@@ -1,0 +1,31 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_Wb_FolioFilesPreview_ActionAddNewExtraFilToFolio_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("File")]
+public ssConectaProveedores.RestRecords.RESTST_1d6498da9105fbe815a7f766352917c0Structure inParamFile;
+[JsonProperty("Folio")]
+public ssConectaProveedores.RestRecords.RESTEN_764a7cdbc8a8735aa4be34db0d0a0f0aEntityRecord inParamFolio;
+[JsonProperty("SupplierNumber")]
+public string inParamSupplierNumber;
+[JsonProperty("Invoice")]
+public ssConectaProveedores.RestRecords.RESTEN_d1d0320db36efbb094ad0082361435a0EntityRecord inParamInvoice;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioFilesPreview_ActionAddNewExtraFilToFolio_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_j_FoliosSAE_Wb_FolioFilesPreview_ActionAddNewExtraFilToFolio_Inputs result = inputParameters.ToObject<RESTConectaProveedores_j_FoliosSAE_Wb_FolioFilesPreview_ActionAddNewExtraFilToFolio_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_j_FoliosSAE_Wb_FolioFilesPreview_ActionAddNewExtraFilToFolio_Model ToModel() {ConectaProveedores_j_FoliosSAE_Wb_FolioFilesPreview_ActionAddNewExtraFilToFolio_Model result = new ConectaProveedores_j_FoliosSAE_Wb_FolioFilesPreview_ActionAddNewExtraFilToFolio_Model();
+result.inParamFile = ssConectaProveedores.RestRecords.RESTST_1d6498da9105fbe815a7f766352917c0Structure.ToStructure(inParamFile);
+result.inParamFolio = ssConectaProveedores.RestRecords.RESTEN_764a7cdbc8a8735aa4be34db0d0a0f0aEntityRecord.ToStructure(inParamFolio);
+result.inParamSupplierNumber = inParamSupplierNumber == null ? "" : inParamSupplierNumber;
+result.inParamInvoice = ssConectaProveedores.RestRecords.RESTEN_d1d0320db36efbb094ad0082361435a0EntityRecord.ToStructure(inParamInvoice);
+return result;
+}
+
+}

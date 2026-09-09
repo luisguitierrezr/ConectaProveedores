@@ -1,0 +1,68 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_g_Reports_wb_documentExtrationFiles_DataActionGetAllFiles_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("DocumentExtrationFiles")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_27be19a2068bdbf4844f837df703a71bStructure> outParamDocumentExtrationFiles;
+
+
+    public static RESTConectaProveedores_g_Reports_wb_documentExtrationFiles_DataActionGetAllFiles_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_845dd74219b9b2e8e635abcbf851e5ff outParamDocumentExtrationFiles) {RESTConectaProveedores_g_Reports_wb_documentExtrationFiles_DataActionGetAllFiles_Outputs result = new RESTConectaProveedores_g_Reports_wb_documentExtrationFiles_DataActionGetAllFiles_Outputs();
+// Write the needed fields of the list outParamDocumentExtrationFiles to the result.outParamDocumentExtrationFiles
+ssConectaProveedores.RestRecords.RESTST_27be19a2068bdbf4844f837df703a71bStructure tmpoutParamDocumentExtrationFilesElement;
+if(outParamDocumentExtrationFiles.Empty) {
+// Write the needed fields of the record outParamDocumentExtrationFiles.CurrentRec to the tmpoutParamDocumentExtrationFilesElement
+tmpoutParamDocumentExtrationFilesElement = new ssConectaProveedores.RestRecords.RESTST_27be19a2068bdbf4844f837df703a71bStructure();
+tmpoutParamDocumentExtrationFilesElement.AttrFileName = outParamDocumentExtrationFiles.CurrentRec.ssFileName;
+tmpoutParamDocumentExtrationFilesElement.AttrStorageId = (long?) outParamDocumentExtrationFiles.CurrentRec.ssStorageId;
+tmpoutParamDocumentExtrationFilesElement.AttrSelect = (bool?) outParamDocumentExtrationFiles.CurrentRec.ssSelect;
+tmpoutParamDocumentExtrationFilesElement.AttrCreatedOn = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamDocumentExtrationFiles.CurrentRec.ssCreatedOn);
+tmpoutParamDocumentExtrationFilesElement.AttrSize = (long?) outParamDocumentExtrationFiles.CurrentRec.ssSize;
+result.outParamDocumentExtrationFiles = new RestList<ssConectaProveedores.RestRecords.RESTST_27be19a2068bdbf4844f837df703a71bStructure>(new ssConectaProveedores.RestRecords.RESTST_27be19a2068bdbf4844f837df703a71bStructure[] {}, tmpoutParamDocumentExtrationFilesElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_27be19a2068bdbf4844f837df703a71bStructure>
+ tmpoutParamDocumentExtrationFiles1List = new List<ssConectaProveedores.RestRecords.RESTST_27be19a2068bdbf4844f837df703a71bStructure>
+();
+try {outParamDocumentExtrationFiles.StartIteration();
+while (!(outParamDocumentExtrationFiles.Eof)) {
+// Write the needed fields of the record outParamDocumentExtrationFiles.CurrentRec to the tmpoutParamDocumentExtrationFilesElement
+tmpoutParamDocumentExtrationFilesElement = new ssConectaProveedores.RestRecords.RESTST_27be19a2068bdbf4844f837df703a71bStructure();
+tmpoutParamDocumentExtrationFilesElement.AttrFileName = outParamDocumentExtrationFiles.CurrentRec.ssFileName;
+tmpoutParamDocumentExtrationFilesElement.AttrStorageId = (long?) outParamDocumentExtrationFiles.CurrentRec.ssStorageId;
+tmpoutParamDocumentExtrationFilesElement.AttrSelect = (bool?) outParamDocumentExtrationFiles.CurrentRec.ssSelect;
+tmpoutParamDocumentExtrationFilesElement.AttrCreatedOn = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamDocumentExtrationFiles.CurrentRec.ssCreatedOn);
+tmpoutParamDocumentExtrationFilesElement.AttrSize = (long?) outParamDocumentExtrationFiles.CurrentRec.ssSize;
+tmpoutParamDocumentExtrationFiles1List.Add(tmpoutParamDocumentExtrationFilesElement);
+outParamDocumentExtrationFiles.Advance();
+}
+
+} finally {
+outParamDocumentExtrationFiles.EndIteration();
+}
+
+result.outParamDocumentExtrationFiles = new RestList<ssConectaProveedores.RestRecords.RESTST_27be19a2068bdbf4844f837df703a71bStructure>(tmpoutParamDocumentExtrationFiles1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_27be19a2068bdbf4844f837df703a71bStructure));
+}
+
+return result;
+}
+
+
+    public static ConectaProveedores_g_Reports_wb_documentExtrationFiles_DataActionGetAllFiles_Model ToModel(RESTConectaProveedores_g_Reports_wb_documentExtrationFiles_DataActionGetAllFiles_Outputs variables) {ConectaProveedores_g_Reports_wb_documentExtrationFiles_DataActionGetAllFiles_Model result = new ConectaProveedores_g_Reports_wb_documentExtrationFiles_DataActionGetAllFiles_Model();
+result.outParamDocumentExtrationFiles = variables == null ? new RL_845dd74219b9b2e8e635abcbf851e5ff() : RL_845dd74219b9b2e8e635abcbf851e5ff.FromRestList(variables.outParamDocumentExtrationFiles, ssConectaProveedores.RestRecords.RESTST_27be19a2068bdbf4844f837df703a71bStructure.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_g_Reports_wb_documentExtrationFiles_DataActionGetAllFiles_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_g_Reports_wb_documentExtrationFiles_DataActionGetAllFiles_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_g_Reports_wb_documentExtrationFiles_DataActionGetAllFiles_Outputs result = new RESTConectaProveedores_g_Reports_wb_documentExtrationFiles_DataActionGetAllFiles_Outputs();
+result.outParamDocumentExtrationFiles = screenModel.outParamDocumentExtrationFiles.ToRestList<ssConectaProveedores.RestRecords.RESTST_27be19a2068bdbf4844f837df703a71bStructure>(ssConectaProveedores.RestRecords.RESTST_27be19a2068bdbf4844f837df703a71bStructure.FromStructureDelegate(conf));
+return result;
+}
+
+}

@@ -1,0 +1,33 @@
+﻿using System.Diagnostics;
+namespace ssConectaProveedores.ReferencesProxy {
+
+public sealed partial class ENUser_PreferencesEntity {
+private static readonly ActivitySource activitySource = new(typeof(ENUser_PreferencesEntity).Namespace);
+private static System.Collections.Generic.Dictionary<string,string> _entityAttributes;
+private static System.Collections.Generic.Dictionary<string,string> EntityAttributes => _entityAttributes ??= InitializeEntityAttributes();
+
+private static System.Collections.Generic.Dictionary<string,string> InitializeEntityAttributes() {
+return new System.Collections.Generic.Dictionary<string,string> {
+{"id", TableDetailsServiceAccessor.Instance?.GetValidatedColumnName(_EntityKeyConstants.@Organization, _EntityKeyConstants._OrganizationEntityKeys.@User_Preferences, _EntityKeyConstants._OrganizationEntityKeys._User_PreferencesAttributeKeys.@Id, "id") ?? "id"},
+{"tablelinescount", TableDetailsServiceAccessor.Instance?.GetValidatedColumnName(_EntityKeyConstants.@Organization, _EntityKeyConstants._OrganizationEntityKeys.@User_Preferences, _EntityKeyConstants._OrganizationEntityKeys._User_PreferencesAttributeKeys.@TableLinesCount, "tablelinescount") ?? "tablelinescount"}
+};
+}
+public static System.Collections.Generic.Dictionary<string,string> AttributesToDatabaseNamesMap() {
+return EntityAttributes;
+}
+public static string AttributeDatabaseName(string attributeName) {
+string databaseName;
+EntityAttributes.TryGetValue(attributeName, out databaseName);
+return databaseName;
+}
+public static string LocalViewName(string locale) {
+return ViewName(locale);
+}
+public static string ViewName(string locale) {
+return BaseAppUtils.EscapeAndQualifySqlIdentifier(DatabaseAccess.ForRuntimeDatabase, TableDetailsServiceAccessor.Instance?.GetValidatedTableName(_EntityKeyConstants.@Organization, _EntityKeyConstants._OrganizationEntityKeys.@User_Preferences, "user__ok7ot05vqroujzi5wf_ij983"));
+}
+public static readonly ObjectKey eSpaceKey = ObjectKey.Parse("deebe1cf-a029-4ef6-9cff-f0e01fed8e07");
+} // ENUser_PreferencesEntity
+
+}
+

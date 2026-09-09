@@ -1,0 +1,25 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_a_Common_Wb_AssignTempRolePopup_ServiceAPIServiceUserApplicationRoleTempAssign_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("Source")]
+public ssConectaProveedores.RestRecords.RESTEN_20bdea9cf8f17569719f414a83b584b6EntityRecord inParamSource;
+[JsonProperty("UserId")]
+public string inParamUserId;
+
+
+    public static RESTConectaProveedores_a_Common_Wb_AssignTempRolePopup_ServiceAPIServiceUserApplicationRoleTempAssign_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_a_Common_Wb_AssignTempRolePopup_ServiceAPIServiceUserApplicationRoleTempAssign_Inputs result = inputParameters.ToObject<RESTConectaProveedores_a_Common_Wb_AssignTempRolePopup_ServiceAPIServiceUserApplicationRoleTempAssign_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_a_Common_Wb_AssignTempRolePopup_ServiceAPIServiceUserApplicationRoleTempAssign_Model ToModel() {ConectaProveedores_a_Common_Wb_AssignTempRolePopup_ServiceAPIServiceUserApplicationRoleTempAssign_Model result = new ConectaProveedores_a_Common_Wb_AssignTempRolePopup_ServiceAPIServiceUserApplicationRoleTempAssign_Model();
+result.inParamSource = ssConectaProveedores.RestRecords.RESTEN_20bdea9cf8f17569719f414a83b584b6EntityRecord.ToStructure(inParamSource);
+result.inParamUserId = inParamUserId == null ? "" : inParamUserId;
+return result;
+}
+
+}

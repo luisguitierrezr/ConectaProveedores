@@ -1,0 +1,82 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssConectaProveedores.RestRecords;
+
+// OrderDistributionConfigFirstApproverEntraRoleFirstContactEntraRoleSecondApproverEntraRoleSecondContactEntraRoleRegionNumberTelcelDirectionRegionRecord
+public class RESTRC_c1e2ad1f67f216fd0b4fb3f61e1c54ad : AbstractRESTStructure<RC_c1e2ad1f67f216fd0b4fb3f61e1c54ad> {
+[JsonProperty("OrderDistributionConfig")]
+public ssConectaProveedores.RestRecords.RESTEN_4ad0cdb13562998fda111463f2af9c31EntityRecord AttrOrderDistributionConfig;
+
+[JsonProperty("FirstApproverEntraRole")]
+public ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord AttrFirstApproverEntraRole;
+
+[JsonProperty("FirstContactEntraRole")]
+public ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord AttrFirstContactEntraRole;
+
+[JsonProperty("SecondApproverEntraRole")]
+public ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord AttrSecondApproverEntraRole;
+
+[JsonProperty("SecondContactEntraRole")]
+public ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord AttrSecondContactEntraRole;
+
+[JsonProperty("RegionNumber")]
+public string AttrRegionNumber;
+
+[JsonProperty("TelcelDirection")]
+public ssConectaProveedores.RestRecords.RESTEN_d466acc32a9bc0e97d052bc80d6c9d0bEntityRecord AttrTelcelDirection;
+
+[JsonProperty("Region")]
+public ssConectaProveedores.RestRecords.RESTEN_31f501c551d210017fcb34b5237e3390EntityRecord AttrRegion;
+
+public RESTRC_c1e2ad1f67f216fd0b4fb3f61e1c54ad() { }
+
+public RESTRC_c1e2ad1f67f216fd0b4fb3f61e1c54ad (RC_c1e2ad1f67f216fd0b4fb3f61e1c54ad s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrOrderDistributionConfig = ConvertToRestWithoutDefaults(s.ssENOrderDistributionConfig, new EN_4ad0cdb13562998fda111463f2af9c31EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_4ad0cdb13562998fda111463f2af9c31EntityRecord.FromStructure, config);
+AttrFirstApproverEntraRole = ConvertToRestWithoutDefaults(s.ssENFirstApproverEntraRole, new EN_d27d6d10f66f82966903ca7fd33164f8EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord.FromStructure, config);
+AttrFirstContactEntraRole = ConvertToRestWithoutDefaults(s.ssENFirstContactEntraRole, new EN_d27d6d10f66f82966903ca7fd33164f8EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord.FromStructure, config);
+AttrSecondApproverEntraRole = ConvertToRestWithoutDefaults(s.ssENSecondApproverEntraRole, new EN_d27d6d10f66f82966903ca7fd33164f8EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord.FromStructure, config);
+AttrSecondContactEntraRole = ConvertToRestWithoutDefaults(s.ssENSecondContactEntraRole, new EN_d27d6d10f66f82966903ca7fd33164f8EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord.FromStructure, config);
+AttrRegionNumber = ConvertToRestWithoutDefaults(s.ssRegionNumber, "");
+AttrTelcelDirection = ConvertToRestWithoutDefaults(s.ssENTelcelDirection, new EN_d466acc32a9bc0e97d052bc80d6c9d0bEntityRecord(), ssConectaProveedores.RestRecords.RESTEN_d466acc32a9bc0e97d052bc80d6c9d0bEntityRecord.FromStructure, config);
+AttrRegion = ConvertToRestWithoutDefaults(s.ssENRegion, new EN_31f501c551d210017fcb34b5237e3390EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_31f501c551d210017fcb34b5237e3390EntityRecord.FromStructure, config);
+  } else {
+AttrOrderDistributionConfig = ssConectaProveedores.RestRecords.RESTEN_4ad0cdb13562998fda111463f2af9c31EntityRecord.FromStructure(s.ssENOrderDistributionConfig, config);
+AttrFirstApproverEntraRole = ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord.FromStructure(s.ssENFirstApproverEntraRole, config);
+AttrFirstContactEntraRole = ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord.FromStructure(s.ssENFirstContactEntraRole, config);
+AttrSecondApproverEntraRole = ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord.FromStructure(s.ssENSecondApproverEntraRole, config);
+AttrSecondContactEntraRole = ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord.FromStructure(s.ssENSecondContactEntraRole, config);
+AttrRegionNumber = s.ssRegionNumber;
+AttrTelcelDirection = ssConectaProveedores.RestRecords.RESTEN_d466acc32a9bc0e97d052bc80d6c9d0bEntityRecord.FromStructure(s.ssENTelcelDirection, config);
+AttrRegion = ssConectaProveedores.RestRecords.RESTEN_31f501c551d210017fcb34b5237e3390EntityRecord.FromStructure(s.ssENRegion, config);
+  }
+}
+
+public static RC_c1e2ad1f67f216fd0b4fb3f61e1c54ad ToStructure(ssConectaProveedores.RestRecords.RESTRC_c1e2ad1f67f216fd0b4fb3f61e1c54ad obj) { 
+  RC_c1e2ad1f67f216fd0b4fb3f61e1c54ad s = new RC_c1e2ad1f67f216fd0b4fb3f61e1c54ad();
+  if(obj != null) {
+  s.ssENOrderDistributionConfig = ssConectaProveedores.RestRecords.RESTEN_4ad0cdb13562998fda111463f2af9c31EntityRecord.ToStructure(obj.AttrOrderDistributionConfig);
+  s.ssENFirstApproverEntraRole = ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord.ToStructure(obj.AttrFirstApproverEntraRole);
+  s.ssENFirstContactEntraRole = ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord.ToStructure(obj.AttrFirstContactEntraRole);
+  s.ssENSecondApproverEntraRole = ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord.ToStructure(obj.AttrSecondApproverEntraRole);
+  s.ssENSecondContactEntraRole = ssConectaProveedores.RestRecords.RESTEN_d27d6d10f66f82966903ca7fd33164f8EntityRecord.ToStructure(obj.AttrSecondContactEntraRole);
+  s.ssRegionNumber = obj.AttrRegionNumber == null ? "" : obj.AttrRegionNumber;
+  s.ssENTelcelDirection = ssConectaProveedores.RestRecords.RESTEN_d466acc32a9bc0e97d052bc80d6c9d0bEntityRecord.ToStructure(obj.AttrTelcelDirection);
+  s.ssENRegion = ssConectaProveedores.RestRecords.RESTEN_31f501c551d210017fcb34b5237e3390EntityRecord.ToStructure(obj.AttrRegion);
+  }
+  return s;
+}
+
+public static Func<RC_c1e2ad1f67f216fd0b4fb3f61e1c54ad, ssConectaProveedores.RestRecords.RESTRC_c1e2ad1f67f216fd0b4fb3f61e1c54ad> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (RC_c1e2ad1f67f216fd0b4fb3f61e1c54ad s) => FromStructure(s, config);
+}
+public static ssConectaProveedores.RestRecords.RESTRC_c1e2ad1f67f216fd0b4fb3f61e1c54ad FromStructure(RC_c1e2ad1f67f216fd0b4fb3f61e1c54ad s, IBehaviorsConfiguration config) { 
+  return new ssConectaProveedores.RestRecords.RESTRC_c1e2ad1f67f216fd0b4fb3f61e1c54ad(s, config);
+}
+
+}
+
+

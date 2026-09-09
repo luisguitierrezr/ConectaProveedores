@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_ServiceAPICall_ZMXMIMMF_VISUALIZAR_SAL_ANT_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("Request")]
+public ssConectaProveedores.RestRecords.RESTST_f68ab54e767928bb7cc21e9801e8642bStructure inParamRequest;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_ServiceAPICall_ZMXMIMMF_VISUALIZAR_SAL_ANT_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_ServiceAPICall_ZMXMIMMF_VISUALIZAR_SAL_ANT_Inputs result = inputParameters.ToObject<RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_ServiceAPICall_ZMXMIMMF_VISUALIZAR_SAL_ANT_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_ServiceAPICall_ZMXMIMMF_VISUALIZAR_SAL_ANT_Model ToModel() {ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_ServiceAPICall_ZMXMIMMF_VISUALIZAR_SAL_ANT_Model result = new ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_ServiceAPICall_ZMXMIMMF_VISUALIZAR_SAL_ANT_Model();
+result.inParamRequest = ssConectaProveedores.RestRecords.RESTST_f68ab54e767928bb7cc21e9801e8642bStructure.ToStructure(inParamRequest);
+return result;
+}
+
+}

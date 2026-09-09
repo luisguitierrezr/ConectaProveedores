@@ -1,0 +1,13 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_d_InvoiceAudit_InvoicesAudit_DataActionGetInvoice_Model {
+
+    public RC_cad676a01e44d775889bfdee9f2eda1f outParamInvoiceRecord;
+public bool outParamHasDifferentRegions;
+public EN_31f501c551d210017fcb34b5237e3390EntityRecord outParamRegion;
+public EN_9d6ffd765945bcc9a7f807d4f431bd00EntityRecord outParamSupplier;
+
+}

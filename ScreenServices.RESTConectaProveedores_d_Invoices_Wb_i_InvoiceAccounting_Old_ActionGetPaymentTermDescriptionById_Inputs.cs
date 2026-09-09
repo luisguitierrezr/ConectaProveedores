@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionGetPaymentTermDescriptionById_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("PaymentTermsId")]
+public long? inParamPaymentTermsId;
+
+
+    public static RESTConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionGetPaymentTermDescriptionById_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionGetPaymentTermDescriptionById_Inputs result = inputParameters.ToObject<RESTConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionGetPaymentTermDescriptionById_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionGetPaymentTermDescriptionById_Model ToModel() {ConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionGetPaymentTermDescriptionById_Model result = new ConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionGetPaymentTermDescriptionById_Model();
+result.inParamPaymentTermsId = inParamPaymentTermsId == null ? 0L : inParamPaymentTermsId.Value;
+return result;
+}
+
+}

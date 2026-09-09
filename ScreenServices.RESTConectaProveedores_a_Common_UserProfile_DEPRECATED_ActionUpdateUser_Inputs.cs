@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_a_Common_UserProfile_DEPRECATED_ActionUpdateUser_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("UserUpdateInfo")]
+public ssConectaProveedores.RestRecords.RESTST_da83da85e5348cd2800e701fda6288aaStructure inParamUserUpdateInfo;
+
+
+    public static RESTConectaProveedores_a_Common_UserProfile_DEPRECATED_ActionUpdateUser_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_a_Common_UserProfile_DEPRECATED_ActionUpdateUser_Inputs result = inputParameters.ToObject<RESTConectaProveedores_a_Common_UserProfile_DEPRECATED_ActionUpdateUser_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_a_Common_UserProfile_DEPRECATED_ActionUpdateUser_Model ToModel() {ConectaProveedores_a_Common_UserProfile_DEPRECATED_ActionUpdateUser_Model result = new ConectaProveedores_a_Common_UserProfile_DEPRECATED_ActionUpdateUser_Model();
+result.inParamUserUpdateInfo = ssConectaProveedores.RestRecords.RESTST_da83da85e5348cd2800e701fda6288aaStructure.ToStructure(inParamUserUpdateInfo);
+return result;
+}
+
+}

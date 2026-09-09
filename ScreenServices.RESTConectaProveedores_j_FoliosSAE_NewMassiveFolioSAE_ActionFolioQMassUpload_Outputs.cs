@@ -1,0 +1,183 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_NewMassiveFolioSAE_ActionFolioQMassUpload_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("FolioQList")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_118fe20454dd0bf1f0e6d925e7d7544bStructure> outParamFolioQList;
+[JsonProperty("NumberOfRecords")]
+public int? outParamNumberOfRecords;
+[JsonProperty("NumberOfErros")]
+public int? outParamNumberOfErros;
+[JsonProperty("OrderNumber")]
+public long? outParamOrderNumber;
+[JsonProperty("ErrorMsg")]
+public string outParamErrorMsg;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_NewMassiveFolioSAE_ActionFolioQMassUpload_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_f4ab0a048438c19ab1537693fa69f7c4 outParamFolioQList, int outParamNumberOfRecords, int outParamNumberOfErros, long outParamOrderNumber, string outParamErrorMsg) {RESTConectaProveedores_j_FoliosSAE_NewMassiveFolioSAE_ActionFolioQMassUpload_Outputs result = new RESTConectaProveedores_j_FoliosSAE_NewMassiveFolioSAE_ActionFolioQMassUpload_Outputs();
+conf.IncludeBinariesURL = false;
+// Write the needed fields of the list outParamFolioQList to the result.outParamFolioQList
+ssConectaProveedores.RestRecords.RESTST_118fe20454dd0bf1f0e6d925e7d7544bStructure tmpoutParamFolioQListElement;
+if(outParamFolioQList.Empty) {
+// Write the needed fields of the record outParamFolioQList.CurrentRec to the tmpoutParamFolioQListElement
+tmpoutParamFolioQListElement = new ssConectaProveedores.RestRecords.RESTST_118fe20454dd0bf1f0e6d925e7d7544bStructure();
+tmpoutParamFolioQListElement.AttrNumber = (int?) outParamFolioQList.CurrentRec.ssNumber;
+tmpoutParamFolioQListElement.AttrOrderNumber = outParamFolioQList.CurrentRec.ssOrderNumber;
+tmpoutParamFolioQListElement.AttrOrderMainItem = (long?) outParamFolioQList.CurrentRec.ssOrderMainItem;
+tmpoutParamFolioQListElement.AttrPosition = (int?) outParamFolioQList.CurrentRec.ssPosition;
+tmpoutParamFolioQListElement.AttrDeliveryDate = outParamFolioQList.CurrentRec.ssDeliveryDate;
+tmpoutParamFolioQListElement.AttrInvoiceQuantity = (decimal?) outParamFolioQList.CurrentRec.ssInvoiceQuantity;
+tmpoutParamFolioQListElement.AttrWaitingQuantity = (decimal?) outParamFolioQList.CurrentRec.ssWaitingQuantity;
+tmpoutParamFolioQListElement.AttrDeliveredQuantity = (int?) outParamFolioQList.CurrentRec.ssDeliveredQuantity;
+tmpoutParamFolioQListElement.AttrQuantity = (decimal?) outParamFolioQList.CurrentRec.ssQuantity;
+tmpoutParamFolioQListElement.AttrUserEmail = outParamFolioQList.CurrentRec.ssUserEmail;
+tmpoutParamFolioQListElement.AttrInvoiceFilenamePdf = outParamFolioQList.CurrentRec.ssInvoiceFilenamePdf;
+tmpoutParamFolioQListElement.AttrInvoiceFilenameXml = outParamFolioQList.CurrentRec.ssInvoiceFilenameXml;
+tmpoutParamFolioQListElement.AttrIsValidInvoiceFilenamePdf = (bool?) outParamFolioQList.CurrentRec.ssIsValidInvoiceFilenamePdf;
+tmpoutParamFolioQListElement.AttrIsValidInvoiceFilenameXml = (bool?) outParamFolioQList.CurrentRec.ssIsValidInvoiceFilenameXml;
+tmpoutParamFolioQListElement.AttrPEP = outParamFolioQList.CurrentRec.ssPEP;
+tmpoutParamFolioQListElement.AttrPlaceId = outParamFolioQList.CurrentRec.ssPlaceId;
+tmpoutParamFolioQListElement.AttrPlaceName = outParamFolioQList.CurrentRec.ssPlaceName;
+tmpoutParamFolioQListElement.AttrMaterialCode = outParamFolioQList.CurrentRec.ssMaterialCode;
+tmpoutParamFolioQListElement.AttrMaterialDescription = outParamFolioQList.CurrentRec.ssMaterialDescription;
+tmpoutParamFolioQListElement.AttrAssigmentCode = outParamFolioQList.CurrentRec.ssAssigmentCode;
+tmpoutParamFolioQListElement.AttrUnitPrice = (decimal?) outParamFolioQList.CurrentRec.ssUnitPrice;
+tmpoutParamFolioQListElement.AttrAmountDelivered = (decimal?) outParamFolioQList.CurrentRec.ssAmountDelivered;
+tmpoutParamFolioQListElement.AttrCurrency = outParamFolioQList.CurrentRec.ssCurrency;
+// Write the needed fields of the list outParamFolioQList.CurrentRec.ssFolioQFilesList to the tmpoutParamFolioQListElement.AttrFolioQFilesList
+ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement;
+if(outParamFolioQList.CurrentRec.ssFolioQFilesList.Empty) {
+// Write the needed fields of the record outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec to the tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement = new ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure();
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrFilename = outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssFilename;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrBinary = outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssBinary;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrBinaryFilename = outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssBinaryFilename;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrFileExists = (bool?) outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssFileExists;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrIsExtra = (bool?) outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssIsExtra;
+tmpoutParamFolioQListElement.AttrFolioQFilesList = new RestList<ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure>(new ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure[] {}, tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure>
+ tmpoutParamFolioQList_CurrentRec_ssFolioQFilesList1List = new List<ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure>
+();
+try {outParamFolioQList.CurrentRec.ssFolioQFilesList.StartIteration();
+while (!(outParamFolioQList.CurrentRec.ssFolioQFilesList.Eof)) {
+// Write the needed fields of the record outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec to the tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement = new ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure();
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrFilename = outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssFilename;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrBinary = outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssBinary;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrBinaryFilename = outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssBinaryFilename;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrFileExists = (bool?) outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssFileExists;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrIsExtra = (bool?) outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssIsExtra;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesList1List.Add(tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement);
+outParamFolioQList.CurrentRec.ssFolioQFilesList.Advance();
+}
+
+} finally {
+outParamFolioQList.CurrentRec.ssFolioQFilesList.EndIteration();
+}
+
+tmpoutParamFolioQListElement.AttrFolioQFilesList = new RestList<ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure>(tmpoutParamFolioQList_CurrentRec_ssFolioQFilesList1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure));
+}
+
+tmpoutParamFolioQListElement.AttrWithError = (bool?) outParamFolioQList.CurrentRec.ssWithError;
+tmpoutParamFolioQListElement.AttrMessage = outParamFolioQList.CurrentRec.ssMessage;
+tmpoutParamFolioQListElement.AttrBaseQuantity = (int?) outParamFolioQList.CurrentRec.ssBaseQuantity;
+tmpoutParamFolioQListElement.AttrVATRate = (decimal?) outParamFolioQList.CurrentRec.ssVATRate;
+result.outParamFolioQList = new RestList<ssConectaProveedores.RestRecords.RESTST_118fe20454dd0bf1f0e6d925e7d7544bStructure>(new ssConectaProveedores.RestRecords.RESTST_118fe20454dd0bf1f0e6d925e7d7544bStructure[] {}, tmpoutParamFolioQListElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_118fe20454dd0bf1f0e6d925e7d7544bStructure>
+ tmpoutParamFolioQList1List = new List<ssConectaProveedores.RestRecords.RESTST_118fe20454dd0bf1f0e6d925e7d7544bStructure>
+();
+try {outParamFolioQList.StartIteration();
+while (!(outParamFolioQList.Eof)) {
+// Write the needed fields of the record outParamFolioQList.CurrentRec to the tmpoutParamFolioQListElement
+tmpoutParamFolioQListElement = new ssConectaProveedores.RestRecords.RESTST_118fe20454dd0bf1f0e6d925e7d7544bStructure();
+tmpoutParamFolioQListElement.AttrNumber = (int?) outParamFolioQList.CurrentRec.ssNumber;
+tmpoutParamFolioQListElement.AttrOrderNumber = outParamFolioQList.CurrentRec.ssOrderNumber;
+tmpoutParamFolioQListElement.AttrOrderMainItem = (long?) outParamFolioQList.CurrentRec.ssOrderMainItem;
+tmpoutParamFolioQListElement.AttrPosition = (int?) outParamFolioQList.CurrentRec.ssPosition;
+tmpoutParamFolioQListElement.AttrDeliveryDate = outParamFolioQList.CurrentRec.ssDeliveryDate;
+tmpoutParamFolioQListElement.AttrInvoiceQuantity = (decimal?) outParamFolioQList.CurrentRec.ssInvoiceQuantity;
+tmpoutParamFolioQListElement.AttrWaitingQuantity = (decimal?) outParamFolioQList.CurrentRec.ssWaitingQuantity;
+tmpoutParamFolioQListElement.AttrDeliveredQuantity = (int?) outParamFolioQList.CurrentRec.ssDeliveredQuantity;
+tmpoutParamFolioQListElement.AttrQuantity = (decimal?) outParamFolioQList.CurrentRec.ssQuantity;
+tmpoutParamFolioQListElement.AttrUserEmail = outParamFolioQList.CurrentRec.ssUserEmail;
+tmpoutParamFolioQListElement.AttrInvoiceFilenamePdf = outParamFolioQList.CurrentRec.ssInvoiceFilenamePdf;
+tmpoutParamFolioQListElement.AttrInvoiceFilenameXml = outParamFolioQList.CurrentRec.ssInvoiceFilenameXml;
+tmpoutParamFolioQListElement.AttrIsValidInvoiceFilenamePdf = (bool?) outParamFolioQList.CurrentRec.ssIsValidInvoiceFilenamePdf;
+tmpoutParamFolioQListElement.AttrIsValidInvoiceFilenameXml = (bool?) outParamFolioQList.CurrentRec.ssIsValidInvoiceFilenameXml;
+tmpoutParamFolioQListElement.AttrPEP = outParamFolioQList.CurrentRec.ssPEP;
+tmpoutParamFolioQListElement.AttrPlaceId = outParamFolioQList.CurrentRec.ssPlaceId;
+tmpoutParamFolioQListElement.AttrPlaceName = outParamFolioQList.CurrentRec.ssPlaceName;
+tmpoutParamFolioQListElement.AttrMaterialCode = outParamFolioQList.CurrentRec.ssMaterialCode;
+tmpoutParamFolioQListElement.AttrMaterialDescription = outParamFolioQList.CurrentRec.ssMaterialDescription;
+tmpoutParamFolioQListElement.AttrAssigmentCode = outParamFolioQList.CurrentRec.ssAssigmentCode;
+tmpoutParamFolioQListElement.AttrUnitPrice = (decimal?) outParamFolioQList.CurrentRec.ssUnitPrice;
+tmpoutParamFolioQListElement.AttrAmountDelivered = (decimal?) outParamFolioQList.CurrentRec.ssAmountDelivered;
+tmpoutParamFolioQListElement.AttrCurrency = outParamFolioQList.CurrentRec.ssCurrency;
+// Write the needed fields of the list outParamFolioQList.CurrentRec.ssFolioQFilesList to the tmpoutParamFolioQListElement.AttrFolioQFilesList
+ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement;
+if(outParamFolioQList.CurrentRec.ssFolioQFilesList.Empty) {
+// Write the needed fields of the record outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec to the tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement = new ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure();
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrFilename = outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssFilename;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrBinary = outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssBinary;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrBinaryFilename = outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssBinaryFilename;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrFileExists = (bool?) outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssFileExists;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrIsExtra = (bool?) outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssIsExtra;
+tmpoutParamFolioQListElement.AttrFolioQFilesList = new RestList<ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure>(new ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure[] {}, tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure>
+ tmpoutParamFolioQList_CurrentRec_ssFolioQFilesList1List = new List<ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure>
+();
+try {outParamFolioQList.CurrentRec.ssFolioQFilesList.StartIteration();
+while (!(outParamFolioQList.CurrentRec.ssFolioQFilesList.Eof)) {
+// Write the needed fields of the record outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec to the tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement = new ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure();
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrFilename = outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssFilename;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrBinary = outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssBinary;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrBinaryFilename = outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssBinaryFilename;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrFileExists = (bool?) outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssFileExists;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement.AttrIsExtra = (bool?) outParamFolioQList.CurrentRec.ssFolioQFilesList.CurrentRec.ssIsExtra;
+tmpoutParamFolioQList_CurrentRec_ssFolioQFilesList1List.Add(tmpoutParamFolioQList_CurrentRec_ssFolioQFilesListElement);
+outParamFolioQList.CurrentRec.ssFolioQFilesList.Advance();
+}
+
+} finally {
+outParamFolioQList.CurrentRec.ssFolioQFilesList.EndIteration();
+}
+
+tmpoutParamFolioQListElement.AttrFolioQFilesList = new RestList<ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure>(tmpoutParamFolioQList_CurrentRec_ssFolioQFilesList1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_b9bc0a93e29018653085b5de5dd1951eStructure));
+}
+
+tmpoutParamFolioQListElement.AttrWithError = (bool?) outParamFolioQList.CurrentRec.ssWithError;
+tmpoutParamFolioQListElement.AttrMessage = outParamFolioQList.CurrentRec.ssMessage;
+tmpoutParamFolioQListElement.AttrBaseQuantity = (int?) outParamFolioQList.CurrentRec.ssBaseQuantity;
+tmpoutParamFolioQListElement.AttrVATRate = (decimal?) outParamFolioQList.CurrentRec.ssVATRate;
+tmpoutParamFolioQList1List.Add(tmpoutParamFolioQListElement);
+outParamFolioQList.Advance();
+}
+
+} finally {
+outParamFolioQList.EndIteration();
+}
+
+result.outParamFolioQList = new RestList<ssConectaProveedores.RestRecords.RESTST_118fe20454dd0bf1f0e6d925e7d7544bStructure>(tmpoutParamFolioQList1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_118fe20454dd0bf1f0e6d925e7d7544bStructure));
+}
+
+result.outParamNumberOfRecords = (int?) outParamNumberOfRecords;
+result.outParamNumberOfErros = (int?) outParamNumberOfErros;
+result.outParamOrderNumber = (long?) outParamOrderNumber;
+result.outParamErrorMsg = outParamErrorMsg;
+return result;
+}
+
+
+    
+
+    
+}

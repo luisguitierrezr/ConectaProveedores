@@ -1,0 +1,51 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssConectaProveedores.ReferencesProxy.RestRecords;
+
+// ErrorMessage
+public class JSONST_b7d405ca4407e572da091e54d07e3bd1Structure : AbstractRESTStructure<ST_b7d405ca4407e572da091e54d07e3bd1Structure> {
+[JsonProperty("code")]
+[JsonPropertyName("code")]
+public string AttrCode;
+
+[JsonProperty("message")]
+[JsonPropertyName("message")]
+public string AttrMessage;
+
+public JSONST_b7d405ca4407e572da091e54d07e3bd1Structure() { }
+
+public JSONST_b7d405ca4407e572da091e54d07e3bd1Structure (ST_b7d405ca4407e572da091e54d07e3bd1Structure s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrCode = ConvertToRestWithoutDefaults(s.ssCode, "");
+AttrMessage = ConvertToRestWithoutDefaults(s.ssMessage, "");
+  } else {
+AttrCode = s.ssCode;
+AttrMessage = s.ssMessage;
+  }
+}
+
+public static Func<ssConectaProveedores.ReferencesProxy.RestRecords.JSONST_b7d405ca4407e572da091e54d07e3bd1Structure, ST_b7d405ca4407e572da091e54d07e3bd1Structure> ToStructureDelegate(IBehaviorsConfiguration config) { 
+  return (ssConectaProveedores.ReferencesProxy.RestRecords.JSONST_b7d405ca4407e572da091e54d07e3bd1Structure s) => ToStructure(s, config);
+}
+public static ST_b7d405ca4407e572da091e54d07e3bd1Structure ToStructure(ssConectaProveedores.ReferencesProxy.RestRecords.JSONST_b7d405ca4407e572da091e54d07e3bd1Structure obj, IBehaviorsConfiguration config) { 
+  ST_b7d405ca4407e572da091e54d07e3bd1Structure s = new ST_b7d405ca4407e572da091e54d07e3bd1Structure();
+  if(obj != null) {
+  s.ssCode = obj.AttrCode == null ? "" : obj.AttrCode;
+  s.ssMessage = obj.AttrMessage == null ? "" : obj.AttrMessage;
+  }
+  return s;
+}
+
+public static Func<ST_b7d405ca4407e572da091e54d07e3bd1Structure, ssConectaProveedores.ReferencesProxy.RestRecords.JSONST_b7d405ca4407e572da091e54d07e3bd1Structure> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (ST_b7d405ca4407e572da091e54d07e3bd1Structure s) => FromStructure(s, config);
+}
+public static ssConectaProveedores.ReferencesProxy.RestRecords.JSONST_b7d405ca4407e572da091e54d07e3bd1Structure FromStructure(ST_b7d405ca4407e572da091e54d07e3bd1Structure s, IBehaviorsConfiguration config) { 
+  return new ssConectaProveedores.ReferencesProxy.RestRecords.JSONST_b7d405ca4407e572da091e54d07e3bd1Structure(s, config);
+}
+
+}
+
+

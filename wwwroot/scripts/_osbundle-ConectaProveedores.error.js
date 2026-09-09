@@ -1,0 +1,2 @@
+﻿
+import{a as i}from"./_oschunk-XEBTTBBQ.js";import{I as o,J as a,T as s,U as m,V as u,W as c,X as f,Y as p,a as r,g as n,t}from"./_oschunk-GQ75NTNV.js";s(n,{applicationDefinition:i}).then(function(){return Promise.all([c(n,{dateTimeFormat:new t.DateTimeFormatInfo("yyyy-MM-dd","HH:mm:ss"),numberFormat:new t.NumberFormatInfo(".","")}),p(n,{onSettingsUpdated:f}),u()])}).then(function(){return m({initType:a.Application.InitializationType.Minimal}).then(function(){function e(){o.renderErrorScreen(i)}return r(e,"initView"),e()})}).catch(function(e){console.error(e)});

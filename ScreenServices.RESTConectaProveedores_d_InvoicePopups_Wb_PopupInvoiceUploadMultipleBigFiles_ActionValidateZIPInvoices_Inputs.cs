@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultipleBigFiles_ActionValidateZIPInvoices_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_File")]
+public ssConectaProveedores.RestRecords.RESTST_1d6498da9105fbe815a7f766352917c0Structure inParami_File;
+
+
+    public static RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultipleBigFiles_ActionValidateZIPInvoices_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultipleBigFiles_ActionValidateZIPInvoices_Inputs result = inputParameters.ToObject<RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultipleBigFiles_ActionValidateZIPInvoices_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultipleBigFiles_ActionValidateZIPInvoices_Model ToModel() {ConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultipleBigFiles_ActionValidateZIPInvoices_Model result = new ConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultipleBigFiles_ActionValidateZIPInvoices_Model();
+result.inParami_File = ssConectaProveedores.RestRecords.RESTST_1d6498da9105fbe815a7f766352917c0Structure.ToStructure(inParami_File);
+return result;
+}
+
+}

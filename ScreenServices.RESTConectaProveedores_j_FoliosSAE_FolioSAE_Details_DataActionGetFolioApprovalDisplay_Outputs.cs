@@ -1,0 +1,78 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_FolioSAE_Details_DataActionGetFolioApprovalDisplay_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("FolioApprovalDisplayList")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure> outParamFolioApprovalDisplayList;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_FolioSAE_Details_DataActionGetFolioApprovalDisplay_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_875afe918a46d044315dbe3410f1f2a7 outParamFolioApprovalDisplayList) {RESTConectaProveedores_j_FoliosSAE_FolioSAE_Details_DataActionGetFolioApprovalDisplay_Outputs result = new RESTConectaProveedores_j_FoliosSAE_FolioSAE_Details_DataActionGetFolioApprovalDisplay_Outputs();
+// Write the needed fields of the list outParamFolioApprovalDisplayList to the result.outParamFolioApprovalDisplayList
+ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure tmpoutParamFolioApprovalDisplayListElement;
+if(outParamFolioApprovalDisplayList.Empty) {
+// Write the needed fields of the record outParamFolioApprovalDisplayList.CurrentRec to the tmpoutParamFolioApprovalDisplayListElement
+tmpoutParamFolioApprovalDisplayListElement = new ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure();
+tmpoutParamFolioApprovalDisplayListElement.AttrLevelNumber = (int?) outParamFolioApprovalDisplayList.CurrentRec.ssLevelNumber;
+tmpoutParamFolioApprovalDisplayListElement.AttrApprovalStatusId = (int?) outParamFolioApprovalDisplayList.CurrentRec.ssApprovalStatusId;
+tmpoutParamFolioApprovalDisplayListElement.AttrName = outParamFolioApprovalDisplayList.CurrentRec.ssName;
+tmpoutParamFolioApprovalDisplayListElement.AttrCombinedJobTitles = outParamFolioApprovalDisplayList.CurrentRec.ssCombinedJobTitles;
+// Write optimized tmpoutParamFolioApprovalDisplayListElement.AttrApplicationRole
+tmpoutParamFolioApprovalDisplayListElement.AttrApplicationRole = "";
+// Write optimized tmpoutParamFolioApprovalDisplayListElement.AttrIsReassigned
+tmpoutParamFolioApprovalDisplayListElement.AttrIsReassigned = (bool?) false;
+// Write optimized tmpoutParamFolioApprovalDisplayListElement.AttrIsSubstituteFor
+tmpoutParamFolioApprovalDisplayListElement.AttrIsSubstituteFor = "";
+result.outParamFolioApprovalDisplayList = new RestList<ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure>(new ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure[] {}, tmpoutParamFolioApprovalDisplayListElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure>
+ tmpoutParamFolioApprovalDisplayList1List = new List<ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure>
+();
+try {outParamFolioApprovalDisplayList.StartIteration();
+while (!(outParamFolioApprovalDisplayList.Eof)) {
+// Write the needed fields of the record outParamFolioApprovalDisplayList.CurrentRec to the tmpoutParamFolioApprovalDisplayListElement
+tmpoutParamFolioApprovalDisplayListElement = new ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure();
+tmpoutParamFolioApprovalDisplayListElement.AttrLevelNumber = (int?) outParamFolioApprovalDisplayList.CurrentRec.ssLevelNumber;
+tmpoutParamFolioApprovalDisplayListElement.AttrApprovalStatusId = (int?) outParamFolioApprovalDisplayList.CurrentRec.ssApprovalStatusId;
+tmpoutParamFolioApprovalDisplayListElement.AttrName = outParamFolioApprovalDisplayList.CurrentRec.ssName;
+tmpoutParamFolioApprovalDisplayListElement.AttrCombinedJobTitles = outParamFolioApprovalDisplayList.CurrentRec.ssCombinedJobTitles;
+// Write optimized tmpoutParamFolioApprovalDisplayListElement.AttrApplicationRole
+tmpoutParamFolioApprovalDisplayListElement.AttrApplicationRole = "";
+// Write optimized tmpoutParamFolioApprovalDisplayListElement.AttrIsReassigned
+tmpoutParamFolioApprovalDisplayListElement.AttrIsReassigned = (bool?) false;
+// Write optimized tmpoutParamFolioApprovalDisplayListElement.AttrIsSubstituteFor
+tmpoutParamFolioApprovalDisplayListElement.AttrIsSubstituteFor = "";
+tmpoutParamFolioApprovalDisplayList1List.Add(tmpoutParamFolioApprovalDisplayListElement);
+outParamFolioApprovalDisplayList.Advance();
+}
+
+} finally {
+outParamFolioApprovalDisplayList.EndIteration();
+}
+
+result.outParamFolioApprovalDisplayList = new RestList<ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure>(tmpoutParamFolioApprovalDisplayList1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure));
+}
+
+return result;
+}
+
+
+    public static ConectaProveedores_j_FoliosSAE_FolioSAE_Details_DataActionGetFolioApprovalDisplay_Model ToModel(RESTConectaProveedores_j_FoliosSAE_FolioSAE_Details_DataActionGetFolioApprovalDisplay_Outputs variables) {ConectaProveedores_j_FoliosSAE_FolioSAE_Details_DataActionGetFolioApprovalDisplay_Model result = new ConectaProveedores_j_FoliosSAE_FolioSAE_Details_DataActionGetFolioApprovalDisplay_Model();
+result.outParamFolioApprovalDisplayList = variables == null ? new RL_875afe918a46d044315dbe3410f1f2a7() : RL_875afe918a46d044315dbe3410f1f2a7.FromRestList(variables.outParamFolioApprovalDisplayList, ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_FolioSAE_Details_DataActionGetFolioApprovalDisplay_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_j_FoliosSAE_FolioSAE_Details_DataActionGetFolioApprovalDisplay_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_j_FoliosSAE_FolioSAE_Details_DataActionGetFolioApprovalDisplay_Outputs result = new RESTConectaProveedores_j_FoliosSAE_FolioSAE_Details_DataActionGetFolioApprovalDisplay_Outputs();
+result.outParamFolioApprovalDisplayList = screenModel.outParamFolioApprovalDisplayList.ToRestList<ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure>(ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure.FromStructureDelegate(conf));
+return result;
+}
+
+}

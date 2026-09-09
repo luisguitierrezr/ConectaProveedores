@@ -1,0 +1,94 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssConectaProveedores.RestRecords;
+
+// InvoiceInvoiceExtendedTaxInvoiceTaxTypeRequisitionInvoiceExtendedDistributionFrequencyProject_Asset_ServiceBusinessValueCategoryBusinessValueSubcategoryRecord
+public class RESTRC_b64650646295f01a3e7c46ac44009d3c : AbstractRESTStructure<RC_b64650646295f01a3e7c46ac44009d3c> {
+[JsonProperty("Invoice")]
+public ssConectaProveedores.RestRecords.RESTEN_d1d0320db36efbb094ad0082361435a0EntityRecord AttrInvoice;
+
+[JsonProperty("InvoiceExtendedTax")]
+public ssConectaProveedores.RestRecords.RESTEN_9a1e28c9eaa6b8ab0560ccd355c7e0e5EntityRecord AttrInvoiceExtendedTax;
+
+[JsonProperty("InvoiceTaxType")]
+public ssConectaProveedores.RestRecords.RESTEN_cff5cb02ac5fe11578884acf37327af3EntityRecord AttrInvoiceTaxType;
+
+[JsonProperty("Requisition")]
+public ssConectaProveedores.RestRecords.RESTEN_98680591dcf3728e0877a90eb5e1e552EntityRecord AttrRequisition;
+
+[JsonProperty("InvoiceExtended")]
+public ssConectaProveedores.RestRecords.RESTEN_f81a3d226103fd013068b8763798067aEntityRecord AttrInvoiceExtended;
+
+[JsonProperty("Distribution")]
+public ssConectaProveedores.RestRecords.RESTEN_88460e7eac2a65d244abb23fe44af0adEntityRecord AttrDistribution;
+
+[JsonProperty("Frequency")]
+public ssConectaProveedores.RestRecords.RESTEN_a6239c65aa61ed4530d18a92034301bbEntityRecord AttrFrequency;
+
+[JsonProperty("Project_Asset_Service")]
+public ssConectaProveedores.RestRecords.RESTEN_c092eb57986a0debaa22aa8b8546b9c4EntityRecord AttrProject_Asset_Service;
+
+[JsonProperty("BusinessValueCategory")]
+public ssConectaProveedores.RestRecords.RESTEN_0578d9e3d7c16250b8bfbc03836e290fEntityRecord AttrBusinessValueCategory;
+
+[JsonProperty("BusinessValueSubcategory")]
+public ssConectaProveedores.RestRecords.RESTEN_f296fc330d9916f9de4aae18321e8388EntityRecord AttrBusinessValueSubcategory;
+
+public RESTRC_b64650646295f01a3e7c46ac44009d3c() { }
+
+public RESTRC_b64650646295f01a3e7c46ac44009d3c (RC_b64650646295f01a3e7c46ac44009d3c s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrInvoice = ConvertToRestWithoutDefaults(s.ssENInvoice, new EN_d1d0320db36efbb094ad0082361435a0EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_d1d0320db36efbb094ad0082361435a0EntityRecord.FromStructure, config);
+AttrInvoiceExtendedTax = ConvertToRestWithoutDefaults(s.ssENInvoiceExtendedTax, new EN_9a1e28c9eaa6b8ab0560ccd355c7e0e5EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_9a1e28c9eaa6b8ab0560ccd355c7e0e5EntityRecord.FromStructure, config);
+AttrInvoiceTaxType = ConvertToRestWithoutDefaults(s.ssENInvoiceTaxType, new EN_cff5cb02ac5fe11578884acf37327af3EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_cff5cb02ac5fe11578884acf37327af3EntityRecord.FromStructure, config);
+AttrRequisition = ConvertToRestWithoutDefaults(s.ssENRequisition, new EN_98680591dcf3728e0877a90eb5e1e552EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_98680591dcf3728e0877a90eb5e1e552EntityRecord.FromStructure, config);
+AttrInvoiceExtended = ConvertToRestWithoutDefaults(s.ssENInvoiceExtended, new EN_f81a3d226103fd013068b8763798067aEntityRecord(), ssConectaProveedores.RestRecords.RESTEN_f81a3d226103fd013068b8763798067aEntityRecord.FromStructure, config);
+AttrDistribution = ConvertToRestWithoutDefaults(s.ssENDistribution, new EN_88460e7eac2a65d244abb23fe44af0adEntityRecord(), ssConectaProveedores.RestRecords.RESTEN_88460e7eac2a65d244abb23fe44af0adEntityRecord.FromStructure, config);
+AttrFrequency = ConvertToRestWithoutDefaults(s.ssENFrequency, new EN_a6239c65aa61ed4530d18a92034301bbEntityRecord(), ssConectaProveedores.RestRecords.RESTEN_a6239c65aa61ed4530d18a92034301bbEntityRecord.FromStructure, config);
+AttrProject_Asset_Service = ConvertToRestWithoutDefaults(s.ssENProject_Asset_Service, new EN_c092eb57986a0debaa22aa8b8546b9c4EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_c092eb57986a0debaa22aa8b8546b9c4EntityRecord.FromStructure, config);
+AttrBusinessValueCategory = ConvertToRestWithoutDefaults(s.ssENBusinessValueCategory, new EN_0578d9e3d7c16250b8bfbc03836e290fEntityRecord(), ssConectaProveedores.RestRecords.RESTEN_0578d9e3d7c16250b8bfbc03836e290fEntityRecord.FromStructure, config);
+AttrBusinessValueSubcategory = ConvertToRestWithoutDefaults(s.ssENBusinessValueSubcategory, new EN_f296fc330d9916f9de4aae18321e8388EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_f296fc330d9916f9de4aae18321e8388EntityRecord.FromStructure, config);
+  } else {
+AttrInvoice = ssConectaProveedores.RestRecords.RESTEN_d1d0320db36efbb094ad0082361435a0EntityRecord.FromStructure(s.ssENInvoice, config);
+AttrInvoiceExtendedTax = ssConectaProveedores.RestRecords.RESTEN_9a1e28c9eaa6b8ab0560ccd355c7e0e5EntityRecord.FromStructure(s.ssENInvoiceExtendedTax, config);
+AttrInvoiceTaxType = ssConectaProveedores.RestRecords.RESTEN_cff5cb02ac5fe11578884acf37327af3EntityRecord.FromStructure(s.ssENInvoiceTaxType, config);
+AttrRequisition = ssConectaProveedores.RestRecords.RESTEN_98680591dcf3728e0877a90eb5e1e552EntityRecord.FromStructure(s.ssENRequisition, config);
+AttrInvoiceExtended = ssConectaProveedores.RestRecords.RESTEN_f81a3d226103fd013068b8763798067aEntityRecord.FromStructure(s.ssENInvoiceExtended, config);
+AttrDistribution = ssConectaProveedores.RestRecords.RESTEN_88460e7eac2a65d244abb23fe44af0adEntityRecord.FromStructure(s.ssENDistribution, config);
+AttrFrequency = ssConectaProveedores.RestRecords.RESTEN_a6239c65aa61ed4530d18a92034301bbEntityRecord.FromStructure(s.ssENFrequency, config);
+AttrProject_Asset_Service = ssConectaProveedores.RestRecords.RESTEN_c092eb57986a0debaa22aa8b8546b9c4EntityRecord.FromStructure(s.ssENProject_Asset_Service, config);
+AttrBusinessValueCategory = ssConectaProveedores.RestRecords.RESTEN_0578d9e3d7c16250b8bfbc03836e290fEntityRecord.FromStructure(s.ssENBusinessValueCategory, config);
+AttrBusinessValueSubcategory = ssConectaProveedores.RestRecords.RESTEN_f296fc330d9916f9de4aae18321e8388EntityRecord.FromStructure(s.ssENBusinessValueSubcategory, config);
+  }
+}
+
+public static RC_b64650646295f01a3e7c46ac44009d3c ToStructure(ssConectaProveedores.RestRecords.RESTRC_b64650646295f01a3e7c46ac44009d3c obj) { 
+  RC_b64650646295f01a3e7c46ac44009d3c s = new RC_b64650646295f01a3e7c46ac44009d3c();
+  if(obj != null) {
+  s.ssENInvoice = ssConectaProveedores.RestRecords.RESTEN_d1d0320db36efbb094ad0082361435a0EntityRecord.ToStructure(obj.AttrInvoice);
+  s.ssENInvoiceExtendedTax = ssConectaProveedores.RestRecords.RESTEN_9a1e28c9eaa6b8ab0560ccd355c7e0e5EntityRecord.ToStructure(obj.AttrInvoiceExtendedTax);
+  s.ssENInvoiceTaxType = ssConectaProveedores.RestRecords.RESTEN_cff5cb02ac5fe11578884acf37327af3EntityRecord.ToStructure(obj.AttrInvoiceTaxType);
+  s.ssENRequisition = ssConectaProveedores.RestRecords.RESTEN_98680591dcf3728e0877a90eb5e1e552EntityRecord.ToStructure(obj.AttrRequisition);
+  s.ssENInvoiceExtended = ssConectaProveedores.RestRecords.RESTEN_f81a3d226103fd013068b8763798067aEntityRecord.ToStructure(obj.AttrInvoiceExtended);
+  s.ssENDistribution = ssConectaProveedores.RestRecords.RESTEN_88460e7eac2a65d244abb23fe44af0adEntityRecord.ToStructure(obj.AttrDistribution);
+  s.ssENFrequency = ssConectaProveedores.RestRecords.RESTEN_a6239c65aa61ed4530d18a92034301bbEntityRecord.ToStructure(obj.AttrFrequency);
+  s.ssENProject_Asset_Service = ssConectaProveedores.RestRecords.RESTEN_c092eb57986a0debaa22aa8b8546b9c4EntityRecord.ToStructure(obj.AttrProject_Asset_Service);
+  s.ssENBusinessValueCategory = ssConectaProveedores.RestRecords.RESTEN_0578d9e3d7c16250b8bfbc03836e290fEntityRecord.ToStructure(obj.AttrBusinessValueCategory);
+  s.ssENBusinessValueSubcategory = ssConectaProveedores.RestRecords.RESTEN_f296fc330d9916f9de4aae18321e8388EntityRecord.ToStructure(obj.AttrBusinessValueSubcategory);
+  }
+  return s;
+}
+
+public static Func<RC_b64650646295f01a3e7c46ac44009d3c, ssConectaProveedores.RestRecords.RESTRC_b64650646295f01a3e7c46ac44009d3c> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (RC_b64650646295f01a3e7c46ac44009d3c s) => FromStructure(s, config);
+}
+public static ssConectaProveedores.RestRecords.RESTRC_b64650646295f01a3e7c46ac44009d3c FromStructure(RC_b64650646295f01a3e7c46ac44009d3c s, IBehaviorsConfiguration config) { 
+  return new ssConectaProveedores.RestRecords.RESTRC_b64650646295f01a3e7c46ac44009d3c(s, config);
+}
+
+}
+
+

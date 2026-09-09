@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_g_Reports_wb_documentExtrationByFile_ServiceAPIServiceGetDocumentsByListId_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("IdsList")]
+public RestList<long> inParamIdsList;
+
+
+    public static RESTConectaProveedores_g_Reports_wb_documentExtrationByFile_ServiceAPIServiceGetDocumentsByListId_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_g_Reports_wb_documentExtrationByFile_ServiceAPIServiceGetDocumentsByListId_Inputs result = inputParameters.ToObject<RESTConectaProveedores_g_Reports_wb_documentExtrationByFile_ServiceAPIServiceGetDocumentsByListId_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_g_Reports_wb_documentExtrationByFile_ServiceAPIServiceGetDocumentsByListId_Model ToModel() {ConectaProveedores_g_Reports_wb_documentExtrationByFile_ServiceAPIServiceGetDocumentsByListId_Model result = new ConectaProveedores_g_Reports_wb_documentExtrationByFile_ServiceAPIServiceGetDocumentsByListId_Model();
+result.inParamIdsList = BasicTypeList<long>.FromRestList(inParamIdsList);
+return result;
+}
+
+}

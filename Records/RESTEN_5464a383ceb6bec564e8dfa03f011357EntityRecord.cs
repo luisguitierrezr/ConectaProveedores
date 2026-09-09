@@ -1,0 +1,82 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssConectaProveedores.RestRecords;
+
+// ProposalApproval
+public class RESTEN_5464a383ceb6bec564e8dfa03f011357EntityRecord : AbstractRESTStructure<EN_5464a383ceb6bec564e8dfa03f011357EntityRecord> {
+[JsonProperty("Id")]
+public long? AttrId;
+
+[JsonProperty("ProposalId")]
+public long? AttrProposalId;
+
+[JsonProperty("ProcessTypeCode")]
+public string AttrProcessTypeCode;
+
+[JsonProperty("ApprovalProcessVersion")]
+public string AttrApprovalProcessVersion;
+
+[JsonProperty("CurrentLevel_DEPREC")]
+public int? AttrCurrentLevel_DEPREC;
+
+[JsonProperty("MaxLevel_DEPREC")]
+public int? AttrMaxLevel_DEPREC;
+
+[JsonProperty("StartedOn")]
+public String AttrStartedOn;
+
+[JsonProperty("FinishedOn")]
+public String AttrFinishedOn;
+
+public RESTEN_5464a383ceb6bec564e8dfa03f011357EntityRecord() { }
+
+public RESTEN_5464a383ceb6bec564e8dfa03f011357EntityRecord (EN_5464a383ceb6bec564e8dfa03f011357EntityRecord s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrId = (long?) s.ssId;
+AttrProposalId = ConvertToRestWithoutDefaults(s.ssProposalId, 0L);
+AttrProcessTypeCode = ConvertToRestWithoutDefaults(s.ssProcessTypeCode, "");
+AttrApprovalProcessVersion = ConvertToRestWithoutDefaults(s.ssApprovalProcessVersion, "");
+AttrCurrentLevel_DEPREC = ConvertToRestWithoutDefaults(s.ssCurrentLevel_DEPREC, 0);
+AttrMaxLevel_DEPREC = ConvertToRestWithoutDefaults(s.ssMaxLevel_DEPREC, 0);
+AttrStartedOn = ConvertDateTimeToRestWithoutDefaults(s.ssStartedOn, new DateTime(1900, 1, 1, 0, 0, 0, DateTimeKind.Utc), config.DateTimeFormat);
+AttrFinishedOn = ConvertDateTimeToRestWithoutDefaults(s.ssFinishedOn, new DateTime(1900, 1, 1, 0, 0, 0, DateTimeKind.Utc), config.DateTimeFormat);
+  } else {
+AttrId = (long?) s.ssId;
+AttrProposalId = (long?) s.ssProposalId;
+AttrProcessTypeCode = s.ssProcessTypeCode;
+AttrApprovalProcessVersion = s.ssApprovalProcessVersion;
+AttrCurrentLevel_DEPREC = (int?) s.ssCurrentLevel_DEPREC;
+AttrMaxLevel_DEPREC = (int?) s.ssMaxLevel_DEPREC;
+AttrStartedOn = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateTimeToRestType(s.ssStartedOn, config.DateTimeFormat);
+AttrFinishedOn = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateTimeToRestType(s.ssFinishedOn, config.DateTimeFormat);
+  }
+}
+
+public static EN_5464a383ceb6bec564e8dfa03f011357EntityRecord ToStructure(ssConectaProveedores.RestRecords.RESTEN_5464a383ceb6bec564e8dfa03f011357EntityRecord obj) { 
+  EN_5464a383ceb6bec564e8dfa03f011357EntityRecord s = new EN_5464a383ceb6bec564e8dfa03f011357EntityRecord();
+  if(obj != null) {
+  s.ssId = obj.AttrId == null ? 0L : obj.AttrId.Value;
+  s.ssProposalId = obj.AttrProposalId == null ? 0L : obj.AttrProposalId.Value;
+  s.ssProcessTypeCode = obj.AttrProcessTypeCode == null ? "" : obj.AttrProcessTypeCode;
+  s.ssApprovalProcessVersion = obj.AttrApprovalProcessVersion == null ? "" : obj.AttrApprovalProcessVersion;
+  s.ssCurrentLevel_DEPREC = obj.AttrCurrentLevel_DEPREC == null ? 0 : obj.AttrCurrentLevel_DEPREC.Value;
+  s.ssMaxLevel_DEPREC = obj.AttrMaxLevel_DEPREC == null ? 0 : obj.AttrMaxLevel_DEPREC.Value;
+  s.ssStartedOn = obj.AttrStartedOn == null ? new DateTime(1900, 1, 1, 0, 0, 0, DateTimeKind.Utc) : OutSystems.RESTService.Runtime.Abstractions.Conversions.TextToDateTime(obj.AttrStartedOn, OutSystems.RESTService.Runtime.Abstractions.Behaviors.DateTimeFormat.ISO);
+  s.ssFinishedOn = obj.AttrFinishedOn == null ? new DateTime(1900, 1, 1, 0, 0, 0, DateTimeKind.Utc) : OutSystems.RESTService.Runtime.Abstractions.Conversions.TextToDateTime(obj.AttrFinishedOn, OutSystems.RESTService.Runtime.Abstractions.Behaviors.DateTimeFormat.ISO);
+  }
+  return s;
+}
+
+public static Func<EN_5464a383ceb6bec564e8dfa03f011357EntityRecord, ssConectaProveedores.RestRecords.RESTEN_5464a383ceb6bec564e8dfa03f011357EntityRecord> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (EN_5464a383ceb6bec564e8dfa03f011357EntityRecord s) => FromStructure(s, config);
+}
+public static ssConectaProveedores.RestRecords.RESTEN_5464a383ceb6bec564e8dfa03f011357EntityRecord FromStructure(EN_5464a383ceb6bec564e8dfa03f011357EntityRecord s, IBehaviorsConfiguration config) { 
+  return new ssConectaProveedores.RestRecords.RESTEN_5464a383ceb6bec564e8dfa03f011357EntityRecord(s, config);
+}
+
+}
+
+

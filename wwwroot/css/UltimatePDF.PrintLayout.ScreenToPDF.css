@@ -1,0 +1,2 @@
+﻿
+.layout-print-info-bar{position:fixed;top:0;left:0;right:0;z-index:1;display:flex;align-items:center;font-family:sans-serif;font-size:12px;line-height:1.3em;background-color:#cce5ff;color:#004c98;padding:2px;border-top:1px solid #84b8fa;border-bottom:1px solid #84b8fa}.layout-print-info-bar img{height:20px;margin-right:5px}.layout-print-documentation{font-family:sans-serif;font-size:12px;line-height:1.3em;background-color:#cce5ff;color:#004c98;padding:20px;border:1px solid #84b8fa;margin-bottom:40px}

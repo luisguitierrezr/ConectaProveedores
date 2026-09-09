@@ -1,0 +1,10 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAdvWithoutInvoiceData_Model {
+
+    public ST_26b16bea631cbd94cf555acb5c7a4be3Structure outParamo_AdvWithoutInvoice;
+
+}

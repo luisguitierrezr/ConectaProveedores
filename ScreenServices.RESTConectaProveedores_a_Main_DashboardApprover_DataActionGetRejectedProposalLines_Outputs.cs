@@ -1,0 +1,40 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_a_Main_DashboardApprover_DataActionGetRejectedProposalLines_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("RejectedProposalLines")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure> outParamRejectedProposalLines;
+[JsonProperty("o_TotalCount")]
+public int? outParamo_TotalCount;
+
+
+    public static RESTConectaProveedores_a_Main_DashboardApprover_DataActionGetRejectedProposalLines_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_496abaeba4975b81a1a9b391230e8099 outParamRejectedProposalLines, int outParamo_TotalCount) {RESTConectaProveedores_a_Main_DashboardApprover_DataActionGetRejectedProposalLines_Outputs result = new RESTConectaProveedores_a_Main_DashboardApprover_DataActionGetRejectedProposalLines_Outputs();
+// Write optimized result.outParamRejectedProposalLines
+result.outParamRejectedProposalLines = new RL_496abaeba4975b81a1a9b391230e8099().ToRestList<ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure>(ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure.FromStructureDelegate(conf));
+result.outParamo_TotalCount = (int?) outParamo_TotalCount;
+return result;
+}
+
+
+    public static ConectaProveedores_a_Main_DashboardApprover_DataActionGetRejectedProposalLines_Model ToModel(RESTConectaProveedores_a_Main_DashboardApprover_DataActionGetRejectedProposalLines_Outputs variables) {ConectaProveedores_a_Main_DashboardApprover_DataActionGetRejectedProposalLines_Model result = new ConectaProveedores_a_Main_DashboardApprover_DataActionGetRejectedProposalLines_Model();
+result.outParamRejectedProposalLines = variables == null ? new RL_496abaeba4975b81a1a9b391230e8099() : RL_496abaeba4975b81a1a9b391230e8099.FromRestList(variables.outParamRejectedProposalLines, ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure.ToStructure);
+result.outParamo_TotalCount = variables == null || variables.outParamo_TotalCount == null ? 0 : variables.outParamo_TotalCount.Value;
+return result;
+}
+
+
+    public static RESTConectaProveedores_a_Main_DashboardApprover_DataActionGetRejectedProposalLines_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_a_Main_DashboardApprover_DataActionGetRejectedProposalLines_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_a_Main_DashboardApprover_DataActionGetRejectedProposalLines_Outputs result = new RESTConectaProveedores_a_Main_DashboardApprover_DataActionGetRejectedProposalLines_Outputs();
+result.outParamRejectedProposalLines = screenModel.outParamRejectedProposalLines.ToRestList<ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure>(ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure.FromStructureDelegate(conf));
+result.outParamo_TotalCount = (int?) screenModel.outParamo_TotalCount;
+return result;
+}
+
+}

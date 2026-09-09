@@ -1,0 +1,81 @@
+﻿var ConectaProveedores_g_Reports_RequestsReport_mvc_translationsResources_esMX = {
+"Tn5vgWuc_Eu9cXC9bLtRPQ#Value": "Puesto",
+"iWP_uKFhPkSp9NyiuYJ7ug#Value": "Usuario",
+"LBQ8wxfQBUW3nYGIuuAXZw#Value": "Estatus",
+"4WS1WlSUb0C5V9hl87HCGA#Value": "Estatus de entrega",
+"+OxOPXgxZ0uw_R15aYVUJg#Value": "Monto Total",
+"7rGDTc5uVUqz7EUtBfIg4Q#Value": "Moneda",
+"ldpCI+qNzkOxWlsGtEaDHA#Value": "Precio Unitario",
+"fNdMB2SB7kyAYqps+nqgOA#Value": "Cantidad Disponible",
+"0YPENaSuoEqJIisZS+H3WA#Value": "Cantidad Entregada",
+"+PlRS+hjY0+qq6PXWYqmvA#Value": "Cantidad en Pedido",
+"RIxCQWXub0unIlYZMKBiSA#Value": "Descripción del material",
+"Fqn5x93oqkyR1pZ+ZddsRA#Value": "Codigo de material",
+"ZmDl2obs1UyjFmWCxratcw#Value": "Posición",
+"3zMsvDDZgEKH6gnXCLynFQ#Value": "Sociedad",
+"ed6ii6OogUiJcZIj+Rq4iA#Value": "Imputación",
+"43mvmG4RyU6c3YVVQ+UNvw#Value": "Solicitante",
+"lF4kpeHQgU2bF02HpJggFw#Value": "Entrega Final",
+"DCpgrmkVo0+dhBzJdWsSGw#Value": "Ind. de bloqueo",
+"GIb3b6_Yf0Cl2ynsMJlXbA#Value": "Ind. de borrado",
+"7tNK3JvuSEKsl0ZDprfFdw#Value": "Proveedor",
+"uEdr8t60gUuI08c2CMDA_w#Value": "Fecha de Liberación",
+"Vwc9Urst9UurT4yHYT56Vw#Value": "Número de Pedido",
+"D0kWwc5JHEOPiuSnKEHtHA#Value": "Configuraciones de tabla",
+"4cZPWVMG0UOnjj+Qbx_+ww#Value": "Debes seleccionar un filtro para buscar registros.",
+"mygR+Kt9pE6tWVFVJk+aXw#Value": "No se encontraron resultados en la búsqueda.",
+"1wsK1Lp4BkCwDQK_S8sT5g#Value": "Generar reporte CSV",
+"oO0k46x1Tk2_fzO7sPLCWA#Value": "Generar reporte Excel",
+"GK_eXDN2N0Coy_TE85ci8A#Value.65921.1": "Todos",
+"aSc_BEzdnU+diy1XpYNhZw#Value.-488076020.1": "No hay regiones para mostrar...",
+"ZQFQr13Fgkil8m8dsX4MPA#Value.-512840794.1": "Buscar...",
+"Dxxp1k1S2kWDI0VRFAuMBQ#Value.-488076020.1": "No hay regiones para mostrar...",
+"DtI37Uw+ZU6sLkzOn5IQZQ#Value": "Región",
+"gSw9q+ZVW0KtBSn4I2o4+Q#Value.-1794755088.1": "No hay sociedads para mostrar...",
+"6rHfld3cqUCZ4C4YjP4qbA#Value.-512840794.1": "Buscar...",
+"9CcBTqzgokOYt59NWyxK0Q#Value.-1794755088.1": "No hay sociedads para mostrar...",
+"ITtTVaYH+EWpJSw31bunhQ#Value.65921.1": "Todos",
+"4u1d0Ixg5EuPHQ8J+9Kasw#Value": "Sociedad",
+"dFu7EUlPi0KZLElAfA1Sug#Value.-886884740.1": "No hay solicitantes para mostrar...",
+"i8J5KkGRekerMUga15rnkg#Value.-512840794.1": "Buscar...",
+"fGSwPjOZ6kCJvET3yrOTvw#Value.-886884740.1": "No hay solicitantes para mostrar...",
+"FsdqAef6r0W8zUz3BiQY4A#Value.65921.1": "Todos",
+"NkTecBmHZUaMOIy6_We29w#Value": "Solicitante",
+"WirXekCe1UWHvAp_GYy1Mg#ValueExpression.69519515.1": "Número de Pedido",
+"MYvLAZa__kOqSwh0vDXwug#Value": "Número de Pedido",
+"zm2QszVpuUCUQJ_Qo1n1bg#ValueExpression.65921.1": "Todos",
+"7mQ8y59f4karcJPW5gRJ3Q#Value": "Fecha hasta",
+"+ocDvJtESEy4nNOvS1ct0g#ValueExpression.65921.1": "Todos",
+"Oh409H7QXUG+cFmMeg0eqA#Value": "Fecha desde",
+"g5VXEeoKKUa0OHt+hiiqOg#Value": "Pedidos provenientes de SAP",
+"pxL_fIm8zEaSnMoFYRLY4w#Value": "Pedidos provenientes de SAP",
+"BdZZBjnDw0C8tzKeRg2eOg#Value": "Dashboard",
+"3o1xhH+fdUKvGHdC4ZckjA#Value": "Inicio",
+"TbaZwv2fl0e_RSFb3_zCwg#Message.1989930733.1": "Hubo un problema generando el reporte. Por favor, contacta al administrador.",
+"ZeXQmGzdvEyL4XZfjBTfug#Message.-1473724744.1": "No se han encontrado resultados con los filtros seleccionados"
+};
+var ConectaProveedores_g_Reports_RequestsReport_mvc_translationsResources_enUS = {
+"D0kWwc5JHEOPiuSnKEHtHA#Value": "Table settings",
+"DtI37Uw+ZU6sLkzOn5IQZQ#Value": "Supplier",
+"4u1d0Ixg5EuPHQ8J+9Kasw#Value": "Supplier",
+"NkTecBmHZUaMOIy6_We29w#Value": "Supplier",
+"MYvLAZa__kOqSwh0vDXwug#Value": "Supplier",
+"zm2QszVpuUCUQJ_Qo1n1bg#ValueExpression.65921.1": "All",
+"+ocDvJtESEy4nNOvS1ct0g#ValueExpression.65921.1": "All",
+"Oh409H7QXUG+cFmMeg0eqA#Value": "Payment Date From",
+"pxL_fIm8zEaSnMoFYRLY4w#Value": "Commissions and Leases",
+"BdZZBjnDw0C8tzKeRg2eOg#Value": "Dashboard",
+"3o1xhH+fdUKvGHdC4ZckjA#Value": "Dashboard"
+};
+export default {
+"es-MX": {
+"translations": ConectaProveedores_g_Reports_RequestsReport_mvc_translationsResources_esMX,
+"isRTL": false
+},
+"en-US": {
+"translations": ConectaProveedores_g_Reports_RequestsReport_mvc_translationsResources_enUS,
+"isRTL": false
+}
+};
+
+

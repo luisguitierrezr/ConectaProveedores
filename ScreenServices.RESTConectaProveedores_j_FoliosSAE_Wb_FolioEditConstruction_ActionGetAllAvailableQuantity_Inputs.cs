@@ -1,0 +1,25 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_Wb_FolioEditConstruction_ActionGetAllAvailableQuantity_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("GetFolioItemsByFolioId_List")]
+public RestList<ssConectaProveedores.RestRecords.RESTRC_95110bc97f34f4c1561c8cbf2b5015b2> inParamGetFolioItemsByFolioId_List;
+[JsonProperty("FolioIdToExclude")]
+public long? inParamFolioIdToExclude;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioEditConstruction_ActionGetAllAvailableQuantity_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_j_FoliosSAE_Wb_FolioEditConstruction_ActionGetAllAvailableQuantity_Inputs result = inputParameters.ToObject<RESTConectaProveedores_j_FoliosSAE_Wb_FolioEditConstruction_ActionGetAllAvailableQuantity_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_j_FoliosSAE_Wb_FolioEditConstruction_ActionGetAllAvailableQuantity_Model ToModel() {ConectaProveedores_j_FoliosSAE_Wb_FolioEditConstruction_ActionGetAllAvailableQuantity_Model result = new ConectaProveedores_j_FoliosSAE_Wb_FolioEditConstruction_ActionGetAllAvailableQuantity_Model();
+result.inParamGetFolioItemsByFolioId_List = RL_a968cf9f63475dc9358672149b11245a.FromRestList(inParamGetFolioItemsByFolioId_List, ssConectaProveedores.RestRecords.RESTRC_95110bc97f34f4c1561c8cbf2b5015b2.ToStructure);
+result.inParamFolioIdToExclude = inParamFolioIdToExclude == null ? 0L : inParamFolioIdToExclude.Value;
+return result;
+}
+
+}

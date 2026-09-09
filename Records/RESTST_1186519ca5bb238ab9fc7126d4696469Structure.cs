@@ -1,0 +1,82 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssConectaProveedores.RestRecords;
+
+// PI_HEADER_EM
+public class RESTST_1186519ca5bb238ab9fc7126d4696469Structure : AbstractRESTStructure<ST_1186519ca5bb238ab9fc7126d4696469Structure> {
+[JsonProperty("PEDIDO")]
+public string AttrPEDIDO;
+
+[JsonProperty("PROVEEDOR")]
+public string AttrPROVEEDOR;
+
+[JsonProperty("NUMERO_FACTURA")]
+public string AttrNUMERO_FACTURA;
+
+[JsonProperty("CARTA_PORTE")]
+public string AttrCARTA_PORTE;
+
+[JsonProperty("TEXTO_CABECERA")]
+public string AttrTEXTO_CABECERA;
+
+[JsonProperty("UUID")]
+public string AttrUUID;
+
+[JsonProperty("FECHA_CONTABILIZACION")]
+public string AttrFECHA_CONTABILIZACION;
+
+[JsonProperty("FECHA_REGISTRO")]
+public string AttrFECHA_REGISTRO;
+
+public RESTST_1186519ca5bb238ab9fc7126d4696469Structure() { }
+
+public RESTST_1186519ca5bb238ab9fc7126d4696469Structure (ST_1186519ca5bb238ab9fc7126d4696469Structure s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrPEDIDO = ConvertToRestWithoutDefaults(s.ssPEDIDO, "");
+AttrPROVEEDOR = ConvertToRestWithoutDefaults(s.ssPROVEEDOR, "");
+AttrNUMERO_FACTURA = ConvertToRestWithoutDefaults(s.ssNUMERO_FACTURA, "");
+AttrCARTA_PORTE = ConvertToRestWithoutDefaults(s.ssCARTA_PORTE, "");
+AttrTEXTO_CABECERA = ConvertToRestWithoutDefaults(s.ssTEXTO_CABECERA, "");
+AttrUUID = ConvertToRestWithoutDefaults(s.ssUUID, "");
+AttrFECHA_CONTABILIZACION = ConvertToRestWithoutDefaults(s.ssFECHA_CONTABILIZACION, "");
+AttrFECHA_REGISTRO = ConvertToRestWithoutDefaults(s.ssFECHA_REGISTRO, "");
+  } else {
+AttrPEDIDO = s.ssPEDIDO;
+AttrPROVEEDOR = s.ssPROVEEDOR;
+AttrNUMERO_FACTURA = s.ssNUMERO_FACTURA;
+AttrCARTA_PORTE = s.ssCARTA_PORTE;
+AttrTEXTO_CABECERA = s.ssTEXTO_CABECERA;
+AttrUUID = s.ssUUID;
+AttrFECHA_CONTABILIZACION = s.ssFECHA_CONTABILIZACION;
+AttrFECHA_REGISTRO = s.ssFECHA_REGISTRO;
+  }
+}
+
+public static ST_1186519ca5bb238ab9fc7126d4696469Structure ToStructure(ssConectaProveedores.RestRecords.RESTST_1186519ca5bb238ab9fc7126d4696469Structure obj) { 
+  ST_1186519ca5bb238ab9fc7126d4696469Structure s = new ST_1186519ca5bb238ab9fc7126d4696469Structure();
+  if(obj != null) {
+  s.ssPEDIDO = obj.AttrPEDIDO == null ? "" : obj.AttrPEDIDO;
+  s.ssPROVEEDOR = obj.AttrPROVEEDOR == null ? "" : obj.AttrPROVEEDOR;
+  s.ssNUMERO_FACTURA = obj.AttrNUMERO_FACTURA == null ? "" : obj.AttrNUMERO_FACTURA;
+  s.ssCARTA_PORTE = obj.AttrCARTA_PORTE == null ? "" : obj.AttrCARTA_PORTE;
+  s.ssTEXTO_CABECERA = obj.AttrTEXTO_CABECERA == null ? "" : obj.AttrTEXTO_CABECERA;
+  s.ssUUID = obj.AttrUUID == null ? "" : obj.AttrUUID;
+  s.ssFECHA_CONTABILIZACION = obj.AttrFECHA_CONTABILIZACION == null ? "" : obj.AttrFECHA_CONTABILIZACION;
+  s.ssFECHA_REGISTRO = obj.AttrFECHA_REGISTRO == null ? "" : obj.AttrFECHA_REGISTRO;
+  }
+  return s;
+}
+
+public static Func<ST_1186519ca5bb238ab9fc7126d4696469Structure, ssConectaProveedores.RestRecords.RESTST_1186519ca5bb238ab9fc7126d4696469Structure> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (ST_1186519ca5bb238ab9fc7126d4696469Structure s) => FromStructure(s, config);
+}
+public static ssConectaProveedores.RestRecords.RESTST_1186519ca5bb238ab9fc7126d4696469Structure FromStructure(ST_1186519ca5bb238ab9fc7126d4696469Structure s, IBehaviorsConfiguration config) { 
+  return new ssConectaProveedores.RestRecords.RESTST_1186519ca5bb238ab9fc7126d4696469Structure(s, config);
+}
+
+}
+
+

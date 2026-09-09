@@ -1,0 +1,40 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_a_Main_DashboardTreasury_DataActionGetPartiallyPaidProposals_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("PartiallyPaidProposals")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure> outParamPartiallyPaidProposals;
+[JsonProperty("o_TotalCount")]
+public int? outParamo_TotalCount;
+
+
+    public static RESTConectaProveedores_a_Main_DashboardTreasury_DataActionGetPartiallyPaidProposals_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_496abaeba4975b81a1a9b391230e8099 outParamPartiallyPaidProposals, int outParamo_TotalCount) {RESTConectaProveedores_a_Main_DashboardTreasury_DataActionGetPartiallyPaidProposals_Outputs result = new RESTConectaProveedores_a_Main_DashboardTreasury_DataActionGetPartiallyPaidProposals_Outputs();
+// Write optimized result.outParamPartiallyPaidProposals
+result.outParamPartiallyPaidProposals = new RL_496abaeba4975b81a1a9b391230e8099().ToRestList<ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure>(ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure.FromStructureDelegate(conf));
+result.outParamo_TotalCount = (int?) outParamo_TotalCount;
+return result;
+}
+
+
+    public static ConectaProveedores_a_Main_DashboardTreasury_DataActionGetPartiallyPaidProposals_Model ToModel(RESTConectaProveedores_a_Main_DashboardTreasury_DataActionGetPartiallyPaidProposals_Outputs variables) {ConectaProveedores_a_Main_DashboardTreasury_DataActionGetPartiallyPaidProposals_Model result = new ConectaProveedores_a_Main_DashboardTreasury_DataActionGetPartiallyPaidProposals_Model();
+result.outParamPartiallyPaidProposals = variables == null ? new RL_496abaeba4975b81a1a9b391230e8099() : RL_496abaeba4975b81a1a9b391230e8099.FromRestList(variables.outParamPartiallyPaidProposals, ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure.ToStructure);
+result.outParamo_TotalCount = variables == null || variables.outParamo_TotalCount == null ? 0 : variables.outParamo_TotalCount.Value;
+return result;
+}
+
+
+    public static RESTConectaProveedores_a_Main_DashboardTreasury_DataActionGetPartiallyPaidProposals_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_a_Main_DashboardTreasury_DataActionGetPartiallyPaidProposals_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_a_Main_DashboardTreasury_DataActionGetPartiallyPaidProposals_Outputs result = new RESTConectaProveedores_a_Main_DashboardTreasury_DataActionGetPartiallyPaidProposals_Outputs();
+result.outParamPartiallyPaidProposals = screenModel.outParamPartiallyPaidProposals.ToRestList<ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure>(ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure.FromStructureDelegate(conf));
+result.outParamo_TotalCount = (int?) screenModel.outParamo_TotalCount;
+return result;
+}
+
+}

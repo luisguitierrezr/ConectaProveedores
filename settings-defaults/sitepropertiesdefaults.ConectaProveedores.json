@@ -1,0 +1,244 @@
+﻿{
+  "OutSystems": {
+    "SiteProperties": {
+      "588dd3e9-ffc1-4591-bd4e-2f57e6c30828": {
+        "2566fc93-2684-48e8-98cc-d92f4ff38a49": {
+          "DataType": "Boolean",
+          "DataValue": "True"
+        },
+        "78eeb8d7-e80e-475a-bffa-f7c07267561f": {
+          "DataType": "Boolean",
+          "DataValue": "True"
+        },
+        "16a72a7b-8d06-48d5-ab35-1b5a41e2d428": {
+          "DataType": "Text",
+          "DataValue": "\u00229F3aB7KqX2mL8RZpWcH6TnE4JdS5YV\u0022"
+        },
+        "eea5f51a-3493-494a-a5f6-b4a0232dec79": {
+          "DataType": "Integer",
+          "DataValue": "5"
+        },
+        "70c1aa76-3e65-4189-bfce-797b65fd95b1": {
+          "DataType": "Text",
+          "DataValue": "\u00226HwHZkLvQssQMniAcRiprCmx9nU96dE6Skw9mYI4NSDXdJv7hDvNJQQJ99CDAC3pKaRAArohAAABAZBS1uhU.1bziu7smX8qcacQPXXS4lzB8tjzH953OPF4Dufr5ajhzeab8valxJQQJ99CDAC3pKaRAArohAAABAZBS3Uuu\u0022"
+        },
+        "a76f5594-969c-4ce6-ab45-07078d85791f": {
+          "DataType": "Text",
+          "DataValue": "\u0022DEV\u0022"
+        },
+        "ed55a918-4ca0-48fb-b6c4-ea8d05e47033": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "8e894843-c38d-4fd6-bfac-d97fb4577aa1": {
+          "DataType": "Text",
+          "DataValue": "\u0022ZDOCIN03\u0022"
+        },
+        "f92eea8b-f124-430f-ace1-afaac55178d4": {
+          "DataType": "Text",
+          "DataValue": "\u0022ZDOCIN01\u0022"
+        },
+        "0e8c0c38-638b-4e70-9f81-0bcbbfd542b9": {
+          "DataType": "Text",
+          "DataValue": "\u0022BKPF\u0022"
+        },
+        "f3ea0663-311e-492e-b6e7-27558ae8aa41": {
+          "DataType": "Text",
+          "DataValue": "\u0022ZDOCIN02\u0022"
+        },
+        "6a2157c6-3f49-4c2c-9a1b-96f5bf819415": {
+          "DataType": "Boolean",
+          "DataValue": "True"
+        },
+        "5a5fbcbe-29da-4c7d-b673-09b891988b18": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "9b6a9645-9a75-418a-bd4a-c7e37ca612b8": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "6ffb78a8-adaa-4183-bbc7-6b28af63be13": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "5cb18906-f37a-4f25-9195-2e374f7418db": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "4aa14f90-d43e-4f43-9f40-0cb30081126c": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "92903bb6-ecac-46fc-b18d-fc42e3f0f9bb": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "8240a90b-e20e-4b85-b0a0-80e821aabad7": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "99ffe874-b38f-47b5-8d98-0a8e75a5e69c": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "dabb7766-1bc6-4a37-8069-28e9fbc4ac06": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "96322b18-b407-4edd-ae51-c747d705ef80": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "cf936380-2ed5-494a-8387-5e796cab083a": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "56efe60a-33a6-4860-8469-ef7a18aa0436": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "5af126ce-aa17-4cd7-825f-508e95113dd5": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "0a9fc965-41dc-42e7-9790-a472978b19b7": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "f68ce52b-85f0-4e6d-9023-9a2a6211f462": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "4d9c2fb3-b615-4860-b07c-33514af37867": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "8b403473-ee16-44c4-9f8c-e2032c36631d": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "9bf60aff-5a1b-49e9-8b90-dd5db054f47e": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "1fde1841-5b7a-444b-8bee-a1359563e2bc": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "a37e3797-dcfb-4e09-b0e8-8b6908c024f9": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "4b4dc48b-e840-46c0-bdeb-fb0fd9600985": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "fd8e6abb-b624-4608-9fa9-7106fa540706": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "3e99e471-fd68-4591-8c9b-bf85889a7b4f": {
+          "DataType": "Boolean",
+          "DataValue": "True"
+        },
+        "eef90b63-b465-4e74-9019-30ff55e7c370": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "50e5aec1-48e1-479e-9b5c-ea364751b475": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "fe198b9e-a92f-40ee-9442-c12229c9def1": {
+          "DataType": "Boolean",
+          "DataValue": "True"
+        },
+        "89730362-a2b0-4ef3-bd33-a674a99cd41e": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "9028ea84-afd3-4775-bd7d-bfb2bc887a52": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "78fe3f2e-6416-4641-86ed-2478a273e82e": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "4da6ee47-9f77-4537-a7ef-9dcac50a9579": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "ad780f21-5798-4046-b971-ea40391acbbe": {
+          "DataType": "Boolean",
+          "DataValue": "False"
+        },
+        "b9597218-5618-4d8a-a940-59418a72d014": {
+          "DataType": "Boolean",
+          "DataValue": "True"
+        },
+        "b7e7bb67-5f72-48ec-a72b-d098664963cc": {
+          "DataType": "Boolean",
+          "DataValue": "True"
+        },
+        "0cd4d86d-a11f-4766-86f6-14db429fe039": {
+          "DataType": "Boolean",
+          "DataValue": "True"
+        },
+        "48f58197-f1d6-41f1-9c5b-e199f90c6f7f": {
+          "DataType": "Boolean",
+          "DataValue": "True"
+        },
+        "ff76678b-37b5-4f61-b7a2-d8bb473bf20a": {
+          "DataType": "Boolean",
+          "DataValue": "True"
+        },
+        "db2ce8ab-8756-4646-b695-ddf2806165b8": {
+          "DataType": "Text",
+          "DataValue": "\u0022dd.MM.yyyy\u0022"
+        },
+        "dcbd537b-008b-4d27-8b54-ae9cd0976ad0": {
+          "DataType": "Boolean",
+          "DataValue": "True"
+        },
+        "feeda20c-648b-41a6-ab65-a8e1ae484931": {
+          "DataType": "Text",
+          "DataValue": "\u0022ZDOCIN12\u0022"
+        },
+        "43d678be-144b-4b83-a49b-7523b98e493d": {
+          "DataType": "Text",
+          "DataValue": "\u0022ZDOCIN10\u0022"
+        },
+        "7a68394d-6573-4003-b2ba-ba9c4ea9def3": {
+          "DataType": "Text",
+          "DataValue": "\u0022BUS2012\u0022"
+        },
+        "02d9521d-bf9f-4b9f-903c-94cef30ab6bf": {
+          "DataType": "Text",
+          "DataValue": "\u0022ZDOCIN11\u0022"
+        },
+        "cccba008-9c5b-4ab5-9a71-6ecc43ad1280": {
+          "DataType": "Text",
+          "DataValue": "\u0022ZDOCIN30\u0022"
+        },
+        "47c4b17a-47c0-4f82-a842-14eb175036e3": {
+          "DataType": "Text",
+          "DataValue": "\u0022ZDOCIN28\u0022"
+        },
+        "e93e1b60-0433-4eec-ae12-b3c1d10b81bb": {
+          "DataType": "Text",
+          "DataValue": "\u0022BUS2105\u0022"
+        },
+        "db0d14b3-9106-405f-9aee-a2b8eb103c19": {
+          "DataType": "Text",
+          "DataValue": "\u0022ZDOCIN29\u0022"
+        },
+        "2245ab97-1db7-4f61-a220-9db3dfb47dd2": {
+          "DataType": "Integer",
+          "DataValue": "2026"
+        }
+      }
+    }
+  }
+}

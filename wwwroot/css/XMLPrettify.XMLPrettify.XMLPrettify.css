@@ -1,0 +1,2 @@
+﻿
+.xml_container .xml-node{margin-left:20px;position:relative}.xml_container .arrow{cursor:pointer;display:inline-block;width:20px;position:absolute;left:-20px}.xml_container .arrow:before{content:"\25bc"}.xml_container .collapsed .arrow:before{content:"\25b6"}.xml_container .xml-content{display:block}.xml_container .collapsed .xml-content{display:none}.xml_container .xml-tag{color:#00f}.xml_container .xml-attribute{color:red}.xml_container .xml-value{color:green}

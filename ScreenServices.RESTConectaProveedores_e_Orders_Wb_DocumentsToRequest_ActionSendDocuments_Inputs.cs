@@ -1,0 +1,31 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_e_Orders_Wb_DocumentsToRequest_ActionSendDocuments_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("DocumentsRecordList")]
+public RestList<ssConectaProveedores.RestRecords.RESTRC_9b26d66c2c2462dead9020a39a074a2b> inParamDocumentsRecordList;
+[JsonProperty("UserIds")]
+public RestList<string> inParamUserIds;
+[JsonProperty("GetOrderRequestFiles_RequestFiles")]
+public RestList<ssConectaProveedores.RestRecords.RESTEN_e4c3d4adf857b2c10b2425b3cc0babe3EntityRecord> inParamGetOrderRequestFiles_RequestFiles;
+[JsonProperty("GetSupplierUsersBySupplierId_List")]
+public RestList<ssConectaProveedores.RestRecords.RESTRC_33e6e9ec201f65e0eb7bd5d251178def> inParamGetSupplierUsersBySupplierId_List;
+
+
+    public static RESTConectaProveedores_e_Orders_Wb_DocumentsToRequest_ActionSendDocuments_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_e_Orders_Wb_DocumentsToRequest_ActionSendDocuments_Inputs result = inputParameters.ToObject<RESTConectaProveedores_e_Orders_Wb_DocumentsToRequest_ActionSendDocuments_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_e_Orders_Wb_DocumentsToRequest_ActionSendDocuments_Model ToModel() {ConectaProveedores_e_Orders_Wb_DocumentsToRequest_ActionSendDocuments_Model result = new ConectaProveedores_e_Orders_Wb_DocumentsToRequest_ActionSendDocuments_Model();
+result.inParamDocumentsRecordList = RL_d9f83b71a68be75785bb65af54dd24f1.FromRestList(inParamDocumentsRecordList, ssConectaProveedores.RestRecords.RESTRC_9b26d66c2c2462dead9020a39a074a2b.ToStructure);
+result.inParamUserIds = BasicTypeList<string>.FromRestList(inParamUserIds);
+result.inParamGetOrderRequestFiles_RequestFiles = RL_08794d38cc3e746db7e33443c648a0fa.FromRestList(inParamGetOrderRequestFiles_RequestFiles, ssConectaProveedores.RestRecords.RESTEN_e4c3d4adf857b2c10b2425b3cc0babe3EntityRecord.ToStructure);
+result.inParamGetSupplierUsersBySupplierId_List = RL_84bdfe424d1eb0223fc2b8cfa9bb96be.FromRestList(inParamGetSupplierUsersBySupplierId_List, ssConectaProveedores.RestRecords.RESTRC_33e6e9ec201f65e0eb7bd5d251178def.ToStructure);
+return result;
+}
+
+}

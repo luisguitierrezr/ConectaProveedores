@@ -1,0 +1,58 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssConectaProveedores.RestRecords;
+
+// CompanyIdDocumentTypeIdRegionIdRecord
+public class JSONRC_4d57f99d5ffffde65e439e566311a35e : AbstractRESTStructure<RC_4d57f99d5ffffde65e439e566311a35e> {
+[JsonProperty("CompanyId")]
+[JsonPropertyName("CompanyId")]
+public ssConectaProveedores.RestRecords.JSONST_52a0b4b2bb66d62c40848f2d472a3986Structure AttrCompanyId;
+
+[JsonProperty("DocumentTypeId")]
+[JsonPropertyName("DocumentTypeId")]
+public ssConectaProveedores.RestRecords.JSONST_52a0b4b2bb66d62c40848f2d472a3986Structure AttrDocumentTypeId;
+
+[JsonProperty("RegionId")]
+[JsonPropertyName("RegionId")]
+public ssConectaProveedores.RestRecords.JSONST_52a0b4b2bb66d62c40848f2d472a3986Structure AttrRegionId;
+
+public JSONRC_4d57f99d5ffffde65e439e566311a35e() { }
+
+public JSONRC_4d57f99d5ffffde65e439e566311a35e (RC_4d57f99d5ffffde65e439e566311a35e s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrCompanyId = ConvertToRestWithoutDefaults(s.ssSTCompanyId, new ST_52a0b4b2bb66d62c40848f2d472a3986Structure(), ssConectaProveedores.RestRecords.JSONST_52a0b4b2bb66d62c40848f2d472a3986Structure.FromStructure, config);
+AttrDocumentTypeId = ConvertToRestWithoutDefaults(s.ssSTDocumentTypeId, new ST_52a0b4b2bb66d62c40848f2d472a3986Structure(), ssConectaProveedores.RestRecords.JSONST_52a0b4b2bb66d62c40848f2d472a3986Structure.FromStructure, config);
+AttrRegionId = ConvertToRestWithoutDefaults(s.ssSTRegionId, new ST_52a0b4b2bb66d62c40848f2d472a3986Structure(), ssConectaProveedores.RestRecords.JSONST_52a0b4b2bb66d62c40848f2d472a3986Structure.FromStructure, config);
+  } else {
+AttrCompanyId = ssConectaProveedores.RestRecords.JSONST_52a0b4b2bb66d62c40848f2d472a3986Structure.FromStructure(s.ssSTCompanyId, config);
+AttrDocumentTypeId = ssConectaProveedores.RestRecords.JSONST_52a0b4b2bb66d62c40848f2d472a3986Structure.FromStructure(s.ssSTDocumentTypeId, config);
+AttrRegionId = ssConectaProveedores.RestRecords.JSONST_52a0b4b2bb66d62c40848f2d472a3986Structure.FromStructure(s.ssSTRegionId, config);
+  }
+}
+
+public static Func<ssConectaProveedores.RestRecords.JSONRC_4d57f99d5ffffde65e439e566311a35e, RC_4d57f99d5ffffde65e439e566311a35e> ToStructureDelegate(IBehaviorsConfiguration config) { 
+  return (ssConectaProveedores.RestRecords.JSONRC_4d57f99d5ffffde65e439e566311a35e s) => ToStructure(s, config);
+}
+public static RC_4d57f99d5ffffde65e439e566311a35e ToStructure(ssConectaProveedores.RestRecords.JSONRC_4d57f99d5ffffde65e439e566311a35e obj, IBehaviorsConfiguration config) { 
+  RC_4d57f99d5ffffde65e439e566311a35e s = new RC_4d57f99d5ffffde65e439e566311a35e();
+  if(obj != null) {
+  s.ssSTCompanyId = ssConectaProveedores.RestRecords.JSONST_52a0b4b2bb66d62c40848f2d472a3986Structure.ToStructure(obj.AttrCompanyId, config);
+  s.ssSTDocumentTypeId = ssConectaProveedores.RestRecords.JSONST_52a0b4b2bb66d62c40848f2d472a3986Structure.ToStructure(obj.AttrDocumentTypeId, config);
+  s.ssSTRegionId = ssConectaProveedores.RestRecords.JSONST_52a0b4b2bb66d62c40848f2d472a3986Structure.ToStructure(obj.AttrRegionId, config);
+  }
+  return s;
+}
+
+public static Func<RC_4d57f99d5ffffde65e439e566311a35e, ssConectaProveedores.RestRecords.JSONRC_4d57f99d5ffffde65e439e566311a35e> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (RC_4d57f99d5ffffde65e439e566311a35e s) => FromStructure(s, config);
+}
+public static ssConectaProveedores.RestRecords.JSONRC_4d57f99d5ffffde65e439e566311a35e FromStructure(RC_4d57f99d5ffffde65e439e566311a35e s, IBehaviorsConfiguration config) { 
+  return new ssConectaProveedores.RestRecords.JSONRC_4d57f99d5ffffde65e439e566311a35e(s, config);
+}
+
+}
+
+

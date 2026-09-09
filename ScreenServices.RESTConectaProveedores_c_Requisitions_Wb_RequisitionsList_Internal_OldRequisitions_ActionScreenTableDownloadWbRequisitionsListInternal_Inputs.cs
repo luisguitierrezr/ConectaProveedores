@@ -1,0 +1,31 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_c_Requisitions_Wb_RequisitionsList_Internal_OldRequisitions_ActionScreenTableDownloadWbRequisitionsListInternal_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_IsCSV")]
+public bool? inParami_IsCSV;
+[JsonProperty("i_IsPDF")]
+public bool? inParami_IsPDF;
+[JsonProperty("i_IsXLS")]
+public bool? inParami_IsXLS;
+[JsonProperty("i_RequisitionsListInternalTableListStructure")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure> inParami_RequisitionsListInternalTableListStructure;
+
+
+    public static RESTConectaProveedores_c_Requisitions_Wb_RequisitionsList_Internal_OldRequisitions_ActionScreenTableDownloadWbRequisitionsListInternal_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_c_Requisitions_Wb_RequisitionsList_Internal_OldRequisitions_ActionScreenTableDownloadWbRequisitionsListInternal_Inputs result = inputParameters.ToObject<RESTConectaProveedores_c_Requisitions_Wb_RequisitionsList_Internal_OldRequisitions_ActionScreenTableDownloadWbRequisitionsListInternal_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_c_Requisitions_Wb_RequisitionsList_Internal_OldRequisitions_ActionScreenTableDownloadWbRequisitionsListInternal_Model ToModel() {ConectaProveedores_c_Requisitions_Wb_RequisitionsList_Internal_OldRequisitions_ActionScreenTableDownloadWbRequisitionsListInternal_Model result = new ConectaProveedores_c_Requisitions_Wb_RequisitionsList_Internal_OldRequisitions_ActionScreenTableDownloadWbRequisitionsListInternal_Model();
+result.inParami_IsCSV = inParami_IsCSV == null ? false : inParami_IsCSV.Value;
+result.inParami_IsPDF = inParami_IsPDF == null ? false : inParami_IsPDF.Value;
+result.inParami_IsXLS = inParami_IsXLS == null ? false : inParami_IsXLS.Value;
+result.inParami_RequisitionsListInternalTableListStructure = RL_622bdef78070a83f1d39501965da2144.FromRestList(inParami_RequisitionsListInternalTableListStructure, ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure.ToStructure);
+return result;
+}
+
+}

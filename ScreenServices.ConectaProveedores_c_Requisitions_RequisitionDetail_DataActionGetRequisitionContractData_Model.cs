@@ -1,0 +1,15 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetRequisitionContractData_Model {
+
+    public ST_26b16bea631cbd94cf555acb5c7a4be3Structure outParamo_ContractFile;
+public RL_7a479a555821b093171c5d3cd3382006 outParamo_AttachFilesList;
+public RL_7a479a555821b093171c5d3cd3382006 outParamo_ContractDepositList;
+public RL_7a479a555821b093171c5d3cd3382006 outParamo_ContractInsuranceList;
+public ST_26b16bea631cbd94cf555acb5c7a4be3Structure outParamo_ContractAdvancePayment;
+public ST_26b16bea631cbd94cf555acb5c7a4be3Structure outParamo_ContractPendingJustification;
+
+}

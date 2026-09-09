@@ -1,0 +1,35 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_z_Hotfix_HotfixOrderApprover_DataActionGetRequisitions_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("List")]
+public RestList<ssConectaProveedores.RestRecords.RESTRC_4f0d40ef248987564be81ff3e7fa1eab> outParamList;
+
+
+    public static RESTConectaProveedores_z_Hotfix_HotfixOrderApprover_DataActionGetRequisitions_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_f2eeb002682d9f8c7bb8a8168b7aea5f outParamList) {RESTConectaProveedores_z_Hotfix_HotfixOrderApprover_DataActionGetRequisitions_Outputs result = new RESTConectaProveedores_z_Hotfix_HotfixOrderApprover_DataActionGetRequisitions_Outputs();
+// Write optimized result.outParamList
+result.outParamList = new RL_f2eeb002682d9f8c7bb8a8168b7aea5f().ToRestList<ssConectaProveedores.RestRecords.RESTRC_4f0d40ef248987564be81ff3e7fa1eab>(ssConectaProveedores.RestRecords.RESTRC_4f0d40ef248987564be81ff3e7fa1eab.FromStructureDelegate(conf));
+return result;
+}
+
+
+    public static ConectaProveedores_z_Hotfix_HotfixOrderApprover_DataActionGetRequisitions_Model ToModel(RESTConectaProveedores_z_Hotfix_HotfixOrderApprover_DataActionGetRequisitions_Outputs variables) {ConectaProveedores_z_Hotfix_HotfixOrderApprover_DataActionGetRequisitions_Model result = new ConectaProveedores_z_Hotfix_HotfixOrderApprover_DataActionGetRequisitions_Model();
+result.outParamList = variables == null ? new RL_f2eeb002682d9f8c7bb8a8168b7aea5f() : RL_f2eeb002682d9f8c7bb8a8168b7aea5f.FromRestList(variables.outParamList, ssConectaProveedores.RestRecords.RESTRC_4f0d40ef248987564be81ff3e7fa1eab.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_z_Hotfix_HotfixOrderApprover_DataActionGetRequisitions_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_z_Hotfix_HotfixOrderApprover_DataActionGetRequisitions_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_z_Hotfix_HotfixOrderApprover_DataActionGetRequisitions_Outputs result = new RESTConectaProveedores_z_Hotfix_HotfixOrderApprover_DataActionGetRequisitions_Outputs();
+result.outParamList = screenModel.outParamList.ToRestList<ssConectaProveedores.RestRecords.RESTRC_4f0d40ef248987564be81ff3e7fa1eab>(ssConectaProveedores.RestRecords.RESTRC_4f0d40ef248987564be81ff3e7fa1eab.FromStructureDelegate(conf));
+return result;
+}
+
+}

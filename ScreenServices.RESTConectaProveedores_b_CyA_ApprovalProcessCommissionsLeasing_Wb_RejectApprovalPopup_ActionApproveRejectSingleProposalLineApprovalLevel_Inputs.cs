@@ -1,0 +1,31 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_Wb_RejectApprovalPopup_ActionApproveRejectSingleProposalLineApprovalLevel_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_ProposalId")]
+public long? inParami_ProposalId;
+[JsonProperty("i_ProposalLineApprovalLevelId")]
+public long? inParami_ProposalLineApprovalLevelId;
+[JsonProperty("i_IsReject")]
+public bool? inParami_IsReject;
+[JsonProperty("i_Comment")]
+public string inParami_Comment;
+
+
+    public static RESTConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_Wb_RejectApprovalPopup_ActionApproveRejectSingleProposalLineApprovalLevel_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_Wb_RejectApprovalPopup_ActionApproveRejectSingleProposalLineApprovalLevel_Inputs result = inputParameters.ToObject<RESTConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_Wb_RejectApprovalPopup_ActionApproveRejectSingleProposalLineApprovalLevel_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_Wb_RejectApprovalPopup_ActionApproveRejectSingleProposalLineApprovalLevel_Model ToModel() {ConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_Wb_RejectApprovalPopup_ActionApproveRejectSingleProposalLineApprovalLevel_Model result = new ConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_Wb_RejectApprovalPopup_ActionApproveRejectSingleProposalLineApprovalLevel_Model();
+result.inParami_ProposalId = inParami_ProposalId == null ? 0L : inParami_ProposalId.Value;
+result.inParami_ProposalLineApprovalLevelId = inParami_ProposalLineApprovalLevelId == null ? 0L : inParami_ProposalLineApprovalLevelId.Value;
+result.inParami_IsReject = inParami_IsReject == null ? false : inParami_IsReject.Value;
+result.inParami_Comment = inParami_Comment == null ? "" : inParami_Comment;
+return result;
+}
+
+}

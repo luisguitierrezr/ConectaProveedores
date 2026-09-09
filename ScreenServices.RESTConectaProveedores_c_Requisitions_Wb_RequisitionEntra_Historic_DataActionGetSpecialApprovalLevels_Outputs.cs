@@ -1,0 +1,74 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_c_Requisitions_Wb_RequisitionEntra_Historic_DataActionGetSpecialApprovalLevels_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("ApprovalList")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure> outParamApprovalList;
+
+
+    public static RESTConectaProveedores_c_Requisitions_Wb_RequisitionEntra_Historic_DataActionGetSpecialApprovalLevels_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_875afe918a46d044315dbe3410f1f2a7 outParamApprovalList) {RESTConectaProveedores_c_Requisitions_Wb_RequisitionEntra_Historic_DataActionGetSpecialApprovalLevels_Outputs result = new RESTConectaProveedores_c_Requisitions_Wb_RequisitionEntra_Historic_DataActionGetSpecialApprovalLevels_Outputs();
+// Write the needed fields of the list outParamApprovalList to the result.outParamApprovalList
+ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure tmpoutParamApprovalListElement;
+if(outParamApprovalList.Empty) {
+// Write the needed fields of the record outParamApprovalList.CurrentRec to the tmpoutParamApprovalListElement
+tmpoutParamApprovalListElement = new ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure();
+// Write optimized tmpoutParamApprovalListElement.AttrLevelNumber
+tmpoutParamApprovalListElement.AttrLevelNumber = (int?) 0;
+tmpoutParamApprovalListElement.AttrApprovalStatusId = (int?) outParamApprovalList.CurrentRec.ssApprovalStatusId;
+tmpoutParamApprovalListElement.AttrName = outParamApprovalList.CurrentRec.ssName;
+tmpoutParamApprovalListElement.AttrCombinedJobTitles = outParamApprovalList.CurrentRec.ssCombinedJobTitles;
+tmpoutParamApprovalListElement.AttrApplicationRole = outParamApprovalList.CurrentRec.ssApplicationRole;
+tmpoutParamApprovalListElement.AttrIsReassigned = (bool?) outParamApprovalList.CurrentRec.ssIsReassigned;
+tmpoutParamApprovalListElement.AttrIsSubstituteFor = outParamApprovalList.CurrentRec.ssIsSubstituteFor;
+result.outParamApprovalList = new RestList<ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure>(new ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure[] {}, tmpoutParamApprovalListElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure>
+ tmpoutParamApprovalList1List = new List<ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure>
+();
+try {outParamApprovalList.StartIteration();
+while (!(outParamApprovalList.Eof)) {
+// Write the needed fields of the record outParamApprovalList.CurrentRec to the tmpoutParamApprovalListElement
+tmpoutParamApprovalListElement = new ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure();
+// Write optimized tmpoutParamApprovalListElement.AttrLevelNumber
+tmpoutParamApprovalListElement.AttrLevelNumber = (int?) 0;
+tmpoutParamApprovalListElement.AttrApprovalStatusId = (int?) outParamApprovalList.CurrentRec.ssApprovalStatusId;
+tmpoutParamApprovalListElement.AttrName = outParamApprovalList.CurrentRec.ssName;
+tmpoutParamApprovalListElement.AttrCombinedJobTitles = outParamApprovalList.CurrentRec.ssCombinedJobTitles;
+tmpoutParamApprovalListElement.AttrApplicationRole = outParamApprovalList.CurrentRec.ssApplicationRole;
+tmpoutParamApprovalListElement.AttrIsReassigned = (bool?) outParamApprovalList.CurrentRec.ssIsReassigned;
+tmpoutParamApprovalListElement.AttrIsSubstituteFor = outParamApprovalList.CurrentRec.ssIsSubstituteFor;
+tmpoutParamApprovalList1List.Add(tmpoutParamApprovalListElement);
+outParamApprovalList.Advance();
+}
+
+} finally {
+outParamApprovalList.EndIteration();
+}
+
+result.outParamApprovalList = new RestList<ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure>(tmpoutParamApprovalList1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure));
+}
+
+return result;
+}
+
+
+    public static ConectaProveedores_c_Requisitions_Wb_RequisitionEntra_Historic_DataActionGetSpecialApprovalLevels_Model ToModel(RESTConectaProveedores_c_Requisitions_Wb_RequisitionEntra_Historic_DataActionGetSpecialApprovalLevels_Outputs variables) {ConectaProveedores_c_Requisitions_Wb_RequisitionEntra_Historic_DataActionGetSpecialApprovalLevels_Model result = new ConectaProveedores_c_Requisitions_Wb_RequisitionEntra_Historic_DataActionGetSpecialApprovalLevels_Model();
+result.outParamApprovalList = variables == null ? new RL_875afe918a46d044315dbe3410f1f2a7() : RL_875afe918a46d044315dbe3410f1f2a7.FromRestList(variables.outParamApprovalList, ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_c_Requisitions_Wb_RequisitionEntra_Historic_DataActionGetSpecialApprovalLevels_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_c_Requisitions_Wb_RequisitionEntra_Historic_DataActionGetSpecialApprovalLevels_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_c_Requisitions_Wb_RequisitionEntra_Historic_DataActionGetSpecialApprovalLevels_Outputs result = new RESTConectaProveedores_c_Requisitions_Wb_RequisitionEntra_Historic_DataActionGetSpecialApprovalLevels_Outputs();
+result.outParamApprovalList = screenModel.outParamApprovalList.ToRestList<ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure>(ssConectaProveedores.RestRecords.RESTST_3c480a6d17a69eed60b057b7ed343a1dStructure.FromStructureDelegate(conf));
+return result;
+}
+
+}

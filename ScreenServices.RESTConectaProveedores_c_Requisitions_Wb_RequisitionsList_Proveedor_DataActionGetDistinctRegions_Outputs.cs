@@ -1,0 +1,66 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_c_Requisitions_Wb_RequisitionsList_Proveedor_DataActionGetDistinctRegions_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("RegionsList")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_1d2d09c8b788d410a2c7ddc6277e6c9aStructure> outParamRegionsList;
+
+
+    public static RESTConectaProveedores_c_Requisitions_Wb_RequisitionsList_Proveedor_DataActionGetDistinctRegions_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_66e54aa915d6f6db629964a69a34a959 outParamRegionsList) {RESTConectaProveedores_c_Requisitions_Wb_RequisitionsList_Proveedor_DataActionGetDistinctRegions_Outputs result = new RESTConectaProveedores_c_Requisitions_Wb_RequisitionsList_Proveedor_DataActionGetDistinctRegions_Outputs();
+// Write the needed fields of the list outParamRegionsList to the result.outParamRegionsList
+ssConectaProveedores.RestRecords.RESTST_1d2d09c8b788d410a2c7ddc6277e6c9aStructure tmpoutParamRegionsListElement;
+if(outParamRegionsList.Empty) {
+// Write the needed fields of the record outParamRegionsList.CurrentRec to the tmpoutParamRegionsListElement
+tmpoutParamRegionsListElement = new ssConectaProveedores.RestRecords.RESTST_1d2d09c8b788d410a2c7ddc6277e6c9aStructure();
+tmpoutParamRegionsListElement.AttrRegionId = (long?) outParamRegionsList.CurrentRec.ssRegionId;
+tmpoutParamRegionsListElement.AttrRegionCode = outParamRegionsList.CurrentRec.ssRegionCode;
+// Write optimized tmpoutParamRegionsListElement.AttrRegionName
+tmpoutParamRegionsListElement.AttrRegionName = "";
+result.outParamRegionsList = new RestList<ssConectaProveedores.RestRecords.RESTST_1d2d09c8b788d410a2c7ddc6277e6c9aStructure>(new ssConectaProveedores.RestRecords.RESTST_1d2d09c8b788d410a2c7ddc6277e6c9aStructure[] {}, tmpoutParamRegionsListElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_1d2d09c8b788d410a2c7ddc6277e6c9aStructure>
+ tmpoutParamRegionsList1List = new List<ssConectaProveedores.RestRecords.RESTST_1d2d09c8b788d410a2c7ddc6277e6c9aStructure>
+();
+try {outParamRegionsList.StartIteration();
+while (!(outParamRegionsList.Eof)) {
+// Write the needed fields of the record outParamRegionsList.CurrentRec to the tmpoutParamRegionsListElement
+tmpoutParamRegionsListElement = new ssConectaProveedores.RestRecords.RESTST_1d2d09c8b788d410a2c7ddc6277e6c9aStructure();
+tmpoutParamRegionsListElement.AttrRegionId = (long?) outParamRegionsList.CurrentRec.ssRegionId;
+tmpoutParamRegionsListElement.AttrRegionCode = outParamRegionsList.CurrentRec.ssRegionCode;
+// Write optimized tmpoutParamRegionsListElement.AttrRegionName
+tmpoutParamRegionsListElement.AttrRegionName = "";
+tmpoutParamRegionsList1List.Add(tmpoutParamRegionsListElement);
+outParamRegionsList.Advance();
+}
+
+} finally {
+outParamRegionsList.EndIteration();
+}
+
+result.outParamRegionsList = new RestList<ssConectaProveedores.RestRecords.RESTST_1d2d09c8b788d410a2c7ddc6277e6c9aStructure>(tmpoutParamRegionsList1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_1d2d09c8b788d410a2c7ddc6277e6c9aStructure));
+}
+
+return result;
+}
+
+
+    public static ConectaProveedores_c_Requisitions_Wb_RequisitionsList_Proveedor_DataActionGetDistinctRegions_Model ToModel(RESTConectaProveedores_c_Requisitions_Wb_RequisitionsList_Proveedor_DataActionGetDistinctRegions_Outputs variables) {ConectaProveedores_c_Requisitions_Wb_RequisitionsList_Proveedor_DataActionGetDistinctRegions_Model result = new ConectaProveedores_c_Requisitions_Wb_RequisitionsList_Proveedor_DataActionGetDistinctRegions_Model();
+result.outParamRegionsList = variables == null ? new RL_66e54aa915d6f6db629964a69a34a959() : RL_66e54aa915d6f6db629964a69a34a959.FromRestList(variables.outParamRegionsList, ssConectaProveedores.RestRecords.RESTST_1d2d09c8b788d410a2c7ddc6277e6c9aStructure.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_c_Requisitions_Wb_RequisitionsList_Proveedor_DataActionGetDistinctRegions_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_c_Requisitions_Wb_RequisitionsList_Proveedor_DataActionGetDistinctRegions_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_c_Requisitions_Wb_RequisitionsList_Proveedor_DataActionGetDistinctRegions_Outputs result = new RESTConectaProveedores_c_Requisitions_Wb_RequisitionsList_Proveedor_DataActionGetDistinctRegions_Outputs();
+result.outParamRegionsList = screenModel.outParamRegionsList.ToRestList<ssConectaProveedores.RestRecords.RESTST_1d2d09c8b788d410a2c7ddc6277e6c9aStructure>(ssConectaProveedores.RestRecords.RESTST_1d2d09c8b788d410a2c7ddc6277e6c9aStructure.FromStructureDelegate(conf));
+return result;
+}
+
+}

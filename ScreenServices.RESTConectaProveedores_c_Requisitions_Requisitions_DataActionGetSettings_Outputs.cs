@@ -1,0 +1,34 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_c_Requisitions_Requisitions_DataActionGetSettings_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("IsActiveDEV_NewVersionScreenDownloads")]
+public bool? outParamIsActiveDEV_NewVersionScreenDownloads;
+
+
+    public static RESTConectaProveedores_c_Requisitions_Requisitions_DataActionGetSettings_Outputs FromOutputs(IBehaviorsConfiguration conf, bool outParamIsActiveDEV_NewVersionScreenDownloads) {RESTConectaProveedores_c_Requisitions_Requisitions_DataActionGetSettings_Outputs result = new RESTConectaProveedores_c_Requisitions_Requisitions_DataActionGetSettings_Outputs();
+result.outParamIsActiveDEV_NewVersionScreenDownloads = (bool?) outParamIsActiveDEV_NewVersionScreenDownloads;
+return result;
+}
+
+
+    public static ConectaProveedores_c_Requisitions_Requisitions_DataActionGetSettings_Model ToModel(RESTConectaProveedores_c_Requisitions_Requisitions_DataActionGetSettings_Outputs variables) {ConectaProveedores_c_Requisitions_Requisitions_DataActionGetSettings_Model result = new ConectaProveedores_c_Requisitions_Requisitions_DataActionGetSettings_Model();
+result.outParamIsActiveDEV_NewVersionScreenDownloads = variables == null || variables.outParamIsActiveDEV_NewVersionScreenDownloads == null ? false : variables.outParamIsActiveDEV_NewVersionScreenDownloads.Value;
+return result;
+}
+
+
+    public static RESTConectaProveedores_c_Requisitions_Requisitions_DataActionGetSettings_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_c_Requisitions_Requisitions_DataActionGetSettings_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_c_Requisitions_Requisitions_DataActionGetSettings_Outputs result = new RESTConectaProveedores_c_Requisitions_Requisitions_DataActionGetSettings_Outputs();
+result.outParamIsActiveDEV_NewVersionScreenDownloads = (bool?) screenModel.outParamIsActiveDEV_NewVersionScreenDownloads;
+return result;
+}
+
+}

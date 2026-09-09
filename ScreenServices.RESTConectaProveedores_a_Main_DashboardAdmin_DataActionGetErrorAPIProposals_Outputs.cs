@@ -1,0 +1,64 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_a_Main_DashboardAdmin_DataActionGetErrorAPIProposals_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("ErrorAPIProposals")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure> outParamErrorAPIProposals;
+
+
+    public static RESTConectaProveedores_a_Main_DashboardAdmin_DataActionGetErrorAPIProposals_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_496abaeba4975b81a1a9b391230e8099 outParamErrorAPIProposals) {RESTConectaProveedores_a_Main_DashboardAdmin_DataActionGetErrorAPIProposals_Outputs result = new RESTConectaProveedores_a_Main_DashboardAdmin_DataActionGetErrorAPIProposals_Outputs();
+// Write the needed fields of the list outParamErrorAPIProposals to the result.outParamErrorAPIProposals
+ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure tmpoutParamErrorAPIProposalsElement;
+if(outParamErrorAPIProposals.Empty) {
+// Write the needed fields of the record outParamErrorAPIProposals.CurrentRec to the tmpoutParamErrorAPIProposalsElement
+tmpoutParamErrorAPIProposalsElement = new ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure();
+// Write optimized tmpoutParamErrorAPIProposalsElement.AttrStatusLabel
+tmpoutParamErrorAPIProposalsElement.AttrStatusLabel = "";
+tmpoutParamErrorAPIProposalsElement.AttrCount = (int?) outParamErrorAPIProposals.CurrentRec.ssCount;
+result.outParamErrorAPIProposals = new RestList<ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure>(new ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure[] {}, tmpoutParamErrorAPIProposalsElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure>
+ tmpoutParamErrorAPIProposals1List = new List<ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure>
+();
+try {outParamErrorAPIProposals.StartIteration();
+while (!(outParamErrorAPIProposals.Eof)) {
+// Write the needed fields of the record outParamErrorAPIProposals.CurrentRec to the tmpoutParamErrorAPIProposalsElement
+tmpoutParamErrorAPIProposalsElement = new ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure();
+// Write optimized tmpoutParamErrorAPIProposalsElement.AttrStatusLabel
+tmpoutParamErrorAPIProposalsElement.AttrStatusLabel = "";
+tmpoutParamErrorAPIProposalsElement.AttrCount = (int?) outParamErrorAPIProposals.CurrentRec.ssCount;
+tmpoutParamErrorAPIProposals1List.Add(tmpoutParamErrorAPIProposalsElement);
+outParamErrorAPIProposals.Advance();
+}
+
+} finally {
+outParamErrorAPIProposals.EndIteration();
+}
+
+result.outParamErrorAPIProposals = new RestList<ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure>(tmpoutParamErrorAPIProposals1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure));
+}
+
+return result;
+}
+
+
+    public static ConectaProveedores_a_Main_DashboardAdmin_DataActionGetErrorAPIProposals_Model ToModel(RESTConectaProveedores_a_Main_DashboardAdmin_DataActionGetErrorAPIProposals_Outputs variables) {ConectaProveedores_a_Main_DashboardAdmin_DataActionGetErrorAPIProposals_Model result = new ConectaProveedores_a_Main_DashboardAdmin_DataActionGetErrorAPIProposals_Model();
+result.outParamErrorAPIProposals = variables == null ? new RL_496abaeba4975b81a1a9b391230e8099() : RL_496abaeba4975b81a1a9b391230e8099.FromRestList(variables.outParamErrorAPIProposals, ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_a_Main_DashboardAdmin_DataActionGetErrorAPIProposals_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_a_Main_DashboardAdmin_DataActionGetErrorAPIProposals_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_a_Main_DashboardAdmin_DataActionGetErrorAPIProposals_Outputs result = new RESTConectaProveedores_a_Main_DashboardAdmin_DataActionGetErrorAPIProposals_Outputs();
+result.outParamErrorAPIProposals = screenModel.outParamErrorAPIProposals.ToRestList<ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure>(ssConectaProveedores.RestRecords.RESTST_bfed96b4bd29e9b06f0b06e901b1508bStructure.FromStructureDelegate(conf));
+return result;
+}
+
+}

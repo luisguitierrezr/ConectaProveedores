@@ -1,0 +1,45 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetSummary_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("o_SummaryRec")]
+public ssConectaProveedores.RestRecords.RESTRC_0b2176705fa164c9531eb643caf0e9d4 outParamo_SummaryRec;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetSummary_Outputs FromOutputs(IBehaviorsConfiguration conf, RC_0b2176705fa164c9531eb643caf0e9d4 outParamo_SummaryRec) {RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetSummary_Outputs result = new RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetSummary_Outputs();
+// Write the needed fields of the record outParamo_SummaryRec to the result.outParamo_SummaryRec
+result.outParamo_SummaryRec = new ssConectaProveedores.RestRecords.RESTRC_0b2176705fa164c9531eb643caf0e9d4();
+result.outParamo_SummaryRec.AttrCurrency = outParamo_SummaryRec.ssCurrency;
+result.outParamo_SummaryRec.AttrAmountDelivered = (decimal?) outParamo_SummaryRec.ssAmountDelivered;
+result.outParamo_SummaryRec.AttrAmountLeft = (decimal?) outParamo_SummaryRec.ssAmountLeft;
+result.outParamo_SummaryRec.AttrDifference_FormSAE_Invoice_Amount = (decimal?) outParamo_SummaryRec.ssDifference_FormSAE_Invoice_Amount;
+result.outParamo_SummaryRec.AttrDifference_FormSAE_Invoice_Percent = (decimal?) outParamo_SummaryRec.ssDifference_FormSAE_Invoice_Percent;
+result.outParamo_SummaryRec.AttrInvoicingAmount = (decimal?) outParamo_SummaryRec.ssInvoicingAmount;
+result.outParamo_SummaryRec.AttrMaxAlowed = (decimal?) outParamo_SummaryRec.ssMaxAlowed;
+result.outParamo_SummaryRec.AttrPartialDeliveryAmount = (decimal?) outParamo_SummaryRec.ssPartialDeliveryAmount;
+result.outParamo_SummaryRec.AttrPercentageDelivered = (decimal?) outParamo_SummaryRec.ssPercentageDelivered;
+result.outParamo_SummaryRec.AttrTotalAmount = (decimal?) outParamo_SummaryRec.ssTotalAmount;
+return result;
+}
+
+
+    public static ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetSummary_Model ToModel(RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetSummary_Outputs variables) {ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetSummary_Model result = new ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetSummary_Model();
+result.outParamo_SummaryRec = variables == null ? new RC_0b2176705fa164c9531eb643caf0e9d4() : ssConectaProveedores.RestRecords.RESTRC_0b2176705fa164c9531eb643caf0e9d4.ToStructure(variables.outParamo_SummaryRec);
+return result;
+}
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetSummary_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetSummary_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetSummary_Outputs result = new RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetSummary_Outputs();
+result.outParamo_SummaryRec = ssConectaProveedores.RestRecords.RESTRC_0b2176705fa164c9531eb643caf0e9d4.FromStructure(screenModel.outParamo_SummaryRec, conf);
+return result;
+}
+
+}

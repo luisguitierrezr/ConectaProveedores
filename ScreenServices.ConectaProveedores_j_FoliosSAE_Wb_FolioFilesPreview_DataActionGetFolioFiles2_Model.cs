@@ -1,0 +1,21 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_j_FoliosSAE_Wb_FolioFilesPreview_DataActionGetFolioFiles2_Model {
+
+    public RL_89dfc296578aaa53d7fbc0b8af34fb54 outParamFolioMainFiles;
+public RL_89dfc296578aaa53d7fbc0b8af34fb54 outParamFolioExtraFiles;
+public RL_cc11123f1ba1bfd417e2f33be28138e9 outParamInvoiceMainFiles;
+public RL_cc11123f1ba1bfd417e2f33be28138e9 outParamInvoiceExtraFiles;
+public bool outParamIsConstruction;
+public int outParamFolioStatusId;
+public bool outParamCanSupplierChange;
+public long outParamInvoiceID;
+public EN_764a7cdbc8a8735aa4be34db0d0a0f0aEntityRecord outParamFolio;
+public string outParamSupplierNumber;
+public EN_d1d0320db36efbb094ad0082361435a0EntityRecord outParamInvoice;
+public string outParamFilesForDownload;
+
+}

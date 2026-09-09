@@ -1,0 +1,44 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssConectaProveedores.RestRecords;
+
+// File3Record
+public class JSONRC_e5232dda8695a6b53d7aafcc3b6d847f : AbstractRESTStructure<RC_e5232dda8695a6b53d7aafcc3b6d847f> {
+[JsonProperty("File3")]
+[JsonPropertyName("File3")]
+public ssConectaProveedores.RestRecords.JSONEN_1d38c6a5bdfe9befe9c6396896ed360eEntityRecord AttrFile3;
+
+public JSONRC_e5232dda8695a6b53d7aafcc3b6d847f() { }
+
+public JSONRC_e5232dda8695a6b53d7aafcc3b6d847f (RC_e5232dda8695a6b53d7aafcc3b6d847f s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrFile3 = ConvertToRestWithoutDefaults(s.ssENFile3, new EN_1d38c6a5bdfe9befe9c6396896ed360eEntityRecord(), ssConectaProveedores.RestRecords.JSONEN_1d38c6a5bdfe9befe9c6396896ed360eEntityRecord.FromStructure, config);
+  } else {
+AttrFile3 = ssConectaProveedores.RestRecords.JSONEN_1d38c6a5bdfe9befe9c6396896ed360eEntityRecord.FromStructure(s.ssENFile3, config);
+  }
+}
+
+public static Func<ssConectaProveedores.RestRecords.JSONRC_e5232dda8695a6b53d7aafcc3b6d847f, RC_e5232dda8695a6b53d7aafcc3b6d847f> ToStructureDelegate(IBehaviorsConfiguration config) { 
+  return (ssConectaProveedores.RestRecords.JSONRC_e5232dda8695a6b53d7aafcc3b6d847f s) => ToStructure(s, config);
+}
+public static RC_e5232dda8695a6b53d7aafcc3b6d847f ToStructure(ssConectaProveedores.RestRecords.JSONRC_e5232dda8695a6b53d7aafcc3b6d847f obj, IBehaviorsConfiguration config) { 
+  RC_e5232dda8695a6b53d7aafcc3b6d847f s = new RC_e5232dda8695a6b53d7aafcc3b6d847f();
+  if(obj != null) {
+  s.ssENFile3 = ssConectaProveedores.RestRecords.JSONEN_1d38c6a5bdfe9befe9c6396896ed360eEntityRecord.ToStructure(obj.AttrFile3, config);
+  }
+  return s;
+}
+
+public static Func<RC_e5232dda8695a6b53d7aafcc3b6d847f, ssConectaProveedores.RestRecords.JSONRC_e5232dda8695a6b53d7aafcc3b6d847f> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (RC_e5232dda8695a6b53d7aafcc3b6d847f s) => FromStructure(s, config);
+}
+public static ssConectaProveedores.RestRecords.JSONRC_e5232dda8695a6b53d7aafcc3b6d847f FromStructure(RC_e5232dda8695a6b53d7aafcc3b6d847f s, IBehaviorsConfiguration config) { 
+  return new ssConectaProveedores.RestRecords.JSONRC_e5232dda8695a6b53d7aafcc3b6d847f(s, config);
+}
+
+}
+
+

@@ -1,0 +1,64 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetSettings_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("IsActiveAmountValidation")]
+public bool? outParamIsActiveAmountValidation;
+[JsonProperty("IsForceForeigner")]
+public bool? outParamIsForceForeigner;
+[JsonProperty("o_ForeignCurrencyMargin")]
+public decimal? outParamo_ForeignCurrencyMargin;
+[JsonProperty("o_NationalCurrencyMargin")]
+public decimal? outParamo_NationalCurrencyMargin;
+[JsonProperty("o_IsActiveDEV_HU13008_Complement")]
+public bool? outParamo_IsActiveDEV_HU13008_Complement;
+[JsonProperty("o_IsActiveDEV_HU13046")]
+public bool? outParamo_IsActiveDEV_HU13046;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetSettings_Outputs FromOutputs(IBehaviorsConfiguration conf, bool outParamIsActiveAmountValidation, bool outParamIsForceForeigner, decimal outParamo_ForeignCurrencyMargin, decimal outParamo_NationalCurrencyMargin, bool outParamo_IsActiveDEV_HU13008_Complement, bool outParamo_IsActiveDEV_HU13046) {RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetSettings_Outputs result = new RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetSettings_Outputs();
+// Write optimized result.outParamIsActiveAmountValidation
+result.outParamIsActiveAmountValidation = (bool?) false;
+// Write optimized result.outParamIsForceForeigner
+result.outParamIsForceForeigner = (bool?) false;
+// Write optimized result.outParamo_ForeignCurrencyMargin
+result.outParamo_ForeignCurrencyMargin = (decimal?) 0.0M;
+// Write optimized result.outParamo_NationalCurrencyMargin
+result.outParamo_NationalCurrencyMargin = (decimal?) 0.0M;
+// Write optimized result.outParamo_IsActiveDEV_HU13008_Complement
+result.outParamo_IsActiveDEV_HU13008_Complement = (bool?) false;
+result.outParamo_IsActiveDEV_HU13046 = (bool?) outParamo_IsActiveDEV_HU13046;
+return result;
+}
+
+
+    public static ConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetSettings_Model ToModel(RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetSettings_Outputs variables) {ConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetSettings_Model result = new ConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetSettings_Model();
+result.outParamIsActiveAmountValidation = variables == null || variables.outParamIsActiveAmountValidation == null ? false : variables.outParamIsActiveAmountValidation.Value;
+result.outParamIsForceForeigner = variables == null || variables.outParamIsForceForeigner == null ? false : variables.outParamIsForceForeigner.Value;
+result.outParamo_ForeignCurrencyMargin = variables == null || variables.outParamo_ForeignCurrencyMargin == null ? (((decimal)10)) : variables.outParamo_ForeignCurrencyMargin.Value;
+result.outParamo_NationalCurrencyMargin = variables == null || variables.outParamo_NationalCurrencyMargin == null ? (((decimal)10)) : variables.outParamo_NationalCurrencyMargin.Value;
+result.outParamo_IsActiveDEV_HU13008_Complement = variables == null || variables.outParamo_IsActiveDEV_HU13008_Complement == null ? false : variables.outParamo_IsActiveDEV_HU13008_Complement.Value;
+result.outParamo_IsActiveDEV_HU13046 = variables == null || variables.outParamo_IsActiveDEV_HU13046 == null ? false : variables.outParamo_IsActiveDEV_HU13046.Value;
+return result;
+}
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetSettings_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetSettings_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetSettings_Outputs result = new RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetSettings_Outputs();
+result.outParamIsActiveAmountValidation = (bool?) screenModel.outParamIsActiveAmountValidation;
+result.outParamIsForceForeigner = (bool?) screenModel.outParamIsForceForeigner;
+result.outParamo_ForeignCurrencyMargin = (decimal?) screenModel.outParamo_ForeignCurrencyMargin;
+result.outParamo_NationalCurrencyMargin = (decimal?) screenModel.outParamo_NationalCurrencyMargin;
+result.outParamo_IsActiveDEV_HU13008_Complement = (bool?) screenModel.outParamo_IsActiveDEV_HU13008_Complement;
+result.outParamo_IsActiveDEV_HU13046 = (bool?) screenModel.outParamo_IsActiveDEV_HU13046;
+return result;
+}
+
+}

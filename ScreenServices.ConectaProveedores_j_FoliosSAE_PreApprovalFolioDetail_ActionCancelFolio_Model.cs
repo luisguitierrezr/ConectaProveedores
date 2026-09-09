@@ -1,0 +1,13 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_j_FoliosSAE_PreApprovalFolioDetail_ActionCancelFolio_Model {
+
+    public RC_b668eee4846e2937101a51355804499d inParamObject;
+public ST_e54bcdc56c6f092fdfed672ad024bfa4Structure inParamFolioReject;
+public RL_8430333e95ceffc00def96d8abb01f75 inParamFolioApprovalLevels_List;
+public int inParamOffsetUtc;
+
+}

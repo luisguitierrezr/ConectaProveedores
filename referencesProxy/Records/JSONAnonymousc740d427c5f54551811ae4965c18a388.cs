@@ -1,0 +1,44 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssConectaProveedores.ReferencesProxy.RestRecords;
+
+// UserDetailRecord
+public class JSONRC_9282d2ea82843f3ec15beba5c474f7e7 : AbstractRESTStructure<RC_9282d2ea82843f3ec15beba5c474f7e7> {
+[JsonProperty("UserDetail")]
+[JsonPropertyName("UserDetail")]
+public ssConectaProveedores.ReferencesProxy.RestRecords.JSONST_3d98fcbf952bf72084dad4104cc8c43fStructure AttrUserDetail;
+
+public JSONRC_9282d2ea82843f3ec15beba5c474f7e7() { }
+
+public JSONRC_9282d2ea82843f3ec15beba5c474f7e7 (RC_9282d2ea82843f3ec15beba5c474f7e7 s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrUserDetail = ConvertToRestWithoutDefaults(s.ssSTUserDetail, new ST_3d98fcbf952bf72084dad4104cc8c43fStructure(), ssConectaProveedores.ReferencesProxy.RestRecords.JSONST_3d98fcbf952bf72084dad4104cc8c43fStructure.FromStructure, config);
+  } else {
+AttrUserDetail = ssConectaProveedores.ReferencesProxy.RestRecords.JSONST_3d98fcbf952bf72084dad4104cc8c43fStructure.FromStructure(s.ssSTUserDetail, config);
+  }
+}
+
+public static Func<ssConectaProveedores.ReferencesProxy.RestRecords.JSONRC_9282d2ea82843f3ec15beba5c474f7e7, RC_9282d2ea82843f3ec15beba5c474f7e7> ToStructureDelegate(IBehaviorsConfiguration config) { 
+  return (ssConectaProveedores.ReferencesProxy.RestRecords.JSONRC_9282d2ea82843f3ec15beba5c474f7e7 s) => ToStructure(s, config);
+}
+public static RC_9282d2ea82843f3ec15beba5c474f7e7 ToStructure(ssConectaProveedores.ReferencesProxy.RestRecords.JSONRC_9282d2ea82843f3ec15beba5c474f7e7 obj, IBehaviorsConfiguration config) { 
+  RC_9282d2ea82843f3ec15beba5c474f7e7 s = new RC_9282d2ea82843f3ec15beba5c474f7e7();
+  if(obj != null) {
+  s.ssSTUserDetail = ssConectaProveedores.ReferencesProxy.RestRecords.JSONST_3d98fcbf952bf72084dad4104cc8c43fStructure.ToStructure(obj.AttrUserDetail, config);
+  }
+  return s;
+}
+
+public static Func<RC_9282d2ea82843f3ec15beba5c474f7e7, ssConectaProveedores.ReferencesProxy.RestRecords.JSONRC_9282d2ea82843f3ec15beba5c474f7e7> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (RC_9282d2ea82843f3ec15beba5c474f7e7 s) => FromStructure(s, config);
+}
+public static ssConectaProveedores.ReferencesProxy.RestRecords.JSONRC_9282d2ea82843f3ec15beba5c474f7e7 FromStructure(RC_9282d2ea82843f3ec15beba5c474f7e7 s, IBehaviorsConfiguration config) { 
+  return new ssConectaProveedores.ReferencesProxy.RestRecords.JSONRC_9282d2ea82843f3ec15beba5c474f7e7(s, config);
+}
+
+}
+
+

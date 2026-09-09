@@ -1,0 +1,2 @@
+﻿
+import{Tf as c}from"./_oschunk-USRQKATU.js";import{H as d,a as t,f as n,g as a,h as l,i as s,r as i}from"./_oschunk-GQ75NTNV.js";var u={};var o=class o extends d.BaseController{getDefaultTimeout(){return c.defaultTimeout}get handleError(){return this.hasOwnProperty("_handleError")||(this._handleError=function(r,E){var h=this.controller;s.debug("d_InvoiceAudit",n.getMessage(r));var g=a.resolve(l.GlobalExceptionHandler);return g(r,E),i.UNHANDLED_ERROR_RESULT}),this._handleError}set handleError(r){this._handleError=r}};t(o,"Controller");var e=o,O=new e(u);export{O as a};

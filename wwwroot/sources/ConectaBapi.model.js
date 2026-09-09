@@ -1,0 +1,42 @@
+﻿import * as OSRuntimeCore from "@outsystems/runtime-core-js";
+
+var OS = OSRuntimeCore;
+export {entities, setEntities} from "./ConectaBapi.entities-model.js";
+export {ST_0310bb62d750573571d23e0cd61c55b3Structure} from "./ConectaProveedores.model.js";
+export {ST_d2beaf811f074c88054765b10d929011Structure} from "./ConectaProveedores.model.js";
+export {ST_9ccb23f05cb3d8c4e4c68479ccdba9f1Structure} from "./ConectaProveedores.model.js";
+export {ST_99acd807840db0272ca95b7e5ca3fca1Structure} from "./ConectaProveedores.model.js";
+export {ST_1881d7eeaa3bae99e7aa7a6ecb977980Structure} from "./ConectaProveedores.model.js";
+export {ST_8d8928c3b1d6b9b5123f6c51624c56b2Structure} from "./ConectaProveedores.model.js";
+export {ST_1ca05235ee87feb8ff9907143d7de852Structure} from "./ConectaProveedores.model.js";
+export {ST_1ebe89bcb89e874288df8fa96ba9996fStructure} from "./ConectaProveedores.model.js";
+export {ST_21ada127931bc47aabf2d9a5964b17feStructure} from "./ConectaProveedores.model.js";
+export {ST_af46d22a4ab690d6a003acf927bb2771Structure} from "./ConectaProveedores.model.js";
+export {ST_828ac715d3b2e46c74367f017543eab1Structure} from "./ConectaProveedores.model.js";
+export {ST_26cbe75ae3e20157af048dd188f74dc2Structure} from "./ConectaProveedores.model.js";
+export {ST_b19d23fc0038c4f52f978d3d75427ea7Structure} from "./ConectaProveedores.model.js";
+export {ST_27647b039a03d40c5b921de2dccb61f4Structure} from "./ConectaProveedores.model.js";
+export {ST_2859defd6257fe38677ed819621e4236Structure} from "./ConectaProveedores.model.js";
+export {ST_4e772ab2be79435889bcf86fc0455824Structure} from "./ConectaProveedores.model.js";
+export {ST_b8bada9441ba6abcbadb418a924fe551Structure} from "./ConectaProveedores.model.js";
+export {ST_3b61de88b81d785d0616b445a04890fdStructure} from "./ConectaProveedores.model.js";
+export {ST_4639a265770186863b3ecaeafd29fb96Structure} from "./ConectaProveedores.model.js";
+export {ST_9e0fb2735a5b1c9875cbba9ab856e646Structure} from "./ConectaProveedores.model.js";
+export {ST_57edec30140ebe846267970253841d11Structure} from "./ConectaProveedores.model.js";
+export {ST_d34c4878f870709fdbf7a3e48e70a4edStructure} from "./ConectaProveedores.model.js";
+export {ST_f6501ee18e176493154e18d361367656Structure} from "./ConectaProveedores.model.js";
+export {ST_f4885e4f480f4a52f6c05031eda6ef37Structure} from "./ConectaProveedores.model.js";
+export {ST_646bfb521d5f3e3e304163b436da5220Structure} from "./ConectaProveedores.model.js";
+export {ST_e5256660414a7d3dddc63b7cbdd21e9cStructure} from "./ConectaProveedores.model.js";
+export {ST_9327164801e6ab5e342b0e8e98c59312Structure} from "./ConectaProveedores.model.js";
+export {ST_e676179583470b305e615630acee7039Structure} from "./ConectaProveedores.model.js";
+export {ST_a84a1a1cfcb637021c4d3a23fe7a72d6Structure} from "./ConectaProveedores.model.js";
+export {ST_7816c3c943d129234de46d39c32a618eStructure} from "./ConectaProveedores.model.js";
+export {ST_7dc1141edc6ff8164773775d2fc68a19Structure} from "./ConectaProveedores.model.js";
+export {ST_9fe56281b338f341e5bf9f16eeeff800Structure} from "./ConectaProveedores.model.js";
+export {ST_976925bffb49d1800d61d6274bd325dfStructure} from "./ConectaProveedores.model.js";
+export {ST_9f44b824af1405b8fbe038a5a393bb86Structure} from "./ConectaProveedores.model.js";
+export {ST_a8dbb50321f7e9ee99b69f05907922f9Structure} from "./ConectaProveedores.model.js";
+export {ST_b1e959d1ca95497ef5f6ec59a9b0e5dbStructure} from "./ConectaProveedores.model.js";
+
+

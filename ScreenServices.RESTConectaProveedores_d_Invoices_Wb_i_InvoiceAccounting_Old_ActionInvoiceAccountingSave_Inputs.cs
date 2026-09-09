@@ -1,0 +1,40 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionInvoiceAccountingSave_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_InvoiceId")]
+public long? inParami_InvoiceId;
+[JsonProperty("i_InvoiceAccounting")]
+public ssConectaProveedores.RestRecords.RESTEN_b3917cbd7cc45d0b71b8ce3e028f14a3EntityRecord inParami_InvoiceAccounting;
+[JsonProperty("i_InvoiceAddendumList")]
+public RestList<ssConectaProveedores.RestRecords.RESTEN_a9440c310249b67518f0615139b4c690EntityRecord> inParami_InvoiceAddendumList;
+[JsonProperty("i_InvoiceExtended")]
+public ssConectaProveedores.RestRecords.RESTEN_f81a3d226103fd013068b8763798067aEntityRecord inParami_InvoiceExtended;
+[JsonProperty("i_InvoiceAccountingServicesList")]
+public RestList<ssConectaProveedores.RestRecords.RESTEN_103cfe3736a71d97f9a0699797cf8ac2EntityRecord> inParami_InvoiceAccountingServicesList;
+[JsonProperty("i_IsImport")]
+public bool? inParami_IsImport;
+[JsonProperty("i_InvoiceAccountingEntries")]
+public RestList<ssConectaProveedores.RestRecords.RESTEN_66fb76d3fab58a693a3c750c022bd4efEntityRecord> inParami_InvoiceAccountingEntries;
+
+
+    public static RESTConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionInvoiceAccountingSave_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionInvoiceAccountingSave_Inputs result = inputParameters.ToObject<RESTConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionInvoiceAccountingSave_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionInvoiceAccountingSave_Model ToModel() {ConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionInvoiceAccountingSave_Model result = new ConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionInvoiceAccountingSave_Model();
+result.inParami_InvoiceId = inParami_InvoiceId == null ? 0L : inParami_InvoiceId.Value;
+result.inParami_InvoiceAccounting = ssConectaProveedores.RestRecords.RESTEN_b3917cbd7cc45d0b71b8ce3e028f14a3EntityRecord.ToStructure(inParami_InvoiceAccounting);
+result.inParami_InvoiceAddendumList = RL_4d4dc9b85c4a7d6bf03b676c2530ea4f.FromRestList(inParami_InvoiceAddendumList, ssConectaProveedores.RestRecords.RESTEN_a9440c310249b67518f0615139b4c690EntityRecord.ToStructure);
+result.inParami_InvoiceExtended = ssConectaProveedores.RestRecords.RESTEN_f81a3d226103fd013068b8763798067aEntityRecord.ToStructure(inParami_InvoiceExtended);
+result.inParami_InvoiceAccountingServicesList = RL_500d3f017443846ad96a3e45e41bf158.FromRestList(inParami_InvoiceAccountingServicesList, ssConectaProveedores.RestRecords.RESTEN_103cfe3736a71d97f9a0699797cf8ac2EntityRecord.ToStructure);
+result.inParami_IsImport = inParami_IsImport == null ? false : inParami_IsImport.Value;
+result.inParami_InvoiceAccountingEntries = RL_0704e14bc1b3305d76f59d709913c287.FromRestList(inParami_InvoiceAccountingEntries, ssConectaProveedores.RestRecords.RESTEN_66fb76d3fab58a693a3c750c022bd4efEntityRecord.ToStructure);
+return result;
+}
+
+}

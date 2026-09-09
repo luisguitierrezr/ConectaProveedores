@@ -1,0 +1,32 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultiple_ActionValidateZIPInvoices_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("MultiUploadInvoiceFileStruct")]
+public ssConectaProveedores.RestRecords.RESTST_5478c3bb197e3019856d4a634c17d91dStructure outParamMultiUploadInvoiceFileStruct;
+
+
+    public static RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultiple_ActionValidateZIPInvoices_Outputs FromOutputs(IBehaviorsConfiguration conf, ST_5478c3bb197e3019856d4a634c17d91dStructure outParamMultiUploadInvoiceFileStruct) {RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultiple_ActionValidateZIPInvoices_Outputs result = new RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultiple_ActionValidateZIPInvoices_Outputs();
+conf.IncludeBinariesURL = false;
+// Write the needed fields of the record outParamMultiUploadInvoiceFileStruct to the result.outParamMultiUploadInvoiceFileStruct
+result.outParamMultiUploadInvoiceFileStruct = new ssConectaProveedores.RestRecords.RESTST_5478c3bb197e3019856d4a634c17d91dStructure();
+result.outParamMultiUploadInvoiceFileStruct.AttrInvoiceFileId = (long?) outParamMultiUploadInvoiceFileStruct.ssInvoiceFileId;
+result.outParamMultiUploadInvoiceFileStruct.AttrName = outParamMultiUploadInvoiceFileStruct.ssName;
+result.outParamMultiUploadInvoiceFileStruct.AttrBinaryDataZIP = outParamMultiUploadInvoiceFileStruct.ssBinaryDataZIP;
+result.outParamMultiUploadInvoiceFileStruct.AttrBinaryDataXML = outParamMultiUploadInvoiceFileStruct.ssBinaryDataXML;
+result.outParamMultiUploadInvoiceFileStruct.AttrBinaryDataPDF = outParamMultiUploadInvoiceFileStruct.ssBinaryDataPDF;
+result.outParamMultiUploadInvoiceFileStruct.AttrStorageId = (long?) outParamMultiUploadInvoiceFileStruct.ssStorageId;
+result.outParamMultiUploadInvoiceFileStruct.AttrErrorMsg = outParamMultiUploadInvoiceFileStruct.ssErrorMsg;
+result.outParamMultiUploadInvoiceFileStruct.AttrFileId = (long?) outParamMultiUploadInvoiceFileStruct.ssFileId;
+return result;
+}
+
+
+    
+
+    
+}

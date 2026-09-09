@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_y_Utils_Wb_SetTableRecord_ServiceAPIServiceSetUserPreferences_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_Preferences")]
+public ssConectaProveedores.RestRecords.RESTEN_43bc359d08ba76411e7c349a19aa5aa1EntityRecord inParami_Preferences;
+
+
+    public static RESTConectaProveedores_y_Utils_Wb_SetTableRecord_ServiceAPIServiceSetUserPreferences_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_y_Utils_Wb_SetTableRecord_ServiceAPIServiceSetUserPreferences_Inputs result = inputParameters.ToObject<RESTConectaProveedores_y_Utils_Wb_SetTableRecord_ServiceAPIServiceSetUserPreferences_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_y_Utils_Wb_SetTableRecord_ServiceAPIServiceSetUserPreferences_Model ToModel() {ConectaProveedores_y_Utils_Wb_SetTableRecord_ServiceAPIServiceSetUserPreferences_Model result = new ConectaProveedores_y_Utils_Wb_SetTableRecord_ServiceAPIServiceSetUserPreferences_Model();
+result.inParami_Preferences = ssConectaProveedores.RestRecords.RESTEN_43bc359d08ba76411e7c349a19aa5aa1EntityRecord.ToStructure(inParami_Preferences);
+return result;
+}
+
+}

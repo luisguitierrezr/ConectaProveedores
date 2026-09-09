@@ -1,0 +1,34 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetSettings_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("o_IsActiveServiceTypeEXP1")]
+public bool? outParamo_IsActiveServiceTypeEXP1;
+
+
+    public static RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetSettings_Outputs FromOutputs(IBehaviorsConfiguration conf, bool outParamo_IsActiveServiceTypeEXP1) {RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetSettings_Outputs result = new RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetSettings_Outputs();
+result.outParamo_IsActiveServiceTypeEXP1 = (bool?) outParamo_IsActiveServiceTypeEXP1;
+return result;
+}
+
+
+    public static ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetSettings_Model ToModel(RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetSettings_Outputs variables) {ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetSettings_Model result = new ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetSettings_Model();
+result.outParamo_IsActiveServiceTypeEXP1 = variables == null || variables.outParamo_IsActiveServiceTypeEXP1 == null ? false : variables.outParamo_IsActiveServiceTypeEXP1.Value;
+return result;
+}
+
+
+    public static RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetSettings_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetSettings_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetSettings_Outputs result = new RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetSettings_Outputs();
+result.outParamo_IsActiveServiceTypeEXP1 = (bool?) screenModel.outParamo_IsActiveServiceTypeEXP1;
+return result;
+}
+
+}

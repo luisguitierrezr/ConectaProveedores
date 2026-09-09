@@ -1,0 +1,70 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceBulkCancel_ActionInvoiceCancelBulk_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("o_Output")]
+public ssConectaProveedores.RestRecords.RESTST_046fb53ebbe142526d95e87ef1ae9711Structure outParamo_Output;
+[JsonProperty("NotificationContent")]
+public ssConectaProveedores.RestRecords.RESTST_6ac87b97c676cd17082ba2063283d4baStructure outParamNotificationContent;
+[JsonProperty("NotificationError")]
+public ssConectaProveedores.RestRecords.RESTST_bb4ffb4d3263f72e713312025a0e6fc7Structure outParamNotificationError;
+
+
+    public static RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceBulkCancel_ActionInvoiceCancelBulk_Outputs FromOutputs(IBehaviorsConfiguration conf, ST_046fb53ebbe142526d95e87ef1ae9711Structure outParamo_Output, ST_6ac87b97c676cd17082ba2063283d4baStructure outParamNotificationContent, ST_bb4ffb4d3263f72e713312025a0e6fc7Structure outParamNotificationError) {RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceBulkCancel_ActionInvoiceCancelBulk_Outputs result = new RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceBulkCancel_ActionInvoiceCancelBulk_Outputs();
+conf.IncludeBinariesURL = false;
+// Write the needed fields of the record outParamo_Output to the result.outParamo_Output
+result.outParamo_Output = new ssConectaProveedores.RestRecords.RESTST_046fb53ebbe142526d95e87ef1ae9711Structure();
+result.outParamo_Output.AttrIsSuccess = (bool?) outParamo_Output.ssIsSuccess;
+result.outParamo_Output.AttrMessage = outParamo_Output.ssMessage;
+// Write optimized result.outParamo_Output.AttrLines
+result.outParamo_Output.AttrLines = (int?) 0;
+// Write the needed fields of the record outParamNotificationContent to the result.outParamNotificationContent
+result.outParamNotificationContent = new ssConectaProveedores.RestRecords.RESTST_6ac87b97c676cd17082ba2063283d4baStructure();
+result.outParamNotificationContent.AttrNrOfRecordsAffected = (int?) outParamNotificationContent.ssNrOfRecordsAffected;
+result.outParamNotificationContent.AttrTitle = outParamNotificationContent.ssTitle;
+result.outParamNotificationContent.AttrNrOfRecordsSuccessful = (int?) outParamNotificationContent.ssNrOfRecordsSuccessful;
+result.outParamNotificationContent.AttrNrOfRecordsUnsuccessful = (int?) outParamNotificationContent.ssNrOfRecordsUnsuccessful;
+// Write the needed fields of the record outParamNotificationError to the result.outParamNotificationError
+result.outParamNotificationError = new ssConectaProveedores.RestRecords.RESTST_bb4ffb4d3263f72e713312025a0e6fc7Structure();
+result.outParamNotificationError.AttrTitle = outParamNotificationError.ssTitle;
+// Write the needed fields of the list outParamNotificationError.ssApprovalErrorList to the result.outParamNotificationError.AttrApprovalErrorList
+ssConectaProveedores.RestRecords.RESTRC_1f579c47758735b50f415dd5b367a40b tmpoutParamNotificationError_ssApprovalErrorListElement;
+if(outParamNotificationError.ssApprovalErrorList.Empty) {
+// Write the needed fields of the record outParamNotificationError.ssApprovalErrorList.CurrentRec to the tmpoutParamNotificationError_ssApprovalErrorListElement
+tmpoutParamNotificationError_ssApprovalErrorListElement = new ssConectaProveedores.RestRecords.RESTRC_1f579c47758735b50f415dd5b367a40b();
+tmpoutParamNotificationError_ssApprovalErrorListElement.AttrError = outParamNotificationError.ssApprovalErrorList.CurrentRec.ssError;
+tmpoutParamNotificationError_ssApprovalErrorListElement.AttrNumber = outParamNotificationError.ssApprovalErrorList.CurrentRec.ssNumber;
+result.outParamNotificationError.AttrApprovalErrorList = new RestList<ssConectaProveedores.RestRecords.RESTRC_1f579c47758735b50f415dd5b367a40b>(new ssConectaProveedores.RestRecords.RESTRC_1f579c47758735b50f415dd5b367a40b[] {}, tmpoutParamNotificationError_ssApprovalErrorListElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTRC_1f579c47758735b50f415dd5b367a40b>
+ tmpoutParamNotificationError_ssApprovalErrorList1List = new List<ssConectaProveedores.RestRecords.RESTRC_1f579c47758735b50f415dd5b367a40b>
+();
+try {outParamNotificationError.ssApprovalErrorList.StartIteration();
+while (!(outParamNotificationError.ssApprovalErrorList.Eof)) {
+// Write the needed fields of the record outParamNotificationError.ssApprovalErrorList.CurrentRec to the tmpoutParamNotificationError_ssApprovalErrorListElement
+tmpoutParamNotificationError_ssApprovalErrorListElement = new ssConectaProveedores.RestRecords.RESTRC_1f579c47758735b50f415dd5b367a40b();
+tmpoutParamNotificationError_ssApprovalErrorListElement.AttrError = outParamNotificationError.ssApprovalErrorList.CurrentRec.ssError;
+tmpoutParamNotificationError_ssApprovalErrorListElement.AttrNumber = outParamNotificationError.ssApprovalErrorList.CurrentRec.ssNumber;
+tmpoutParamNotificationError_ssApprovalErrorList1List.Add(tmpoutParamNotificationError_ssApprovalErrorListElement);
+outParamNotificationError.ssApprovalErrorList.Advance();
+}
+
+} finally {
+outParamNotificationError.ssApprovalErrorList.EndIteration();
+}
+
+result.outParamNotificationError.AttrApprovalErrorList = new RestList<ssConectaProveedores.RestRecords.RESTRC_1f579c47758735b50f415dd5b367a40b>(tmpoutParamNotificationError_ssApprovalErrorList1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTRC_1f579c47758735b50f415dd5b367a40b));
+}
+
+return result;
+}
+
+
+    
+
+    
+}

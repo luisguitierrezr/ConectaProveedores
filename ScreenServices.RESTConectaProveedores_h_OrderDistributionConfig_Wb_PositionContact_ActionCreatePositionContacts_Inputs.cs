@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_h_OrderDistributionConfig_Wb_PositionContact_ActionCreatePositionContacts_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("PositionContactList")]
+public RestList<string> inParamPositionContactList;
+
+
+    public static RESTConectaProveedores_h_OrderDistributionConfig_Wb_PositionContact_ActionCreatePositionContacts_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_h_OrderDistributionConfig_Wb_PositionContact_ActionCreatePositionContacts_Inputs result = inputParameters.ToObject<RESTConectaProveedores_h_OrderDistributionConfig_Wb_PositionContact_ActionCreatePositionContacts_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_h_OrderDistributionConfig_Wb_PositionContact_ActionCreatePositionContacts_Model ToModel() {ConectaProveedores_h_OrderDistributionConfig_Wb_PositionContact_ActionCreatePositionContacts_Model result = new ConectaProveedores_h_OrderDistributionConfig_Wb_PositionContact_ActionCreatePositionContacts_Model();
+result.inParamPositionContactList = BasicTypeList<string>.FromRestList(inParamPositionContactList);
+return result;
+}
+
+}

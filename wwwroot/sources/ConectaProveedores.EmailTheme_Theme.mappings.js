@@ -1,0 +1,2 @@
+﻿
+export {ICON_LIBRARY_NAME, ICON_MAPPINGS, WEIGHT_MAPPINGS, SIZE_MAPPINGS} from "./FontAwesome4_0.mappings.js";

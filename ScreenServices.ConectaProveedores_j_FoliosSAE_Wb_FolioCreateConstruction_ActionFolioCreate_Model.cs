@@ -1,0 +1,29 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_j_FoliosSAE_Wb_FolioCreateConstruction_ActionFolioCreate_Model {
+
+    public RL_123aa03224ec08dab8cbe26021987012 inParamI_SelectedLines;
+public long inParamI_OrderMainId;
+public string inParamI_FirstApprovalId;
+public string inParamI_Comments;
+public EN_f81a3d226103fd013068b8763798067aEntityRecord inParamInvoiceExtended;
+public RL_1501ee54ff868a67eff67465502ee3d9 inParamFilesListExtra;
+public RL_1501ee54ff868a67eff67465502ee3d9 inParamFilesList;
+public long inParamInvoiceId;
+public ST_6f620840109ac6f721328b723ec0152cStructure inParamInvoiceForeignToCreate;
+public int inParamApprovalProcessTypeId;
+public RC_1c2482ce6cd4b83ca44ec0510b231d44 inParamConstructionData;
+public long inParamApprovalProcessId;
+public RC_45d2d2c3c5fe5caa10fa5e20326622ac inParami_SummaryRec;
+public bool inParami_IsMassCreate;
+public int inParami_MinuteSelected;
+public long inParami_OrderAccConceptID;
+public RL_1501ee54ff868a67eff67465502ee3d9 inParamCreditNoteFilesList;
+public decimal inParamImportAnticipo;
+public bool inParamIsNational;
+public int inParamOffsetUtc;
+
+}

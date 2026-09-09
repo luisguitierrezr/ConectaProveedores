@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_c_Requisitions_Wb_RequisitionInvoices_ActionGetCanUploadInvoicesByRequisitionId_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_RequisitionId")]
+public long? inParami_RequisitionId;
+
+
+    public static RESTConectaProveedores_c_Requisitions_Wb_RequisitionInvoices_ActionGetCanUploadInvoicesByRequisitionId_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_c_Requisitions_Wb_RequisitionInvoices_ActionGetCanUploadInvoicesByRequisitionId_Inputs result = inputParameters.ToObject<RESTConectaProveedores_c_Requisitions_Wb_RequisitionInvoices_ActionGetCanUploadInvoicesByRequisitionId_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_c_Requisitions_Wb_RequisitionInvoices_ActionGetCanUploadInvoicesByRequisitionId_Model ToModel() {ConectaProveedores_c_Requisitions_Wb_RequisitionInvoices_ActionGetCanUploadInvoicesByRequisitionId_Model result = new ConectaProveedores_c_Requisitions_Wb_RequisitionInvoices_ActionGetCanUploadInvoicesByRequisitionId_Model();
+result.inParami_RequisitionId = inParami_RequisitionId == null ? 0L : inParami_RequisitionId.Value;
+return result;
+}
+
+}

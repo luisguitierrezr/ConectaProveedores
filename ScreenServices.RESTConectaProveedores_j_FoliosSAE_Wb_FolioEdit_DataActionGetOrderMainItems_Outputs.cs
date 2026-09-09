@@ -1,0 +1,35 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetOrderMainItems_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("List")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_1bddfac19e9b0cef65924aa7568fd106Structure> outParamList;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetOrderMainItems_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_4e1292c876d12cf32f3c04367498157e outParamList) {RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetOrderMainItems_Outputs result = new RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetOrderMainItems_Outputs();
+// Write optimized result.outParamList
+result.outParamList = new RL_4e1292c876d12cf32f3c04367498157e().ToRestList<ssConectaProveedores.RestRecords.RESTST_1bddfac19e9b0cef65924aa7568fd106Structure>(ssConectaProveedores.RestRecords.RESTST_1bddfac19e9b0cef65924aa7568fd106Structure.FromStructureDelegate(conf));
+return result;
+}
+
+
+    public static ConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetOrderMainItems_Model ToModel(RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetOrderMainItems_Outputs variables) {ConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetOrderMainItems_Model result = new ConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetOrderMainItems_Model();
+result.outParamList = variables == null ? new RL_4e1292c876d12cf32f3c04367498157e() : RL_4e1292c876d12cf32f3c04367498157e.FromRestList(variables.outParamList, ssConectaProveedores.RestRecords.RESTST_1bddfac19e9b0cef65924aa7568fd106Structure.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetOrderMainItems_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetOrderMainItems_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetOrderMainItems_Outputs result = new RESTConectaProveedores_j_FoliosSAE_Wb_FolioEdit_DataActionGetOrderMainItems_Outputs();
+result.outParamList = screenModel.outParamList.ToRestList<ssConectaProveedores.RestRecords.RESTST_1bddfac19e9b0cef65924aa7568fd106Structure>(ssConectaProveedores.RestRecords.RESTST_1bddfac19e9b0cef65924aa7568fd106Structure.FromStructureDelegate(conf));
+return result;
+}
+
+}

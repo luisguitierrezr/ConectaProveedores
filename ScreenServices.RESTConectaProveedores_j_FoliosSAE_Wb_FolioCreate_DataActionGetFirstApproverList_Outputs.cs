@@ -1,0 +1,64 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetFirstApproverList_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("FirstApproverList")]
+public RestList<ssConectaProveedores.RestRecords.RESTRC_7170c97aaf61dfa14af07f5ef3cecd45> outParamFirstApproverList;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetFirstApproverList_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_648f5b7a91b58d2f6ade938e7f17a9f2 outParamFirstApproverList) {RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetFirstApproverList_Outputs result = new RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetFirstApproverList_Outputs();
+// Write the needed fields of the list outParamFirstApproverList to the result.outParamFirstApproverList
+ssConectaProveedores.RestRecords.RESTRC_7170c97aaf61dfa14af07f5ef3cecd45 tmpoutParamFirstApproverListElement;
+if(outParamFirstApproverList.Empty) {
+// Write the needed fields of the record outParamFirstApproverList.CurrentRec to the tmpoutParamFirstApproverListElement
+tmpoutParamFirstApproverListElement = new ssConectaProveedores.RestRecords.RESTRC_7170c97aaf61dfa14af07f5ef3cecd45();
+tmpoutParamFirstApproverListElement.AttrUserId = outParamFirstApproverList.CurrentRec.ssUserId;
+tmpoutParamFirstApproverListElement.AttrRolename = outParamFirstApproverList.CurrentRec.ssRolename;
+tmpoutParamFirstApproverListElement.AttrUserName = outParamFirstApproverList.CurrentRec.ssUserName;
+result.outParamFirstApproverList = new RestList<ssConectaProveedores.RestRecords.RESTRC_7170c97aaf61dfa14af07f5ef3cecd45>(new ssConectaProveedores.RestRecords.RESTRC_7170c97aaf61dfa14af07f5ef3cecd45[] {}, tmpoutParamFirstApproverListElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTRC_7170c97aaf61dfa14af07f5ef3cecd45>
+ tmpoutParamFirstApproverList1List = new List<ssConectaProveedores.RestRecords.RESTRC_7170c97aaf61dfa14af07f5ef3cecd45>
+();
+try {outParamFirstApproverList.StartIteration();
+while (!(outParamFirstApproverList.Eof)) {
+// Write the needed fields of the record outParamFirstApproverList.CurrentRec to the tmpoutParamFirstApproverListElement
+tmpoutParamFirstApproverListElement = new ssConectaProveedores.RestRecords.RESTRC_7170c97aaf61dfa14af07f5ef3cecd45();
+tmpoutParamFirstApproverListElement.AttrUserId = outParamFirstApproverList.CurrentRec.ssUserId;
+tmpoutParamFirstApproverListElement.AttrRolename = outParamFirstApproverList.CurrentRec.ssRolename;
+tmpoutParamFirstApproverListElement.AttrUserName = outParamFirstApproverList.CurrentRec.ssUserName;
+tmpoutParamFirstApproverList1List.Add(tmpoutParamFirstApproverListElement);
+outParamFirstApproverList.Advance();
+}
+
+} finally {
+outParamFirstApproverList.EndIteration();
+}
+
+result.outParamFirstApproverList = new RestList<ssConectaProveedores.RestRecords.RESTRC_7170c97aaf61dfa14af07f5ef3cecd45>(tmpoutParamFirstApproverList1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTRC_7170c97aaf61dfa14af07f5ef3cecd45));
+}
+
+return result;
+}
+
+
+    public static ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetFirstApproverList_Model ToModel(RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetFirstApproverList_Outputs variables) {ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetFirstApproverList_Model result = new ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetFirstApproverList_Model();
+result.outParamFirstApproverList = variables == null ? new RL_648f5b7a91b58d2f6ade938e7f17a9f2() : RL_648f5b7a91b58d2f6ade938e7f17a9f2.FromRestList(variables.outParamFirstApproverList, ssConectaProveedores.RestRecords.RESTRC_7170c97aaf61dfa14af07f5ef3cecd45.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetFirstApproverList_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetFirstApproverList_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetFirstApproverList_Outputs result = new RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreate_DataActionGetFirstApproverList_Outputs();
+result.outParamFirstApproverList = screenModel.outParamFirstApproverList.ToRestList<ssConectaProveedores.RestRecords.RESTRC_7170c97aaf61dfa14af07f5ef3cecd45>(ssConectaProveedores.RestRecords.RESTRC_7170c97aaf61dfa14af07f5ef3cecd45.FromStructureDelegate(conf));
+return result;
+}
+
+}

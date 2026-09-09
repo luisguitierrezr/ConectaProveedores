@@ -1,0 +1,2 @@
+﻿
+.zoom-wrapper{display:flex;justify-content:center;align-items:center}.zoomable{max-width:350px;max-height:300px;transition:transform .3s ease,filter .3s ease;transform-origin:center center;display:block;margin:0 auto;cursor:pointer;z-index:10}.zoomable:hover{transform:scale(1.05);filter:brightness(1.2)}.zoomable.zoomed{transform:scale(1.5)}

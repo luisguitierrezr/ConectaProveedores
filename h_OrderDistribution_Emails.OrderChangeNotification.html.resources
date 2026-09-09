@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos distribuidos</title>
+    <!--[if gte mso 9]><xml>
+        <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml><![endif]-->
+<style>
+    .OSFillParent { 
+        display: block;
+        width: 100%;
+    }
+
+    table.OSFillParent {
+        display: table;
+    }
+
+    .OSInline {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    table.OSInline {
+        display: inline-table;
+    }
+
+    .OSAutoMarginTop {
+        margin-top: 10px;
+    }
+
+    .ThemeGrid_Container {
+        box-sizing: border-box;
+    }
+
+    .OSBlockWidget {
+        display: inline;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .is-rtl {
+        direction: rtl;
+    }
+</style>
+&&STYLE&&
+</head>
+<body>
+    <div class="email-max-width margin-auto" id="EmailWrapper"><div class="background-neutral-2 padding-l" id="Email"><div class="background-neutral-0 padding-l border-radius-medium" id="Content"><div class="margin-bottom-base margin-top-base" style="&&v3_Style&&">&&#KCmecIeaYjE6N1ZyqXf4wFA_&&&&/KCmecIeaYjE6N1ZyqXf4wFA_&&&&^KCmecIeaYjE6N1ZyqXf4wFA_&&&&#KOU_WEuxnZE6wz10SS92tNg_&&<span class="flag-isdev text-align-center">DEV</span>&&/KOU_WEuxnZE6wz10SS92tNg_&&&&^KOU_WEuxnZE6wz10SS92tNg_&&&&#KI_v7Z9zRPEGjSJoYpmuY1w_&&<span class="flag-isqa text-align-center">QA</span>&&/KI_v7Z9zRPEGjSJoYpmuY1w_&&&&^KI_v7Z9zRPEGjSJoYpmuY1w_&&&&/KI_v7Z9zRPEGjSJoYpmuY1w_&&&&/KOU_WEuxnZE6wz10SS92tNg_&&&&/KCmecIeaYjE6N1ZyqXf4wFA_&&</div><div class="email-logo text-align-left" id="Logo"><img alt="Company Logo" src="&&KJGQAZPwDMEqUI_utmsJRQw_HREF&&"/><span class="ThemeGrid_MarginGutter">&&KHqrmrj3c80ixZHMJpyLJeQ_Value&&</span></div><div class="margin-bottom-base heading5" id="Title" style="&&v8_Style&&">&&#KOQFe1u_xwUSwvKdgT4lhmA_&&&&KFVzUgKYsE0uSmBv0rvcpYg_Value&&&&/KOQFe1u_xwUSwvKdgT4lhmA_&&&&^KOQFe1u_xwUSwvKdgT4lhmA_&&Hola!&&/KOQFe1u_xwUSwvKdgT4lhmA_&&</div><div class="margin-bottom-base" id="Message">&&Ka6Ni2D0Ut0Cru6CrcASkPg_Value&&</div><div class="margin-bottom-m" id="CancelationMotives">&&#KJwYQfNeXNESap_GzdBI8iQ_&&<div class="heading2"><span style="&&v11_Style&&">&&KvLNv5EkXGk_BzGSKeemDsw_Value&&</span></div>&&/KJwYQfNeXNESap_GzdBI8iQ_&&&&^KJwYQfNeXNESap_GzdBI8iQ_&&&&/KJwYQfNeXNESap_GzdBI8iQ_&&</div><div class="margin-bottom-s">&&K_LcH_e4HdU__vj6jTpCPyA_Value&&<a enabled="true" href="&&KQx_EoGz54UyWLGuMJZmtSA_HREF&&">Portal Conecta Proveedores</a></div><div>Gracias,<br><span style="&&v17_Style&&">&&KcRkHNhhqf0uoOVhrZGsJkQ_Value&&</span></div><div class="email-separator"></div><div class="font-size-xs text-neutral-7" id="Copyright">&#169; <span style="&&v20_Style&&">&&KTLRgKCLlZUumFQkwZVaByg_Value&&</span>&#160;&&KxAtKK3mU3ES8RyIjH9W0OA_Value&&. Todos los derechos reservados.</div>&&#KpGZeEy8QXEK_9AWNm6XJCA_&&&&/KpGZeEy8QXEK_9AWNm6XJCA_&&&&^KpGZeEy8QXEK_9AWNm6XJCA_&&<div class="margin-top-base">&&#KmgjMVSLVnEmM3ZoJOdTpRw_&&<span class="font-size-xs OSFillParent">&&KHUhbGLTc_Eeg3Yc2X3dvhA_Value&&</span>&&/KmgjMVSLVnEmM3ZoJOdTpRw_&&&&^KmgjMVSLVnEmM3ZoJOdTpRw_&&&&/KmgjMVSLVnEmM3ZoJOdTpRw_&&&&#KbRvfxJ2ajEiNpFS0qrOrlA_&&<span class="font-size-xs OSFillParent">&&KT_2tSitT6kWk1Ji8JK_9dQ_Value&&</span>&&/KbRvfxJ2ajEiNpFS0qrOrlA_&&&&^KbRvfxJ2ajEiNpFS0qrOrlA_&&&&/KbRvfxJ2ajEiNpFS0qrOrlA_&&</div>&&/KpGZeEy8QXEK_9AWNm6XJCA_&&</div><div class="margin-top-m" id="Footer"></div></div></div>
+</body>
+</html>

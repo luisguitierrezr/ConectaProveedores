@@ -1,0 +1,40 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssConectaProveedores.RestRecords;
+
+// DeletedStorageRecord
+public class RESTRC_1789507e695396bb66757dd83a78c4b5 : AbstractRESTStructure<RC_1789507e695396bb66757dd83a78c4b5> {
+[JsonProperty("DeletedStorage")]
+public ssConectaProveedores.RestRecords.RESTEN_cddda4c1238a2c23ce999ed0bb374320EntityRecord AttrDeletedStorage;
+
+public RESTRC_1789507e695396bb66757dd83a78c4b5() { }
+
+public RESTRC_1789507e695396bb66757dd83a78c4b5 (RC_1789507e695396bb66757dd83a78c4b5 s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrDeletedStorage = ConvertToRestWithoutDefaults(s.ssENDeletedStorage, new EN_cddda4c1238a2c23ce999ed0bb374320EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_cddda4c1238a2c23ce999ed0bb374320EntityRecord.FromStructure, config);
+  } else {
+AttrDeletedStorage = ssConectaProveedores.RestRecords.RESTEN_cddda4c1238a2c23ce999ed0bb374320EntityRecord.FromStructure(s.ssENDeletedStorage, config);
+  }
+}
+
+public static RC_1789507e695396bb66757dd83a78c4b5 ToStructure(ssConectaProveedores.RestRecords.RESTRC_1789507e695396bb66757dd83a78c4b5 obj) { 
+  RC_1789507e695396bb66757dd83a78c4b5 s = new RC_1789507e695396bb66757dd83a78c4b5();
+  if(obj != null) {
+  s.ssENDeletedStorage = ssConectaProveedores.RestRecords.RESTEN_cddda4c1238a2c23ce999ed0bb374320EntityRecord.ToStructure(obj.AttrDeletedStorage);
+  }
+  return s;
+}
+
+public static Func<RC_1789507e695396bb66757dd83a78c4b5, ssConectaProveedores.RestRecords.RESTRC_1789507e695396bb66757dd83a78c4b5> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (RC_1789507e695396bb66757dd83a78c4b5 s) => FromStructure(s, config);
+}
+public static ssConectaProveedores.RestRecords.RESTRC_1789507e695396bb66757dd83a78c4b5 FromStructure(RC_1789507e695396bb66757dd83a78c4b5 s, IBehaviorsConfiguration config) { 
+  return new ssConectaProveedores.RestRecords.RESTRC_1789507e695396bb66757dd83a78c4b5(s, config);
+}
+
+}
+
+

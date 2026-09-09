@@ -1,0 +1,91 @@
+﻿namespace ssConectaProveedores;
+
+public partial class Actions {
+public class lcvUploadInvoiceFiles_1NationalCreateExtended : VarsBag {
+public long inParamInvoiceId;
+public EN_f81a3d226103fd013068b8763798067aEntityRecord inParamInvoiceExtended;
+public EN_1ca446167f1a5fee035306f622895668EntityRecord inParamInvoiceExtendedIssuer;
+public EN_b0c20b1f1237d3e4f4e5e432cd60cb6aEntityRecord inParamInvoiceExtendedReceiver;
+public RL_698fc6adea2f9e4df8f68df6dcd5ea9d inParamInvoiceExtendedItemList;
+public RL_18908f1ccb5f6631454d810d9be77594 inParamInvoiceExtendedTaxList;
+public RL_1801d41568a41cf6282486c389726e17 inParamInvoiceExtendedRelationsList;
+public RL_4d4dc9b85c4a7d6bf03b676c2530ea4f inParamInvoiceExtendedMoreChargesList;
+public EN_9bd576a05df3846c52ce88a606aff414EntityRecord inParamInvoiceExtendedCartaPorte;
+public byte[] inParamSelloDigital;
+public bool inParamIsToCreateAll;
+public Actions.lcoInvoiceExtendedIssuerCreateOrUpdate resInvoiceExtendedIssuerCreateOrUpdate =  new Actions.lcoInvoiceExtendedIssuerCreateOrUpdate();
+public Actions.lcoInvoiceExtendedCreateOrUpdate resInvoiceExtendedCreateOrUpdate =  new Actions.lcoInvoiceExtendedCreateOrUpdate();
+public Actions.lcoInvoiceExtendedCartaPorteCreateOrUpdate resInvoiceExtendedCartaPorteCreateOrUpdate =  new Actions.lcoInvoiceExtendedCartaPorteCreateOrUpdate();
+public Actions.lcoInvoiceExtendedReceiverCreateOrUpdate resInvoiceExtendedReceiverCreateOrUpdate =  new Actions.lcoInvoiceExtendedReceiverCreateOrUpdate();
+public Actions.lcoInvoiceExtendedSelloDigitalCreateOrUpdate resInvoiceExtendedSelloDigitalCreateOrUpdate =  new Actions.lcoInvoiceExtendedSelloDigitalCreateOrUpdate();
+public lcvUploadInvoiceFiles_1NationalCreateExtended(long inParamInvoiceId, EN_f81a3d226103fd013068b8763798067aEntityRecord inParamInvoiceExtended, EN_1ca446167f1a5fee035306f622895668EntityRecord inParamInvoiceExtendedIssuer, EN_b0c20b1f1237d3e4f4e5e432cd60cb6aEntityRecord inParamInvoiceExtendedReceiver, RL_698fc6adea2f9e4df8f68df6dcd5ea9d inParamInvoiceExtendedItemList, RL_18908f1ccb5f6631454d810d9be77594 inParamInvoiceExtendedTaxList, RL_1801d41568a41cf6282486c389726e17 inParamInvoiceExtendedRelationsList, RL_4d4dc9b85c4a7d6bf03b676c2530ea4f inParamInvoiceExtendedMoreChargesList, EN_9bd576a05df3846c52ce88a606aff414EntityRecord inParamInvoiceExtendedCartaPorte, byte[] inParamSelloDigital, bool inParamIsToCreateAll) {
+this.inParamInvoiceId = inParamInvoiceId;
+this.inParamInvoiceExtended = inParamInvoiceExtended;
+this.inParamInvoiceExtendedIssuer = inParamInvoiceExtendedIssuer;
+this.inParamInvoiceExtendedReceiver = inParamInvoiceExtendedReceiver;
+this.inParamInvoiceExtendedItemList = inParamInvoiceExtendedItemList;
+this.inParamInvoiceExtendedTaxList = inParamInvoiceExtendedTaxList;
+this.inParamInvoiceExtendedRelationsList = inParamInvoiceExtendedRelationsList;
+this.inParamInvoiceExtendedMoreChargesList = inParamInvoiceExtendedMoreChargesList;
+this.inParamInvoiceExtendedCartaPorte = inParamInvoiceExtendedCartaPorte;
+this.inParamSelloDigital = inParamSelloDigital;
+this.inParamIsToCreateAll = inParamIsToCreateAll;
+}
+}
+/// <summary>
+/// Action <code>UploadInvoiceFiles_1NationalCreateExtended</code> that represents the Service Studio
+///  action <code>UploadInvoiceFiles_1NationalCreateExtended</code> <p> Description: </p>
+/// </summary>
+public static async Task ActionUploadInvoiceFiles_1NationalCreateExtended(IRequestContext requestContext,long inParamInvoiceId,EN_f81a3d226103fd013068b8763798067aEntityRecord inParamInvoiceExtended,EN_1ca446167f1a5fee035306f622895668EntityRecord inParamInvoiceExtendedIssuer,EN_b0c20b1f1237d3e4f4e5e432cd60cb6aEntityRecord inParamInvoiceExtendedReceiver,RL_698fc6adea2f9e4df8f68df6dcd5ea9d inParamInvoiceExtendedItemList,RL_18908f1ccb5f6631454d810d9be77594 inParamInvoiceExtendedTaxList,RL_1801d41568a41cf6282486c389726e17 inParamInvoiceExtendedRelationsList,RL_4d4dc9b85c4a7d6bf03b676c2530ea4f inParamInvoiceExtendedMoreChargesList,EN_9bd576a05df3846c52ce88a606aff414EntityRecord inParamInvoiceExtendedCartaPorte,byte[] inParamSelloDigital,bool inParamIsToCreateAll,CancellationToken cancellationToken) {
+lcvUploadInvoiceFiles_1NationalCreateExtended localVars = new lcvUploadInvoiceFiles_1NationalCreateExtended(inParamInvoiceId, inParamInvoiceExtended, inParamInvoiceExtendedIssuer, inParamInvoiceExtendedReceiver, inParamInvoiceExtendedItemList, inParamInvoiceExtendedTaxList, inParamInvoiceExtendedRelationsList, inParamInvoiceExtendedMoreChargesList, inParamInvoiceExtendedCartaPorte, inParamSelloDigital, inParamIsToCreateAll);
+try {
+cancellationToken.ThrowIfCancellationRequested();
+using (AppHealthProvider.CreateServerActionMetric("UploadInvoiceFiles_1NationalCreateExtended", "96d69ccc-8f98-4b5a-b655-8c0f8e4bd9f3"))
+using (RuntimePlatformSettings.OpenTelemetry.ServerActionIsEnabled.GetValue() ? activitySource.CreateActionActivity("UploadInvoiceFiles_1NationalCreateExtended", "96d69ccc-8f98-4b5a-b655-8c0f8e4bd9f3", "ConectaProveedores", "588dd3e9-ffc1-4591-bd4e-2f57e6c30828") : null){
+// InvoiceExtendedCreateOrUpdate
+localVars.resInvoiceExtendedCreateOrUpdate.outParamId = await Actions.ActionInvoiceExtendedCreateOrUpdate(requestContext,localVars.inParamInvoiceExtended,localVars.inParamInvoiceId,cancellationToken);
+
+// InvoiceExtendedTaxesCreateOrUpdate
+await Actions.ActionInvoiceExtendedTaxesCreateOrUpdate(requestContext,localVars.inParamInvoiceExtendedTaxList,localVars.inParamInvoiceId,cancellationToken);
+
+// InvoiceExtendedItemsCreateOrUpdate
+await Actions.ActionInvoiceExtendedItemsCreateOrUpdate(requestContext,localVars.inParamInvoiceExtendedItemList,localVars.inParamInvoiceId,localVars.inParamInvoiceExtended.ssMoneda,cancellationToken);
+
+if((localVars.inParamIsToCreateAll)) {
+// InvoiceExtendedSelloDigitalCreateOrUpdate
+localVars.resInvoiceExtendedSelloDigitalCreateOrUpdate.outParamId = await Actions.ActionInvoiceExtendedSelloDigitalCreateOrUpdate(requestContext,new EN_5d65ad71be8ce0e9ccb95bcaf92c4383EntityRecord(){ ssInvoiceId = localVars.inParamInvoiceId, ssSelloDigital = localVars.inParamSelloDigital },cancellationToken);
+
+// InvoiceExtendedIssuerCreateOrUpdate
+localVars.resInvoiceExtendedIssuerCreateOrUpdate.outParamId = await Actions.ActionInvoiceExtendedIssuerCreateOrUpdate(requestContext,localVars.inParamInvoiceExtendedIssuer,localVars.inParamInvoiceId,cancellationToken);
+
+// InvoiceExtendedReceiverCreateOrUpdate
+localVars.resInvoiceExtendedReceiverCreateOrUpdate.outParamId = await Actions.ActionInvoiceExtendedReceiverCreateOrUpdate(requestContext,localVars.inParamInvoiceExtendedReceiver,localVars.inParamInvoiceId,cancellationToken);
+
+// InvoiceExtendedRelationsCreateOrUpdate
+await Actions.ActionInvoiceExtendedRelationsCreateOrUpdate(requestContext,localVars.inParamInvoiceExtendedRelationsList,localVars.inParamInvoiceId,cancellationToken);
+
+// InvoiceExtendedCartaPorteCreateOrUpdate
+localVars.resInvoiceExtendedCartaPorteCreateOrUpdate.outParamId = await Actions.ActionInvoiceExtendedCartaPorteCreateOrUpdate(requestContext,localVars.inParamInvoiceExtendedCartaPorte,localVars.inParamInvoiceId,cancellationToken);
+
+// InvoiceExtendedMoreChargesCreateOrUpdate
+await Actions.ActionInvoiceExtendedMoreChargesCreateOrUpdate(requestContext,localVars.inParamInvoiceExtendedMoreChargesList,localVars.inParamInvoiceId,cancellationToken);
+
+}
+
+} //close CreateActionActivity using block
+} // try
+
+finally {
+} // inner-finally
+RETURN_STATEMENT:
+return;
+}
+
+public static class FuncActionUploadInvoiceFiles_1NationalCreateExtended {
+
+
+
+}
+
+
+}

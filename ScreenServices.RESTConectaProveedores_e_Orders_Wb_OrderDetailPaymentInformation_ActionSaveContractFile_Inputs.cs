@@ -1,0 +1,25 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_ActionSaveContractFile_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_OrderId")]
+public long? inParami_OrderId;
+[JsonProperty("i_ContractFile")]
+public ssConectaProveedores.RestRecords.RESTST_c3df6a1f053620bf8d50da58ff4e41bcStructure inParami_ContractFile;
+
+
+    public static RESTConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_ActionSaveContractFile_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_ActionSaveContractFile_Inputs result = inputParameters.ToObject<RESTConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_ActionSaveContractFile_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_ActionSaveContractFile_Model ToModel() {ConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_ActionSaveContractFile_Model result = new ConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_ActionSaveContractFile_Model();
+result.inParami_OrderId = inParami_OrderId == null ? 0L : inParami_OrderId.Value;
+result.inParami_ContractFile = ssConectaProveedores.RestRecords.RESTST_c3df6a1f053620bf8d50da58ff4e41bcStructure.ToStructure(inParami_ContractFile);
+return result;
+}
+
+}

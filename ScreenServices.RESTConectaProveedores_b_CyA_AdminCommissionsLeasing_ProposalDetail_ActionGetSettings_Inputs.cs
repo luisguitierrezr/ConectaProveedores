@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_b_CyA_AdminCommissionsLeasing_ProposalDetail_ActionGetSettings_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("TableName")]
+public string inParamTableName;
+
+
+    public static RESTConectaProveedores_b_CyA_AdminCommissionsLeasing_ProposalDetail_ActionGetSettings_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_b_CyA_AdminCommissionsLeasing_ProposalDetail_ActionGetSettings_Inputs result = inputParameters.ToObject<RESTConectaProveedores_b_CyA_AdminCommissionsLeasing_ProposalDetail_ActionGetSettings_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_b_CyA_AdminCommissionsLeasing_ProposalDetail_ActionGetSettings_Model ToModel() {ConectaProveedores_b_CyA_AdminCommissionsLeasing_ProposalDetail_ActionGetSettings_Model result = new ConectaProveedores_b_CyA_AdminCommissionsLeasing_ProposalDetail_ActionGetSettings_Model();
+result.inParamTableName = inParamTableName == null ? "" : inParamTableName;
+return result;
+}
+
+}

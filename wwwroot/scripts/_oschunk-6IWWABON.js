@@ -1,0 +1,2 @@
+﻿
+import{Tf as c}from"./_oschunk-USRQKATU.js";import{H as d,a as t,f as a,g as n,h as l,i as s,r as i}from"./_oschunk-GQ75NTNV.js";var E={};var o=class o extends d.BaseController{getDefaultTimeout(){return c.defaultTimeout}get handleError(){return this.hasOwnProperty("_handleError")||(this._handleError=function(r,u){var h=this.controller;s.debug("z_TableDownloadsPDF",a.getMessage(r));var g=n.resolve(l.GlobalExceptionHandler);return g(r,u),i.UNHANDLED_ERROR_RESULT}),this._handleError}set handleError(r){this._handleError=r}};t(o,"Controller");var e=o,O=new e(E);export{O as a};

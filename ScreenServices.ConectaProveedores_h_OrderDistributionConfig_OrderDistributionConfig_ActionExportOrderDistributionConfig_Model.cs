@@ -1,0 +1,17 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfig_ActionExportOrderDistributionConfig_Model {
+
+    public long inParami_OrderId;
+public int inParami_TabNumber;
+public string inParami_TableSort;
+public string inParami_OrderDistributionConfig_Applicant;
+public string inParami_OrderDistributionConfig_ApplicantDescription;
+public string inParami_OrderDistributionConfig_Direction;
+public string inParami_OrderDistributionConfig_Division;
+public string inParami_OrderDistributionConfig_Role;
+
+}

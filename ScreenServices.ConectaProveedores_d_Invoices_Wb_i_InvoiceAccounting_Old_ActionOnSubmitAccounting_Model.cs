@@ -1,0 +1,20 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_d_Invoices_Wb_i_InvoiceAccounting_Old_ActionOnSubmitAccounting_Model {
+
+    public long inParami_InvoiceId;
+public long inParami_InvoiceApprovalLevelId;
+public bool inParami_IsApprove;
+public string inParami_Comment;
+public EN_b3917cbd7cc45d0b71b8ce3e028f14a3EntityRecord inParami_InvoiceAccounting;
+public RL_4d4dc9b85c4a7d6bf03b676c2530ea4f inParami_InvoiceAddendumList;
+public EN_f81a3d226103fd013068b8763798067aEntityRecord inParami_InvoiceExtended;
+public RL_500d3f017443846ad96a3e45e41bf158 inParami_InvoiceAccountingServicesList;
+public bool inParami_IsImport;
+public RL_0704e14bc1b3305d76f59d709913c287 inParami_InvoiceAccountingEntries;
+public int inParamOffsetUtc;
+
+}

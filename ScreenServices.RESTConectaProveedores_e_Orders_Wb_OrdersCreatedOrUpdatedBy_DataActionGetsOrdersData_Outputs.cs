@@ -1,0 +1,39 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_e_Orders_Wb_OrdersCreatedOrUpdatedBy_DataActionGetsOrdersData_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("o_OrderCreatedLog")]
+public ssConectaProveedores.RestRecords.RESTST_26711e61541f079fb4510d8f9bfa1e3dStructure outParamo_OrderCreatedLog;
+
+
+    public static RESTConectaProveedores_e_Orders_Wb_OrdersCreatedOrUpdatedBy_DataActionGetsOrdersData_Outputs FromOutputs(IBehaviorsConfiguration conf, ST_26711e61541f079fb4510d8f9bfa1e3dStructure outParamo_OrderCreatedLog) {RESTConectaProveedores_e_Orders_Wb_OrdersCreatedOrUpdatedBy_DataActionGetsOrdersData_Outputs result = new RESTConectaProveedores_e_Orders_Wb_OrdersCreatedOrUpdatedBy_DataActionGetsOrdersData_Outputs();
+// Write the needed fields of the record outParamo_OrderCreatedLog to the result.outParamo_OrderCreatedLog
+result.outParamo_OrderCreatedLog = new ssConectaProveedores.RestRecords.RESTST_26711e61541f079fb4510d8f9bfa1e3dStructure();
+result.outParamo_OrderCreatedLog.AttrCreatedBy = outParamo_OrderCreatedLog.ssCreatedBy;
+result.outParamo_OrderCreatedLog.AttrCreatedOn = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateTimeToRestType(outParamo_OrderCreatedLog.ssCreatedOn, conf.DateTimeFormat);
+result.outParamo_OrderCreatedLog.AttrUpdatedBy = outParamo_OrderCreatedLog.ssUpdatedBy;
+result.outParamo_OrderCreatedLog.AttrUpdatedOn = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateTimeToRestType(outParamo_OrderCreatedLog.ssUpdatedOn, conf.DateTimeFormat);
+return result;
+}
+
+
+    public static ConectaProveedores_e_Orders_Wb_OrdersCreatedOrUpdatedBy_DataActionGetsOrdersData_Model ToModel(RESTConectaProveedores_e_Orders_Wb_OrdersCreatedOrUpdatedBy_DataActionGetsOrdersData_Outputs variables) {ConectaProveedores_e_Orders_Wb_OrdersCreatedOrUpdatedBy_DataActionGetsOrdersData_Model result = new ConectaProveedores_e_Orders_Wb_OrdersCreatedOrUpdatedBy_DataActionGetsOrdersData_Model();
+result.outParamo_OrderCreatedLog = variables == null ? new ST_26711e61541f079fb4510d8f9bfa1e3dStructure() : ssConectaProveedores.RestRecords.RESTST_26711e61541f079fb4510d8f9bfa1e3dStructure.ToStructure(variables.outParamo_OrderCreatedLog);
+return result;
+}
+
+
+    public static RESTConectaProveedores_e_Orders_Wb_OrdersCreatedOrUpdatedBy_DataActionGetsOrdersData_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_e_Orders_Wb_OrdersCreatedOrUpdatedBy_DataActionGetsOrdersData_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_e_Orders_Wb_OrdersCreatedOrUpdatedBy_DataActionGetsOrdersData_Outputs result = new RESTConectaProveedores_e_Orders_Wb_OrdersCreatedOrUpdatedBy_DataActionGetsOrdersData_Outputs();
+result.outParamo_OrderCreatedLog = ssConectaProveedores.RestRecords.RESTST_26711e61541f079fb4510d8f9bfa1e3dStructure.FromStructure(screenModel.outParamo_OrderCreatedLog, conf);
+return result;
+}
+
+}

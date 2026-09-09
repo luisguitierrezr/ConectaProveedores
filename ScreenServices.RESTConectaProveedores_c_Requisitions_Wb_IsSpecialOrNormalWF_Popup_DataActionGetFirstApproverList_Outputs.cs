@@ -1,0 +1,64 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_c_Requisitions_Wb_IsSpecialOrNormalWF_Popup_DataActionGetFirstApproverList_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("UserList")]
+public RestList<ssConectaProveedores.RestRecords.RESTRC_f4217b217830b749d338ebe1832450a6> outParamUserList;
+
+
+    public static RESTConectaProveedores_c_Requisitions_Wb_IsSpecialOrNormalWF_Popup_DataActionGetFirstApproverList_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_1145aac6350efb8c92df9a6bfb52edab outParamUserList) {RESTConectaProveedores_c_Requisitions_Wb_IsSpecialOrNormalWF_Popup_DataActionGetFirstApproverList_Outputs result = new RESTConectaProveedores_c_Requisitions_Wb_IsSpecialOrNormalWF_Popup_DataActionGetFirstApproverList_Outputs();
+// Write the needed fields of the list outParamUserList to the result.outParamUserList
+ssConectaProveedores.RestRecords.RESTRC_f4217b217830b749d338ebe1832450a6 tmpoutParamUserListElement;
+if(outParamUserList.Empty) {
+// Write the needed fields of the record outParamUserList.CurrentRec to the tmpoutParamUserListElement
+tmpoutParamUserListElement = new ssConectaProveedores.RestRecords.RESTRC_f4217b217830b749d338ebe1832450a6();
+tmpoutParamUserListElement.AttrUserId = outParamUserList.CurrentRec.ssUserId;
+tmpoutParamUserListElement.AttrRoleName = outParamUserList.CurrentRec.ssRoleName;
+tmpoutParamUserListElement.AttrUserName = outParamUserList.CurrentRec.ssUserName;
+result.outParamUserList = new RestList<ssConectaProveedores.RestRecords.RESTRC_f4217b217830b749d338ebe1832450a6>(new ssConectaProveedores.RestRecords.RESTRC_f4217b217830b749d338ebe1832450a6[] {}, tmpoutParamUserListElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTRC_f4217b217830b749d338ebe1832450a6>
+ tmpoutParamUserList1List = new List<ssConectaProveedores.RestRecords.RESTRC_f4217b217830b749d338ebe1832450a6>
+();
+try {outParamUserList.StartIteration();
+while (!(outParamUserList.Eof)) {
+// Write the needed fields of the record outParamUserList.CurrentRec to the tmpoutParamUserListElement
+tmpoutParamUserListElement = new ssConectaProveedores.RestRecords.RESTRC_f4217b217830b749d338ebe1832450a6();
+tmpoutParamUserListElement.AttrUserId = outParamUserList.CurrentRec.ssUserId;
+tmpoutParamUserListElement.AttrRoleName = outParamUserList.CurrentRec.ssRoleName;
+tmpoutParamUserListElement.AttrUserName = outParamUserList.CurrentRec.ssUserName;
+tmpoutParamUserList1List.Add(tmpoutParamUserListElement);
+outParamUserList.Advance();
+}
+
+} finally {
+outParamUserList.EndIteration();
+}
+
+result.outParamUserList = new RestList<ssConectaProveedores.RestRecords.RESTRC_f4217b217830b749d338ebe1832450a6>(tmpoutParamUserList1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTRC_f4217b217830b749d338ebe1832450a6));
+}
+
+return result;
+}
+
+
+    public static ConectaProveedores_c_Requisitions_Wb_IsSpecialOrNormalWF_Popup_DataActionGetFirstApproverList_Model ToModel(RESTConectaProveedores_c_Requisitions_Wb_IsSpecialOrNormalWF_Popup_DataActionGetFirstApproverList_Outputs variables) {ConectaProveedores_c_Requisitions_Wb_IsSpecialOrNormalWF_Popup_DataActionGetFirstApproverList_Model result = new ConectaProveedores_c_Requisitions_Wb_IsSpecialOrNormalWF_Popup_DataActionGetFirstApproverList_Model();
+result.outParamUserList = variables == null ? new RL_1145aac6350efb8c92df9a6bfb52edab() : RL_1145aac6350efb8c92df9a6bfb52edab.FromRestList(variables.outParamUserList, ssConectaProveedores.RestRecords.RESTRC_f4217b217830b749d338ebe1832450a6.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_c_Requisitions_Wb_IsSpecialOrNormalWF_Popup_DataActionGetFirstApproverList_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_c_Requisitions_Wb_IsSpecialOrNormalWF_Popup_DataActionGetFirstApproverList_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_c_Requisitions_Wb_IsSpecialOrNormalWF_Popup_DataActionGetFirstApproverList_Outputs result = new RESTConectaProveedores_c_Requisitions_Wb_IsSpecialOrNormalWF_Popup_DataActionGetFirstApproverList_Outputs();
+result.outParamUserList = screenModel.outParamUserList.ToRestList<ssConectaProveedores.RestRecords.RESTRC_f4217b217830b749d338ebe1832450a6>(ssConectaProveedores.RestRecords.RESTRC_f4217b217830b749d338ebe1832450a6.FromStructureDelegate(conf));
+return result;
+}
+
+}

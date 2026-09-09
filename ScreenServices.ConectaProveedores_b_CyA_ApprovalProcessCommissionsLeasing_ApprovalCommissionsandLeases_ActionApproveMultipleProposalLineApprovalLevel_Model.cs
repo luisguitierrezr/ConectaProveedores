@@ -1,0 +1,10 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_ActionApproveMultipleProposalLineApprovalLevel_Model {
+
+    public RL_b8bc07441a220c1a5fc88aead339c457 inParami_ProposalLineApprovalLevelIdList;
+
+}

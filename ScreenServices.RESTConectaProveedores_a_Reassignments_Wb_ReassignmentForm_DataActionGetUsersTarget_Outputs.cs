@@ -1,0 +1,66 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_a_Reassignments_Wb_ReassignmentForm_DataActionGetUsersTarget_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("o_UserTargetListAU")]
+public RestList<ssConectaProveedores.RestRecords.RESTRC_18c2d75e8e190384e64859e7ed1d4f00> outParamo_UserTargetListAU;
+
+
+    public static RESTConectaProveedores_a_Reassignments_Wb_ReassignmentForm_DataActionGetUsersTarget_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_144725d7e52a72fc566c148009197c7e outParamo_UserTargetListAU) {RESTConectaProveedores_a_Reassignments_Wb_ReassignmentForm_DataActionGetUsersTarget_Outputs result = new RESTConectaProveedores_a_Reassignments_Wb_ReassignmentForm_DataActionGetUsersTarget_Outputs();
+// Write the needed fields of the list outParamo_UserTargetListAU to the result.outParamo_UserTargetListAU
+ssConectaProveedores.RestRecords.RESTRC_18c2d75e8e190384e64859e7ed1d4f00 tmpoutParamo_UserTargetListAUElement;
+if(outParamo_UserTargetListAU.Empty) {
+// Write the needed fields of the record outParamo_UserTargetListAU.CurrentRec to the tmpoutParamo_UserTargetListAUElement
+tmpoutParamo_UserTargetListAUElement = new ssConectaProveedores.RestRecords.RESTRC_18c2d75e8e190384e64859e7ed1d4f00();
+tmpoutParamo_UserTargetListAUElement.AttrEmail = outParamo_UserTargetListAU.CurrentRec.ssEmail;
+tmpoutParamo_UserTargetListAUElement.AttrEntraId = outParamo_UserTargetListAU.CurrentRec.ssEntraId;
+tmpoutParamo_UserTargetListAUElement.AttrName = outParamo_UserTargetListAU.CurrentRec.ssName;
+tmpoutParamo_UserTargetListAUElement.AttrRole = outParamo_UserTargetListAU.CurrentRec.ssRole;
+result.outParamo_UserTargetListAU = new RestList<ssConectaProveedores.RestRecords.RESTRC_18c2d75e8e190384e64859e7ed1d4f00>(new ssConectaProveedores.RestRecords.RESTRC_18c2d75e8e190384e64859e7ed1d4f00[] {}, tmpoutParamo_UserTargetListAUElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTRC_18c2d75e8e190384e64859e7ed1d4f00>
+ tmpoutParamo_UserTargetListAU1List = new List<ssConectaProveedores.RestRecords.RESTRC_18c2d75e8e190384e64859e7ed1d4f00>
+();
+try {outParamo_UserTargetListAU.StartIteration();
+while (!(outParamo_UserTargetListAU.Eof)) {
+// Write the needed fields of the record outParamo_UserTargetListAU.CurrentRec to the tmpoutParamo_UserTargetListAUElement
+tmpoutParamo_UserTargetListAUElement = new ssConectaProveedores.RestRecords.RESTRC_18c2d75e8e190384e64859e7ed1d4f00();
+tmpoutParamo_UserTargetListAUElement.AttrEmail = outParamo_UserTargetListAU.CurrentRec.ssEmail;
+tmpoutParamo_UserTargetListAUElement.AttrEntraId = outParamo_UserTargetListAU.CurrentRec.ssEntraId;
+tmpoutParamo_UserTargetListAUElement.AttrName = outParamo_UserTargetListAU.CurrentRec.ssName;
+tmpoutParamo_UserTargetListAUElement.AttrRole = outParamo_UserTargetListAU.CurrentRec.ssRole;
+tmpoutParamo_UserTargetListAU1List.Add(tmpoutParamo_UserTargetListAUElement);
+outParamo_UserTargetListAU.Advance();
+}
+
+} finally {
+outParamo_UserTargetListAU.EndIteration();
+}
+
+result.outParamo_UserTargetListAU = new RestList<ssConectaProveedores.RestRecords.RESTRC_18c2d75e8e190384e64859e7ed1d4f00>(tmpoutParamo_UserTargetListAU1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTRC_18c2d75e8e190384e64859e7ed1d4f00));
+}
+
+return result;
+}
+
+
+    public static ConectaProveedores_a_Reassignments_Wb_ReassignmentForm_DataActionGetUsersTarget_Model ToModel(RESTConectaProveedores_a_Reassignments_Wb_ReassignmentForm_DataActionGetUsersTarget_Outputs variables) {ConectaProveedores_a_Reassignments_Wb_ReassignmentForm_DataActionGetUsersTarget_Model result = new ConectaProveedores_a_Reassignments_Wb_ReassignmentForm_DataActionGetUsersTarget_Model();
+result.outParamo_UserTargetListAU = variables == null ? new RL_144725d7e52a72fc566c148009197c7e() : RL_144725d7e52a72fc566c148009197c7e.FromRestList(variables.outParamo_UserTargetListAU, ssConectaProveedores.RestRecords.RESTRC_18c2d75e8e190384e64859e7ed1d4f00.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_a_Reassignments_Wb_ReassignmentForm_DataActionGetUsersTarget_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_a_Reassignments_Wb_ReassignmentForm_DataActionGetUsersTarget_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_a_Reassignments_Wb_ReassignmentForm_DataActionGetUsersTarget_Outputs result = new RESTConectaProveedores_a_Reassignments_Wb_ReassignmentForm_DataActionGetUsersTarget_Outputs();
+result.outParamo_UserTargetListAU = screenModel.outParamo_UserTargetListAU.ToRestList<ssConectaProveedores.RestRecords.RESTRC_18c2d75e8e190384e64859e7ed1d4f00>(ssConectaProveedores.RestRecords.RESTRC_18c2d75e8e190384e64859e7ed1d4f00.FromStructureDelegate(conf));
+return result;
+}
+
+}

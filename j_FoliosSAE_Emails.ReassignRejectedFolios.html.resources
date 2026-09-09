@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folios - Reasignar Folios</title>
+    <!--[if gte mso 9]><xml>
+        <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml><![endif]-->
+<style>
+    .OSFillParent { 
+        display: block;
+        width: 100%;
+    }
+
+    table.OSFillParent {
+        display: table;
+    }
+
+    .OSInline {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    table.OSInline {
+        display: inline-table;
+    }
+
+    .OSAutoMarginTop {
+        margin-top: 10px;
+    }
+
+    .ThemeGrid_Container {
+        box-sizing: border-box;
+    }
+
+    .OSBlockWidget {
+        display: inline;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .is-rtl {
+        direction: rtl;
+    }
+</style>
+&&STYLE&&
+</head>
+<body>
+    <div class="email-max-width margin-auto" id="EmailWrapper"><div class="background-neutral-2 padding-l" id="Email"><div class="background-neutral-0 padding-l border-radius-medium" id="Content"><div class="margin-bottom-base margin-top-base" style="&&v3_Style&&">&&#KAY5odH_RrEagUw3L0DkBMw_&&&&/KAY5odH_RrEagUw3L0DkBMw_&&&&^KAY5odH_RrEagUw3L0DkBMw_&&&&#KfH_6XgW1WE2uMK_KixevSA_&&<span class="flag-isdev text-align-center">DEV</span>&&/KfH_6XgW1WE2uMK_KixevSA_&&&&^KfH_6XgW1WE2uMK_KixevSA_&&&&#Kdw569rTZykaWheJxixMnHA_&&<span class="flag-isqa text-align-center">QA</span>&&/Kdw569rTZykaWheJxixMnHA_&&&&^Kdw569rTZykaWheJxixMnHA_&&&&/Kdw569rTZykaWheJxixMnHA_&&&&/KfH_6XgW1WE2uMK_KixevSA_&&&&/KAY5odH_RrEagUw3L0DkBMw_&&</div><div class="email-logo text-align-left" id="Logo"><img alt="Company Logo" src="&&KJGQAZPwDMEqUI_utmsJRQw_HREF&&"/><span class="ThemeGrid_MarginGutter">&&KtZa38yZSQ0_ULggE_hQeYQ_Value&&</span></div><div class="margin-bottom-base heading5" id="Title" style="&&v8_Style&&">&&#K8o5exhgEH0iplwHXECrmuQ_&&&&KE8bOONIOEUCVoBigojcu6g_Value&&&&/K8o5exhgEH0iplwHXECrmuQ_&&&&^K8o5exhgEH0iplwHXECrmuQ_&&Hola!&&/K8o5exhgEH0iplwHXECrmuQ_&&</div><div class="margin-bottom-m" id="Message">Est&#225;s recibiendo este correo electr&#243;nico porque existen &&KQzfGDXQ_TEOOpZWlWCdcHQ_Value&& folios SAEC pendientes dentro de la bandeja de reasignaci&#243;n.</div><div class="margin-bottom-s">&&Ko5pu_BBHJUe86XalK7hEcQ_Value&&<a enabled="true" href="&&KdfEU4UZk5kWL9v9D8RiDhQ_HREF&&">Portal Conecta Proveedores</a></div><div>Gracias,<br><span style="&&v14_Style&&">&&KuIiABf4jeUu_vGN7D99dTA_Value&&</span></div><div class="email-separator"></div><div class="font-size-xs text-neutral-7" id="Copyright">&#169; <span style="&&v17_Style&&">&&KEceE39zTxkSrB4WI8XbJ3w_Value&&</span>&#160;&&KU0fRnfmQdEuJtdECl41ogw_Value&&. Todos los derechos reservados.</div>&&#KGEO_WGyp4EazXwRGpkXCvw_&&&&/KGEO_WGyp4EazXwRGpkXCvw_&&&&^KGEO_WGyp4EazXwRGpkXCvw_&&<div class="margin-top-base">&&#KSjsuclkkj0Oik5vUuFXV3g_&&<span class="font-size-xs OSFillParent">&&Keo0HgNA2EUSUqYIcszb9jg_Value&&</span>&&/KSjsuclkkj0Oik5vUuFXV3g_&&&&^KSjsuclkkj0Oik5vUuFXV3g_&&&&/KSjsuclkkj0Oik5vUuFXV3g_&&&&#Kn6gNlByQHUCpqpvel8zJKg_&&<span class="font-size-xs OSFillParent">&&KWtQkz_fILUO7SeHPE_QX9A_Value&&</span>&&/Kn6gNlByQHUCpqpvel8zJKg_&&&&^Kn6gNlByQHUCpqpvel8zJKg_&&&&/Kn6gNlByQHUCpqpvel8zJKg_&&</div>&&/KGEO_WGyp4EazXwRGpkXCvw_&&</div><div class="margin-top-m" id="Footer"></div></div></div>
+</body>
+</html>

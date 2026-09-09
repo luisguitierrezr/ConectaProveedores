@@ -1,0 +1,34 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetConfiguration_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("UploadContractDateLimit")]
+public int? outParamUploadContractDateLimit;
+
+
+    public static RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetConfiguration_Outputs FromOutputs(IBehaviorsConfiguration conf, int outParamUploadContractDateLimit) {RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetConfiguration_Outputs result = new RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetConfiguration_Outputs();
+result.outParamUploadContractDateLimit = (int?) outParamUploadContractDateLimit;
+return result;
+}
+
+
+    public static ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetConfiguration_Model ToModel(RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetConfiguration_Outputs variables) {ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetConfiguration_Model result = new ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetConfiguration_Model();
+result.outParamUploadContractDateLimit = variables == null || variables.outParamUploadContractDateLimit == null ? 0 : variables.outParamUploadContractDateLimit.Value;
+return result;
+}
+
+
+    public static RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetConfiguration_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetConfiguration_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetConfiguration_Outputs result = new RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetConfiguration_Outputs();
+result.outParamUploadContractDateLimit = (int?) screenModel.outParamUploadContractDateLimit;
+return result;
+}
+
+}

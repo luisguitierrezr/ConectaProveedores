@@ -1,0 +1,62 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreateConstruction_DataActionGetMinutes_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("KeyValueList")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_714c559a98f1e1080cbf60de3228e843Structure> outParamKeyValueList;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreateConstruction_DataActionGetMinutes_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_a579a1a05eaaba551100ea61f4cb3f6b outParamKeyValueList) {RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreateConstruction_DataActionGetMinutes_Outputs result = new RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreateConstruction_DataActionGetMinutes_Outputs();
+// Write the needed fields of the list outParamKeyValueList to the result.outParamKeyValueList
+ssConectaProveedores.RestRecords.RESTST_714c559a98f1e1080cbf60de3228e843Structure tmpoutParamKeyValueListElement;
+if(outParamKeyValueList.Empty) {
+// Write the needed fields of the record outParamKeyValueList.CurrentRec to the tmpoutParamKeyValueListElement
+tmpoutParamKeyValueListElement = new ssConectaProveedores.RestRecords.RESTST_714c559a98f1e1080cbf60de3228e843Structure();
+tmpoutParamKeyValueListElement.AttrKey = (int?) outParamKeyValueList.CurrentRec.ssKey;
+tmpoutParamKeyValueListElement.AttrValue = outParamKeyValueList.CurrentRec.ssValue;
+result.outParamKeyValueList = new RestList<ssConectaProveedores.RestRecords.RESTST_714c559a98f1e1080cbf60de3228e843Structure>(new ssConectaProveedores.RestRecords.RESTST_714c559a98f1e1080cbf60de3228e843Structure[] {}, tmpoutParamKeyValueListElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_714c559a98f1e1080cbf60de3228e843Structure>
+ tmpoutParamKeyValueList1List = new List<ssConectaProveedores.RestRecords.RESTST_714c559a98f1e1080cbf60de3228e843Structure>
+();
+try {outParamKeyValueList.StartIteration();
+while (!(outParamKeyValueList.Eof)) {
+// Write the needed fields of the record outParamKeyValueList.CurrentRec to the tmpoutParamKeyValueListElement
+tmpoutParamKeyValueListElement = new ssConectaProveedores.RestRecords.RESTST_714c559a98f1e1080cbf60de3228e843Structure();
+tmpoutParamKeyValueListElement.AttrKey = (int?) outParamKeyValueList.CurrentRec.ssKey;
+tmpoutParamKeyValueListElement.AttrValue = outParamKeyValueList.CurrentRec.ssValue;
+tmpoutParamKeyValueList1List.Add(tmpoutParamKeyValueListElement);
+outParamKeyValueList.Advance();
+}
+
+} finally {
+outParamKeyValueList.EndIteration();
+}
+
+result.outParamKeyValueList = new RestList<ssConectaProveedores.RestRecords.RESTST_714c559a98f1e1080cbf60de3228e843Structure>(tmpoutParamKeyValueList1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_714c559a98f1e1080cbf60de3228e843Structure));
+}
+
+return result;
+}
+
+
+    public static ConectaProveedores_j_FoliosSAE_Wb_FolioCreateConstruction_DataActionGetMinutes_Model ToModel(RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreateConstruction_DataActionGetMinutes_Outputs variables) {ConectaProveedores_j_FoliosSAE_Wb_FolioCreateConstruction_DataActionGetMinutes_Model result = new ConectaProveedores_j_FoliosSAE_Wb_FolioCreateConstruction_DataActionGetMinutes_Model();
+result.outParamKeyValueList = variables == null ? new RL_a579a1a05eaaba551100ea61f4cb3f6b() : RL_a579a1a05eaaba551100ea61f4cb3f6b.FromRestList(variables.outParamKeyValueList, ssConectaProveedores.RestRecords.RESTST_714c559a98f1e1080cbf60de3228e843Structure.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreateConstruction_DataActionGetMinutes_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_j_FoliosSAE_Wb_FolioCreateConstruction_DataActionGetMinutes_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreateConstruction_DataActionGetMinutes_Outputs result = new RESTConectaProveedores_j_FoliosSAE_Wb_FolioCreateConstruction_DataActionGetMinutes_Outputs();
+result.outParamKeyValueList = screenModel.outParamKeyValueList.ToRestList<ssConectaProveedores.RestRecords.RESTST_714c559a98f1e1080cbf60de3228e843Structure>(ssConectaProveedores.RestRecords.RESTST_714c559a98f1e1080cbf60de3228e843Structure.FromStructureDelegate(conf));
+return result;
+}
+
+}

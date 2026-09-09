@@ -1,0 +1,98 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_z_TableDownloadsPDF_TableDownloadRequisitionsListInternalScreenPDF_DataActionGetRequisitions_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("List")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure> outParamList;
+
+
+    public static RESTConectaProveedores_z_TableDownloadsPDF_TableDownloadRequisitionsListInternalScreenPDF_DataActionGetRequisitions_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_622bdef78070a83f1d39501965da2144 outParamList) {RESTConectaProveedores_z_TableDownloadsPDF_TableDownloadRequisitionsListInternalScreenPDF_DataActionGetRequisitions_Outputs result = new RESTConectaProveedores_z_TableDownloadsPDF_TableDownloadRequisitionsListInternalScreenPDF_DataActionGetRequisitions_Outputs();
+// Write the needed fields of the list outParamList to the result.outParamList
+ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure tmpoutParamListElement;
+if(outParamList.Empty) {
+// Write the needed fields of the record outParamList.CurrentRec to the tmpoutParamListElement
+tmpoutParamListElement = new ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure();
+// Write optimized tmpoutParamListElement.AttrRequisitionId
+tmpoutParamListElement.AttrRequisitionId = (long?) 0L;
+// Write optimized tmpoutParamListElement.AttrRequisitionApprovalLevelId
+tmpoutParamListElement.AttrRequisitionApprovalLevelId = (long?) 0L;
+tmpoutParamListElement.AttrRequisitionName = outParamList.CurrentRec.ssRequisitionName;
+tmpoutParamListElement.AttrRequisitionStatus = outParamList.CurrentRec.ssRequisitionStatus;
+tmpoutParamListElement.AttrCreationDate = outParamList.CurrentRec.ssCreationDate;
+tmpoutParamListElement.AttrLastChange = outParamList.CurrentRec.ssLastChange;
+tmpoutParamListElement.AttrRequester = outParamList.CurrentRec.ssRequester;
+tmpoutParamListElement.AttrProject = outParamList.CurrentRec.ssProject;
+tmpoutParamListElement.AttrSupplier = outParamList.CurrentRec.ssSupplier;
+tmpoutParamListElement.AttrRegion = outParamList.CurrentRec.ssRegion;
+tmpoutParamListElement.AttrAmount = outParamList.CurrentRec.ssAmount;
+tmpoutParamListElement.AttrCurrency = outParamList.CurrentRec.ssCurrency;
+tmpoutParamListElement.AttrCostCenter = outParamList.CurrentRec.ssCostCenter;
+tmpoutParamListElement.AttrCompany = outParamList.CurrentRec.ssCompany;
+tmpoutParamListElement.AttrLastApprover = outParamList.CurrentRec.ssLastApprover;
+tmpoutParamListElement.AttrLastApproverApprovedOn = outParamList.CurrentRec.ssLastApproverApprovedOn;
+tmpoutParamListElement.AttrPolizaSAP_SentWhen = outParamList.CurrentRec.ssPolizaSAP_SentWhen;
+tmpoutParamListElement.AttrAction = outParamList.CurrentRec.ssAction;
+result.outParamList = new RestList<ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure>(new ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure[] {}, tmpoutParamListElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure>
+ tmpoutParamList1List = new List<ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure>
+();
+try {outParamList.StartIteration();
+while (!(outParamList.Eof)) {
+// Write the needed fields of the record outParamList.CurrentRec to the tmpoutParamListElement
+tmpoutParamListElement = new ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure();
+// Write optimized tmpoutParamListElement.AttrRequisitionId
+tmpoutParamListElement.AttrRequisitionId = (long?) 0L;
+// Write optimized tmpoutParamListElement.AttrRequisitionApprovalLevelId
+tmpoutParamListElement.AttrRequisitionApprovalLevelId = (long?) 0L;
+tmpoutParamListElement.AttrRequisitionName = outParamList.CurrentRec.ssRequisitionName;
+tmpoutParamListElement.AttrRequisitionStatus = outParamList.CurrentRec.ssRequisitionStatus;
+tmpoutParamListElement.AttrCreationDate = outParamList.CurrentRec.ssCreationDate;
+tmpoutParamListElement.AttrLastChange = outParamList.CurrentRec.ssLastChange;
+tmpoutParamListElement.AttrRequester = outParamList.CurrentRec.ssRequester;
+tmpoutParamListElement.AttrProject = outParamList.CurrentRec.ssProject;
+tmpoutParamListElement.AttrSupplier = outParamList.CurrentRec.ssSupplier;
+tmpoutParamListElement.AttrRegion = outParamList.CurrentRec.ssRegion;
+tmpoutParamListElement.AttrAmount = outParamList.CurrentRec.ssAmount;
+tmpoutParamListElement.AttrCurrency = outParamList.CurrentRec.ssCurrency;
+tmpoutParamListElement.AttrCostCenter = outParamList.CurrentRec.ssCostCenter;
+tmpoutParamListElement.AttrCompany = outParamList.CurrentRec.ssCompany;
+tmpoutParamListElement.AttrLastApprover = outParamList.CurrentRec.ssLastApprover;
+tmpoutParamListElement.AttrLastApproverApprovedOn = outParamList.CurrentRec.ssLastApproverApprovedOn;
+tmpoutParamListElement.AttrPolizaSAP_SentWhen = outParamList.CurrentRec.ssPolizaSAP_SentWhen;
+tmpoutParamListElement.AttrAction = outParamList.CurrentRec.ssAction;
+tmpoutParamList1List.Add(tmpoutParamListElement);
+outParamList.Advance();
+}
+
+} finally {
+outParamList.EndIteration();
+}
+
+result.outParamList = new RestList<ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure>(tmpoutParamList1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure));
+}
+
+return result;
+}
+
+
+    public static ConectaProveedores_z_TableDownloadsPDF_TableDownloadRequisitionsListInternalScreenPDF_DataActionGetRequisitions_Model ToModel(RESTConectaProveedores_z_TableDownloadsPDF_TableDownloadRequisitionsListInternalScreenPDF_DataActionGetRequisitions_Outputs variables) {ConectaProveedores_z_TableDownloadsPDF_TableDownloadRequisitionsListInternalScreenPDF_DataActionGetRequisitions_Model result = new ConectaProveedores_z_TableDownloadsPDF_TableDownloadRequisitionsListInternalScreenPDF_DataActionGetRequisitions_Model();
+result.outParamList = variables == null ? new RL_622bdef78070a83f1d39501965da2144() : RL_622bdef78070a83f1d39501965da2144.FromRestList(variables.outParamList, ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_z_TableDownloadsPDF_TableDownloadRequisitionsListInternalScreenPDF_DataActionGetRequisitions_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_z_TableDownloadsPDF_TableDownloadRequisitionsListInternalScreenPDF_DataActionGetRequisitions_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_z_TableDownloadsPDF_TableDownloadRequisitionsListInternalScreenPDF_DataActionGetRequisitions_Outputs result = new RESTConectaProveedores_z_TableDownloadsPDF_TableDownloadRequisitionsListInternalScreenPDF_DataActionGetRequisitions_Outputs();
+result.outParamList = screenModel.outParamList.ToRestList<ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure>(ssConectaProveedores.RestRecords.RESTST_291bf3fef8932fa1af5104e6982c4da9Structure.FromStructureDelegate(conf));
+return result;
+}
+
+}

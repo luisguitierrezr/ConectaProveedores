@@ -1,0 +1,37 @@
+﻿using System.Diagnostics;
+namespace ssConectaProveedores {
+
+public sealed partial class ENOrderCommentEntity {
+private static readonly ActivitySource activitySource = new(typeof(ENOrderCommentEntity).Namespace);
+private static System.Collections.Generic.Dictionary<string,string> _entityAttributes;
+private static System.Collections.Generic.Dictionary<string,string> EntityAttributes => _entityAttributes ??= InitializeEntityAttributes();
+
+private static System.Collections.Generic.Dictionary<string,string> InitializeEntityAttributes() {
+return new System.Collections.Generic.Dictionary<string,string> {
+{"id", TableDetailsServiceAccessor.Instance?.GetValidatedColumnName(_EntityKeyConstants.@ConectaProveedores, _EntityKeyConstants._ConectaProveedoresEntityKeys.@OrderComment, _EntityKeyConstants._ConectaProveedoresEntityKeys._OrderCommentAttributeKeys.@Id, "id") ?? "id"},
+{"commenttypeid", TableDetailsServiceAccessor.Instance?.GetValidatedColumnName(_EntityKeyConstants.@ConectaProveedores, _EntityKeyConstants._ConectaProveedoresEntityKeys.@OrderComment, _EntityKeyConstants._ConectaProveedoresEntityKeys._OrderCommentAttributeKeys.@CommentTypeId, "commenttypeid") ?? "commenttypeid"},
+{"orderid", TableDetailsServiceAccessor.Instance?.GetValidatedColumnName(_EntityKeyConstants.@ConectaProveedores, _EntityKeyConstants._ConectaProveedoresEntityKeys.@OrderComment, _EntityKeyConstants._ConectaProveedoresEntityKeys._OrderCommentAttributeKeys.@OrderId, "orderid") ?? "orderid"},
+{"orderapprovallevelid", TableDetailsServiceAccessor.Instance?.GetValidatedColumnName(_EntityKeyConstants.@ConectaProveedores, _EntityKeyConstants._ConectaProveedoresEntityKeys.@OrderComment, _EntityKeyConstants._ConectaProveedoresEntityKeys._OrderCommentAttributeKeys.@OrderApprovalLevelId, "orderapprovallevelid") ?? "orderapprovallevelid"},
+{"entraroleid", TableDetailsServiceAccessor.Instance?.GetValidatedColumnName(_EntityKeyConstants.@ConectaProveedores, _EntityKeyConstants._ConectaProveedoresEntityKeys.@OrderComment, _EntityKeyConstants._ConectaProveedoresEntityKeys._OrderCommentAttributeKeys.@EntraRoleId, "entraroleid") ?? "entraroleid"},
+{"createdby", TableDetailsServiceAccessor.Instance?.GetValidatedColumnName(_EntityKeyConstants.@ConectaProveedores, _EntityKeyConstants._ConectaProveedoresEntityKeys.@OrderComment, _EntityKeyConstants._ConectaProveedoresEntityKeys._OrderCommentAttributeKeys.@CreatedBy, "createdby") ?? "createdby"},
+{"message", TableDetailsServiceAccessor.Instance?.GetValidatedColumnName(_EntityKeyConstants.@ConectaProveedores, _EntityKeyConstants._ConectaProveedoresEntityKeys.@OrderComment, _EntityKeyConstants._ConectaProveedoresEntityKeys._OrderCommentAttributeKeys.@Message, "message") ?? "message"}
+};
+}
+public static System.Collections.Generic.Dictionary<string,string> AttributesToDatabaseNamesMap() {
+return EntityAttributes;
+}
+public static string AttributeDatabaseName(string attributeName) {
+string databaseName;
+EntityAttributes.TryGetValue(attributeName, out databaseName);
+return databaseName;
+}
+public static string LocalViewName(string locale) {
+return ViewName(locale);
+}
+public static string ViewName(string locale) {
+return BaseAppUtils.EscapeAndQualifySqlIdentifier(DatabaseAccess.ForRuntimeDatabase, TableDetailsServiceAccessor.Instance?.GetValidatedTableName(_EntityKeyConstants.@ConectaProveedores, _EntityKeyConstants._ConectaProveedoresEntityKeys.@OrderComment, "order_u8aqr95gpfe2gwoiy4gbj6s6"));
+}
+} // ENOrderCommentEntity
+
+}
+

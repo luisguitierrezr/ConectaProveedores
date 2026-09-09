@@ -1,0 +1,13 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_j_FoliosSAE_Wb_FolioFilesPreview_ActionAddNewExtraFilToFolio_Model {
+
+    public ST_1d6498da9105fbe815a7f766352917c0Structure inParamFile;
+public EN_764a7cdbc8a8735aa4be34db0d0a0f0aEntityRecord inParamFolio;
+public string inParamSupplierNumber;
+public EN_d1d0320db36efbb094ad0082361435a0EntityRecord inParamInvoice;
+
+}

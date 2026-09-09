@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturas con error</title>
+    <!--[if gte mso 9]><xml>
+        <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml><![endif]-->
+<style>
+    .OSFillParent { 
+        display: block;
+        width: 100%;
+    }
+
+    table.OSFillParent {
+        display: table;
+    }
+
+    .OSInline {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    table.OSInline {
+        display: inline-table;
+    }
+
+    .OSAutoMarginTop {
+        margin-top: 10px;
+    }
+
+    .ThemeGrid_Container {
+        box-sizing: border-box;
+    }
+
+    .OSBlockWidget {
+        display: inline;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .is-rtl {
+        direction: rtl;
+    }
+</style>
+&&STYLE&&
+</head>
+<body>
+    <div class="email-max-width margin-auto" id="EmailWrapper"><div class="background-neutral-2 padding-l" id="Email"><div class="background-neutral-0 padding-l border-radius-medium" id="Content"><div class="margin-bottom-base margin-top-base" style="&&v3_Style&&">&&#K2mVQKe5wr02H56YA0rlWIA_&&&&/K2mVQKe5wr02H56YA0rlWIA_&&&&^K2mVQKe5wr02H56YA0rlWIA_&&&&#KlfnUt22sN0K9QO_oEFBFLQ_&&<span class="flag-isdev text-align-center">DEV</span>&&/KlfnUt22sN0K9QO_oEFBFLQ_&&&&^KlfnUt22sN0K9QO_oEFBFLQ_&&&&#KbAPI_sLXjUCHXYWuPytamg_&&<span class="flag-isqa text-align-center">QA</span>&&/KbAPI_sLXjUCHXYWuPytamg_&&&&^KbAPI_sLXjUCHXYWuPytamg_&&&&/KbAPI_sLXjUCHXYWuPytamg_&&&&/KlfnUt22sN0K9QO_oEFBFLQ_&&&&/K2mVQKe5wr02H56YA0rlWIA_&&</div><div class="email-logo text-align-left" id="Logo"><img alt="Company Logo" src="&&KJGQAZPwDMEqUI_utmsJRQw_HREF&&"/><span class="ThemeGrid_MarginGutter">&&KRoPOszqw30u50qAHjZjcJg_Value&&</span></div><div class="margin-bottom-base heading5" id="Title" style="&&v8_Style&&">&&#KDabPnB0C0UKCcGtYqrP9nA_&&&&K8dsPsh3x7EmERXInYC28Kg_Value&&&&/KDabPnB0C0UKCcGtYqrP9nA_&&&&^KDabPnB0C0UKCcGtYqrP9nA_&&Hola!&&/KDabPnB0C0UKCcGtYqrP9nA_&&</div><div class="margin-bottom-m" id="Message">&&KVxQRFA0NVkicy9t_8LLGyA_Value&&</div><div class="margin-bottom-s">&&Kz_Ginv5UK06HJ2Vephg8LA_Value&&<a enabled="true" href="&&KlZbzUhXx4UyafUY7b_ilHg_HREF&&">Portal Conecta Proveedores</a></div><div>Gracias,<br><span style="&&v14_Style&&">&&Kzv3TgGsQr0OyZw6MNnvM8g_Value&&</span></div><div class="email-separator"></div><div class="font-size-xs text-neutral-7" id="Copyright">&#169; <span style="&&v17_Style&&">&&K9fW3PknVkkeN2zvUPqU5vA_Value&&</span>&#160;&&K7DNhNBkgm0_6VLvt90wv4A_Value&&. Todos los derechos reservados.</div>&&#KYA_28zBLkkiLdKaucwGTxQ_&&&&/KYA_28zBLkkiLdKaucwGTxQ_&&&&^KYA_28zBLkkiLdKaucwGTxQ_&&<div class="margin-top-base">&&#KAmM2_uUgoEGU6Ylsc7Ujow_&&<span class="font-size-xs OSFillParent">&&KDspOLsWqKEu1yIkhbbYPWw_Value&&</span>&&/KAmM2_uUgoEGU6Ylsc7Ujow_&&&&^KAmM2_uUgoEGU6Ylsc7Ujow_&&&&/KAmM2_uUgoEGU6Ylsc7Ujow_&&&&#KH_rqelvH7EanQo_0XRUAwA_&&<span class="font-size-xs OSFillParent">&&KoEWMnXQm1068QBjlSFBcUQ_Value&&</span>&&/KH_rqelvH7EanQo_0XRUAwA_&&&&^KH_rqelvH7EanQo_0XRUAwA_&&&&/KH_rqelvH7EanQo_0XRUAwA_&&</div>&&/KYA_28zBLkkiLdKaucwGTxQ_&&</div><div class="margin-top-m" id="Footer"></div></div></div>
+</body>
+</html>

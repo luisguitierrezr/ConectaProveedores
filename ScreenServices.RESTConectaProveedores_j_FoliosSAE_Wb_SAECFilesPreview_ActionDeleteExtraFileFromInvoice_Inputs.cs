@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_Wb_SAECFilesPreview_ActionDeleteExtraFileFromInvoice_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_invoicefileId")]
+public long? inParami_invoicefileId;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_SAECFilesPreview_ActionDeleteExtraFileFromInvoice_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_j_FoliosSAE_Wb_SAECFilesPreview_ActionDeleteExtraFileFromInvoice_Inputs result = inputParameters.ToObject<RESTConectaProveedores_j_FoliosSAE_Wb_SAECFilesPreview_ActionDeleteExtraFileFromInvoice_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_j_FoliosSAE_Wb_SAECFilesPreview_ActionDeleteExtraFileFromInvoice_Model ToModel() {ConectaProveedores_j_FoliosSAE_Wb_SAECFilesPreview_ActionDeleteExtraFileFromInvoice_Model result = new ConectaProveedores_j_FoliosSAE_Wb_SAECFilesPreview_ActionDeleteExtraFileFromInvoice_Model();
+result.inParami_invoicefileId = inParami_invoicefileId == null ? 0L : inParami_invoicefileId.Value;
+return result;
+}
+
+}

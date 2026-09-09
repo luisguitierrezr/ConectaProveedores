@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevos pedidos distribuidos</title>
+    <!--[if gte mso 9]><xml>
+        <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml><![endif]-->
+<style>
+    .OSFillParent { 
+        display: block;
+        width: 100%;
+    }
+
+    table.OSFillParent {
+        display: table;
+    }
+
+    .OSInline {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    table.OSInline {
+        display: inline-table;
+    }
+
+    .OSAutoMarginTop {
+        margin-top: 10px;
+    }
+
+    .ThemeGrid_Container {
+        box-sizing: border-box;
+    }
+
+    .OSBlockWidget {
+        display: inline;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .is-rtl {
+        direction: rtl;
+    }
+</style>
+&&STYLE&&
+</head>
+<body>
+    <div class="email-max-width margin-auto" id="EmailWrapper"><div class="background-neutral-2 padding-l" id="Email"><div class="background-neutral-0 padding-l border-radius-medium" id="Content"><div class="margin-bottom-base margin-top-base" style="&&v3_Style&&">&&#KNTl2r91t20iaJGQ7bKuflQ_&&&&/KNTl2r91t20iaJGQ7bKuflQ_&&&&^KNTl2r91t20iaJGQ7bKuflQ_&&&&#KiHqyuS4BSkeX32A_mxiXxQ_&&<span class="flag-isdev text-align-center">DEV</span>&&/KiHqyuS4BSkeX32A_mxiXxQ_&&&&^KiHqyuS4BSkeX32A_mxiXxQ_&&&&#K93d6rZYf60qpsabvuWtrFg_&&<span class="flag-isqa text-align-center">QA</span>&&/K93d6rZYf60qpsabvuWtrFg_&&&&^K93d6rZYf60qpsabvuWtrFg_&&&&/K93d6rZYf60qpsabvuWtrFg_&&&&/KiHqyuS4BSkeX32A_mxiXxQ_&&&&/KNTl2r91t20iaJGQ7bKuflQ_&&</div><div class="email-logo text-align-left" id="Logo"><img alt="Company Logo" src="&&KJGQAZPwDMEqUI_utmsJRQw_HREF&&"/><span class="ThemeGrid_MarginGutter">&&KJPV5jozEY0eeVn_DboxY5Q_Value&&</span></div><div class="margin-bottom-base heading5" id="Title" style="&&v8_Style&&">&&#Kvt_CSUXc2UWN6f7a1bhC7w_&&&&Ke6WmKp0eU02nQQj9g9864Q_Value&&&&/Kvt_CSUXc2UWN6f7a1bhC7w_&&&&^Kvt_CSUXc2UWN6f7a1bhC7w_&&Hola!&&/Kvt_CSUXc2UWN6f7a1bhC7w_&&</div><div class="margin-bottom-m" id="Message">Est&#225;s recibiendo este correo electr&#243;nico porque se han registrado nuevos pedidos en la plataforma y requieren tu revisi&#243;n.</div><div class="margin-bottom-s">&&KAiv1K4mPG0uSfnqZ8JeIyg_Value&&<a enabled="true" href="&&Kij0vn3xZ3EqPk_Xq8uVkEw_HREF&&">Portal Conecta Proveedores</a></div><div>Gracias,<br><span style="&&v13_Style&&">&&KDL2gVs7V60GU5pz5Qm0tFQ_Value&&</span></div><div class="email-separator"></div><div class="font-size-xs text-neutral-7" id="Copyright">&#169; <span style="&&v16_Style&&">&&KsTsUKAcyBEubzyo4hWoorg_Value&&</span>&#160;&&KdRwJ8CGNL0mU1H1_DssmHQ_Value&&. Todos los derechos reservados.</div>&&#K5XUq2p9pw0iNz1HDYV48vg_&&&&/K5XUq2p9pw0iNz1HDYV48vg_&&&&^K5XUq2p9pw0iNz1HDYV48vg_&&<div class="margin-top-base">&&#Kw5QtSzHWg02aDH7MArM6tQ_&&<span class="font-size-xs OSFillParent">&&KTV_m_f_4xkWSoTy6rTR6dQ_Value&&</span>&&/Kw5QtSzHWg02aDH7MArM6tQ_&&&&^Kw5QtSzHWg02aDH7MArM6tQ_&&&&/Kw5QtSzHWg02aDH7MArM6tQ_&&&&#K9Ywf_WDccUOYL6Gpft5guQ_&&<span class="font-size-xs OSFillParent">&&Kgm550swKGUybO0aerT6b5w_Value&&</span>&&/K9Ywf_WDccUOYL6Gpft5guQ_&&&&^K9Ywf_WDccUOYL6Gpft5guQ_&&&&/K9Ywf_WDccUOYL6Gpft5guQ_&&</div>&&/K5XUq2p9pw0iNz1HDYV48vg_&&</div><div class="margin-top-m" id="Footer"></div></div></div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿{
+  "OutSystems": {
+    "Application": {
+      "Key": "588dd3e9-ffc1-4591-bd4e-2f57e6c30828",
+      "Name": "Conecta Proveedores",
+      "RevisionId": "13209",
+      "UrlBasePath": "ConectaProveedores",
+      "Workload": {
+        "Type": "app"
+      },
+      "CompilationHash": "u\u002BjE_WFb4KGNdiUkiap2Xw",
+      "Description": "",
+      "PrimaryColor": "#5ec8f0",
+      "Hubs": {
+        "DebuggerRequestsHub": "False",
+        "DebuggerEventsHub": "False"
+      },
+      "Controllers": {
+        "DebuggerApiController": "False",
+        "DataPreviewController": "False",
+        "PwaApiController": "False",
+        "FileStorageController": "True"
+      },
+      "Services": {
+        "RestConsumeService": "True"
+      },
+      "Spreadsheets": {
+        "UseExcelDataReaderLibrary": "True",
+        "UseSpreadCheetahWriterLibrary": "True"
+      },
+      "ServiceActions": {
+        "ProduceKeyedElements": "False",
+        "ConsumeKeyedElements": "False"
+      },
+      "HealthChecks": {
+        "EntitySettingsFiles": "True"
+      },
+      "Sql": {
+        "LowCodeLocationEnabled": "False"
+      }
+    },
+    "BackendWorker": {
+      "Version": "v18.541.2"
+    },
+    "RestConsume": {
+      "EnforceCharset": "False",
+      "EncodeUrlPath": "False",
+      "UseModernEncoding": "False",
+      "UnescapeUrlParameters": "True"
+    },
+    "Files": {
+      "EnrichmentEnabled": "True"
+    },
+    "OpenTelemetry": {
+      "Metrics": {
+        "UseCustomHttpRequestDurationBuckets": "True",
+        "AppHealth": {
+          "IsEnabled": "False"
+        },
+        "AssetDetails": {
+          "IsEnabled": "False"
+        }
+      },
+      "Logging": {
+        "EmitStructuredException": "False"
+      }
+    },
+    "Network": {
+      "ValidateSelfSignedCertificates": "False"
+    }
+  },
+  "DatabaseSettingsOptions": {
+    "FeatureToggles": {
+      "EnableVectorSupport": "True",
+      "EnableSavepointRelease": "True",
+      "EnableReplaceNameDbProviders": "True"
+    }
+  }
+}

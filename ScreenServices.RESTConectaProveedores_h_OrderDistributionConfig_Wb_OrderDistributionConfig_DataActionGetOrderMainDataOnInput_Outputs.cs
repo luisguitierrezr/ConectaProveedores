@@ -1,0 +1,45 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_h_OrderDistributionConfig_Wb_OrderDistributionConfig_DataActionGetOrderMainDataOnInput_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("OutFilters")]
+public ssConectaProveedores.RestRecords.RESTST_6981d7cc6c4cb540deb9cf4d07aa35b9Structure outParamOutFilters;
+[JsonProperty("IsOrderRejected")]
+public bool? outParamIsOrderRejected;
+
+
+    public static RESTConectaProveedores_h_OrderDistributionConfig_Wb_OrderDistributionConfig_DataActionGetOrderMainDataOnInput_Outputs FromOutputs(IBehaviorsConfiguration conf, ST_6981d7cc6c4cb540deb9cf4d07aa35b9Structure outParamOutFilters, bool outParamIsOrderRejected) {RESTConectaProveedores_h_OrderDistributionConfig_Wb_OrderDistributionConfig_DataActionGetOrderMainDataOnInput_Outputs result = new RESTConectaProveedores_h_OrderDistributionConfig_Wb_OrderDistributionConfig_DataActionGetOrderMainDataOnInput_Outputs();
+// Write the needed fields of the record outParamOutFilters to the result.outParamOutFilters
+result.outParamOutFilters = new ssConectaProveedores.RestRecords.RESTST_6981d7cc6c4cb540deb9cf4d07aa35b9Structure();
+result.outParamOutFilters.AttrDivision = outParamOutFilters.ssDivision;
+result.outParamOutFilters.AttrApplicant = outParamOutFilters.ssApplicant;
+result.outParamOutFilters.AttrApplicantDescription = outParamOutFilters.ssApplicantDescription;
+result.outParamOutFilters.AttrDirection = outParamOutFilters.ssDirection;
+result.outParamOutFilters.AttrTabNumber = (int?) outParamOutFilters.ssTabNumber;
+result.outParamIsOrderRejected = (bool?) outParamIsOrderRejected;
+return result;
+}
+
+
+    public static ConectaProveedores_h_OrderDistributionConfig_Wb_OrderDistributionConfig_DataActionGetOrderMainDataOnInput_Model ToModel(RESTConectaProveedores_h_OrderDistributionConfig_Wb_OrderDistributionConfig_DataActionGetOrderMainDataOnInput_Outputs variables) {ConectaProveedores_h_OrderDistributionConfig_Wb_OrderDistributionConfig_DataActionGetOrderMainDataOnInput_Model result = new ConectaProveedores_h_OrderDistributionConfig_Wb_OrderDistributionConfig_DataActionGetOrderMainDataOnInput_Model();
+result.outParamOutFilters = variables == null ? new ST_6981d7cc6c4cb540deb9cf4d07aa35b9Structure() : ssConectaProveedores.RestRecords.RESTST_6981d7cc6c4cb540deb9cf4d07aa35b9Structure.ToStructure(variables.outParamOutFilters);
+result.outParamIsOrderRejected = variables == null || variables.outParamIsOrderRejected == null ? false : variables.outParamIsOrderRejected.Value;
+return result;
+}
+
+
+    public static RESTConectaProveedores_h_OrderDistributionConfig_Wb_OrderDistributionConfig_DataActionGetOrderMainDataOnInput_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_h_OrderDistributionConfig_Wb_OrderDistributionConfig_DataActionGetOrderMainDataOnInput_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_h_OrderDistributionConfig_Wb_OrderDistributionConfig_DataActionGetOrderMainDataOnInput_Outputs result = new RESTConectaProveedores_h_OrderDistributionConfig_Wb_OrderDistributionConfig_DataActionGetOrderMainDataOnInput_Outputs();
+result.outParamOutFilters = ssConectaProveedores.RestRecords.RESTST_6981d7cc6c4cb540deb9cf4d07aa35b9Structure.FromStructure(screenModel.outParamOutFilters, conf);
+result.outParamIsOrderRejected = (bool?) screenModel.outParamIsOrderRejected;
+return result;
+}
+
+}

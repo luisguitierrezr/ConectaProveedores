@@ -1,0 +1,80 @@
+﻿var ConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUpload_mvc_translationsResources_esMX = {
+"C72P0iXQVk6rthIixulK5w#ValueExpression.2569629.1": "Guardar",
+"YCl+FTnJEEmi+jU56xVT6g#Value": "Cerrar",
+"Ci1F+EdBDEyy9flKIdQOJA#ValueExpression.1815858133.1": "No encontrado",
+"HovAleRDnk6Zx_sO9z2x9g#Value": "Moneda",
+"rDvqYzrCjkqXJYfsYOX89Q#ValueExpression.1815858133.1": "No encontrado",
+"8o4I6c41a0uS3oxVG_1WNg#Value": "Importe",
+"4bGim9V2V0qee4adcKrVQg#ValueExpression.1815858133.1": "No encontrado",
+"iqKPIUxQNUuJ4QGqOI3wmg#Value": "Fecha de factura",
+"l8EW5DgV80qyikrn91Yipw#ValueExpression.1815858133.1": "No encontrado",
+"rX2PhGWPHUqK_695vwdk8A#Value": "Fecha de factura",
+"ewzRmy91P0eI+2N+cz5seg#ValueExpression.1815858133.1": "No encontrado",
+"STEWYI5_RESjHZQPWtKtkw#Value": "Tax Id Proveedor",
+"K8fRGjyFS0m5OnYN82jY_w#ValueExpression.1815858133.1": "No encontrado",
+"ziHx7mm3CkKqCUlGTGa+xA#Value": "Razón Social Proveedor",
+"vJW4e9NIyUCSd6hFCGDxoQ#ValueExpression.1815858133.1": "No encontrado",
+"2KyiuvIwO0O0OR2eI69bTQ#Value": "RFC Telcel",
+"oQi3JEiCSUKTmZIY4hhjjA#ValueExpression.1815858133.1": "No encontrado",
+"0H0zUI9Ag0ylKiTTpX0ySQ#Value": "Razón Social Telcel",
+"e6nte+Q8Vkm2JguZlzetgQ#ValueExpression.1815858133.1": "No encontrado",
+"_z75EIGGbEG8LN_OzPFtiQ#Value": "Dirección Telcel",
+"ZrRfvp4KoEa5OcDphwn_Bw#ValueExpression.1815858133.1": "No encontrado",
+"7Guwylbf0UK5hEbZsdWAwA#Value": "Número de factura",
+"Ij4zPo9xwUGsy+5rPoEYyQ#Value": "Haga clic aquí o arrastre los archivos para cargarlos",
+"dV0bXLFIBE6x3HuMDpubaA#Value": "Nota de Crédito",
+"LOyS6+RQWEOqcuOWo76NMw#Value": "Haga clic aquí o arrastre los archivos para cargarlos",
+"A3rxqtXOIkm9RAGcLB73Ww#Value": "Evidencias Adicionales",
+"m_vayGsStUSbhmjtiUnm1A#Value": "Haga clic aquí o arrastre los archivos para cargarlos",
+"Sq1w7x12GEClaeg5QRAiFQ#ValueExpression.-1652585721.1": "Factura (pdf)",
+"Sq1w7x12GEClaeg5QRAiFQ#ValueExpression.-1981578035.1": "Factura (xml & pdf)",
+"WiXFtYvWJ0mBzLLGDipIyg#Value": "Carga de factura",
+"3Sw1yUPvDUu6FkXduCqdWQ#Value.-1983470837.1": "Archivo de factura limitado a 1",
+"3Sw1yUPvDUu6FkXduCqdWQ#Value.-451005041.1": "Archivos de factura limitados a 2",
+"61GN7LVJ_0yJLgVaJ5SddQ#Value.-316167296.1": "Los nombres de los archivos de la factura deben ser iguales",
+"kWp0j7OpF021ioJlBllMHw#Value.-1018373344.1": "Archivos de factura limitados a xml & pdf",
+"kWp0j7OpF021ioJlBllMHw#Value.-704563035.1": "Archivo de factura limitado a pdf",
+"xnmuxiI1N06jTzFTfdNRTw#Value.-233626228.1": "Solo se permite nombres de archivos con hasta 20 caracteres.",
+"8J_qCMlKBU6kZazHdgxYSg#Message.875725967.1": "Archivo vacio",
+"eC4RB0FuyECOfCSwXQqDCw#Value.209850919.1": "Nombre de archivo ya existe para esta factura",
+"_EL0QOzqAU+C5M9QKh5snQ#Value.-2043104880.1": "Solo se permite nombres de archivos con hasta 20 caracteres.",
+"WpRhaojFEUGXOXKG8uITRg#Value.1039077644.1": "El número de factura ya ha sido cargado",
+"8WbEH2Uj0kSc_m3bjBMifw#Value.-316167296.1": "Los nombres de los archivos deben coincidir",
+"h_8ko4X1C0a4YdzBEzaUJQ#Value.-1983470837.1": "Archivo de factura limitado a 1",
+"h_8ko4X1C0a4YdzBEzaUJQ#Value.-451005041.1": "Archivos de factura limitados a 2",
+"U5TVeMBmSECY1Od9lhZ_Fg#Value.-1018373344.1": "Archivos de factura limitados a xml & pdf",
+"U5TVeMBmSECY1Od9lhZ_Fg#Value.-704563035.1": "Archivo de factura limitado a pdf",
+"L6SkjfW8G0yRo0aGqTApXA#Message.875725967.1": "Archivo vacio",
+"lS+Y818C+UiFdweDXtCJNg#Message.-490039358.1": "Guardado con éxito",
+"lS+Y818C+UiFdweDXtCJNg#Message.1934877117.1": "Se ha iniciado el proceso de aprobación",
+"ojRGiAxOo0ep9ju9oyV8lA#Message.-892909564.1": "¡Error al intentar cargar facturas. Por favor intentarlo mas tarde!",
+"Q351gORV1k+TsfzsrQt58g#Message.-490039358.1": "Guardado con éxito",
+"Q351gORV1k+TsfzsrQt58g#Message.1934877117.1": "Se ha iniciado el proceso de aprobación",
+"qww4ciJ1dUaYqPRxylPCQw#Message.-1235798656.1": "Este pedido requiere una nota de crédito adjunta"
+};
+var ConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUpload_mvc_translationsResources_enUS = {
+"YCl+FTnJEEmi+jU56xVT6g#Value": "Cancel",
+"HovAleRDnk6Zx_sO9z2x9g#Value": "Document",
+"iqKPIUxQNUuJ4QGqOI3wmg#Value": "Document",
+"l8EW5DgV80qyikrn91Yipw#ValueExpression.1815858133.1": "All",
+"rX2PhGWPHUqK_695vwdk8A#Value": "Payment Date From",
+"STEWYI5_RESjHZQPWtKtkw#Value": "Document",
+"ziHx7mm3CkKqCUlGTGa+xA#Value": "Document",
+"2KyiuvIwO0O0OR2eI69bTQ#Value": "Document",
+"0H0zUI9Ag0ylKiTTpX0ySQ#Value": "Document",
+"_z75EIGGbEG8LN_OzPFtiQ#Value": "Document",
+"7Guwylbf0UK5hEbZsdWAwA#Value": "Document",
+"WiXFtYvWJ0mBzLLGDipIyg#Value": "Manage roles"
+};
+export default {
+"es-MX": {
+"translations": ConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUpload_mvc_translationsResources_esMX,
+"isRTL": false
+},
+"en-US": {
+"translations": ConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUpload_mvc_translationsResources_enUS,
+"isRTL": false
+}
+};
+
+

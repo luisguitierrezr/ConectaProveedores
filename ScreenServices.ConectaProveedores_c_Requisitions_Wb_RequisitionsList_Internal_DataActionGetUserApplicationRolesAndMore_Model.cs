@@ -1,0 +1,17 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_c_Requisitions_Wb_RequisitionsList_Internal_DataActionGetUserApplicationRolesAndMore_Model {
+
+    public RL_97ac86b141c7934fd96d3cf71793066e outParamUserRolesList;
+public string outParamAppRoleListText;
+public bool outParamIsCorporativoCxP;
+public bool outParamo_CanUploadInvoices;
+public string outParamTelcelDirectionsListText;
+public long outParamCorporativoRegionId;
+public long outParamUserRegion;
+public bool outParamIsActiveDEV_NewVersionScreenDownloads;
+
+}

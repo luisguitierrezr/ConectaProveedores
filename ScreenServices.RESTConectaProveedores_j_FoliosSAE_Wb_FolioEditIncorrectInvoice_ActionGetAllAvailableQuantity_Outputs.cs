@@ -1,0 +1,95 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_Wb_FolioEditIncorrectInvoice_ActionGetAllAvailableQuantity_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("LocalSelectedLines")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_aa3e6001f162e602247a2e2cc13e2cf8Structure> outParamLocalSelectedLines;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_Wb_FolioEditIncorrectInvoice_ActionGetAllAvailableQuantity_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_123aa03224ec08dab8cbe26021987012 outParamLocalSelectedLines) {RESTConectaProveedores_j_FoliosSAE_Wb_FolioEditIncorrectInvoice_ActionGetAllAvailableQuantity_Outputs result = new RESTConectaProveedores_j_FoliosSAE_Wb_FolioEditIncorrectInvoice_ActionGetAllAvailableQuantity_Outputs();
+conf.IncludeBinariesURL = false;
+// Write the needed fields of the list outParamLocalSelectedLines to the result.outParamLocalSelectedLines
+ssConectaProveedores.RestRecords.RESTST_aa3e6001f162e602247a2e2cc13e2cf8Structure tmpoutParamLocalSelectedLinesElement;
+if(outParamLocalSelectedLines.Empty) {
+// Write the needed fields of the record outParamLocalSelectedLines.CurrentRec to the tmpoutParamLocalSelectedLinesElement
+tmpoutParamLocalSelectedLinesElement = new ssConectaProveedores.RestRecords.RESTST_aa3e6001f162e602247a2e2cc13e2cf8Structure();
+tmpoutParamLocalSelectedLinesElement.AttrOrderMainId = (long?) outParamLocalSelectedLines.CurrentRec.ssOrderMainId;
+tmpoutParamLocalSelectedLinesElement.AttrPosition = outParamLocalSelectedLines.CurrentRec.ssPosition;
+tmpoutParamLocalSelectedLinesElement.AttrOrderNumber = outParamLocalSelectedLines.CurrentRec.ssOrderNumber;
+tmpoutParamLocalSelectedLinesElement.AttrArticleNumber = outParamLocalSelectedLines.CurrentRec.ssArticleNumber;
+tmpoutParamLocalSelectedLinesElement.AttrDescription = outParamLocalSelectedLines.CurrentRec.ssDescription;
+tmpoutParamLocalSelectedLinesElement.AttrInputationCode = outParamLocalSelectedLines.CurrentRec.ssInputationCode;
+tmpoutParamLocalSelectedLinesElement.AttrDeliveryDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamLocalSelectedLines.CurrentRec.ssDeliveryDate);
+tmpoutParamLocalSelectedLinesElement.AttrInvoiceQtt = (decimal?) outParamLocalSelectedLines.CurrentRec.ssInvoiceQtt;
+tmpoutParamLocalSelectedLinesElement.AttrRemainingQtt = (decimal?) outParamLocalSelectedLines.CurrentRec.ssRemainingQtt;
+tmpoutParamLocalSelectedLinesElement.AttrRemainingQttTotal = (decimal?) outParamLocalSelectedLines.CurrentRec.ssRemainingQttTotal;
+tmpoutParamLocalSelectedLinesElement.AttrUnitPrice = (decimal?) outParamLocalSelectedLines.CurrentRec.ssUnitPrice;
+tmpoutParamLocalSelectedLinesElement.AttrTotalPrice = (decimal?) outParamLocalSelectedLines.CurrentRec.ssTotalPrice;
+tmpoutParamLocalSelectedLinesElement.AttrQuantity = (decimal?) outParamLocalSelectedLines.CurrentRec.ssQuantity;
+tmpoutParamLocalSelectedLinesElement.AttrDeliveryQtt = outParamLocalSelectedLines.CurrentRec.ssDeliveryQtt;
+tmpoutParamLocalSelectedLinesElement.AttrImportdelivery = (decimal?) outParamLocalSelectedLines.CurrentRec.ssImportdelivery;
+tmpoutParamLocalSelectedLinesElement.AttrIsInvoiceError = (bool?) outParamLocalSelectedLines.CurrentRec.ssIsInvoiceError;
+tmpoutParamLocalSelectedLinesElement.AttrIsDateError = (bool?) outParamLocalSelectedLines.CurrentRec.ssIsDateError;
+tmpoutParamLocalSelectedLinesElement.AttrIsPEPError = (bool?) outParamLocalSelectedLines.CurrentRec.ssIsPEPError;
+tmpoutParamLocalSelectedLinesElement.AttrPEP = outParamLocalSelectedLines.CurrentRec.ssPEP;
+tmpoutParamLocalSelectedLinesElement.AttrPlaceId = outParamLocalSelectedLines.CurrentRec.ssPlaceId;
+tmpoutParamLocalSelectedLinesElement.AttrPlaceName = outParamLocalSelectedLines.CurrentRec.ssPlaceName;
+tmpoutParamLocalSelectedLinesElement.AttrBaseQuantity = (int?) outParamLocalSelectedLines.CurrentRec.ssBaseQuantity;
+tmpoutParamLocalSelectedLinesElement.AttrVatRate = (decimal?) outParamLocalSelectedLines.CurrentRec.ssVatRate;
+tmpoutParamLocalSelectedLinesElement.AttrIsMultipleImputation = (bool?) outParamLocalSelectedLines.CurrentRec.ssIsMultipleImputation;
+result.outParamLocalSelectedLines = new RestList<ssConectaProveedores.RestRecords.RESTST_aa3e6001f162e602247a2e2cc13e2cf8Structure>(new ssConectaProveedores.RestRecords.RESTST_aa3e6001f162e602247a2e2cc13e2cf8Structure[] {}, tmpoutParamLocalSelectedLinesElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_aa3e6001f162e602247a2e2cc13e2cf8Structure>
+ tmpoutParamLocalSelectedLines1List = new List<ssConectaProveedores.RestRecords.RESTST_aa3e6001f162e602247a2e2cc13e2cf8Structure>
+();
+try {outParamLocalSelectedLines.StartIteration();
+while (!(outParamLocalSelectedLines.Eof)) {
+// Write the needed fields of the record outParamLocalSelectedLines.CurrentRec to the tmpoutParamLocalSelectedLinesElement
+tmpoutParamLocalSelectedLinesElement = new ssConectaProveedores.RestRecords.RESTST_aa3e6001f162e602247a2e2cc13e2cf8Structure();
+tmpoutParamLocalSelectedLinesElement.AttrOrderMainId = (long?) outParamLocalSelectedLines.CurrentRec.ssOrderMainId;
+tmpoutParamLocalSelectedLinesElement.AttrPosition = outParamLocalSelectedLines.CurrentRec.ssPosition;
+tmpoutParamLocalSelectedLinesElement.AttrOrderNumber = outParamLocalSelectedLines.CurrentRec.ssOrderNumber;
+tmpoutParamLocalSelectedLinesElement.AttrArticleNumber = outParamLocalSelectedLines.CurrentRec.ssArticleNumber;
+tmpoutParamLocalSelectedLinesElement.AttrDescription = outParamLocalSelectedLines.CurrentRec.ssDescription;
+tmpoutParamLocalSelectedLinesElement.AttrInputationCode = outParamLocalSelectedLines.CurrentRec.ssInputationCode;
+tmpoutParamLocalSelectedLinesElement.AttrDeliveryDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamLocalSelectedLines.CurrentRec.ssDeliveryDate);
+tmpoutParamLocalSelectedLinesElement.AttrInvoiceQtt = (decimal?) outParamLocalSelectedLines.CurrentRec.ssInvoiceQtt;
+tmpoutParamLocalSelectedLinesElement.AttrRemainingQtt = (decimal?) outParamLocalSelectedLines.CurrentRec.ssRemainingQtt;
+tmpoutParamLocalSelectedLinesElement.AttrRemainingQttTotal = (decimal?) outParamLocalSelectedLines.CurrentRec.ssRemainingQttTotal;
+tmpoutParamLocalSelectedLinesElement.AttrUnitPrice = (decimal?) outParamLocalSelectedLines.CurrentRec.ssUnitPrice;
+tmpoutParamLocalSelectedLinesElement.AttrTotalPrice = (decimal?) outParamLocalSelectedLines.CurrentRec.ssTotalPrice;
+tmpoutParamLocalSelectedLinesElement.AttrQuantity = (decimal?) outParamLocalSelectedLines.CurrentRec.ssQuantity;
+tmpoutParamLocalSelectedLinesElement.AttrDeliveryQtt = outParamLocalSelectedLines.CurrentRec.ssDeliveryQtt;
+tmpoutParamLocalSelectedLinesElement.AttrImportdelivery = (decimal?) outParamLocalSelectedLines.CurrentRec.ssImportdelivery;
+tmpoutParamLocalSelectedLinesElement.AttrIsInvoiceError = (bool?) outParamLocalSelectedLines.CurrentRec.ssIsInvoiceError;
+tmpoutParamLocalSelectedLinesElement.AttrIsDateError = (bool?) outParamLocalSelectedLines.CurrentRec.ssIsDateError;
+tmpoutParamLocalSelectedLinesElement.AttrIsPEPError = (bool?) outParamLocalSelectedLines.CurrentRec.ssIsPEPError;
+tmpoutParamLocalSelectedLinesElement.AttrPEP = outParamLocalSelectedLines.CurrentRec.ssPEP;
+tmpoutParamLocalSelectedLinesElement.AttrPlaceId = outParamLocalSelectedLines.CurrentRec.ssPlaceId;
+tmpoutParamLocalSelectedLinesElement.AttrPlaceName = outParamLocalSelectedLines.CurrentRec.ssPlaceName;
+tmpoutParamLocalSelectedLinesElement.AttrBaseQuantity = (int?) outParamLocalSelectedLines.CurrentRec.ssBaseQuantity;
+tmpoutParamLocalSelectedLinesElement.AttrVatRate = (decimal?) outParamLocalSelectedLines.CurrentRec.ssVatRate;
+tmpoutParamLocalSelectedLinesElement.AttrIsMultipleImputation = (bool?) outParamLocalSelectedLines.CurrentRec.ssIsMultipleImputation;
+tmpoutParamLocalSelectedLines1List.Add(tmpoutParamLocalSelectedLinesElement);
+outParamLocalSelectedLines.Advance();
+}
+
+} finally {
+outParamLocalSelectedLines.EndIteration();
+}
+
+result.outParamLocalSelectedLines = new RestList<ssConectaProveedores.RestRecords.RESTST_aa3e6001f162e602247a2e2cc13e2cf8Structure>(tmpoutParamLocalSelectedLines1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_aa3e6001f162e602247a2e2cc13e2cf8Structure));
+}
+
+return result;
+}
+
+
+    
+
+    
+}

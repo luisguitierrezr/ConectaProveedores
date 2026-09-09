@@ -1,0 +1,6 @@
+﻿namespace ssConectaProveedores;
+
+public interface ICallback_Notifications_90eca6e8b896426c930ac11800b3905c {
+    public Task<ST_ea2141f4206e3eb2cd0fdd847e008166Structure> FlowNotificationsActionOnBeforeRequest(IRequestContext requestContext,ST_ea2141f4206e3eb2cd0fdd847e008166Structure inParamRequest,CancellationToken cancellationToken);
+
+}

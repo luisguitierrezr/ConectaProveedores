@@ -1,0 +1,65 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssConectaProveedores.RestRecords;
+
+// TI_WXD_In
+public class JSONST_a8dbb50321f7e9ee99b69f05907922f9Structure : AbstractRESTStructure<ST_a8dbb50321f7e9ee99b69f05907922f9Structure> {
+[JsonProperty("SPLIT_KEY")]
+[JsonPropertyName("SPLIT_KEY")]
+public int? AttrSPLIT_KEY;
+
+[JsonProperty("WI_TAX_TYPE")]
+[JsonPropertyName("WI_TAX_TYPE")]
+public string AttrWI_TAX_TYPE;
+
+[JsonProperty("WI_TAX_CODE")]
+[JsonPropertyName("WI_TAX_CODE")]
+public string AttrWI_TAX_CODE;
+
+[JsonProperty("WI_TAX_BASE")]
+[JsonPropertyName("WI_TAX_BASE")]
+public decimal? AttrWI_TAX_BASE;
+
+public JSONST_a8dbb50321f7e9ee99b69f05907922f9Structure() { }
+
+public JSONST_a8dbb50321f7e9ee99b69f05907922f9Structure (ST_a8dbb50321f7e9ee99b69f05907922f9Structure s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrSPLIT_KEY = ConvertToRestWithoutDefaults(s.ssSPLIT_KEY, -2147483648);
+AttrWI_TAX_TYPE = ConvertToRestWithoutDefaults(s.ssWI_TAX_TYPE, "");
+AttrWI_TAX_CODE = ConvertToRestWithoutDefaults(s.ssWI_TAX_CODE, "");
+AttrWI_TAX_BASE = ConvertToRestWithoutDefaults(s.ssWI_TAX_BASE, -79228162514264337593543950335m);
+  } else {
+AttrSPLIT_KEY = (int?) s.ssSPLIT_KEY;
+AttrWI_TAX_TYPE = s.ssWI_TAX_TYPE;
+AttrWI_TAX_CODE = s.ssWI_TAX_CODE;
+AttrWI_TAX_BASE = (decimal?) s.ssWI_TAX_BASE;
+  }
+}
+
+public static Func<ssConectaProveedores.RestRecords.JSONST_a8dbb50321f7e9ee99b69f05907922f9Structure, ST_a8dbb50321f7e9ee99b69f05907922f9Structure> ToStructureDelegate(IBehaviorsConfiguration config) { 
+  return (ssConectaProveedores.RestRecords.JSONST_a8dbb50321f7e9ee99b69f05907922f9Structure s) => ToStructure(s, config);
+}
+public static ST_a8dbb50321f7e9ee99b69f05907922f9Structure ToStructure(ssConectaProveedores.RestRecords.JSONST_a8dbb50321f7e9ee99b69f05907922f9Structure obj, IBehaviorsConfiguration config) { 
+  ST_a8dbb50321f7e9ee99b69f05907922f9Structure s = new ST_a8dbb50321f7e9ee99b69f05907922f9Structure();
+  if(obj != null) {
+  s.ssSPLIT_KEY = obj.AttrSPLIT_KEY == null ? -2147483648 : obj.AttrSPLIT_KEY.Value;
+  s.ssWI_TAX_TYPE = obj.AttrWI_TAX_TYPE == null ? "" : obj.AttrWI_TAX_TYPE;
+  s.ssWI_TAX_CODE = obj.AttrWI_TAX_CODE == null ? "" : obj.AttrWI_TAX_CODE;
+  s.ssWI_TAX_BASE = obj.AttrWI_TAX_BASE == null ? -79228162514264337593543950335m : obj.AttrWI_TAX_BASE.Value;
+  }
+  return s;
+}
+
+public static Func<ST_a8dbb50321f7e9ee99b69f05907922f9Structure, ssConectaProveedores.RestRecords.JSONST_a8dbb50321f7e9ee99b69f05907922f9Structure> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (ST_a8dbb50321f7e9ee99b69f05907922f9Structure s) => FromStructure(s, config);
+}
+public static ssConectaProveedores.RestRecords.JSONST_a8dbb50321f7e9ee99b69f05907922f9Structure FromStructure(ST_a8dbb50321f7e9ee99b69f05907922f9Structure s, IBehaviorsConfiguration config) { 
+  return new ssConectaProveedores.RestRecords.JSONST_a8dbb50321f7e9ee99b69f05907922f9Structure(s, config);
+}
+
+}
+
+

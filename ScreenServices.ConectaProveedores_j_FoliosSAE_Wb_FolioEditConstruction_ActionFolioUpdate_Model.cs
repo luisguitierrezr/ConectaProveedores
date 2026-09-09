@@ -1,0 +1,26 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_j_FoliosSAE_Wb_FolioEditConstruction_ActionFolioUpdate_Model {
+
+    public long inParamFolioID;
+public RL_123aa03224ec08dab8cbe26021987012 inParamI_SelectedLines;
+public long inParamI_OrderMainId;
+public string inParamI_Comments;
+public RL_1501ee54ff868a67eff67465502ee3d9 inParamFilesListExtra;
+public RL_1501ee54ff868a67eff67465502ee3d9 inParamFilesList;
+public int inParamApprovalProcessTypeId;
+public RC_1c2482ce6cd4b83ca44ec0510b231d44 inParamConstructionData;
+public RC_45d2d2c3c5fe5caa10fa5e20326622ac inParami_SummaryRec;
+public EN_d1d0320db36efbb094ad0082361435a0EntityRecord inParamInvoiceToCreate;
+public ST_6f620840109ac6f721328b723ec0152cStructure inParamInvoiceForeignToCreate;
+public RL_1501ee54ff868a67eff67465502ee3d9 inParamCreditNoteFilesList;
+public decimal inParamImportAnticipo;
+public string inParami_UpdateComment;
+public bool inParami_HaveNewFiles;
+public string inParami_NewFileNamesUploaded;
+public int inParamOffsetUtc;
+
+}

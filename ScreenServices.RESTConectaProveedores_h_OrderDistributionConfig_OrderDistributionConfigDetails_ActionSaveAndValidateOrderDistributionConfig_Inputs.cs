@@ -1,0 +1,28 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfigDetails_ActionSaveAndValidateOrderDistributionConfig_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("Source")]
+public ssConectaProveedores.RestRecords.RESTEN_4ad0cdb13562998fda111463f2af9c31EntityRecord inParamSource;
+[JsonProperty("Justification")]
+public string inParamJustification;
+[JsonProperty("OriginalJSON")]
+public string inParamOriginalJSON;
+
+
+    public static RESTConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfigDetails_ActionSaveAndValidateOrderDistributionConfig_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfigDetails_ActionSaveAndValidateOrderDistributionConfig_Inputs result = inputParameters.ToObject<RESTConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfigDetails_ActionSaveAndValidateOrderDistributionConfig_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfigDetails_ActionSaveAndValidateOrderDistributionConfig_Model ToModel() {ConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfigDetails_ActionSaveAndValidateOrderDistributionConfig_Model result = new ConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfigDetails_ActionSaveAndValidateOrderDistributionConfig_Model();
+result.inParamSource = ssConectaProveedores.RestRecords.RESTEN_4ad0cdb13562998fda111463f2af9c31EntityRecord.ToStructure(inParamSource);
+result.inParamJustification = inParamJustification == null ? "" : inParamJustification;
+result.inParamOriginalJSON = inParamOriginalJSON == null ? "" : inParamOriginalJSON;
+return result;
+}
+
+}

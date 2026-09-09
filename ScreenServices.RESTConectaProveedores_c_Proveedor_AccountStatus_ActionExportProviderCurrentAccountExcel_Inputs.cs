@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_c_Proveedor_AccountStatus_ActionExportProviderCurrentAccountExcel_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("Response")]
+public ssConectaProveedores.RestRecords.RESTST_382afa1d8361f400b6ea03403d75e294Structure inParamResponse;
+
+
+    public static RESTConectaProveedores_c_Proveedor_AccountStatus_ActionExportProviderCurrentAccountExcel_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_c_Proveedor_AccountStatus_ActionExportProviderCurrentAccountExcel_Inputs result = inputParameters.ToObject<RESTConectaProveedores_c_Proveedor_AccountStatus_ActionExportProviderCurrentAccountExcel_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_c_Proveedor_AccountStatus_ActionExportProviderCurrentAccountExcel_Model ToModel() {ConectaProveedores_c_Proveedor_AccountStatus_ActionExportProviderCurrentAccountExcel_Model result = new ConectaProveedores_c_Proveedor_AccountStatus_ActionExportProviderCurrentAccountExcel_Model();
+result.inParamResponse = ssConectaProveedores.RestRecords.RESTST_382afa1d8361f400b6ea03403d75e294Structure.ToStructure(inParamResponse);
+return result;
+}
+
+}

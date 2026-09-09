@@ -1,0 +1,2 @@
+﻿
+.rolestatus-tobeactive{background-color:var(--color-blue-lightest);color:var(--color-blue)}.rolestatus-active{background-color:var(--color-green-lightest);color:var(--color-green)}.rolestatus-revoked{background-color:var(--color-red-lightest);color:var(--color-red)}.rolestatus-expired{background-color:var(--color-yellow-lightest);color:var(--color-yellow)}.list-item-content-center{margin-left:var(--space-s)}.status.role-status{min-width:90px!important}

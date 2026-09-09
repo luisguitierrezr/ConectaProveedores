@@ -1,0 +1,598 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <IsPublishable>false</IsPublishable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RootNamespace>ssConectaProveedores</RootNamespace>
+    <AssemblyName>ConectaProveedoresReferencesProxy</AssemblyName>
+    <OutputPath>bin\</OutputPath>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+        <ProjectReference Include="../../Debounce/Debounce.csproj">
+        <Name>Debounce</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../Telcel_Theme/Telcel_Theme.csproj">
+        <Name>Telcel_Theme</Name>
+    </ProjectReference>
+        <Reference Include="../../BinaryData/bin/OutSystems.NssBinaryData.dll">
+            <Name>OutSystems.NssBinaryData</Name>
+            <HintPath>../../BinaryData/bin/OutSystems.NssBinaryData.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    <ProjectReference Include="../../JSONBeautifier/JSONBeautifier.csproj">
+        <Name>JSONBeautifier</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../XMLPrettify/XMLPrettify.csproj">
+        <Name>XMLPrettify</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../CloneOfDebounce/CloneOfDebounce.csproj">
+        <Name>CloneOfDebounce</Name>
+    </ProjectReference>
+        <Reference Include="../../Zip/bin/OutSystems.NssZip.dll">
+            <Name>OutSystems.NssZip</Name>
+            <HintPath>../../Zip/bin/OutSystems.NssZip.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    <ProjectReference Include="../../BigUpload/BigUpload.csproj">
+        <Name>BigUpload</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../OutSystemsCharts/OutSystemsCharts.csproj">
+        <Name>OutSystemsCharts</Name>
+    </ProjectReference>
+        <Reference Include="../../Xml/bin/OutSystems.NssXml.dll">
+            <Name>OutSystems.NssXml</Name>
+            <HintPath>../../Xml/bin/OutSystems.NssXml.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="../../DataExportUtilities/bin/OutSystems.NssDataExportUtilities.dll">
+            <Name>OutSystems.NssDataExportUtilities</Name>
+            <HintPath>../../DataExportUtilities/bin/OutSystems.NssDataExportUtilities.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    <ProjectReference Include="../../CloneOfPDFViewerODC/CloneOfPDFViewerODC.csproj">
+        <Name>CloneOfPDFViewerODC</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../UltimatePDF/UltimatePDF.csproj">
+        <Name>UltimatePDF</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../IS_UserManagementConnector/IS_UserManagementConnector.csproj">
+        <Name>IS_UserManagementConnector</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../HTMLInject/HTMLInject.csproj">
+        <Name>HTMLInject</Name>
+    </ProjectReference>
+        <Reference Include="../../PdfOcrLibrary/bin/OutSystems.NssPdfOcrLibrary.dll">
+            <Name>OutSystems.NssPdfOcrLibrary</Name>
+            <HintPath>../../PdfOcrLibrary/bin/OutSystems.NssPdfOcrLibrary.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    <ProjectReference Include="../../Telcel_FloatingChatUILib/Telcel_FloatingChatUILib.csproj">
+        <Name>Telcel_FloatingChatUILib</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../GetIP/GetIP.csproj">
+        <Name>GetIP</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../CommonPlugin/CommonPlugin.csproj">
+        <Name>CommonPlugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../OutSystemsUI/OutSystemsUI.csproj">
+        <Name>OutSystemsUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../ExpandableTableRow/ExpandableTableRow.csproj">
+        <Name>ExpandableTableRow</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../SecurityAuthLib/SecurityAuthLib.csproj">
+        <Name>SecurityAuthLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../TimezoneUtils/TimezoneUtils.csproj">
+        <Name>TimezoneUtils</Name>
+    </ProjectReference>
+        <Reference Include="../../ForeignInvoiceTextParserService/bin/OutSystems.NssForeignInvoiceTextParserService.dll">
+            <Name>OutSystems.NssForeignInvoiceTextParserService</Name>
+            <HintPath>../../ForeignInvoiceTextParserService/bin/OutSystems.NssForeignInvoiceTextParserService.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="../../UltimatePDF_ExternalLogic/bin/OutSystems.NssUltimatePDF_ExternalLogic.dll">
+            <Name>OutSystems.NssUltimatePDF_ExternalLogic</Name>
+            <HintPath>../../UltimatePDF_ExternalLogic/bin/OutSystems.NssUltimatePDF_ExternalLogic.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="../../Text/bin/OutSystems.NssText.dll">
+            <Name>OutSystems.NssText</Name>
+            <HintPath>../../Text/bin/OutSystems.NssText.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="../../Sanitization/bin/OutSystems.NssSanitization.dll">
+            <Name>OutSystems.NssSanitization</Name>
+            <HintPath>../../Sanitization/bin/OutSystems.NssSanitization.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="../../TimeZone/bin/OutSystems.NssTimeZone.dll">
+            <Name>OutSystems.NssTimeZone</Name>
+            <HintPath>../../TimeZone/bin/OutSystems.NssTimeZone.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    <ProjectReference Include="../../InputMasks/InputMasks.csproj">
+        <Name>InputMasks</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../AutoRefreshUtils/AutoRefreshUtils.csproj">
+        <Name>AutoRefreshUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../ColumOrganizerLib/ColumOrganizerLib.csproj">
+        <Name>ColumOrganizerLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../IS_EntraIDGraphConnector/IS_EntraIDGraphConnector.csproj">
+        <Name>IS_EntraIDGraphConnector</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../Telcel_CopilotLib/Telcel_CopilotLib.csproj">
+        <Name>Telcel_CopilotLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="../../TelCelNotificationsLib/TelCelNotificationsLib.csproj">
+        <Name>TelCelNotificationsLib</Name>
+    </ProjectReference>
+<Reference Include="A2A">
+  <HintPath>../../bin/A2A.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="AWSSDK.Core">
+  <HintPath>../../bin/AWSSDK.Core.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="AWSSDK.S3">
+  <HintPath>../../bin/AWSSDK.S3.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="AWSSDK.SecurityToken">
+  <HintPath>../../bin/AWSSDK.SecurityToken.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="BouncyCastle.Crypto">
+  <HintPath>../../bin/BouncyCastle.Crypto.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Duende.IdentityModel">
+  <HintPath>../../bin/Duende.IdentityModel.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="ExcelDataReader">
+  <HintPath>../../bin/ExcelDataReader.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="GemBox.Spreadsheet">
+  <HintPath>../../bin/GemBox.Spreadsheet.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Google.Protobuf">
+  <HintPath>../../bin/Google.Protobuf.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Grpc.Core.Api">
+  <HintPath>../../bin/Grpc.Core.Api.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Grpc.Net.Client">
+  <HintPath>../../bin/Grpc.Net.Client.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Grpc.Net.ClientFactory">
+  <HintPath>../../bin/Grpc.Net.ClientFactory.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Grpc.Net.Common">
+  <HintPath>../../bin/Grpc.Net.Common.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="HarfBuzzSharp">
+  <HintPath>../../bin/HarfBuzzSharp.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="MailKitLite">
+  <HintPath>../../bin/MailKitLite.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.AspNetCore.Authentication.JwtBearer">
+  <HintPath>../../bin/Microsoft.AspNetCore.Authentication.JwtBearer.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.AspNetCore.HeaderPropagation">
+  <HintPath>../../bin/Microsoft.AspNetCore.HeaderPropagation.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.AspNetCore.Http.Connections.Client">
+  <HintPath>../../bin/Microsoft.AspNetCore.Http.Connections.Client.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.AspNetCore.JsonPatch">
+  <HintPath>../../bin/Microsoft.AspNetCore.JsonPatch.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson">
+  <HintPath>../../bin/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.AspNetCore.SignalR.Client.Core">
+  <HintPath>../../bin/Microsoft.AspNetCore.SignalR.Client.Core.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.AspNetCore.SignalR.Client">
+  <HintPath>../../bin/Microsoft.AspNetCore.SignalR.Client.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson">
+  <HintPath>../../bin/Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.Bcl.Numerics">
+  <HintPath>../../bin/Microsoft.Bcl.Numerics.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.Extensions.AI.Abstractions">
+  <HintPath>../../bin/Microsoft.Extensions.AI.Abstractions.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.IdentityModel.Abstractions">
+  <HintPath>../../bin/Microsoft.IdentityModel.Abstractions.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.IdentityModel.JsonWebTokens">
+  <HintPath>../../bin/Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.IdentityModel.Logging">
+  <HintPath>../../bin/Microsoft.IdentityModel.Logging.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect">
+  <HintPath>../../bin/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.IdentityModel.Protocols">
+  <HintPath>../../bin/Microsoft.IdentityModel.Protocols.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Microsoft.IdentityModel.Tokens">
+  <HintPath>../../bin/Microsoft.IdentityModel.Tokens.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="MimeKitLite">
+  <HintPath>../../bin/MimeKitLite.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="NATS.Client.Abstractions">
+  <HintPath>../../bin/NATS.Client.Abstractions.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="NATS.Client.Core">
+  <HintPath>../../bin/NATS.Client.Core.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="NATS.Client.JetStream">
+  <HintPath>../../bin/NATS.Client.JetStream.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="NATS.Client.Serializers.Json">
+  <HintPath>../../bin/NATS.Client.Serializers.Json.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="NATS.NKeys">
+  <HintPath>../../bin/NATS.NKeys.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Newtonsoft.Json.Bson">
+  <HintPath>../../bin/Newtonsoft.Json.Bson.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Newtonsoft.Json">
+  <HintPath>../../bin/Newtonsoft.Json.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Npgsql">
+  <HintPath>../../bin/Npgsql.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OpenTelemetry.Api.ProviderBuilderExtensions">
+  <HintPath>../../bin/OpenTelemetry.Api.ProviderBuilderExtensions.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OpenTelemetry.Api">
+  <HintPath>../../bin/OpenTelemetry.Api.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OpenTelemetry.Exporter.Console">
+  <HintPath>../../bin/OpenTelemetry.Exporter.Console.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol">
+  <HintPath>../../bin/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OpenTelemetry.Extensions.Hosting">
+  <HintPath>../../bin/OpenTelemetry.Extensions.Hosting.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OpenTelemetry.Instrumentation.AspNetCore">
+  <HintPath>../../bin/OpenTelemetry.Instrumentation.AspNetCore.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OpenTelemetry.Instrumentation.Http">
+  <HintPath>../../bin/OpenTelemetry.Instrumentation.Http.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OpenTelemetry">
+  <HintPath>../../bin/OpenTelemetry.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Abstractions">
+  <HintPath>../../bin/OutSystems.Application.Abstractions.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.AgentEval">
+  <HintPath>../../bin/OutSystems.Application.AgentEval.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Analytics">
+  <HintPath>../../bin/OutSystems.Application.Analytics.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.AppHealth">
+  <HintPath>../../bin/OutSystems.Application.AppHealth.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Caching">
+  <HintPath>../../bin/OutSystems.Application.Caching.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Core">
+  <HintPath>../../bin/OutSystems.Application.Core.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.DataPreview">
+  <HintPath>../../bin/OutSystems.Application.DataPreview.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Debugging">
+  <HintPath>../../bin/OutSystems.Application.Debugging.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Diagnostics">
+  <HintPath>../../bin/OutSystems.Application.Diagnostics.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Emails">
+  <HintPath>../../bin/OutSystems.Application.Emails.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.ErrorHandling">
+  <HintPath>../../bin/OutSystems.Application.ErrorHandling.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Events">
+  <HintPath>../../bin/OutSystems.Application.Events.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Extensibility.Implementation">
+  <HintPath>../../bin/OutSystems.Application.Extensibility.Implementation.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Extensibility">
+  <HintPath>../../bin/OutSystems.Application.Extensibility.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.ExternalAgents">
+  <HintPath>../../bin/OutSystems.Application.ExternalAgents.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.ExternalLibraries">
+  <HintPath>../../bin/OutSystems.Application.ExternalLibraries.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.ExternalSearches">
+  <HintPath>../../bin/OutSystems.Application.ExternalSearches.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Files">
+  <HintPath>../../bin/OutSystems.Application.Files.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.GlobalEvents">
+  <HintPath>../../bin/OutSystems.Application.GlobalEvents.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Identity">
+  <HintPath>../../bin/OutSystems.Application.Identity.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Initialization.ASPNetCore">
+  <HintPath>../../bin/OutSystems.Application.Initialization.ASPNetCore.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Logic">
+  <HintPath>../../bin/OutSystems.Application.Logic.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.ManifestGeneration">
+  <HintPath>../../bin/OutSystems.Application.ManifestGeneration.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Models">
+  <HintPath>../../bin/OutSystems.Application.Models.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.ProducerCapabilities">
+  <HintPath>../../bin/OutSystems.Application.ProducerCapabilities.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Public">
+  <HintPath>../../bin/OutSystems.Application.Public.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Reasoning">
+  <HintPath>../../bin/OutSystems.Application.Reasoning.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.RestConsume">
+  <HintPath>../../bin/OutSystems.Application.RestConsume.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.S3Client">
+  <HintPath>../../bin/OutSystems.Application.S3Client.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Security">
+  <HintPath>../../bin/OutSystems.Application.Security.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.SemanticSearch">
+  <HintPath>../../bin/OutSystems.Application.SemanticSearch.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Session">
+  <HintPath>../../bin/OutSystems.Application.Session.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.SignerClient">
+  <HintPath>../../bin/OutSystems.Application.SignerClient.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Spreadsheets">
+  <HintPath>../../bin/OutSystems.Application.Spreadsheets.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Pgvector">
+  <HintPath>../../bin/Pgvector.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Timers">
+  <HintPath>../../bin/OutSystems.Application.Timers.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Transports">
+  <HintPath>../../bin/OutSystems.Application.Transports.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Application.Workflows">
+  <HintPath>../../bin/OutSystems.Application.Workflows.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.CachingCommon">
+  <HintPath>../../bin/OutSystems.CachingCommon.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.DatabaseProvider.QueryEngine.Driver">
+  <HintPath>../../bin/OutSystems.DatabaseProvider.QueryEngine.Driver.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.DebuggerClient">
+  <HintPath>../../bin/OutSystems.DebuggerClient.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.HubEdition.DatabaseAbstractionLayer">
+  <HintPath>../../bin/OutSystems.HubEdition.DatabaseAbstractionLayer.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.HubEdition.PostgreSQLDatabaseProvider">
+  <HintPath>../../bin/OutSystems.HubEdition.PostgreSQLDatabaseProvider.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.HubEdition.QueryEngineDatabaseProvider">
+  <HintPath>../../bin/OutSystems.HubEdition.QueryEngineDatabaseProvider.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.HubEdition.RuntimePlatform">
+  <HintPath>../../bin/OutSystems.HubEdition.RuntimePlatform.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.OpenTelemetry">
+  <HintPath>../../bin/OutSystems.OpenTelemetry.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Plugin.Caching.Nats">
+  <HintPath>../../bin/OutSystems.Plugin.Caching.Nats.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Plugin.Caching.NoInvalidation">
+  <HintPath>../../bin/OutSystems.Plugin.Caching.NoInvalidation.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.PluginAPI">
+  <HintPath>../../bin/OutSystems.PluginAPI.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.RESTService.Runtime.Abstractions">
+  <HintPath>../../bin/OutSystems.RESTService.Runtime.Abstractions.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.RESTService.Runtime.Core">
+  <HintPath>../../bin/OutSystems.RESTService.Runtime.Core.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.RuntimeCommon">
+  <HintPath>../../bin/OutSystems.RuntimeCommon.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.RuntimeSettingsConfiguration">
+  <HintPath>../../bin/OutSystems.RuntimeSettingsConfiguration.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="OutSystems.Spreadsheet">
+  <HintPath>../../bin/OutSystems.Spreadsheet.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Polly.Core">
+  <HintPath>../../bin/Polly.Core.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Polly.RateLimiting">
+  <HintPath>../../bin/Polly.RateLimiting.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Prometheus.AspNetCore">
+  <HintPath>../../bin/Prometheus.AspNetCore.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Prometheus.NetCore">
+  <HintPath>../../bin/Prometheus.NetCore.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Prometheus.NetStandard">
+  <HintPath>../../bin/Prometheus.NetStandard.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="SkiaSharp">
+  <HintPath>../../bin/SkiaSharp.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="SpreadCheetah">
+  <HintPath>../../bin/SpreadCheetah.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="Stubble.Core">
+  <HintPath>../../bin/Stubble.Core.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="System.Data.CData.ApachePhoenix">
+  <HintPath>../../bin/System.Data.CData.ApachePhoenix.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="System.IdentityModel.Tokens.Jwt">
+  <HintPath>../../bin/System.IdentityModel.Tokens.Jwt.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+<Reference Include="prometheus-net.DotNetRuntime">
+  <HintPath>../../bin/prometheus-net.DotNetRuntime.dll</HintPath>
+  <Private>False</Private>
+</Reference>
+
+  </ItemGroup>
+
+</Project>

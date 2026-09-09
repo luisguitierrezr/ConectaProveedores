@@ -1,0 +1,16 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_DataActionGetAccountingData_Model {
+
+    public EN_8c7f7609e4f1bd7b3e09bb763d792390EntityRecord outParamOrderAccounting;
+public ST_c3df6a1f053620bf8d50da58ff4e41bcStructure outParamo_ExchangeRateEvidence;
+public RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_Estim_Equal_Agreed;
+public RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_CreditNote;
+public RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_Voucher;
+public RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_Finiquito;
+public RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_Anticipo;
+
+}

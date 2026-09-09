@@ -1,0 +1,81 @@
+﻿var ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_mvc_translationsResources_esMX = {
+"tG6_0QFiB0698gRSv9kQmw#Value.1002767249.1": "Seleccione una fecha",
+"TlI8o9A6NUWQ9FFsjtOf5w#Value": "Importe entregado",
+"Z0Az0SViGEmZxSRIzohsKw#Value": "Cantidad entregada",
+"qU5YmZ6xykywgDCV72NKeA#Value": "Por",
+"Vbl3HoJW5E2AG2uQbCY1dw#Value": "Cantidad del pedido",
+"rgBeqsyiKEepgQjbyQJSQw#Value": "Importe total a facturar",
+"Om4yVZr+mUKHozkvxi1gSQ#Value": "Precio unitario",
+"rTo0C3wzvE+G5SWxXbrO3Q#Value": "Cantidad restante",
+"6C6m4z+RIUWIdVooYeYXpA#Value": "Cantidad a facturar",
+"272AhqGaIU6ZUuroH1SNQg#Value": "Fecha de Entrega",
+"a6DZ6djdOUmiJeCbJXj4oQ#Value": "Código de imputación",
+"mfsGCdfkD0qNedsR+NkzJw#Value": "Código de imputación",
+"3bztiPfD10+BtVc66uN5Kw#Value": "Descripción",
+"ws3kttHH0UWcegVjxlvUKw#Value": "Número de artículo",
+"mrxg_2Z5106E9S3Fx_ViTQ#Value": "Número de Pedido",
+"_SyQr1VW4UuqJJsrWh26jQ#Value": "Posición",
+"w6ztIq_Wh0mJHA0LIRxKCQ#Value": "No hay archivos validos, por favor revíselo.",
+"hhRtoNgamkC9NKdQYbghqw#Value": "Hay campos sin fecha de entrega, por favor revíselos.",
+"GquWofwas0egEmQ0DBF1cQ#Value": "Hay campos con cantidad faltante o incorrecta, por favor revíselos",
+"IogSaj2hKEuV55Ny3sg2XA#Value": "Crear folio",
+"6fknC0OoLkyvD1efoRmx0w#Value.-814858255.1": "Evidencias Adicionales",
+"2lZjyzv57kSq9dZtF6IcWQ#Value": "Diferencia (folio vs factura monto)",
+"DrcUeNVekU+js8C35HztsQ#Value": "Diferencia (folio vs factura porcentaje)",
+"oIXQixtfFUiL8mBAnj9LwA#Value": "Importe folio SAEC",
+"vBpAmxvsykKsjG9UEWzfrA#Value": "Valor de la factura (subtotal)",
+"Y0b2i4SVfU6n+ST6zHgemA#Value": "Importe restante",
+"UFCO2y6EeE6hjhK6fVEEBg#Value": "Porcentaje entregado",
+"KUpkLIqfLkCKCVLt2PneJg#Value": "Importe entregado",
+"ykga19aWRUKVL7h+5SN2+g#Value": "Monto total",
+"Sje_m8Mm40OomDWcOmZfgg#Value": "Importe folio SAEC",
+"ELya9kC_ykuPaW_ep3HSAw#Value": "Importe restante",
+"SEqhrdzjWku80aIkwPVhWQ#Value": "Porcentaje entregado",
+"NevdAgVJiEyy+QdfzBWKtA#Value": "Importe entregado",
+"KVgriwJ9SkO+EKUx0w+vzw#Value": "Monto total",
+"wnXxFg5dF06KfqYNuvHWrQ#Value": "Entrega Parcial",
+"qghkX7xmwkCSHoKuLTSYKg#Value": "Entrega Total",
+"WWmrRXgwo0OOGMe7H+7_bw#ValueExpression.1497638985.1": "Comentarios u Observaciones. Si tiene una NOTA de CREDITO, proporcionar: Número e importe, de lo contrario indicar N/A.",
+"XhTHDWydqEu8gj7dc78yXw#Value": "Comentarios u Observaciones",
+"HAJTBthDYUq6jexKwcQkbw#Value.1002767249.1": "Seleccione una fecha",
+"Fb41VEO5AkKiEhjSKiXcHw#Value": "Fecha de Entrega",
+"0MhlBbT+JUaUg2uwT9G6jQ#Value": "Aplicar a todas las filas",
+"1XsFq8fVtkesJGp+wR8Brw#Value.-1076950967.1": "No hay opciones que mostrar",
+"1mNANnim2UmkpuRuwj+apg#Value.-1329997251.1": "Buscar Aprobador",
+"3C4MHVsue0inqovlmRnccQ#Value.-796168008.1": "No hay aprobadores para seleccionar",
+"IuoVEY5WxkGTEJ7GTtKXiA#Value.1414582808.1": "Seleccione el aprobador",
+"ZAQ0qF8GvESi5PmkpTMKqg#Value": "Aprobador",
+"7BLcz2nTPECVBzVlsak9lQ#Value.-1955878649.1": "Normal",
+"7BLcz2nTPECVBzVlsak9lQ#Value.1471074189.1": "Alternativa",
+"8XSXO1Yi90K+Av0m4xAxhw#Value": "Detalles",
+"d7cFv5wwEUy0Y1pxUHlXCg#Value": "Crear Solicitud",
+"7e0600umvUqLtzblXABH3w#Value": "Información para pago",
+"HEb8FWE43kudEvxx4VeQyQ#Value.-1625513716.1": "Valor no permitido",
+"p4uPmof6QkCUeLUVT0HTeg#Message.634980261.1": "El valor que figura en la factura es diferente del valor que figura en el folio:",
+"BbspU77PaUm2hcnceGojJw#Message.634980261.1": "El valor que figura en la factura es diferente del valor que figura en el folio:",
+"5VhW8hzMv0GxwwuMiH8a+g#Message.-1991744483.1": "Hubo un problema de comunicación con el servidor. Por favor, inténtalo de nuevo o contacta a tu administrador.",
+"VAS9lkUZG0yw2+LpRf6gww#Message.664062632.1": "se creó con éxito.",
+"VAS9lkUZG0yw2+LpRf6gww#Message.68060425.1": "Folio",
+"pYNoBvF+AkOsmYm6KzQ0Nw#Message.-1008290854.1": "No fue posible crear el folio, por favor revise los datos introducidos.",
+"QVWWlOpI5UyBXWyTAlWjTQ#Value.335965538.1": "Seleccione un aprobador",
+"okziHi3G2USkq0Z2GQPJNw#Message.875725967.1": "Archivo vacio"
+};
+var ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_mvc_translationsResources_enUS = {
+"WWmrRXgwo0OOGMe7H+7_bw#ValueExpression.1497638985.1": "Comments or Observations. If you have a CREDIT NOTE, please provide: Number and amount; otherwise, indicate N/A.",
+"XhTHDWydqEu8gj7dc78yXw#Value": "Manage roles",
+"IuoVEY5WxkGTEJ7GTtKXiA#Value.1414582808.1": "Select the approver",
+"8XSXO1Yi90K+Av0m4xAxhw#Value": "Manage roles",
+"5VhW8hzMv0GxwwuMiH8a+g#Message.-1991744483.1": "There was a problem communicating with the server. Please try again or contact your administrator"
+};
+export default {
+"es-MX": {
+"translations": ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_mvc_translationsResources_esMX,
+"isRTL": false
+},
+"en-US": {
+"translations": ConectaProveedores_j_FoliosSAE_Wb_FolioCreate_mvc_translationsResources_enUS,
+"isRTL": false
+}
+};
+
+

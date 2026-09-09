@@ -1,0 +1,1 @@
+﻿[{"file":"index.html","replace":[{"token":"$APP_BASE_PATH$","value":"BasePath"}]}]

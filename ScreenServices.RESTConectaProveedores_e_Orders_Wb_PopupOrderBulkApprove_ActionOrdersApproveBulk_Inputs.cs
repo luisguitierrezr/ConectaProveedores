@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_e_Orders_Wb_PopupOrderBulkApprove_ActionOrdersApproveBulk_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_OrderList")]
+public RestList<ssConectaProveedores.RestRecords.RESTRC_829c5fdbd08f778c26d3a6457b4b0808> inParami_OrderList;
+
+
+    public static RESTConectaProveedores_e_Orders_Wb_PopupOrderBulkApprove_ActionOrdersApproveBulk_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_e_Orders_Wb_PopupOrderBulkApprove_ActionOrdersApproveBulk_Inputs result = inputParameters.ToObject<RESTConectaProveedores_e_Orders_Wb_PopupOrderBulkApprove_ActionOrdersApproveBulk_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_e_Orders_Wb_PopupOrderBulkApprove_ActionOrdersApproveBulk_Model ToModel() {ConectaProveedores_e_Orders_Wb_PopupOrderBulkApprove_ActionOrdersApproveBulk_Model result = new ConectaProveedores_e_Orders_Wb_PopupOrderBulkApprove_ActionOrdersApproveBulk_Model();
+result.inParami_OrderList = RL_35197d78da55a316e453192f6bb43d39.FromRestList(inParami_OrderList, ssConectaProveedores.RestRecords.RESTRC_829c5fdbd08f778c26d3a6457b4b0808.ToStructure);
+return result;
+}
+
+}

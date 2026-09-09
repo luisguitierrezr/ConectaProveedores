@@ -1,0 +1,10 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_DataActionGetUserApplicationRoles_Model {
+
+    public RL_da93b3cf8542f5b831efc106e94ee7e2 outParamUserRolesList;
+
+}

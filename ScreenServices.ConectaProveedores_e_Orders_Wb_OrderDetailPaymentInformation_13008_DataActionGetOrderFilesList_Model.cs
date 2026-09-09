@@ -1,0 +1,11 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_13008_DataActionGetOrderFilesList_Model {
+
+    public ST_c3df6a1f053620bf8d50da58ff4e41bcStructure outParamo_FinanceAuthorization;
+public ST_c3df6a1f053620bf8d50da58ff4e41bcStructure outParamo_ProofOfForeignResidence;
+
+}

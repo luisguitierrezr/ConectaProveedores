@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_NewMassiveFolioSAE_ActionFolioQMassUpload_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("FilesList")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_09ca0b4d4a2f96d3f5dee609d73f12b2Structure> inParamFilesList;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_NewMassiveFolioSAE_ActionFolioQMassUpload_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_j_FoliosSAE_NewMassiveFolioSAE_ActionFolioQMassUpload_Inputs result = inputParameters.ToObject<RESTConectaProveedores_j_FoliosSAE_NewMassiveFolioSAE_ActionFolioQMassUpload_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_j_FoliosSAE_NewMassiveFolioSAE_ActionFolioQMassUpload_Model ToModel() {ConectaProveedores_j_FoliosSAE_NewMassiveFolioSAE_ActionFolioQMassUpload_Model result = new ConectaProveedores_j_FoliosSAE_NewMassiveFolioSAE_ActionFolioQMassUpload_Model();
+result.inParamFilesList = RL_1501ee54ff868a67eff67465502ee3d9.FromRestList(inParamFilesList, ssConectaProveedores.RestRecords.RESTST_09ca0b4d4a2f96d3f5dee609d73f12b2Structure.ToStructure);
+return result;
+}
+
+}

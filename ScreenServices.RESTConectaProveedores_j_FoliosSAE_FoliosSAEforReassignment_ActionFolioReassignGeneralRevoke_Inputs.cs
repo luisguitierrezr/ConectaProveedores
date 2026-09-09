@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_j_FoliosSAE_FoliosSAEforReassignment_ActionFolioReassignGeneralRevoke_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_ReassignmentId")]
+public long? inParami_ReassignmentId;
+
+
+    public static RESTConectaProveedores_j_FoliosSAE_FoliosSAEforReassignment_ActionFolioReassignGeneralRevoke_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_j_FoliosSAE_FoliosSAEforReassignment_ActionFolioReassignGeneralRevoke_Inputs result = inputParameters.ToObject<RESTConectaProveedores_j_FoliosSAE_FoliosSAEforReassignment_ActionFolioReassignGeneralRevoke_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_j_FoliosSAE_FoliosSAEforReassignment_ActionFolioReassignGeneralRevoke_Model ToModel() {ConectaProveedores_j_FoliosSAE_FoliosSAEforReassignment_ActionFolioReassignGeneralRevoke_Model result = new ConectaProveedores_j_FoliosSAE_FoliosSAEforReassignment_ActionFolioReassignGeneralRevoke_Model();
+result.inParami_ReassignmentId = inParami_ReassignmentId == null ? 0L : inParami_ReassignmentId.Value;
+return result;
+}
+
+}

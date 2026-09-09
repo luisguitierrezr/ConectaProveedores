@@ -1,0 +1,13 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_e_Orders_Wb_DocumentsToRequest_ActionSendDocuments_Model {
+
+    public RL_d9f83b71a68be75785bb65af54dd24f1 inParamDocumentsRecordList;
+public BasicTypeList<string> inParamUserIds;
+public RL_08794d38cc3e746db7e33443c648a0fa inParamGetOrderRequestFiles_RequestFiles;
+public RL_84bdfe424d1eb0223fc2b8cfa9bb96be inParamGetSupplierUsersBySupplierId_List;
+
+}

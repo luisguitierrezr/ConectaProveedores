@@ -1,0 +1,12 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_c_Requisitions_RequisitionDetail_ActionSaveContractPendingInfo_Model {
+
+    public EN_98680591dcf3728e0877a90eb5e1e552EntityRecord inParami_Requisition;
+public ST_26b16bea631cbd94cf555acb5c7a4be3Structure inParami_RequisitionFileTypesStruct;
+public DateTime inParami_OG_DateOfCommitment;
+
+}

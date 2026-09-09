@@ -1,0 +1,40 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_e_OrdersRequestFiles_Wb_UploadOrderContractDocuments_ActionUploadOrderContractDocument_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_OrderRequestFileId")]
+public long? inParami_OrderRequestFileId;
+[JsonProperty("i_OrderContractFile")]
+public ssConectaProveedores.RestRecords.RESTRC_f6cad939346a2d641ae33c13dbcb8a70 inParami_OrderContractFile;
+[JsonProperty("i_OrderMainId")]
+public long? inParami_OrderMainId;
+[JsonProperty("i_InvoiceForeign")]
+public ssConectaProveedores.RestRecords.RESTST_6f620840109ac6f721328b723ec0152cStructure inParami_InvoiceForeign;
+[JsonProperty("i_File")]
+public ssConectaProveedores.RestRecords.RESTST_1d6498da9105fbe815a7f766352917c0Structure inParami_File;
+[JsonProperty("i_FilesList")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_09ca0b4d4a2f96d3f5dee609d73f12b2Structure> inParami_FilesList;
+[JsonProperty("OffsetUtc")]
+public int? inParamOffsetUtc;
+
+
+    public static RESTConectaProveedores_e_OrdersRequestFiles_Wb_UploadOrderContractDocuments_ActionUploadOrderContractDocument_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_e_OrdersRequestFiles_Wb_UploadOrderContractDocuments_ActionUploadOrderContractDocument_Inputs result = inputParameters.ToObject<RESTConectaProveedores_e_OrdersRequestFiles_Wb_UploadOrderContractDocuments_ActionUploadOrderContractDocument_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_e_OrdersRequestFiles_Wb_UploadOrderContractDocuments_ActionUploadOrderContractDocument_Model ToModel() {ConectaProveedores_e_OrdersRequestFiles_Wb_UploadOrderContractDocuments_ActionUploadOrderContractDocument_Model result = new ConectaProveedores_e_OrdersRequestFiles_Wb_UploadOrderContractDocuments_ActionUploadOrderContractDocument_Model();
+result.inParami_OrderRequestFileId = inParami_OrderRequestFileId == null ? 0L : inParami_OrderRequestFileId.Value;
+result.inParami_OrderContractFile = ssConectaProveedores.RestRecords.RESTRC_f6cad939346a2d641ae33c13dbcb8a70.ToStructure(inParami_OrderContractFile);
+result.inParami_OrderMainId = inParami_OrderMainId == null ? 0L : inParami_OrderMainId.Value;
+result.inParami_InvoiceForeign = ssConectaProveedores.RestRecords.RESTST_6f620840109ac6f721328b723ec0152cStructure.ToStructure(inParami_InvoiceForeign);
+result.inParami_File = ssConectaProveedores.RestRecords.RESTST_1d6498da9105fbe815a7f766352917c0Structure.ToStructure(inParami_File);
+result.inParami_FilesList = RL_1501ee54ff868a67eff67465502ee3d9.FromRestList(inParami_FilesList, ssConectaProveedores.RestRecords.RESTST_09ca0b4d4a2f96d3f5dee609d73f12b2Structure.ToStructure);
+result.inParamOffsetUtc = inParamOffsetUtc == null ? 0 : inParamOffsetUtc.Value;
+return result;
+}
+
+}

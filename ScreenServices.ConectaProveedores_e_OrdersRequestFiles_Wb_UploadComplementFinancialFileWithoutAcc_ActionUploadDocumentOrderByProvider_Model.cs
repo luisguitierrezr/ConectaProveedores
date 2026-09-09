@@ -1,0 +1,17 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_e_OrdersRequestFiles_Wb_UploadComplementFinancialFileWithoutAcc_ActionUploadDocumentOrderByProvider_Model {
+
+    public long inParami_RequestFileId;
+public long inParami_OrderMainId;
+public RL_1501ee54ff868a67eff67465502ee3d9 inParamI_FilesList;
+public RL_1501ee54ff868a67eff67465502ee3d9 inParami_FilesListExtra;
+public ST_6f620840109ac6f721328b723ec0152cStructure inParami_InvoiceForeign;
+public long inParami_OrderAccConceptsId;
+public bool inParami_CreateRequestFile;
+public int inParamOffsetUtc;
+
+}

@@ -1,0 +1,21 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUpload_ActionFolioInvoiceUpdate_Model {
+
+    public long inParami_FolioId;
+public string inParami_Comments;
+public RL_1501ee54ff868a67eff67465502ee3d9 inParamFilesListExtra;
+public RL_1501ee54ff868a67eff67465502ee3d9 inParamFilesList;
+public RL_1501ee54ff868a67eff67465502ee3d9 inParamCreditNoteFilesList;
+public EN_d1d0320db36efbb094ad0082361435a0EntityRecord inParamInvoiceToCreate;
+public ST_6f620840109ac6f721328b723ec0152cStructure inParamInvoiceForeignToCreate;
+public decimal inParamImportAnticipo;
+public int inParamOffsetUtc;
+public string inParami_UpdateComment;
+public bool inParami_HaveNewFiles;
+public string inParami_NewFileNamesUploaded;
+
+}

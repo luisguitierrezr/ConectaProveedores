@@ -1,0 +1,12 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfigDetails_ActionSaveAndValidateOrderDistributionConfig_Model {
+
+    public EN_4ad0cdb13562998fda111463f2af9c31EntityRecord inParamSource;
+public string inParamJustification;
+public string inParamOriginalJSON;
+
+}

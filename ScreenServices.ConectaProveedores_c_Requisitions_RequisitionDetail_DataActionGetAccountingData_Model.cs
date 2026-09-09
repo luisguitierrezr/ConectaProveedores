@@ -1,0 +1,14 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAccountingData_Model {
+
+    public EN_3554712eb61e9f0a2132c551df0f1db5EntityRecord outParamRequisitionAccounting;
+public RC_cdb29de40f41bea5403aac7edb2d6159 outParamo_Estim_Equal_Agreed;
+public RL_7c236018492d50b3625a5b0d981eb4eb outParamo_Remaining;
+public ST_26b16bea631cbd94cf555acb5c7a4be3Structure outParamExchangeRateEvidence;
+public ST_26b16bea631cbd94cf555acb5c7a4be3Structure outParamREPSE;
+
+}

@@ -1,0 +1,23 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_k_Deviations_UnsuccessfulEntries_ActionGetSettings_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("OutSettingsText")]
+public string outParamOutSettingsText;
+
+
+    public static RESTConectaProveedores_k_Deviations_UnsuccessfulEntries_ActionGetSettings_Outputs FromOutputs(IBehaviorsConfiguration conf, string outParamOutSettingsText) {RESTConectaProveedores_k_Deviations_UnsuccessfulEntries_ActionGetSettings_Outputs result = new RESTConectaProveedores_k_Deviations_UnsuccessfulEntries_ActionGetSettings_Outputs();
+conf.IncludeBinariesURL = false;
+result.outParamOutSettingsText = outParamOutSettingsText;
+return result;
+}
+
+
+    
+
+    
+}

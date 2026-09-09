@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_a_Common_UserProfile_ActionAuditCreateWrapper_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("Source")]
+public ssConectaProveedores.RestRecords.RESTST_294e4a8da2ce2078a89c70e4dbbd3a0dStructure inParamSource;
+
+
+    public static RESTConectaProveedores_a_Common_UserProfile_ActionAuditCreateWrapper_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_a_Common_UserProfile_ActionAuditCreateWrapper_Inputs result = inputParameters.ToObject<RESTConectaProveedores_a_Common_UserProfile_ActionAuditCreateWrapper_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_a_Common_UserProfile_ActionAuditCreateWrapper_Model ToModel() {ConectaProveedores_a_Common_UserProfile_ActionAuditCreateWrapper_Model result = new ConectaProveedores_a_Common_UserProfile_ActionAuditCreateWrapper_Model();
+result.inParamSource = ssConectaProveedores.RestRecords.RESTST_294e4a8da2ce2078a89c70e4dbbd3a0dStructure.ToStructure(inParamSource);
+return result;
+}
+
+}

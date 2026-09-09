@@ -1,0 +1,486 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_DataActionGetAccountingData_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("OrderAccounting")]
+public ssConectaProveedores.RestRecords.RESTEN_8c7f7609e4f1bd7b3e09bb763d792390EntityRecord outParamOrderAccounting;
+[JsonProperty("o_ExchangeRateEvidence")]
+public ssConectaProveedores.RestRecords.RESTST_c3df6a1f053620bf8d50da58ff4e41bcStructure outParamo_ExchangeRateEvidence;
+[JsonProperty("o_Estim_Equal_Agreed")]
+public ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_Estim_Equal_Agreed;
+[JsonProperty("o_CreditNote")]
+public ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_CreditNote;
+[JsonProperty("o_Voucher")]
+public ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_Voucher;
+[JsonProperty("o_Finiquito")]
+public ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_Finiquito;
+[JsonProperty("o_Anticipo")]
+public ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_Anticipo;
+
+
+    public static RESTConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_DataActionGetAccountingData_Outputs FromOutputs(IBehaviorsConfiguration conf, EN_8c7f7609e4f1bd7b3e09bb763d792390EntityRecord outParamOrderAccounting, ST_c3df6a1f053620bf8d50da58ff4e41bcStructure outParamo_ExchangeRateEvidence, RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_Estim_Equal_Agreed, RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_CreditNote, RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_Voucher, RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_Finiquito, RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9 outParamo_Anticipo) {RESTConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_DataActionGetAccountingData_Outputs result = new RESTConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_DataActionGetAccountingData_Outputs();
+// Write the needed fields of the record outParamOrderAccounting to the result.outParamOrderAccounting
+result.outParamOrderAccounting = new ssConectaProveedores.RestRecords.RESTEN_8c7f7609e4f1bd7b3e09bb763d792390EntityRecord();
+result.outParamOrderAccounting.AttrId = (long?) outParamOrderAccounting.ssId;
+result.outParamOrderAccounting.AttrOrderId = (long?) outParamOrderAccounting.ssOrderId;
+result.outParamOrderAccounting.AttrHasEstim_Equal_AgrePaym_DEPR = (bool?) outParamOrderAccounting.ssHasEstim_Equal_AgrePaym_DEPR;
+result.outParamOrderAccounting.AttrHasSettlement_DEPR = (bool?) outParamOrderAccounting.ssHasSettlement_DEPR;
+result.outParamOrderAccounting.AttrHasCreditNote_DEPR = (bool?) outParamOrderAccounting.ssHasCreditNote_DEPR;
+result.outParamOrderAccounting.AttrHasVoucher_DEPR = (bool?) outParamOrderAccounting.ssHasVoucher_DEPR;
+result.outParamOrderAccounting.AttrHasSpecialPostDeliveryAuth = (bool?) outParamOrderAccounting.ssHasSpecialPostDeliveryAuth;
+result.outParamOrderAccounting.AttrSpecialPostDeliveryAuthId = (int?) outParamOrderAccounting.ssSpecialPostDeliveryAuthId;
+result.outParamOrderAccounting.AttrAmount_DEPREC = (decimal?) outParamOrderAccounting.ssAmount_DEPREC;
+result.outParamOrderAccounting.AttrCurrencyId_DEPREC = outParamOrderAccounting.ssCurrencyId_DEPREC;
+result.outParamOrderAccounting.AttrPaymentMethodId_DEPREC = (long?) outParamOrderAccounting.ssPaymentMethodId_DEPREC;
+result.outParamOrderAccounting.AttrPaymentTermId_DEPREC = (long?) outParamOrderAccounting.ssPaymentTermId_DEPREC;
+result.outParamOrderAccounting.AttrNegociatedExchangeRateAcc = (decimal?) outParamOrderAccounting.ssNegociatedExchangeRateAcc;
+result.outParamOrderAccounting.AttrExchangeRateComment = outParamOrderAccounting.ssExchangeRateComment;
+result.outParamOrderAccounting.AttrEvidenceFileId = (long?) outParamOrderAccounting.ssEvidenceFileId;
+result.outParamOrderAccounting.AttrHasContract = (bool?) outParamOrderAccounting.ssHasContract;
+result.outParamOrderAccounting.AttrHasREPSE = (bool?) outParamOrderAccounting.ssHasREPSE;
+result.outParamOrderAccounting.AttrHasPaymentSupplement = (bool?) outParamOrderAccounting.ssHasPaymentSupplement;
+result.outParamOrderAccounting.AttrHasNoticeOfPaymentSuspension = (bool?) outParamOrderAccounting.ssHasNoticeOfPaymentSuspension;
+// Write the needed fields of the record outParamo_ExchangeRateEvidence to the result.outParamo_ExchangeRateEvidence
+result.outParamo_ExchangeRateEvidence = new ssConectaProveedores.RestRecords.RESTST_c3df6a1f053620bf8d50da58ff4e41bcStructure();
+// Write the needed fields of the record outParamo_ExchangeRateEvidence.ssOrderContractFile to the result.outParamo_ExchangeRateEvidence.AttrOrderContractFile
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile = new ssConectaProveedores.RestRecords.RESTEN_17538b35348920159ed0ee43b3fb2b50EntityRecord();
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrId
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrId = (long?) 0L;
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrOrderId
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrOrderId = (long?) 0L;
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrOrderFileId
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrOrderFileId = (long?) 0L;
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrContractFileTypeId
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrContractFileTypeId = (int?) 0;
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrAmount
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrAmount = (decimal?) 0.0M;
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrTarif
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrTarif = (decimal?) 0.0M;
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrCurrencyId
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrCurrencyId = "";
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrDepositTypeId
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrDepositTypeId = (int?) 0;
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrInsuranceTypeId
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrInsuranceTypeId = (int?) 0;
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrAdvancePaymentTypeId
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrAdvancePaymentTypeId = (int?) 0;
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrStartBaseDate
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrStartBaseDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(new DateTime(1900, 1, 1, 0, 0, 0, DateTimeKind.Utc));
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrEndBaseDate
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrEndBaseDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(new DateTime(1900, 1, 1, 0, 0, 0, DateTimeKind.Utc));
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrPaymentTermsId
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrPaymentTermsId = (long?) 0L;
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrIsForVendorUpload
+result.outParamo_ExchangeRateEvidence.AttrOrderContractFile.AttrIsForVendorUpload = (bool?) false;
+// Write the needed fields of the record outParamo_ExchangeRateEvidence.ssOrderFile to the result.outParamo_ExchangeRateEvidence.AttrOrderFile
+result.outParamo_ExchangeRateEvidence.AttrOrderFile = new ssConectaProveedores.RestRecords.RESTEN_096339be3ef098b3762e8897e3a1c095EntityRecord();
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrId
+result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrId = (long?) 0L;
+result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrFilename = outParamo_ExchangeRateEvidence.ssOrderFile.ssFilename;
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrVENDOR
+result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrVENDOR = "";
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrDOC_TYPE
+result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrDOC_TYPE = "";
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrSAP_OBJECT
+result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrSAP_OBJECT = "";
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrCreatedBy
+result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrCreatedBy = "";
+// Write optimized result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrCreatedOn
+result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrCreatedOn = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateTimeToRestType(new DateTime(1900, 1, 1, 0, 0, 0, DateTimeKind.Utc), conf.DateTimeFormat);
+result.outParamo_ExchangeRateEvidence.AttrOrderFile.AttrStorageId = (long?) outParamo_ExchangeRateEvidence.ssOrderFile.ssStorageId;
+// Write the needed fields of the record outParamo_ExchangeRateEvidence.ssValid to the result.outParamo_ExchangeRateEvidence.AttrValid
+result.outParamo_ExchangeRateEvidence.AttrValid = new ssConectaProveedores.RestRecords.RESTST_b453bea0930035904f55a74692afd3a8Structure();
+result.outParamo_ExchangeRateEvidence.AttrValid.AttrIsValid = (bool?) outParamo_ExchangeRateEvidence.ssValid.ssIsValid;
+result.outParamo_ExchangeRateEvidence.AttrValid.AttrValidationMessage = outParamo_ExchangeRateEvidence.ssValid.ssValidationMessage;
+result.outParamo_ExchangeRateEvidence.AttrBinary = outParamo_ExchangeRateEvidence.ssBinary;
+// Write the needed fields of the record outParamo_Estim_Equal_Agreed to the result.outParamo_Estim_Equal_Agreed
+result.outParamo_Estim_Equal_Agreed = new ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9();
+// Write the needed fields of the record outParamo_Estim_Equal_Agreed.ssENMainAccConcept to the result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrId = (long?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssId;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrOrderAccountingId = (long?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssOrderAccountingId;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrAccountingDataTypeId = (int?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssAccountingDataTypeId;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrNumberOfPayments = (int?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssNumberOfPayments;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrAmount = (decimal?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssAmount;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrCurrencyId = outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssCurrencyId;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrOrderAccConceptsId = (long?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssOrderAccConceptsId;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrApplyForRequestProject = (bool?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssApplyForRequestProject;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrPaymentTermId = (long?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssPaymentTermId;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrPaymentTermCustomDays = (int?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssPaymentTermCustomDays;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrIsActive = (bool?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssIsActive;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrAdvancePaymentTypeId = (int?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssAdvancePaymentTypeId;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssPaymentDate);
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrPaymentMethodsIdToDelete = (long?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssPaymentMethodsIdToDelete;
+// Write the needed fields of the list outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts to the result.outParamo_Estim_Equal_Agreed.AttrSubAccConcepts
+ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement;
+if(outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.Empty) {
+// Write the needed fields of the record outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec to the tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrOrderAccountingId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssOrderAccountingId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrAccountingDataTypeId = (int?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssAccountingDataTypeId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrNumberOfPayments = (int?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssNumberOfPayments;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrAmount = (decimal?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssAmount;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrCurrencyId = outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssCurrencyId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrOrderAccConceptsId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssOrderAccConceptsId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrApplyForRequestProject = (bool?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssApplyForRequestProject;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrPaymentTermId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssPaymentTermId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrPaymentTermCustomDays = (int?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssPaymentTermCustomDays;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrIsActive = (bool?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssIsActive;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrAdvancePaymentTypeId = (int?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssAdvancePaymentTypeId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssPaymentDate);
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrPaymentMethodsIdToDelete = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssPaymentMethodsIdToDelete;
+result.outParamo_Estim_Equal_Agreed.AttrSubAccConcepts = new RestList<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>(new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord[] {}, tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>
+ tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConcepts1List = new List<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>
+();
+try {outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.StartIteration();
+while (!(outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.Eof)) {
+// Write the needed fields of the record outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec to the tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrOrderAccountingId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssOrderAccountingId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrAccountingDataTypeId = (int?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssAccountingDataTypeId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrNumberOfPayments = (int?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssNumberOfPayments;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrAmount = (decimal?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssAmount;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrCurrencyId = outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssCurrencyId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrOrderAccConceptsId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssOrderAccConceptsId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrApplyForRequestProject = (bool?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssApplyForRequestProject;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrPaymentTermId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssPaymentTermId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrPaymentTermCustomDays = (int?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssPaymentTermCustomDays;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrIsActive = (bool?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssIsActive;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrAdvancePaymentTypeId = (int?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssAdvancePaymentTypeId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssPaymentDate);
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrPaymentMethodsIdToDelete = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssPaymentMethodsIdToDelete;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConcepts1List.Add(tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement);
+outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.Advance();
+}
+
+} finally {
+outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.EndIteration();
+}
+
+result.outParamo_Estim_Equal_Agreed.AttrSubAccConcepts = new RestList<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>(tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConcepts1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord));
+}
+
+// Write the needed fields of the record outParamo_CreditNote to the result.outParamo_CreditNote
+result.outParamo_CreditNote = new ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9();
+// Write the needed fields of the record outParamo_CreditNote.ssENMainAccConcept to the result.outParamo_CreditNote.AttrMainAccConcept
+result.outParamo_CreditNote.AttrMainAccConcept = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+result.outParamo_CreditNote.AttrMainAccConcept.AttrId = (long?) outParamo_CreditNote.ssENMainAccConcept.ssId;
+result.outParamo_CreditNote.AttrMainAccConcept.AttrOrderAccountingId = (long?) outParamo_CreditNote.ssENMainAccConcept.ssOrderAccountingId;
+result.outParamo_CreditNote.AttrMainAccConcept.AttrAccountingDataTypeId = (int?) outParamo_CreditNote.ssENMainAccConcept.ssAccountingDataTypeId;
+result.outParamo_CreditNote.AttrMainAccConcept.AttrNumberOfPayments = (int?) outParamo_CreditNote.ssENMainAccConcept.ssNumberOfPayments;
+result.outParamo_CreditNote.AttrMainAccConcept.AttrAmount = (decimal?) outParamo_CreditNote.ssENMainAccConcept.ssAmount;
+result.outParamo_CreditNote.AttrMainAccConcept.AttrCurrencyId = outParamo_CreditNote.ssENMainAccConcept.ssCurrencyId;
+result.outParamo_CreditNote.AttrMainAccConcept.AttrOrderAccConceptsId = (long?) outParamo_CreditNote.ssENMainAccConcept.ssOrderAccConceptsId;
+result.outParamo_CreditNote.AttrMainAccConcept.AttrApplyForRequestProject = (bool?) outParamo_CreditNote.ssENMainAccConcept.ssApplyForRequestProject;
+result.outParamo_CreditNote.AttrMainAccConcept.AttrPaymentTermId = (long?) outParamo_CreditNote.ssENMainAccConcept.ssPaymentTermId;
+result.outParamo_CreditNote.AttrMainAccConcept.AttrPaymentTermCustomDays = (int?) outParamo_CreditNote.ssENMainAccConcept.ssPaymentTermCustomDays;
+result.outParamo_CreditNote.AttrMainAccConcept.AttrIsActive = (bool?) outParamo_CreditNote.ssENMainAccConcept.ssIsActive;
+result.outParamo_CreditNote.AttrMainAccConcept.AttrAdvancePaymentTypeId = (int?) outParamo_CreditNote.ssENMainAccConcept.ssAdvancePaymentTypeId;
+result.outParamo_CreditNote.AttrMainAccConcept.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_CreditNote.ssENMainAccConcept.ssPaymentDate);
+result.outParamo_CreditNote.AttrMainAccConcept.AttrPaymentMethodsIdToDelete = (long?) outParamo_CreditNote.ssENMainAccConcept.ssPaymentMethodsIdToDelete;
+// Write the needed fields of the list outParamo_CreditNote.ssRLSubAccConcepts to the result.outParamo_CreditNote.AttrSubAccConcepts
+ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord tmpoutParamo_CreditNote_ssRLSubAccConceptsElement;
+if(outParamo_CreditNote.ssRLSubAccConcepts.Empty) {
+// Write the needed fields of the record outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec to the tmpoutParamo_CreditNote_ssRLSubAccConceptsElement
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrId = (long?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrOrderAccountingId = (long?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssOrderAccountingId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrAccountingDataTypeId = (int?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssAccountingDataTypeId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrNumberOfPayments = (int?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssNumberOfPayments;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrAmount = (decimal?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssAmount;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrCurrencyId = outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssCurrencyId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrOrderAccConceptsId = (long?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssOrderAccConceptsId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrApplyForRequestProject = (bool?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssApplyForRequestProject;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrPaymentTermId = (long?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssPaymentTermId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrPaymentTermCustomDays = (int?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssPaymentTermCustomDays;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrIsActive = (bool?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssIsActive;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrAdvancePaymentTypeId = (int?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssAdvancePaymentTypeId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssPaymentDate);
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrPaymentMethodsIdToDelete = (long?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssPaymentMethodsIdToDelete;
+result.outParamo_CreditNote.AttrSubAccConcepts = new RestList<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>(new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord[] {}, tmpoutParamo_CreditNote_ssRLSubAccConceptsElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>
+ tmpoutParamo_CreditNote_ssRLSubAccConcepts1List = new List<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>
+();
+try {outParamo_CreditNote.ssRLSubAccConcepts.StartIteration();
+while (!(outParamo_CreditNote.ssRLSubAccConcepts.Eof)) {
+// Write the needed fields of the record outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec to the tmpoutParamo_CreditNote_ssRLSubAccConceptsElement
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrId = (long?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrOrderAccountingId = (long?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssOrderAccountingId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrAccountingDataTypeId = (int?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssAccountingDataTypeId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrNumberOfPayments = (int?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssNumberOfPayments;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrAmount = (decimal?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssAmount;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrCurrencyId = outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssCurrencyId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrOrderAccConceptsId = (long?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssOrderAccConceptsId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrApplyForRequestProject = (bool?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssApplyForRequestProject;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrPaymentTermId = (long?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssPaymentTermId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrPaymentTermCustomDays = (int?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssPaymentTermCustomDays;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrIsActive = (bool?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssIsActive;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrAdvancePaymentTypeId = (int?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssAdvancePaymentTypeId;
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssPaymentDate);
+tmpoutParamo_CreditNote_ssRLSubAccConceptsElement.AttrPaymentMethodsIdToDelete = (long?) outParamo_CreditNote.ssRLSubAccConcepts.CurrentRec.ssPaymentMethodsIdToDelete;
+tmpoutParamo_CreditNote_ssRLSubAccConcepts1List.Add(tmpoutParamo_CreditNote_ssRLSubAccConceptsElement);
+outParamo_CreditNote.ssRLSubAccConcepts.Advance();
+}
+
+} finally {
+outParamo_CreditNote.ssRLSubAccConcepts.EndIteration();
+}
+
+result.outParamo_CreditNote.AttrSubAccConcepts = new RestList<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>(tmpoutParamo_CreditNote_ssRLSubAccConcepts1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord));
+}
+
+// Write the needed fields of the record outParamo_Voucher to the result.outParamo_Voucher
+result.outParamo_Voucher = new ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9();
+// Write the needed fields of the record outParamo_Voucher.ssENMainAccConcept to the result.outParamo_Voucher.AttrMainAccConcept
+result.outParamo_Voucher.AttrMainAccConcept = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+result.outParamo_Voucher.AttrMainAccConcept.AttrId = (long?) outParamo_Voucher.ssENMainAccConcept.ssId;
+result.outParamo_Voucher.AttrMainAccConcept.AttrOrderAccountingId = (long?) outParamo_Voucher.ssENMainAccConcept.ssOrderAccountingId;
+result.outParamo_Voucher.AttrMainAccConcept.AttrAccountingDataTypeId = (int?) outParamo_Voucher.ssENMainAccConcept.ssAccountingDataTypeId;
+result.outParamo_Voucher.AttrMainAccConcept.AttrNumberOfPayments = (int?) outParamo_Voucher.ssENMainAccConcept.ssNumberOfPayments;
+result.outParamo_Voucher.AttrMainAccConcept.AttrAmount = (decimal?) outParamo_Voucher.ssENMainAccConcept.ssAmount;
+result.outParamo_Voucher.AttrMainAccConcept.AttrCurrencyId = outParamo_Voucher.ssENMainAccConcept.ssCurrencyId;
+result.outParamo_Voucher.AttrMainAccConcept.AttrOrderAccConceptsId = (long?) outParamo_Voucher.ssENMainAccConcept.ssOrderAccConceptsId;
+result.outParamo_Voucher.AttrMainAccConcept.AttrApplyForRequestProject = (bool?) outParamo_Voucher.ssENMainAccConcept.ssApplyForRequestProject;
+result.outParamo_Voucher.AttrMainAccConcept.AttrPaymentTermId = (long?) outParamo_Voucher.ssENMainAccConcept.ssPaymentTermId;
+result.outParamo_Voucher.AttrMainAccConcept.AttrPaymentTermCustomDays = (int?) outParamo_Voucher.ssENMainAccConcept.ssPaymentTermCustomDays;
+result.outParamo_Voucher.AttrMainAccConcept.AttrIsActive = (bool?) outParamo_Voucher.ssENMainAccConcept.ssIsActive;
+result.outParamo_Voucher.AttrMainAccConcept.AttrAdvancePaymentTypeId = (int?) outParamo_Voucher.ssENMainAccConcept.ssAdvancePaymentTypeId;
+result.outParamo_Voucher.AttrMainAccConcept.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_Voucher.ssENMainAccConcept.ssPaymentDate);
+result.outParamo_Voucher.AttrMainAccConcept.AttrPaymentMethodsIdToDelete = (long?) outParamo_Voucher.ssENMainAccConcept.ssPaymentMethodsIdToDelete;
+// Write the needed fields of the list outParamo_Voucher.ssRLSubAccConcepts to the result.outParamo_Voucher.AttrSubAccConcepts
+ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord tmpoutParamo_Voucher_ssRLSubAccConceptsElement;
+if(outParamo_Voucher.ssRLSubAccConcepts.Empty) {
+// Write the needed fields of the record outParamo_Voucher.ssRLSubAccConcepts.CurrentRec to the tmpoutParamo_Voucher_ssRLSubAccConceptsElement
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrId = (long?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrOrderAccountingId = (long?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssOrderAccountingId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrAccountingDataTypeId = (int?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssAccountingDataTypeId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrNumberOfPayments = (int?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssNumberOfPayments;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrAmount = (decimal?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssAmount;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrCurrencyId = outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssCurrencyId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrOrderAccConceptsId = (long?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssOrderAccConceptsId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrApplyForRequestProject = (bool?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssApplyForRequestProject;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrPaymentTermId = (long?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssPaymentTermId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrPaymentTermCustomDays = (int?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssPaymentTermCustomDays;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrIsActive = (bool?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssIsActive;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrAdvancePaymentTypeId = (int?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssAdvancePaymentTypeId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssPaymentDate);
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrPaymentMethodsIdToDelete = (long?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssPaymentMethodsIdToDelete;
+result.outParamo_Voucher.AttrSubAccConcepts = new RestList<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>(new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord[] {}, tmpoutParamo_Voucher_ssRLSubAccConceptsElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>
+ tmpoutParamo_Voucher_ssRLSubAccConcepts1List = new List<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>
+();
+try {outParamo_Voucher.ssRLSubAccConcepts.StartIteration();
+while (!(outParamo_Voucher.ssRLSubAccConcepts.Eof)) {
+// Write the needed fields of the record outParamo_Voucher.ssRLSubAccConcepts.CurrentRec to the tmpoutParamo_Voucher_ssRLSubAccConceptsElement
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrId = (long?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrOrderAccountingId = (long?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssOrderAccountingId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrAccountingDataTypeId = (int?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssAccountingDataTypeId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrNumberOfPayments = (int?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssNumberOfPayments;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrAmount = (decimal?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssAmount;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrCurrencyId = outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssCurrencyId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrOrderAccConceptsId = (long?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssOrderAccConceptsId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrApplyForRequestProject = (bool?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssApplyForRequestProject;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrPaymentTermId = (long?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssPaymentTermId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrPaymentTermCustomDays = (int?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssPaymentTermCustomDays;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrIsActive = (bool?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssIsActive;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrAdvancePaymentTypeId = (int?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssAdvancePaymentTypeId;
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssPaymentDate);
+tmpoutParamo_Voucher_ssRLSubAccConceptsElement.AttrPaymentMethodsIdToDelete = (long?) outParamo_Voucher.ssRLSubAccConcepts.CurrentRec.ssPaymentMethodsIdToDelete;
+tmpoutParamo_Voucher_ssRLSubAccConcepts1List.Add(tmpoutParamo_Voucher_ssRLSubAccConceptsElement);
+outParamo_Voucher.ssRLSubAccConcepts.Advance();
+}
+
+} finally {
+outParamo_Voucher.ssRLSubAccConcepts.EndIteration();
+}
+
+result.outParamo_Voucher.AttrSubAccConcepts = new RestList<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>(tmpoutParamo_Voucher_ssRLSubAccConcepts1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord));
+}
+
+// Write the needed fields of the record outParamo_Finiquito to the result.outParamo_Finiquito
+result.outParamo_Finiquito = new ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9();
+// Write the needed fields of the record outParamo_Finiquito.ssENMainAccConcept to the result.outParamo_Finiquito.AttrMainAccConcept
+result.outParamo_Finiquito.AttrMainAccConcept = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+result.outParamo_Finiquito.AttrMainAccConcept.AttrId = (long?) outParamo_Finiquito.ssENMainAccConcept.ssId;
+result.outParamo_Finiquito.AttrMainAccConcept.AttrOrderAccountingId = (long?) outParamo_Finiquito.ssENMainAccConcept.ssOrderAccountingId;
+result.outParamo_Finiquito.AttrMainAccConcept.AttrAccountingDataTypeId = (int?) outParamo_Finiquito.ssENMainAccConcept.ssAccountingDataTypeId;
+result.outParamo_Finiquito.AttrMainAccConcept.AttrNumberOfPayments = (int?) outParamo_Finiquito.ssENMainAccConcept.ssNumberOfPayments;
+result.outParamo_Finiquito.AttrMainAccConcept.AttrAmount = (decimal?) outParamo_Finiquito.ssENMainAccConcept.ssAmount;
+result.outParamo_Finiquito.AttrMainAccConcept.AttrCurrencyId = outParamo_Finiquito.ssENMainAccConcept.ssCurrencyId;
+result.outParamo_Finiquito.AttrMainAccConcept.AttrOrderAccConceptsId = (long?) outParamo_Finiquito.ssENMainAccConcept.ssOrderAccConceptsId;
+result.outParamo_Finiquito.AttrMainAccConcept.AttrApplyForRequestProject = (bool?) outParamo_Finiquito.ssENMainAccConcept.ssApplyForRequestProject;
+result.outParamo_Finiquito.AttrMainAccConcept.AttrPaymentTermId = (long?) outParamo_Finiquito.ssENMainAccConcept.ssPaymentTermId;
+result.outParamo_Finiquito.AttrMainAccConcept.AttrPaymentTermCustomDays = (int?) outParamo_Finiquito.ssENMainAccConcept.ssPaymentTermCustomDays;
+result.outParamo_Finiquito.AttrMainAccConcept.AttrIsActive = (bool?) outParamo_Finiquito.ssENMainAccConcept.ssIsActive;
+result.outParamo_Finiquito.AttrMainAccConcept.AttrAdvancePaymentTypeId = (int?) outParamo_Finiquito.ssENMainAccConcept.ssAdvancePaymentTypeId;
+result.outParamo_Finiquito.AttrMainAccConcept.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_Finiquito.ssENMainAccConcept.ssPaymentDate);
+result.outParamo_Finiquito.AttrMainAccConcept.AttrPaymentMethodsIdToDelete = (long?) outParamo_Finiquito.ssENMainAccConcept.ssPaymentMethodsIdToDelete;
+// Write the needed fields of the list outParamo_Finiquito.ssRLSubAccConcepts to the result.outParamo_Finiquito.AttrSubAccConcepts
+ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord tmpoutParamo_Finiquito_ssRLSubAccConceptsElement;
+if(outParamo_Finiquito.ssRLSubAccConcepts.Empty) {
+// Write the needed fields of the record outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec to the tmpoutParamo_Finiquito_ssRLSubAccConceptsElement
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrId = (long?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrOrderAccountingId = (long?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssOrderAccountingId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrAccountingDataTypeId = (int?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssAccountingDataTypeId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrNumberOfPayments = (int?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssNumberOfPayments;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrAmount = (decimal?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssAmount;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrCurrencyId = outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssCurrencyId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrOrderAccConceptsId = (long?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssOrderAccConceptsId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrApplyForRequestProject = (bool?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssApplyForRequestProject;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrPaymentTermId = (long?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssPaymentTermId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrPaymentTermCustomDays = (int?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssPaymentTermCustomDays;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrIsActive = (bool?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssIsActive;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrAdvancePaymentTypeId = (int?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssAdvancePaymentTypeId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssPaymentDate);
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrPaymentMethodsIdToDelete = (long?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssPaymentMethodsIdToDelete;
+result.outParamo_Finiquito.AttrSubAccConcepts = new RestList<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>(new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord[] {}, tmpoutParamo_Finiquito_ssRLSubAccConceptsElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>
+ tmpoutParamo_Finiquito_ssRLSubAccConcepts1List = new List<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>
+();
+try {outParamo_Finiquito.ssRLSubAccConcepts.StartIteration();
+while (!(outParamo_Finiquito.ssRLSubAccConcepts.Eof)) {
+// Write the needed fields of the record outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec to the tmpoutParamo_Finiquito_ssRLSubAccConceptsElement
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrId = (long?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrOrderAccountingId = (long?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssOrderAccountingId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrAccountingDataTypeId = (int?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssAccountingDataTypeId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrNumberOfPayments = (int?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssNumberOfPayments;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrAmount = (decimal?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssAmount;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrCurrencyId = outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssCurrencyId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrOrderAccConceptsId = (long?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssOrderAccConceptsId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrApplyForRequestProject = (bool?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssApplyForRequestProject;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrPaymentTermId = (long?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssPaymentTermId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrPaymentTermCustomDays = (int?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssPaymentTermCustomDays;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrIsActive = (bool?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssIsActive;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrAdvancePaymentTypeId = (int?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssAdvancePaymentTypeId;
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssPaymentDate);
+tmpoutParamo_Finiquito_ssRLSubAccConceptsElement.AttrPaymentMethodsIdToDelete = (long?) outParamo_Finiquito.ssRLSubAccConcepts.CurrentRec.ssPaymentMethodsIdToDelete;
+tmpoutParamo_Finiquito_ssRLSubAccConcepts1List.Add(tmpoutParamo_Finiquito_ssRLSubAccConceptsElement);
+outParamo_Finiquito.ssRLSubAccConcepts.Advance();
+}
+
+} finally {
+outParamo_Finiquito.ssRLSubAccConcepts.EndIteration();
+}
+
+result.outParamo_Finiquito.AttrSubAccConcepts = new RestList<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>(tmpoutParamo_Finiquito_ssRLSubAccConcepts1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord));
+}
+
+// Write the needed fields of the record outParamo_Anticipo to the result.outParamo_Anticipo
+result.outParamo_Anticipo = new ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9();
+// Write the needed fields of the record outParamo_Anticipo.ssENMainAccConcept to the result.outParamo_Anticipo.AttrMainAccConcept
+result.outParamo_Anticipo.AttrMainAccConcept = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+result.outParamo_Anticipo.AttrMainAccConcept.AttrId = (long?) outParamo_Anticipo.ssENMainAccConcept.ssId;
+result.outParamo_Anticipo.AttrMainAccConcept.AttrOrderAccountingId = (long?) outParamo_Anticipo.ssENMainAccConcept.ssOrderAccountingId;
+result.outParamo_Anticipo.AttrMainAccConcept.AttrAccountingDataTypeId = (int?) outParamo_Anticipo.ssENMainAccConcept.ssAccountingDataTypeId;
+result.outParamo_Anticipo.AttrMainAccConcept.AttrNumberOfPayments = (int?) outParamo_Anticipo.ssENMainAccConcept.ssNumberOfPayments;
+result.outParamo_Anticipo.AttrMainAccConcept.AttrAmount = (decimal?) outParamo_Anticipo.ssENMainAccConcept.ssAmount;
+result.outParamo_Anticipo.AttrMainAccConcept.AttrCurrencyId = outParamo_Anticipo.ssENMainAccConcept.ssCurrencyId;
+result.outParamo_Anticipo.AttrMainAccConcept.AttrOrderAccConceptsId = (long?) outParamo_Anticipo.ssENMainAccConcept.ssOrderAccConceptsId;
+result.outParamo_Anticipo.AttrMainAccConcept.AttrApplyForRequestProject = (bool?) outParamo_Anticipo.ssENMainAccConcept.ssApplyForRequestProject;
+result.outParamo_Anticipo.AttrMainAccConcept.AttrPaymentTermId = (long?) outParamo_Anticipo.ssENMainAccConcept.ssPaymentTermId;
+result.outParamo_Anticipo.AttrMainAccConcept.AttrPaymentTermCustomDays = (int?) outParamo_Anticipo.ssENMainAccConcept.ssPaymentTermCustomDays;
+result.outParamo_Anticipo.AttrMainAccConcept.AttrIsActive = (bool?) outParamo_Anticipo.ssENMainAccConcept.ssIsActive;
+result.outParamo_Anticipo.AttrMainAccConcept.AttrAdvancePaymentTypeId = (int?) outParamo_Anticipo.ssENMainAccConcept.ssAdvancePaymentTypeId;
+result.outParamo_Anticipo.AttrMainAccConcept.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_Anticipo.ssENMainAccConcept.ssPaymentDate);
+result.outParamo_Anticipo.AttrMainAccConcept.AttrPaymentMethodsIdToDelete = (long?) outParamo_Anticipo.ssENMainAccConcept.ssPaymentMethodsIdToDelete;
+// Write the needed fields of the list outParamo_Anticipo.ssRLSubAccConcepts to the result.outParamo_Anticipo.AttrSubAccConcepts
+ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord tmpoutParamo_Anticipo_ssRLSubAccConceptsElement;
+if(outParamo_Anticipo.ssRLSubAccConcepts.Empty) {
+// Write the needed fields of the record outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec to the tmpoutParamo_Anticipo_ssRLSubAccConceptsElement
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrId = (long?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrOrderAccountingId = (long?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssOrderAccountingId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrAccountingDataTypeId = (int?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssAccountingDataTypeId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrNumberOfPayments = (int?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssNumberOfPayments;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrAmount = (decimal?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssAmount;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrCurrencyId = outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssCurrencyId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrOrderAccConceptsId = (long?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssOrderAccConceptsId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrApplyForRequestProject = (bool?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssApplyForRequestProject;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrPaymentTermId = (long?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssPaymentTermId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrPaymentTermCustomDays = (int?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssPaymentTermCustomDays;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrIsActive = (bool?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssIsActive;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrAdvancePaymentTypeId = (int?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssAdvancePaymentTypeId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssPaymentDate);
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrPaymentMethodsIdToDelete = (long?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssPaymentMethodsIdToDelete;
+result.outParamo_Anticipo.AttrSubAccConcepts = new RestList<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>(new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord[] {}, tmpoutParamo_Anticipo_ssRLSubAccConceptsElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>
+ tmpoutParamo_Anticipo_ssRLSubAccConcepts1List = new List<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>
+();
+try {outParamo_Anticipo.ssRLSubAccConcepts.StartIteration();
+while (!(outParamo_Anticipo.ssRLSubAccConcepts.Eof)) {
+// Write the needed fields of the record outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec to the tmpoutParamo_Anticipo_ssRLSubAccConceptsElement
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement = new ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord();
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrId = (long?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrOrderAccountingId = (long?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssOrderAccountingId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrAccountingDataTypeId = (int?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssAccountingDataTypeId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrNumberOfPayments = (int?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssNumberOfPayments;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrAmount = (decimal?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssAmount;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrCurrencyId = outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssCurrencyId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrOrderAccConceptsId = (long?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssOrderAccConceptsId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrApplyForRequestProject = (bool?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssApplyForRequestProject;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrPaymentTermId = (long?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssPaymentTermId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrPaymentTermCustomDays = (int?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssPaymentTermCustomDays;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrIsActive = (bool?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssIsActive;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrAdvancePaymentTypeId = (int?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssAdvancePaymentTypeId;
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrPaymentDate = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateToText(outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssPaymentDate);
+tmpoutParamo_Anticipo_ssRLSubAccConceptsElement.AttrPaymentMethodsIdToDelete = (long?) outParamo_Anticipo.ssRLSubAccConcepts.CurrentRec.ssPaymentMethodsIdToDelete;
+tmpoutParamo_Anticipo_ssRLSubAccConcepts1List.Add(tmpoutParamo_Anticipo_ssRLSubAccConceptsElement);
+outParamo_Anticipo.ssRLSubAccConcepts.Advance();
+}
+
+} finally {
+outParamo_Anticipo.ssRLSubAccConcepts.EndIteration();
+}
+
+result.outParamo_Anticipo.AttrSubAccConcepts = new RestList<ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord>(tmpoutParamo_Anticipo_ssRLSubAccConcepts1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTEN_3e07a23619060cc7dc5624548803f5fdEntityRecord));
+}
+
+return result;
+}
+
+
+    public static ConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_DataActionGetAccountingData_Model ToModel(RESTConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_DataActionGetAccountingData_Outputs variables) {ConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_DataActionGetAccountingData_Model result = new ConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_DataActionGetAccountingData_Model();
+result.outParamOrderAccounting = variables == null ? new EN_8c7f7609e4f1bd7b3e09bb763d792390EntityRecord() : ssConectaProveedores.RestRecords.RESTEN_8c7f7609e4f1bd7b3e09bb763d792390EntityRecord.ToStructure(variables.outParamOrderAccounting);
+result.outParamo_ExchangeRateEvidence = variables == null ? new ST_c3df6a1f053620bf8d50da58ff4e41bcStructure() : ssConectaProveedores.RestRecords.RESTST_c3df6a1f053620bf8d50da58ff4e41bcStructure.ToStructure(variables.outParamo_ExchangeRateEvidence);
+result.outParamo_Estim_Equal_Agreed = variables == null ? new RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9() : ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9.ToStructure(variables.outParamo_Estim_Equal_Agreed);
+result.outParamo_CreditNote = variables == null ? new RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9() : ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9.ToStructure(variables.outParamo_CreditNote);
+result.outParamo_Voucher = variables == null ? new RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9() : ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9.ToStructure(variables.outParamo_Voucher);
+result.outParamo_Finiquito = variables == null ? new RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9() : ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9.ToStructure(variables.outParamo_Finiquito);
+result.outParamo_Anticipo = variables == null ? new RC_9dc9d00c2e8dcb1797f7869ab9e5a7f9() : ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9.ToStructure(variables.outParamo_Anticipo);
+return result;
+}
+
+
+    public static RESTConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_DataActionGetAccountingData_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_DataActionGetAccountingData_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_DataActionGetAccountingData_Outputs result = new RESTConectaProveedores_e_Orders_Wb_OrderDetailPaymentInformation_DataActionGetAccountingData_Outputs();
+result.outParamOrderAccounting = ssConectaProveedores.RestRecords.RESTEN_8c7f7609e4f1bd7b3e09bb763d792390EntityRecord.FromStructure(screenModel.outParamOrderAccounting, conf);
+result.outParamo_ExchangeRateEvidence = ssConectaProveedores.RestRecords.RESTST_c3df6a1f053620bf8d50da58ff4e41bcStructure.FromStructure(screenModel.outParamo_ExchangeRateEvidence, conf);
+result.outParamo_Estim_Equal_Agreed = ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9.FromStructure(screenModel.outParamo_Estim_Equal_Agreed, conf);
+result.outParamo_CreditNote = ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9.FromStructure(screenModel.outParamo_CreditNote, conf);
+result.outParamo_Voucher = ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9.FromStructure(screenModel.outParamo_Voucher, conf);
+result.outParamo_Finiquito = ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9.FromStructure(screenModel.outParamo_Finiquito, conf);
+result.outParamo_Anticipo = ssConectaProveedores.RestRecords.RESTRC_9dc9d00c2e8dcb1797f7869ab9e5a7f9.FromStructure(screenModel.outParamo_Anticipo, conf);
+return result;
+}
+
+}

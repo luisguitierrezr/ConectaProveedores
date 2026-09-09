@@ -1,0 +1,27 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_b_CyA_TreasuryCommissionsLeasing_Wb_UnpayPaymentPopup_ActionPayUnpaySingleProposalLine_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("o_HasProposalChangedStatus")]
+public bool? outParamo_HasProposalChangedStatus;
+[JsonProperty("o_Output")]
+public ssConectaProveedores.RestRecords.RESTST_046fb53ebbe142526d95e87ef1ae9711Structure outParamo_Output;
+
+
+    public static RESTConectaProveedores_b_CyA_TreasuryCommissionsLeasing_Wb_UnpayPaymentPopup_ActionPayUnpaySingleProposalLine_Outputs FromOutputs(IBehaviorsConfiguration conf, bool outParamo_HasProposalChangedStatus, ST_046fb53ebbe142526d95e87ef1ae9711Structure outParamo_Output) {RESTConectaProveedores_b_CyA_TreasuryCommissionsLeasing_Wb_UnpayPaymentPopup_ActionPayUnpaySingleProposalLine_Outputs result = new RESTConectaProveedores_b_CyA_TreasuryCommissionsLeasing_Wb_UnpayPaymentPopup_ActionPayUnpaySingleProposalLine_Outputs();
+conf.IncludeBinariesURL = false;
+result.outParamo_HasProposalChangedStatus = (bool?) outParamo_HasProposalChangedStatus;
+// Write optimized result.outParamo_Output
+result.outParamo_Output = ssConectaProveedores.RestRecords.RESTST_046fb53ebbe142526d95e87ef1ae9711Structure.FromStructure(new ST_046fb53ebbe142526d95e87ef1ae9711Structure(), conf);
+return result;
+}
+
+
+    
+
+    
+}

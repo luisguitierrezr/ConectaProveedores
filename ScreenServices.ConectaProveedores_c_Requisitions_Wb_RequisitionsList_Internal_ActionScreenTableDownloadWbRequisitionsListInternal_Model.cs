@@ -1,0 +1,13 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_c_Requisitions_Wb_RequisitionsList_Internal_ActionScreenTableDownloadWbRequisitionsListInternal_Model {
+
+    public bool inParami_IsCSV;
+public bool inParami_IsPDF;
+public bool inParami_IsXLS;
+public RL_622bdef78070a83f1d39501965da2144 inParami_RequisitionsListInternalTableListStructure;
+
+}

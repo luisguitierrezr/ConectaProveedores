@@ -1,0 +1,70 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssConectaProveedores.RestRecords;
+
+// InvoiceInvoiceExtendedReceiverInvoiceExtendedCartaPorteInvoiceExtendedIssuerInvoiceAccountingInvoiceExtendedRecord
+public class RESTRC_2c7478516bbd3eed6a35183496a9f500 : AbstractRESTStructure<RC_2c7478516bbd3eed6a35183496a9f500> {
+[JsonProperty("Invoice")]
+public ssConectaProveedores.RestRecords.RESTEN_d1d0320db36efbb094ad0082361435a0EntityRecord AttrInvoice;
+
+[JsonProperty("InvoiceExtendedReceiver")]
+public ssConectaProveedores.RestRecords.RESTEN_b0c20b1f1237d3e4f4e5e432cd60cb6aEntityRecord AttrInvoiceExtendedReceiver;
+
+[JsonProperty("InvoiceExtendedCartaPorte")]
+public ssConectaProveedores.RestRecords.RESTEN_9bd576a05df3846c52ce88a606aff414EntityRecord AttrInvoiceExtendedCartaPorte;
+
+[JsonProperty("InvoiceExtendedIssuer")]
+public ssConectaProveedores.RestRecords.RESTEN_1ca446167f1a5fee035306f622895668EntityRecord AttrInvoiceExtendedIssuer;
+
+[JsonProperty("InvoiceAccounting")]
+public ssConectaProveedores.RestRecords.RESTEN_b3917cbd7cc45d0b71b8ce3e028f14a3EntityRecord AttrInvoiceAccounting;
+
+[JsonProperty("InvoiceExtended")]
+public ssConectaProveedores.RestRecords.RESTEN_f81a3d226103fd013068b8763798067aEntityRecord AttrInvoiceExtended;
+
+public RESTRC_2c7478516bbd3eed6a35183496a9f500() { }
+
+public RESTRC_2c7478516bbd3eed6a35183496a9f500 (RC_2c7478516bbd3eed6a35183496a9f500 s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrInvoice = ConvertToRestWithoutDefaults(s.ssENInvoice, new EN_d1d0320db36efbb094ad0082361435a0EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_d1d0320db36efbb094ad0082361435a0EntityRecord.FromStructure, config);
+AttrInvoiceExtendedReceiver = ConvertToRestWithoutDefaults(s.ssENInvoiceExtendedReceiver, new EN_b0c20b1f1237d3e4f4e5e432cd60cb6aEntityRecord(), ssConectaProveedores.RestRecords.RESTEN_b0c20b1f1237d3e4f4e5e432cd60cb6aEntityRecord.FromStructure, config);
+AttrInvoiceExtendedCartaPorte = ConvertToRestWithoutDefaults(s.ssENInvoiceExtendedCartaPorte, new EN_9bd576a05df3846c52ce88a606aff414EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_9bd576a05df3846c52ce88a606aff414EntityRecord.FromStructure, config);
+AttrInvoiceExtendedIssuer = ConvertToRestWithoutDefaults(s.ssENInvoiceExtendedIssuer, new EN_1ca446167f1a5fee035306f622895668EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_1ca446167f1a5fee035306f622895668EntityRecord.FromStructure, config);
+AttrInvoiceAccounting = ConvertToRestWithoutDefaults(s.ssENInvoiceAccounting, new EN_b3917cbd7cc45d0b71b8ce3e028f14a3EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_b3917cbd7cc45d0b71b8ce3e028f14a3EntityRecord.FromStructure, config);
+AttrInvoiceExtended = ConvertToRestWithoutDefaults(s.ssENInvoiceExtended, new EN_f81a3d226103fd013068b8763798067aEntityRecord(), ssConectaProveedores.RestRecords.RESTEN_f81a3d226103fd013068b8763798067aEntityRecord.FromStructure, config);
+  } else {
+AttrInvoice = ssConectaProveedores.RestRecords.RESTEN_d1d0320db36efbb094ad0082361435a0EntityRecord.FromStructure(s.ssENInvoice, config);
+AttrInvoiceExtendedReceiver = ssConectaProveedores.RestRecords.RESTEN_b0c20b1f1237d3e4f4e5e432cd60cb6aEntityRecord.FromStructure(s.ssENInvoiceExtendedReceiver, config);
+AttrInvoiceExtendedCartaPorte = ssConectaProveedores.RestRecords.RESTEN_9bd576a05df3846c52ce88a606aff414EntityRecord.FromStructure(s.ssENInvoiceExtendedCartaPorte, config);
+AttrInvoiceExtendedIssuer = ssConectaProveedores.RestRecords.RESTEN_1ca446167f1a5fee035306f622895668EntityRecord.FromStructure(s.ssENInvoiceExtendedIssuer, config);
+AttrInvoiceAccounting = ssConectaProveedores.RestRecords.RESTEN_b3917cbd7cc45d0b71b8ce3e028f14a3EntityRecord.FromStructure(s.ssENInvoiceAccounting, config);
+AttrInvoiceExtended = ssConectaProveedores.RestRecords.RESTEN_f81a3d226103fd013068b8763798067aEntityRecord.FromStructure(s.ssENInvoiceExtended, config);
+  }
+}
+
+public static RC_2c7478516bbd3eed6a35183496a9f500 ToStructure(ssConectaProveedores.RestRecords.RESTRC_2c7478516bbd3eed6a35183496a9f500 obj) { 
+  RC_2c7478516bbd3eed6a35183496a9f500 s = new RC_2c7478516bbd3eed6a35183496a9f500();
+  if(obj != null) {
+  s.ssENInvoice = ssConectaProveedores.RestRecords.RESTEN_d1d0320db36efbb094ad0082361435a0EntityRecord.ToStructure(obj.AttrInvoice);
+  s.ssENInvoiceExtendedReceiver = ssConectaProveedores.RestRecords.RESTEN_b0c20b1f1237d3e4f4e5e432cd60cb6aEntityRecord.ToStructure(obj.AttrInvoiceExtendedReceiver);
+  s.ssENInvoiceExtendedCartaPorte = ssConectaProveedores.RestRecords.RESTEN_9bd576a05df3846c52ce88a606aff414EntityRecord.ToStructure(obj.AttrInvoiceExtendedCartaPorte);
+  s.ssENInvoiceExtendedIssuer = ssConectaProveedores.RestRecords.RESTEN_1ca446167f1a5fee035306f622895668EntityRecord.ToStructure(obj.AttrInvoiceExtendedIssuer);
+  s.ssENInvoiceAccounting = ssConectaProveedores.RestRecords.RESTEN_b3917cbd7cc45d0b71b8ce3e028f14a3EntityRecord.ToStructure(obj.AttrInvoiceAccounting);
+  s.ssENInvoiceExtended = ssConectaProveedores.RestRecords.RESTEN_f81a3d226103fd013068b8763798067aEntityRecord.ToStructure(obj.AttrInvoiceExtended);
+  }
+  return s;
+}
+
+public static Func<RC_2c7478516bbd3eed6a35183496a9f500, ssConectaProveedores.RestRecords.RESTRC_2c7478516bbd3eed6a35183496a9f500> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (RC_2c7478516bbd3eed6a35183496a9f500 s) => FromStructure(s, config);
+}
+public static ssConectaProveedores.RestRecords.RESTRC_2c7478516bbd3eed6a35183496a9f500 FromStructure(RC_2c7478516bbd3eed6a35183496a9f500 s, IBehaviorsConfiguration config) { 
+  return new ssConectaProveedores.RestRecords.RESTRC_2c7478516bbd3eed6a35183496a9f500(s, config);
+}
+
+}
+
+

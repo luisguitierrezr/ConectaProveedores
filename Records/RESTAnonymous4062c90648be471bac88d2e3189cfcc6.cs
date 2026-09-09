@@ -1,0 +1,76 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions;
+using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using System.Text.Json.Serialization;
+
+
+namespace ssConectaProveedores.RestRecords;
+
+// RequisitionRequisitionAccountingAllFilesRequisitionAccConceptsRecordListRequisitionCostCentersRequisitionServicesi_RequisitionAccConcept_EstimEqualAgRecord
+public class RESTRC_44742d4360afdf16ff97b37b2eff1760 : AbstractRESTStructure<RC_44742d4360afdf16ff97b37b2eff1760> {
+[JsonProperty("Requisition")]
+public ssConectaProveedores.RestRecords.RESTEN_98680591dcf3728e0877a90eb5e1e552EntityRecord AttrRequisition;
+
+[JsonProperty("RequisitionAccounting")]
+public ssConectaProveedores.RestRecords.RESTEN_3554712eb61e9f0a2132c551df0f1db5EntityRecord AttrRequisitionAccounting;
+
+[JsonProperty("AllFiles")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure> AttrAllFiles;
+
+[JsonProperty("RequisitionAccConceptsRecordList")]
+public RestList<ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e> AttrRequisitionAccConceptsRecordList;
+
+[JsonProperty("RequisitionCostCenters")]
+public RestList<ssConectaProveedores.RestRecords.RESTEN_114fcf95674648310a3efb0d78529a37EntityRecord> AttrRequisitionCostCenters;
+
+[JsonProperty("RequisitionServices")]
+public RestList<ssConectaProveedores.RestRecords.RESTRC_04e7247757060d4016b43102119b0dd6> AttrRequisitionServices;
+
+[JsonProperty("i_RequisitionAccConcept_EstimEqualAg")]
+public ssConectaProveedores.RestRecords.RESTRC_cdb29de40f41bea5403aac7edb2d6159 Attri_RequisitionAccConcept_EstimEqualAg;
+
+public RESTRC_44742d4360afdf16ff97b37b2eff1760() { }
+
+public RESTRC_44742d4360afdf16ff97b37b2eff1760 (RC_44742d4360afdf16ff97b37b2eff1760 s, IBehaviorsConfiguration config) {
+  if (config.DefaultValuesBehavior == DefaultValuesBehavior.DontSend) { 
+AttrRequisition = ConvertToRestWithoutDefaults(s.ssENRequisition, new EN_98680591dcf3728e0877a90eb5e1e552EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_98680591dcf3728e0877a90eb5e1e552EntityRecord.FromStructure, config);
+AttrRequisitionAccounting = ConvertToRestWithoutDefaults(s.ssENRequisitionAccounting, new EN_3554712eb61e9f0a2132c551df0f1db5EntityRecord(), ssConectaProveedores.RestRecords.RESTEN_3554712eb61e9f0a2132c551df0f1db5EntityRecord.FromStructure, config);
+AttrAllFiles = s.ssRLAllFiles.Length == 0 ? null : s.ssRLAllFiles.ToRestList<ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure>(ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure.FromStructureDelegate(config));
+AttrRequisitionAccConceptsRecordList = s.ssRLRequisitionAccConceptsRecordList.Length == 0 ? null : s.ssRLRequisitionAccConceptsRecordList.ToRestList<ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e>(ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e.FromStructureDelegate(config));
+AttrRequisitionCostCenters = s.ssRLRequisitionCostCenters.Length == 0 ? null : s.ssRLRequisitionCostCenters.ToRestList<ssConectaProveedores.RestRecords.RESTEN_114fcf95674648310a3efb0d78529a37EntityRecord>(ssConectaProveedores.RestRecords.RESTEN_114fcf95674648310a3efb0d78529a37EntityRecord.FromStructureDelegate(config));
+AttrRequisitionServices = s.ssRLRequisitionServices.Length == 0 ? null : s.ssRLRequisitionServices.ToRestList<ssConectaProveedores.RestRecords.RESTRC_04e7247757060d4016b43102119b0dd6>(ssConectaProveedores.RestRecords.RESTRC_04e7247757060d4016b43102119b0dd6.FromStructureDelegate(config));
+Attri_RequisitionAccConcept_EstimEqualAg = ConvertToRestWithoutDefaults(s.ssRCi_RequisitionAccConcept_EstimEqualAg, new RC_cdb29de40f41bea5403aac7edb2d6159(), ssConectaProveedores.RestRecords.RESTRC_cdb29de40f41bea5403aac7edb2d6159.FromStructure, config);
+  } else {
+AttrRequisition = ssConectaProveedores.RestRecords.RESTEN_98680591dcf3728e0877a90eb5e1e552EntityRecord.FromStructure(s.ssENRequisition, config);
+AttrRequisitionAccounting = ssConectaProveedores.RestRecords.RESTEN_3554712eb61e9f0a2132c551df0f1db5EntityRecord.FromStructure(s.ssENRequisitionAccounting, config);
+AttrAllFiles = s.ssRLAllFiles.ToRestList<ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure>(ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure.FromStructureDelegate(config));
+AttrRequisitionAccConceptsRecordList = s.ssRLRequisitionAccConceptsRecordList.ToRestList<ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e>(ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e.FromStructureDelegate(config));
+AttrRequisitionCostCenters = s.ssRLRequisitionCostCenters.ToRestList<ssConectaProveedores.RestRecords.RESTEN_114fcf95674648310a3efb0d78529a37EntityRecord>(ssConectaProveedores.RestRecords.RESTEN_114fcf95674648310a3efb0d78529a37EntityRecord.FromStructureDelegate(config));
+AttrRequisitionServices = s.ssRLRequisitionServices.ToRestList<ssConectaProveedores.RestRecords.RESTRC_04e7247757060d4016b43102119b0dd6>(ssConectaProveedores.RestRecords.RESTRC_04e7247757060d4016b43102119b0dd6.FromStructureDelegate(config));
+Attri_RequisitionAccConcept_EstimEqualAg = ssConectaProveedores.RestRecords.RESTRC_cdb29de40f41bea5403aac7edb2d6159.FromStructure(s.ssRCi_RequisitionAccConcept_EstimEqualAg, config);
+  }
+}
+
+public static RC_44742d4360afdf16ff97b37b2eff1760 ToStructure(ssConectaProveedores.RestRecords.RESTRC_44742d4360afdf16ff97b37b2eff1760 obj) { 
+  RC_44742d4360afdf16ff97b37b2eff1760 s = new RC_44742d4360afdf16ff97b37b2eff1760();
+  if(obj != null) {
+  s.ssENRequisition = ssConectaProveedores.RestRecords.RESTEN_98680591dcf3728e0877a90eb5e1e552EntityRecord.ToStructure(obj.AttrRequisition);
+  s.ssENRequisitionAccounting = ssConectaProveedores.RestRecords.RESTEN_3554712eb61e9f0a2132c551df0f1db5EntityRecord.ToStructure(obj.AttrRequisitionAccounting);
+  s.ssRLAllFiles = RL_7a479a555821b093171c5d3cd3382006.FromRestList(obj.AttrAllFiles, ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure.ToStructure);
+  s.ssRLRequisitionAccConceptsRecordList = RL_7c236018492d50b3625a5b0d981eb4eb.FromRestList(obj.AttrRequisitionAccConceptsRecordList, ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e.ToStructure);
+  s.ssRLRequisitionCostCenters = RL_943f36694cec370c0ce0c406bfa23715.FromRestList(obj.AttrRequisitionCostCenters, ssConectaProveedores.RestRecords.RESTEN_114fcf95674648310a3efb0d78529a37EntityRecord.ToStructure);
+  s.ssRLRequisitionServices = RL_b47d9310671b1b627f451a333bb8980a.FromRestList(obj.AttrRequisitionServices, ssConectaProveedores.RestRecords.RESTRC_04e7247757060d4016b43102119b0dd6.ToStructure);
+  s.ssRCi_RequisitionAccConcept_EstimEqualAg = ssConectaProveedores.RestRecords.RESTRC_cdb29de40f41bea5403aac7edb2d6159.ToStructure(obj.Attri_RequisitionAccConcept_EstimEqualAg);
+  }
+  return s;
+}
+
+public static Func<RC_44742d4360afdf16ff97b37b2eff1760, ssConectaProveedores.RestRecords.RESTRC_44742d4360afdf16ff97b37b2eff1760> FromStructureDelegate(IBehaviorsConfiguration config) { 
+  return (RC_44742d4360afdf16ff97b37b2eff1760 s) => FromStructure(s, config);
+}
+public static ssConectaProveedores.RestRecords.RESTRC_44742d4360afdf16ff97b37b2eff1760 FromStructure(RC_44742d4360afdf16ff97b37b2eff1760 s, IBehaviorsConfiguration config) { 
+  return new ssConectaProveedores.RestRecords.RESTRC_44742d4360afdf16ff97b37b2eff1760(s, config);
+}
+
+}
+
+

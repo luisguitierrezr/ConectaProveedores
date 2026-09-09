@@ -1,0 +1,240 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAccountingData_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("RequisitionAccounting")]
+public ssConectaProveedores.RestRecords.RESTEN_3554712eb61e9f0a2132c551df0f1db5EntityRecord outParamRequisitionAccounting;
+[JsonProperty("o_Estim_Equal_Agreed")]
+public ssConectaProveedores.RestRecords.RESTRC_cdb29de40f41bea5403aac7edb2d6159 outParamo_Estim_Equal_Agreed;
+[JsonProperty("o_Remaining")]
+public RestList<ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e> outParamo_Remaining;
+[JsonProperty("ExchangeRateEvidence")]
+public ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure outParamExchangeRateEvidence;
+[JsonProperty("REPSE")]
+public ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure outParamREPSE;
+
+
+    public static RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAccountingData_Outputs FromOutputs(IBehaviorsConfiguration conf, EN_3554712eb61e9f0a2132c551df0f1db5EntityRecord outParamRequisitionAccounting, RC_cdb29de40f41bea5403aac7edb2d6159 outParamo_Estim_Equal_Agreed, RL_7c236018492d50b3625a5b0d981eb4eb outParamo_Remaining, ST_26b16bea631cbd94cf555acb5c7a4be3Structure outParamExchangeRateEvidence, ST_26b16bea631cbd94cf555acb5c7a4be3Structure outParamREPSE) {RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAccountingData_Outputs result = new RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAccountingData_Outputs();
+// Write the needed fields of the record outParamRequisitionAccounting to the result.outParamRequisitionAccounting
+result.outParamRequisitionAccounting = new ssConectaProveedores.RestRecords.RESTEN_3554712eb61e9f0a2132c551df0f1db5EntityRecord();
+result.outParamRequisitionAccounting.AttrId = (long?) outParamRequisitionAccounting.ssId;
+result.outParamRequisitionAccounting.AttrRequisitionId = (long?) outParamRequisitionAccounting.ssRequisitionId;
+result.outParamRequisitionAccounting.AttrHasEstim_Equal_AgrePaym_DEPR = (bool?) outParamRequisitionAccounting.ssHasEstim_Equal_AgrePaym_DEPR;
+result.outParamRequisitionAccounting.AttrHasSettlement_DEPR = (bool?) outParamRequisitionAccounting.ssHasSettlement_DEPR;
+result.outParamRequisitionAccounting.AttrHasCreditNote_DEPR = (bool?) outParamRequisitionAccounting.ssHasCreditNote_DEPR;
+result.outParamRequisitionAccounting.AttrHasVoucher_DEPR = (bool?) outParamRequisitionAccounting.ssHasVoucher_DEPR;
+result.outParamRequisitionAccounting.AttrHasSpecialPostDeliveryAuth = (bool?) outParamRequisitionAccounting.ssHasSpecialPostDeliveryAuth;
+result.outParamRequisitionAccounting.AttrSpecialPostDeliveryAuthId = (int?) outParamRequisitionAccounting.ssSpecialPostDeliveryAuthId;
+result.outParamRequisitionAccounting.AttrAmount_DEPREC = (decimal?) outParamRequisitionAccounting.ssAmount_DEPREC;
+result.outParamRequisitionAccounting.AttrCurrencyId_DEPREC = outParamRequisitionAccounting.ssCurrencyId_DEPREC;
+result.outParamRequisitionAccounting.AttrPaymentMethodId_DEPREC = (long?) outParamRequisitionAccounting.ssPaymentMethodId_DEPREC;
+result.outParamRequisitionAccounting.AttrPaymentTermId_DEPREC = (long?) outParamRequisitionAccounting.ssPaymentTermId_DEPREC;
+result.outParamRequisitionAccounting.AttrNegociatedExchangeRateAcc = (decimal?) outParamRequisitionAccounting.ssNegociatedExchangeRateAcc;
+result.outParamRequisitionAccounting.AttrExchangeRateComment = outParamRequisitionAccounting.ssExchangeRateComment;
+result.outParamRequisitionAccounting.AttrEvidenceFileId = (long?) outParamRequisitionAccounting.ssEvidenceFileId;
+result.outParamRequisitionAccounting.AttrHasContract = (bool?) outParamRequisitionAccounting.ssHasContract;
+result.outParamRequisitionAccounting.AttrHasREPSE = (bool?) outParamRequisitionAccounting.ssHasREPSE;
+result.outParamRequisitionAccounting.AttrHasPaymentSupplement = (bool?) outParamRequisitionAccounting.ssHasPaymentSupplement;
+result.outParamRequisitionAccounting.AttrHasNoticeOfPaymentSuspension = (bool?) outParamRequisitionAccounting.ssHasNoticeOfPaymentSuspension;
+// Write the needed fields of the record outParamo_Estim_Equal_Agreed to the result.outParamo_Estim_Equal_Agreed
+result.outParamo_Estim_Equal_Agreed = new ssConectaProveedores.RestRecords.RESTRC_cdb29de40f41bea5403aac7edb2d6159();
+// Write the needed fields of the record outParamo_Estim_Equal_Agreed.ssENMainAccConcept to the result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept = new ssConectaProveedores.RestRecords.RESTEN_e5ff66566e5f431d75aae3b3535726a7EntityRecord();
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrId = (long?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssId;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrRequisitionAccountingId = (long?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssRequisitionAccountingId;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrAccountingDataTypeId = (int?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssAccountingDataTypeId;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrNumberOfPayments = (int?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssNumberOfPayments;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrAmount = (decimal?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssAmount;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrCurrencyId = outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssCurrencyId;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrRequisitionAccConceptsId = (long?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssRequisitionAccConceptsId;
+result.outParamo_Estim_Equal_Agreed.AttrMainAccConcept.AttrIsActive = (bool?) outParamo_Estim_Equal_Agreed.ssENMainAccConcept.ssIsActive;
+// Write the needed fields of the list outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts to the result.outParamo_Estim_Equal_Agreed.AttrSubAccConcepts
+ssConectaProveedores.RestRecords.RESTEN_e5ff66566e5f431d75aae3b3535726a7EntityRecord tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement;
+if(outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.Empty) {
+// Write the needed fields of the record outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec to the tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement = new ssConectaProveedores.RestRecords.RESTEN_e5ff66566e5f431d75aae3b3535726a7EntityRecord();
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrRequisitionAccountingId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssRequisitionAccountingId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrAccountingDataTypeId = (int?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssAccountingDataTypeId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrNumberOfPayments = (int?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssNumberOfPayments;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrAmount = (decimal?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssAmount;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrCurrencyId = outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssCurrencyId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrRequisitionAccConceptsId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssRequisitionAccConceptsId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrIsActive = (bool?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssIsActive;
+result.outParamo_Estim_Equal_Agreed.AttrSubAccConcepts = new RestList<ssConectaProveedores.RestRecords.RESTEN_e5ff66566e5f431d75aae3b3535726a7EntityRecord>(new ssConectaProveedores.RestRecords.RESTEN_e5ff66566e5f431d75aae3b3535726a7EntityRecord[] {}, tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTEN_e5ff66566e5f431d75aae3b3535726a7EntityRecord>
+ tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConcepts1List = new List<ssConectaProveedores.RestRecords.RESTEN_e5ff66566e5f431d75aae3b3535726a7EntityRecord>
+();
+try {outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.StartIteration();
+while (!(outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.Eof)) {
+// Write the needed fields of the record outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec to the tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement = new ssConectaProveedores.RestRecords.RESTEN_e5ff66566e5f431d75aae3b3535726a7EntityRecord();
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrRequisitionAccountingId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssRequisitionAccountingId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrAccountingDataTypeId = (int?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssAccountingDataTypeId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrNumberOfPayments = (int?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssNumberOfPayments;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrAmount = (decimal?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssAmount;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrCurrencyId = outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssCurrencyId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrRequisitionAccConceptsId = (long?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssRequisitionAccConceptsId;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement.AttrIsActive = (bool?) outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.CurrentRec.ssIsActive;
+tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConcepts1List.Add(tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConceptsElement);
+outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.Advance();
+}
+
+} finally {
+outParamo_Estim_Equal_Agreed.ssRLSubAccConcepts.EndIteration();
+}
+
+result.outParamo_Estim_Equal_Agreed.AttrSubAccConcepts = new RestList<ssConectaProveedores.RestRecords.RESTEN_e5ff66566e5f431d75aae3b3535726a7EntityRecord>(tmpoutParamo_Estim_Equal_Agreed_ssRLSubAccConcepts1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTEN_e5ff66566e5f431d75aae3b3535726a7EntityRecord));
+}
+
+// Write the needed fields of the list outParamo_Remaining to the result.outParamo_Remaining
+ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e tmpoutParamo_RemainingElement;
+if(outParamo_Remaining.Empty) {
+// Write the needed fields of the record outParamo_Remaining.CurrentRec to the tmpoutParamo_RemainingElement
+tmpoutParamo_RemainingElement = new ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e();
+// Write the needed fields of the record outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts to the tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts = new ssConectaProveedores.RestRecords.RESTEN_e5ff66566e5f431d75aae3b3535726a7EntityRecord();
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrId = (long?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssId;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrRequisitionAccountingId = (long?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssRequisitionAccountingId;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrAccountingDataTypeId = (int?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssAccountingDataTypeId;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrNumberOfPayments = (int?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssNumberOfPayments;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrAmount = (decimal?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssAmount;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrCurrencyId = outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssCurrencyId;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrRequisitionAccConceptsId = (long?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssRequisitionAccConceptsId;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrIsActive = (bool?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssIsActive;
+// Write the needed fields of the record outParamo_Remaining.CurrentRec.ssENAccountingDataType to the tmpoutParamo_RemainingElement.AttrAccountingDataType
+tmpoutParamo_RemainingElement.AttrAccountingDataType = new ssConectaProveedores.RestRecords.RESTEN_1a6e61f23608fb50bfdbc36bcf040caeEntityRecord();
+tmpoutParamo_RemainingElement.AttrAccountingDataType.AttrId = (int?) outParamo_Remaining.CurrentRec.ssENAccountingDataType.ssId;
+tmpoutParamo_RemainingElement.AttrAccountingDataType.AttrLabel = outParamo_Remaining.CurrentRec.ssENAccountingDataType.ssLabel;
+tmpoutParamo_RemainingElement.AttrAccountingDataType.AttrOrder = (int?) outParamo_Remaining.CurrentRec.ssENAccountingDataType.ssOrder;
+tmpoutParamo_RemainingElement.AttrAccountingDataType.AttrIs_Active = (bool?) outParamo_Remaining.CurrentRec.ssENAccountingDataType.ssIs_Active;
+tmpoutParamo_RemainingElement.AttrAccountingDataType.AttrIsEstim_Equal_Agreed = (bool?) outParamo_Remaining.CurrentRec.ssENAccountingDataType.ssIsEstim_Equal_Agreed;
+result.outParamo_Remaining = new RestList<ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e>(new ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e[] {}, tmpoutParamo_RemainingElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e>
+ tmpoutParamo_Remaining1List = new List<ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e>
+();
+try {outParamo_Remaining.StartIteration();
+while (!(outParamo_Remaining.Eof)) {
+// Write the needed fields of the record outParamo_Remaining.CurrentRec to the tmpoutParamo_RemainingElement
+tmpoutParamo_RemainingElement = new ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e();
+// Write the needed fields of the record outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts to the tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts = new ssConectaProveedores.RestRecords.RESTEN_e5ff66566e5f431d75aae3b3535726a7EntityRecord();
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrId = (long?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssId;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrRequisitionAccountingId = (long?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssRequisitionAccountingId;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrAccountingDataTypeId = (int?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssAccountingDataTypeId;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrNumberOfPayments = (int?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssNumberOfPayments;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrAmount = (decimal?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssAmount;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrCurrencyId = outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssCurrencyId;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrRequisitionAccConceptsId = (long?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssRequisitionAccConceptsId;
+tmpoutParamo_RemainingElement.AttrRequisitionAccConcepts.AttrIsActive = (bool?) outParamo_Remaining.CurrentRec.ssENRequisitionAccConcepts.ssIsActive;
+// Write the needed fields of the record outParamo_Remaining.CurrentRec.ssENAccountingDataType to the tmpoutParamo_RemainingElement.AttrAccountingDataType
+tmpoutParamo_RemainingElement.AttrAccountingDataType = new ssConectaProveedores.RestRecords.RESTEN_1a6e61f23608fb50bfdbc36bcf040caeEntityRecord();
+tmpoutParamo_RemainingElement.AttrAccountingDataType.AttrId = (int?) outParamo_Remaining.CurrentRec.ssENAccountingDataType.ssId;
+tmpoutParamo_RemainingElement.AttrAccountingDataType.AttrLabel = outParamo_Remaining.CurrentRec.ssENAccountingDataType.ssLabel;
+tmpoutParamo_RemainingElement.AttrAccountingDataType.AttrOrder = (int?) outParamo_Remaining.CurrentRec.ssENAccountingDataType.ssOrder;
+tmpoutParamo_RemainingElement.AttrAccountingDataType.AttrIs_Active = (bool?) outParamo_Remaining.CurrentRec.ssENAccountingDataType.ssIs_Active;
+tmpoutParamo_RemainingElement.AttrAccountingDataType.AttrIsEstim_Equal_Agreed = (bool?) outParamo_Remaining.CurrentRec.ssENAccountingDataType.ssIsEstim_Equal_Agreed;
+tmpoutParamo_Remaining1List.Add(tmpoutParamo_RemainingElement);
+outParamo_Remaining.Advance();
+}
+
+} finally {
+outParamo_Remaining.EndIteration();
+}
+
+result.outParamo_Remaining = new RestList<ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e>(tmpoutParamo_Remaining1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e));
+}
+
+// Write the needed fields of the record outParamExchangeRateEvidence to the result.outParamExchangeRateEvidence
+result.outParamExchangeRateEvidence = new ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure();
+// Write the needed fields of the record outParamExchangeRateEvidence.ssRequisitionContractFile to the result.outParamExchangeRateEvidence.AttrRequisitionContractFile
+result.outParamExchangeRateEvidence.AttrRequisitionContractFile = new ssConectaProveedores.RestRecords.RESTEN_aeab0089a9236dfc6c684ea98f650647EntityRecord();
+result.outParamExchangeRateEvidence.AttrRequisitionContractFile.AttrId = (long?) outParamExchangeRateEvidence.ssRequisitionContractFile.ssId;
+result.outParamExchangeRateEvidence.AttrRequisitionContractFile.AttrRequisitionId = (long?) outParamExchangeRateEvidence.ssRequisitionContractFile.ssRequisitionId;
+result.outParamExchangeRateEvidence.AttrRequisitionContractFile.AttrRequisitionFileId = (long?) outParamExchangeRateEvidence.ssRequisitionContractFile.ssRequisitionFileId;
+result.outParamExchangeRateEvidence.AttrRequisitionContractFile.AttrContractFileTypeId = (int?) outParamExchangeRateEvidence.ssRequisitionContractFile.ssContractFileTypeId;
+result.outParamExchangeRateEvidence.AttrRequisitionContractFile.AttrAmount = (decimal?) outParamExchangeRateEvidence.ssRequisitionContractFile.ssAmount;
+result.outParamExchangeRateEvidence.AttrRequisitionContractFile.AttrCurrencyId = outParamExchangeRateEvidence.ssRequisitionContractFile.ssCurrencyId;
+result.outParamExchangeRateEvidence.AttrRequisitionContractFile.AttrDepositTypeId = (int?) outParamExchangeRateEvidence.ssRequisitionContractFile.ssDepositTypeId;
+result.outParamExchangeRateEvidence.AttrRequisitionContractFile.AttrInsuranceTypeId = (int?) outParamExchangeRateEvidence.ssRequisitionContractFile.ssInsuranceTypeId;
+result.outParamExchangeRateEvidence.AttrRequisitionContractFile.AttrAdvancePaymentTypeId = (int?) outParamExchangeRateEvidence.ssRequisitionContractFile.ssAdvancePaymentTypeId;
+// Write the needed fields of the record outParamExchangeRateEvidence.ssRequisitionFile to the result.outParamExchangeRateEvidence.AttrRequisitionFile
+result.outParamExchangeRateEvidence.AttrRequisitionFile = new ssConectaProveedores.RestRecords.RESTEN_4cce425e15647f937e21de4e52849889EntityRecord();
+result.outParamExchangeRateEvidence.AttrRequisitionFile.AttrId = (long?) outParamExchangeRateEvidence.ssRequisitionFile.ssId;
+result.outParamExchangeRateEvidence.AttrRequisitionFile.AttrFilename = outParamExchangeRateEvidence.ssRequisitionFile.ssFilename;
+result.outParamExchangeRateEvidence.AttrRequisitionFile.AttrVENDOR = outParamExchangeRateEvidence.ssRequisitionFile.ssVENDOR;
+result.outParamExchangeRateEvidence.AttrRequisitionFile.AttrDOC_TYPE = outParamExchangeRateEvidence.ssRequisitionFile.ssDOC_TYPE;
+result.outParamExchangeRateEvidence.AttrRequisitionFile.AttrSAP_OBJECT = outParamExchangeRateEvidence.ssRequisitionFile.ssSAP_OBJECT;
+result.outParamExchangeRateEvidence.AttrRequisitionFile.AttrCreatedBy = outParamExchangeRateEvidence.ssRequisitionFile.ssCreatedBy;
+result.outParamExchangeRateEvidence.AttrRequisitionFile.AttrCreatedOn = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateTimeToRestType(outParamExchangeRateEvidence.ssRequisitionFile.ssCreatedOn, conf.DateTimeFormat);
+result.outParamExchangeRateEvidence.AttrRequisitionFile.AttrStorageId = (long?) outParamExchangeRateEvidence.ssRequisitionFile.ssStorageId;
+// Write the needed fields of the record outParamExchangeRateEvidence.ssValid to the result.outParamExchangeRateEvidence.AttrValid
+result.outParamExchangeRateEvidence.AttrValid = new ssConectaProveedores.RestRecords.RESTST_b453bea0930035904f55a74692afd3a8Structure();
+result.outParamExchangeRateEvidence.AttrValid.AttrIsValid = (bool?) outParamExchangeRateEvidence.ssValid.ssIsValid;
+result.outParamExchangeRateEvidence.AttrValid.AttrValidationMessage = outParamExchangeRateEvidence.ssValid.ssValidationMessage;
+result.outParamExchangeRateEvidence.AttrBinary = outParamExchangeRateEvidence.ssBinary;
+result.outParamExchangeRateEvidence.AttrBigUploadfileId = (long?) outParamExchangeRateEvidence.ssBigUploadfileId;
+// Write the needed fields of the record outParamREPSE to the result.outParamREPSE
+result.outParamREPSE = new ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure();
+// Write the needed fields of the record outParamREPSE.ssRequisitionContractFile to the result.outParamREPSE.AttrRequisitionContractFile
+result.outParamREPSE.AttrRequisitionContractFile = new ssConectaProveedores.RestRecords.RESTEN_aeab0089a9236dfc6c684ea98f650647EntityRecord();
+result.outParamREPSE.AttrRequisitionContractFile.AttrId = (long?) outParamREPSE.ssRequisitionContractFile.ssId;
+result.outParamREPSE.AttrRequisitionContractFile.AttrRequisitionId = (long?) outParamREPSE.ssRequisitionContractFile.ssRequisitionId;
+result.outParamREPSE.AttrRequisitionContractFile.AttrRequisitionFileId = (long?) outParamREPSE.ssRequisitionContractFile.ssRequisitionFileId;
+result.outParamREPSE.AttrRequisitionContractFile.AttrContractFileTypeId = (int?) outParamREPSE.ssRequisitionContractFile.ssContractFileTypeId;
+result.outParamREPSE.AttrRequisitionContractFile.AttrAmount = (decimal?) outParamREPSE.ssRequisitionContractFile.ssAmount;
+result.outParamREPSE.AttrRequisitionContractFile.AttrCurrencyId = outParamREPSE.ssRequisitionContractFile.ssCurrencyId;
+result.outParamREPSE.AttrRequisitionContractFile.AttrDepositTypeId = (int?) outParamREPSE.ssRequisitionContractFile.ssDepositTypeId;
+result.outParamREPSE.AttrRequisitionContractFile.AttrInsuranceTypeId = (int?) outParamREPSE.ssRequisitionContractFile.ssInsuranceTypeId;
+result.outParamREPSE.AttrRequisitionContractFile.AttrAdvancePaymentTypeId = (int?) outParamREPSE.ssRequisitionContractFile.ssAdvancePaymentTypeId;
+// Write the needed fields of the record outParamREPSE.ssRequisitionFile to the result.outParamREPSE.AttrRequisitionFile
+result.outParamREPSE.AttrRequisitionFile = new ssConectaProveedores.RestRecords.RESTEN_4cce425e15647f937e21de4e52849889EntityRecord();
+result.outParamREPSE.AttrRequisitionFile.AttrId = (long?) outParamREPSE.ssRequisitionFile.ssId;
+result.outParamREPSE.AttrRequisitionFile.AttrFilename = outParamREPSE.ssRequisitionFile.ssFilename;
+result.outParamREPSE.AttrRequisitionFile.AttrVENDOR = outParamREPSE.ssRequisitionFile.ssVENDOR;
+result.outParamREPSE.AttrRequisitionFile.AttrDOC_TYPE = outParamREPSE.ssRequisitionFile.ssDOC_TYPE;
+result.outParamREPSE.AttrRequisitionFile.AttrSAP_OBJECT = outParamREPSE.ssRequisitionFile.ssSAP_OBJECT;
+result.outParamREPSE.AttrRequisitionFile.AttrCreatedBy = outParamREPSE.ssRequisitionFile.ssCreatedBy;
+result.outParamREPSE.AttrRequisitionFile.AttrCreatedOn = OutSystems.RESTService.Runtime.Abstractions.Conversions.DateTimeToRestType(outParamREPSE.ssRequisitionFile.ssCreatedOn, conf.DateTimeFormat);
+result.outParamREPSE.AttrRequisitionFile.AttrStorageId = (long?) outParamREPSE.ssRequisitionFile.ssStorageId;
+// Write the needed fields of the record outParamREPSE.ssValid to the result.outParamREPSE.AttrValid
+result.outParamREPSE.AttrValid = new ssConectaProveedores.RestRecords.RESTST_b453bea0930035904f55a74692afd3a8Structure();
+result.outParamREPSE.AttrValid.AttrIsValid = (bool?) outParamREPSE.ssValid.ssIsValid;
+result.outParamREPSE.AttrValid.AttrValidationMessage = outParamREPSE.ssValid.ssValidationMessage;
+result.outParamREPSE.AttrBinary = outParamREPSE.ssBinary;
+result.outParamREPSE.AttrBigUploadfileId = (long?) outParamREPSE.ssBigUploadfileId;
+return result;
+}
+
+
+    public static ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAccountingData_Model ToModel(RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAccountingData_Outputs variables) {ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAccountingData_Model result = new ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAccountingData_Model();
+result.outParamRequisitionAccounting = variables == null ? new EN_3554712eb61e9f0a2132c551df0f1db5EntityRecord() : ssConectaProveedores.RestRecords.RESTEN_3554712eb61e9f0a2132c551df0f1db5EntityRecord.ToStructure(variables.outParamRequisitionAccounting);
+result.outParamo_Estim_Equal_Agreed = variables == null ? new RC_cdb29de40f41bea5403aac7edb2d6159() : ssConectaProveedores.RestRecords.RESTRC_cdb29de40f41bea5403aac7edb2d6159.ToStructure(variables.outParamo_Estim_Equal_Agreed);
+result.outParamo_Remaining = variables == null ? new RL_7c236018492d50b3625a5b0d981eb4eb() : RL_7c236018492d50b3625a5b0d981eb4eb.FromRestList(variables.outParamo_Remaining, ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e.ToStructure);
+result.outParamExchangeRateEvidence = variables == null ? new ST_26b16bea631cbd94cf555acb5c7a4be3Structure() : ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure.ToStructure(variables.outParamExchangeRateEvidence);
+result.outParamREPSE = variables == null ? new ST_26b16bea631cbd94cf555acb5c7a4be3Structure() : ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure.ToStructure(variables.outParamREPSE);
+return result;
+}
+
+
+    public static RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAccountingData_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAccountingData_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAccountingData_Outputs result = new RESTConectaProveedores_c_Requisitions_RequisitionDetail_DataActionGetAccountingData_Outputs();
+result.outParamRequisitionAccounting = ssConectaProveedores.RestRecords.RESTEN_3554712eb61e9f0a2132c551df0f1db5EntityRecord.FromStructure(screenModel.outParamRequisitionAccounting, conf);
+result.outParamo_Estim_Equal_Agreed = ssConectaProveedores.RestRecords.RESTRC_cdb29de40f41bea5403aac7edb2d6159.FromStructure(screenModel.outParamo_Estim_Equal_Agreed, conf);
+result.outParamo_Remaining = screenModel.outParamo_Remaining.ToRestList<ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e>(ssConectaProveedores.RestRecords.RESTRC_f80fde4acf9a7dc465a1d535c05dfb8e.FromStructureDelegate(conf));
+result.outParamExchangeRateEvidence = ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure.FromStructure(screenModel.outParamExchangeRateEvidence, conf);
+result.outParamREPSE = ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure.FromStructure(screenModel.outParamREPSE, conf);
+return result;
+}
+
+}

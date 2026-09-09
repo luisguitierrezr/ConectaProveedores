@@ -1,0 +1,62 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_DataActionGetUserApplicationRoles_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("UserRolesList")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_9adff333942ff7120fc18c8e55f201fdStructure> outParamUserRolesList;
+
+
+    public static RESTConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_DataActionGetUserApplicationRoles_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_da93b3cf8542f5b831efc106e94ee7e2 outParamUserRolesList) {RESTConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_DataActionGetUserApplicationRoles_Outputs result = new RESTConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_DataActionGetUserApplicationRoles_Outputs();
+// Write the needed fields of the list outParamUserRolesList to the result.outParamUserRolesList
+ssConectaProveedores.RestRecords.RESTST_9adff333942ff7120fc18c8e55f201fdStructure tmpoutParamUserRolesListElement;
+if(outParamUserRolesList.Empty) {
+// Write the needed fields of the record outParamUserRolesList.CurrentRec to the tmpoutParamUserRolesListElement
+tmpoutParamUserRolesListElement = new ssConectaProveedores.RestRecords.RESTST_9adff333942ff7120fc18c8e55f201fdStructure();
+tmpoutParamUserRolesListElement.AttrApplicationRoleId = (long?) outParamUserRolesList.CurrentRec.ssApplicationRoleId;
+tmpoutParamUserRolesListElement.AttrRoleName = outParamUserRolesList.CurrentRec.ssRoleName;
+result.outParamUserRolesList = new RestList<ssConectaProveedores.RestRecords.RESTST_9adff333942ff7120fc18c8e55f201fdStructure>(new ssConectaProveedores.RestRecords.RESTST_9adff333942ff7120fc18c8e55f201fdStructure[] {}, tmpoutParamUserRolesListElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_9adff333942ff7120fc18c8e55f201fdStructure>
+ tmpoutParamUserRolesList1List = new List<ssConectaProveedores.RestRecords.RESTST_9adff333942ff7120fc18c8e55f201fdStructure>
+();
+try {outParamUserRolesList.StartIteration();
+while (!(outParamUserRolesList.Eof)) {
+// Write the needed fields of the record outParamUserRolesList.CurrentRec to the tmpoutParamUserRolesListElement
+tmpoutParamUserRolesListElement = new ssConectaProveedores.RestRecords.RESTST_9adff333942ff7120fc18c8e55f201fdStructure();
+tmpoutParamUserRolesListElement.AttrApplicationRoleId = (long?) outParamUserRolesList.CurrentRec.ssApplicationRoleId;
+tmpoutParamUserRolesListElement.AttrRoleName = outParamUserRolesList.CurrentRec.ssRoleName;
+tmpoutParamUserRolesList1List.Add(tmpoutParamUserRolesListElement);
+outParamUserRolesList.Advance();
+}
+
+} finally {
+outParamUserRolesList.EndIteration();
+}
+
+result.outParamUserRolesList = new RestList<ssConectaProveedores.RestRecords.RESTST_9adff333942ff7120fc18c8e55f201fdStructure>(tmpoutParamUserRolesList1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_9adff333942ff7120fc18c8e55f201fdStructure));
+}
+
+return result;
+}
+
+
+    public static ConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_DataActionGetUserApplicationRoles_Model ToModel(RESTConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_DataActionGetUserApplicationRoles_Outputs variables) {ConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_DataActionGetUserApplicationRoles_Model result = new ConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_DataActionGetUserApplicationRoles_Model();
+result.outParamUserRolesList = variables == null ? new RL_da93b3cf8542f5b831efc106e94ee7e2() : RL_da93b3cf8542f5b831efc106e94ee7e2.FromRestList(variables.outParamUserRolesList, ssConectaProveedores.RestRecords.RESTST_9adff333942ff7120fc18c8e55f201fdStructure.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_DataActionGetUserApplicationRoles_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_DataActionGetUserApplicationRoles_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_DataActionGetUserApplicationRoles_Outputs result = new RESTConectaProveedores_b_CyA_ApprovalProcessCommissionsLeasing_ApprovalCommissionsandLeases_DataActionGetUserApplicationRoles_Outputs();
+result.outParamUserRolesList = screenModel.outParamUserRolesList.ToRestList<ssConectaProveedores.RestRecords.RESTST_9adff333942ff7120fc18c8e55f201fdStructure>(ssConectaProveedores.RestRecords.RESTST_9adff333942ff7120fc18c8e55f201fdStructure.FromStructureDelegate(conf));
+return result;
+}
+
+}

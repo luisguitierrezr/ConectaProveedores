@@ -1,0 +1,2 @@
+﻿
+[data-checkbox]:checked:after{border:var(--border-size-l) solid var(--color-neutral-0);border-right:var(--border-size-none)!important;border-top:var(--border-size-none)!important;display:block;height:4px;left:5px;top:7px;width:12px}[data-checkbox]{height:24px;padding:var(--space-none);width:24px;border-color:var(--color-secondary)!important}

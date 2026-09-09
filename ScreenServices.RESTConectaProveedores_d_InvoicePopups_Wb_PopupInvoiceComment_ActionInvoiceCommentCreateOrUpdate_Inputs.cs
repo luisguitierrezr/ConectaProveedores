@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceComment_ActionInvoiceCommentCreateOrUpdate_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("Source")]
+public ssConectaProveedores.RestRecords.RESTEN_41db3de59e8e7bb612336c1b02d2e4f8EntityRecord inParamSource;
+
+
+    public static RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceComment_ActionInvoiceCommentCreateOrUpdate_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceComment_ActionInvoiceCommentCreateOrUpdate_Inputs result = inputParameters.ToObject<RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceComment_ActionInvoiceCommentCreateOrUpdate_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceComment_ActionInvoiceCommentCreateOrUpdate_Model ToModel() {ConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceComment_ActionInvoiceCommentCreateOrUpdate_Model result = new ConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceComment_ActionInvoiceCommentCreateOrUpdate_Model();
+result.inParamSource = ssConectaProveedores.RestRecords.RESTEN_41db3de59e8e7bb612336c1b02d2e4f8EntityRecord.ToStructure(inParamSource);
+return result;
+}
+
+}

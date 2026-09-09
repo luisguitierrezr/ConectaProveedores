@@ -1,0 +1,68 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_a_Main_Homepage_DataActionGetRequisitionsKPI_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("o_RequisitionCounts")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_34313c5cf94d7ce3c5404858c22fafd9Structure> outParamo_RequisitionCounts;
+
+
+    public static RESTConectaProveedores_a_Main_Homepage_DataActionGetRequisitionsKPI_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_7d9c239ab2336eba85802eb00151e260 outParamo_RequisitionCounts) {RESTConectaProveedores_a_Main_Homepage_DataActionGetRequisitionsKPI_Outputs result = new RESTConectaProveedores_a_Main_Homepage_DataActionGetRequisitionsKPI_Outputs();
+// Write the needed fields of the list outParamo_RequisitionCounts to the result.outParamo_RequisitionCounts
+ssConectaProveedores.RestRecords.RESTST_34313c5cf94d7ce3c5404858c22fafd9Structure tmpoutParamo_RequisitionCountsElement;
+if(outParamo_RequisitionCounts.Empty) {
+// Write the needed fields of the record outParamo_RequisitionCounts.CurrentRec to the tmpoutParamo_RequisitionCountsElement
+tmpoutParamo_RequisitionCountsElement = new ssConectaProveedores.RestRecords.RESTST_34313c5cf94d7ce3c5404858c22fafd9Structure();
+tmpoutParamo_RequisitionCountsElement.AttrValue = (decimal?) outParamo_RequisitionCounts.CurrentRec.ssValue;
+tmpoutParamo_RequisitionCountsElement.AttrLabel = outParamo_RequisitionCounts.CurrentRec.ssLabel;
+tmpoutParamo_RequisitionCountsElement.AttrSeriesName = outParamo_RequisitionCounts.CurrentRec.ssSeriesName;
+tmpoutParamo_RequisitionCountsElement.AttrColor = outParamo_RequisitionCounts.CurrentRec.ssColor;
+tmpoutParamo_RequisitionCountsElement.AttrTooltip = outParamo_RequisitionCounts.CurrentRec.ssTooltip;
+result.outParamo_RequisitionCounts = new RestList<ssConectaProveedores.RestRecords.RESTST_34313c5cf94d7ce3c5404858c22fafd9Structure>(new ssConectaProveedores.RestRecords.RESTST_34313c5cf94d7ce3c5404858c22fafd9Structure[] {}, tmpoutParamo_RequisitionCountsElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_34313c5cf94d7ce3c5404858c22fafd9Structure>
+ tmpoutParamo_RequisitionCounts1List = new List<ssConectaProveedores.RestRecords.RESTST_34313c5cf94d7ce3c5404858c22fafd9Structure>
+();
+try {outParamo_RequisitionCounts.StartIteration();
+while (!(outParamo_RequisitionCounts.Eof)) {
+// Write the needed fields of the record outParamo_RequisitionCounts.CurrentRec to the tmpoutParamo_RequisitionCountsElement
+tmpoutParamo_RequisitionCountsElement = new ssConectaProveedores.RestRecords.RESTST_34313c5cf94d7ce3c5404858c22fafd9Structure();
+tmpoutParamo_RequisitionCountsElement.AttrValue = (decimal?) outParamo_RequisitionCounts.CurrentRec.ssValue;
+tmpoutParamo_RequisitionCountsElement.AttrLabel = outParamo_RequisitionCounts.CurrentRec.ssLabel;
+tmpoutParamo_RequisitionCountsElement.AttrSeriesName = outParamo_RequisitionCounts.CurrentRec.ssSeriesName;
+tmpoutParamo_RequisitionCountsElement.AttrColor = outParamo_RequisitionCounts.CurrentRec.ssColor;
+tmpoutParamo_RequisitionCountsElement.AttrTooltip = outParamo_RequisitionCounts.CurrentRec.ssTooltip;
+tmpoutParamo_RequisitionCounts1List.Add(tmpoutParamo_RequisitionCountsElement);
+outParamo_RequisitionCounts.Advance();
+}
+
+} finally {
+outParamo_RequisitionCounts.EndIteration();
+}
+
+result.outParamo_RequisitionCounts = new RestList<ssConectaProveedores.RestRecords.RESTST_34313c5cf94d7ce3c5404858c22fafd9Structure>(tmpoutParamo_RequisitionCounts1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_34313c5cf94d7ce3c5404858c22fafd9Structure));
+}
+
+return result;
+}
+
+
+    public static ConectaProveedores_a_Main_Homepage_DataActionGetRequisitionsKPI_Model ToModel(RESTConectaProveedores_a_Main_Homepage_DataActionGetRequisitionsKPI_Outputs variables) {ConectaProveedores_a_Main_Homepage_DataActionGetRequisitionsKPI_Model result = new ConectaProveedores_a_Main_Homepage_DataActionGetRequisitionsKPI_Model();
+result.outParamo_RequisitionCounts = variables == null ? new RL_7d9c239ab2336eba85802eb00151e260() : RL_7d9c239ab2336eba85802eb00151e260.FromRestList(variables.outParamo_RequisitionCounts, ssConectaProveedores.RestRecords.RESTST_34313c5cf94d7ce3c5404858c22fafd9Structure.ToStructure);
+return result;
+}
+
+
+    public static RESTConectaProveedores_a_Main_Homepage_DataActionGetRequisitionsKPI_Outputs FromModel(IBehaviorsConfiguration conf, ConectaProveedores_a_Main_Homepage_DataActionGetRequisitionsKPI_Model screenModel) {if((screenModel == null)) {
+return null;
+}
+
+RESTConectaProveedores_a_Main_Homepage_DataActionGetRequisitionsKPI_Outputs result = new RESTConectaProveedores_a_Main_Homepage_DataActionGetRequisitionsKPI_Outputs();
+result.outParamo_RequisitionCounts = screenModel.outParamo_RequisitionCounts.ToRestList<ssConectaProveedores.RestRecords.RESTST_34313c5cf94d7ce3c5404858c22fafd9Structure>(ssConectaProveedores.RestRecords.RESTST_34313c5cf94d7ce3c5404858c22fafd9Structure.FromStructureDelegate(conf));
+return result;
+}
+
+}

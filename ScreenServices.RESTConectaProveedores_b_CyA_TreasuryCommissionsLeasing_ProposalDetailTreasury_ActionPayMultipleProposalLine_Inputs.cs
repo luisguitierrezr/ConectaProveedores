@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_b_CyA_TreasuryCommissionsLeasing_ProposalDetailTreasury_ActionPayMultipleProposalLine_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_ProposalLinelIdList")]
+public RestList<long> inParami_ProposalLinelIdList;
+
+
+    public static RESTConectaProveedores_b_CyA_TreasuryCommissionsLeasing_ProposalDetailTreasury_ActionPayMultipleProposalLine_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_b_CyA_TreasuryCommissionsLeasing_ProposalDetailTreasury_ActionPayMultipleProposalLine_Inputs result = inputParameters.ToObject<RESTConectaProveedores_b_CyA_TreasuryCommissionsLeasing_ProposalDetailTreasury_ActionPayMultipleProposalLine_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_b_CyA_TreasuryCommissionsLeasing_ProposalDetailTreasury_ActionPayMultipleProposalLine_Model ToModel() {ConectaProveedores_b_CyA_TreasuryCommissionsLeasing_ProposalDetailTreasury_ActionPayMultipleProposalLine_Model result = new ConectaProveedores_b_CyA_TreasuryCommissionsLeasing_ProposalDetailTreasury_ActionPayMultipleProposalLine_Model();
+result.inParami_ProposalLinelIdList = BasicTypeList<long>.FromRestList(inParami_ProposalLinelIdList);
+return result;
+}
+
+}

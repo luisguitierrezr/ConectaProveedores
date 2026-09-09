@@ -1,0 +1,75 @@
+﻿using OutSystems.RESTService.Runtime.Abstractions.Behaviors;
+using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultipleBigFiles_ActionUploadInvoiceFilesMultiple_Outputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("Error_MultiUploadInvoiceFileStructList")]
+public RestList<ssConectaProveedores.RestRecords.RESTST_5478c3bb197e3019856d4a634c17d91dStructure> outParamError_MultiUploadInvoiceFileStructList;
+
+
+    public static RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultipleBigFiles_ActionUploadInvoiceFilesMultiple_Outputs FromOutputs(IBehaviorsConfiguration conf, RL_2e76d5be11218f97ffd872b5a7213337 outParamError_MultiUploadInvoiceFileStructList) {RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultipleBigFiles_ActionUploadInvoiceFilesMultiple_Outputs result = new RESTConectaProveedores_d_InvoicePopups_Wb_PopupInvoiceUploadMultipleBigFiles_ActionUploadInvoiceFilesMultiple_Outputs();
+conf.IncludeBinariesURL = false;
+// Write the needed fields of the list outParamError_MultiUploadInvoiceFileStructList to the result.outParamError_MultiUploadInvoiceFileStructList
+ssConectaProveedores.RestRecords.RESTST_5478c3bb197e3019856d4a634c17d91dStructure tmpoutParamError_MultiUploadInvoiceFileStructListElement;
+if(outParamError_MultiUploadInvoiceFileStructList.Empty) {
+// Write the needed fields of the record outParamError_MultiUploadInvoiceFileStructList.CurrentRec to the tmpoutParamError_MultiUploadInvoiceFileStructListElement
+tmpoutParamError_MultiUploadInvoiceFileStructListElement = new ssConectaProveedores.RestRecords.RESTST_5478c3bb197e3019856d4a634c17d91dStructure();
+// Write optimized tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrInvoiceFileId
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrInvoiceFileId = (long?) 0L;
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrName = outParamError_MultiUploadInvoiceFileStructList.CurrentRec.ssName;
+// Write optimized tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrBinaryDataZIP
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrBinaryDataZIP = new byte[] {};
+// Write optimized tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrBinaryDataXML
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrBinaryDataXML = new byte[] {};
+// Write optimized tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrBinaryDataPDF
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrBinaryDataPDF = new byte[] {};
+// Write optimized tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrStorageId
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrStorageId = (long?) 0L;
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrErrorMsg = outParamError_MultiUploadInvoiceFileStructList.CurrentRec.ssErrorMsg;
+// Write optimized tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrFileId
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrFileId = (long?) 0L;
+result.outParamError_MultiUploadInvoiceFileStructList = new RestList<ssConectaProveedores.RestRecords.RESTST_5478c3bb197e3019856d4a634c17d91dStructure>(new ssConectaProveedores.RestRecords.RESTST_5478c3bb197e3019856d4a634c17d91dStructure[] {}, tmpoutParamError_MultiUploadInvoiceFileStructListElement);
+} else {
+List<ssConectaProveedores.RestRecords.RESTST_5478c3bb197e3019856d4a634c17d91dStructure>
+ tmpoutParamError_MultiUploadInvoiceFileStructList1List = new List<ssConectaProveedores.RestRecords.RESTST_5478c3bb197e3019856d4a634c17d91dStructure>
+();
+try {outParamError_MultiUploadInvoiceFileStructList.StartIteration();
+while (!(outParamError_MultiUploadInvoiceFileStructList.Eof)) {
+// Write the needed fields of the record outParamError_MultiUploadInvoiceFileStructList.CurrentRec to the tmpoutParamError_MultiUploadInvoiceFileStructListElement
+tmpoutParamError_MultiUploadInvoiceFileStructListElement = new ssConectaProveedores.RestRecords.RESTST_5478c3bb197e3019856d4a634c17d91dStructure();
+// Write optimized tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrInvoiceFileId
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrInvoiceFileId = (long?) 0L;
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrName = outParamError_MultiUploadInvoiceFileStructList.CurrentRec.ssName;
+// Write optimized tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrBinaryDataZIP
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrBinaryDataZIP = new byte[] {};
+// Write optimized tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrBinaryDataXML
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrBinaryDataXML = new byte[] {};
+// Write optimized tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrBinaryDataPDF
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrBinaryDataPDF = new byte[] {};
+// Write optimized tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrStorageId
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrStorageId = (long?) 0L;
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrErrorMsg = outParamError_MultiUploadInvoiceFileStructList.CurrentRec.ssErrorMsg;
+// Write optimized tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrFileId
+tmpoutParamError_MultiUploadInvoiceFileStructListElement.AttrFileId = (long?) 0L;
+tmpoutParamError_MultiUploadInvoiceFileStructList1List.Add(tmpoutParamError_MultiUploadInvoiceFileStructListElement);
+outParamError_MultiUploadInvoiceFileStructList.Advance();
+}
+
+} finally {
+outParamError_MultiUploadInvoiceFileStructList.EndIteration();
+}
+
+result.outParamError_MultiUploadInvoiceFileStructList = new RestList<ssConectaProveedores.RestRecords.RESTST_5478c3bb197e3019856d4a634c17d91dStructure>(tmpoutParamError_MultiUploadInvoiceFileStructList1List.ToArray(), default(ssConectaProveedores.RestRecords.RESTST_5478c3bb197e3019856d4a634c17d91dStructure));
+}
+
+return result;
+}
+
+
+    
+
+    
+}

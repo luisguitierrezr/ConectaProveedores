@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_c_Requisitions_RequisitionDetail_ActionGetIsShowAssignFirstApproverPopup_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("UserId")]
+public string inParamUserId;
+
+
+    public static RESTConectaProveedores_c_Requisitions_RequisitionDetail_ActionGetIsShowAssignFirstApproverPopup_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_c_Requisitions_RequisitionDetail_ActionGetIsShowAssignFirstApproverPopup_Inputs result = inputParameters.ToObject<RESTConectaProveedores_c_Requisitions_RequisitionDetail_ActionGetIsShowAssignFirstApproverPopup_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_c_Requisitions_RequisitionDetail_ActionGetIsShowAssignFirstApproverPopup_Model ToModel() {ConectaProveedores_c_Requisitions_RequisitionDetail_ActionGetIsShowAssignFirstApproverPopup_Model result = new ConectaProveedores_c_Requisitions_RequisitionDetail_ActionGetIsShowAssignFirstApproverPopup_Model();
+result.inParamUserId = inParamUserId == null ? "" : inParamUserId;
+return result;
+}
+
+}

@@ -1,0 +1,28 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_c_Requisitions_RequisitionDetail_ActionSaveContractPendingInfo_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_Requisition")]
+public ssConectaProveedores.RestRecords.RESTEN_98680591dcf3728e0877a90eb5e1e552EntityRecord inParami_Requisition;
+[JsonProperty("i_RequisitionFileTypesStruct")]
+public ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure inParami_RequisitionFileTypesStruct;
+[JsonProperty("i_OG_DateOfCommitment")]
+public String inParami_OG_DateOfCommitment;
+
+
+    public static RESTConectaProveedores_c_Requisitions_RequisitionDetail_ActionSaveContractPendingInfo_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_c_Requisitions_RequisitionDetail_ActionSaveContractPendingInfo_Inputs result = inputParameters.ToObject<RESTConectaProveedores_c_Requisitions_RequisitionDetail_ActionSaveContractPendingInfo_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_c_Requisitions_RequisitionDetail_ActionSaveContractPendingInfo_Model ToModel() {ConectaProveedores_c_Requisitions_RequisitionDetail_ActionSaveContractPendingInfo_Model result = new ConectaProveedores_c_Requisitions_RequisitionDetail_ActionSaveContractPendingInfo_Model();
+result.inParami_Requisition = ssConectaProveedores.RestRecords.RESTEN_98680591dcf3728e0877a90eb5e1e552EntityRecord.ToStructure(inParami_Requisition);
+result.inParami_RequisitionFileTypesStruct = ssConectaProveedores.RestRecords.RESTST_26b16bea631cbd94cf555acb5c7a4be3Structure.ToStructure(inParami_RequisitionFileTypesStruct);
+result.inParami_OG_DateOfCommitment = inParami_OG_DateOfCommitment == null ? new DateTime(1900, 1, 1, 0, 0, 0, DateTimeKind.Utc) : OutSystems.RESTService.Runtime.Abstractions.Conversions.TextToDate(inParami_OG_DateOfCommitment);
+return result;
+}
+
+}

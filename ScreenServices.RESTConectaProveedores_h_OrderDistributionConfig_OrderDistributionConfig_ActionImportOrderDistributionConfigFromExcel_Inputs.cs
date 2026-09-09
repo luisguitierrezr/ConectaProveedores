@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfig_ActionImportOrderDistributionConfigFromExcel_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("FileContent")]
+public byte[] inParamFileContent;
+
+
+    public static RESTConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfig_ActionImportOrderDistributionConfigFromExcel_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfig_ActionImportOrderDistributionConfigFromExcel_Inputs result = inputParameters.ToObject<RESTConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfig_ActionImportOrderDistributionConfigFromExcel_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfig_ActionImportOrderDistributionConfigFromExcel_Model ToModel() {ConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfig_ActionImportOrderDistributionConfigFromExcel_Model result = new ConectaProveedores_h_OrderDistributionConfig_OrderDistributionConfig_ActionImportOrderDistributionConfigFromExcel_Model();
+result.inParamFileContent = inParamFileContent == null ? new byte[] {} : inParamFileContent;
+return result;
+}
+
+}

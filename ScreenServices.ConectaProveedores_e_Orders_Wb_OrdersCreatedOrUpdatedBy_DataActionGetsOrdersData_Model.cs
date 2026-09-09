@@ -1,0 +1,10 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class ConectaProveedores_e_Orders_Wb_OrdersCreatedOrUpdatedBy_DataActionGetsOrdersData_Model {
+
+    public ST_26711e61541f079fb4510d8f9bfa1e3dStructure outParamo_OrderCreatedLog;
+
+}

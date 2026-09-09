@@ -1,0 +1,22 @@
+﻿using OutSystems.RESTService.Runtime.Core.Controllers;
+using OutSystems.RESTService.Runtime.Core.Controllers.ScreenServices;
+
+namespace ssConectaProveedores.ScreenServices;
+
+public class RESTConectaProveedores_d_Invoices_Wb_InvoiceDetailsChat_ActionAddComment_Inputs : ScreenServicesApiController.Payload.IDataPayload {
+
+    [JsonProperty("i_InvoiceComment")]
+public ssConectaProveedores.RestRecords.RESTEN_41db3de59e8e7bb612336c1b02d2e4f8EntityRecord inParami_InvoiceComment;
+
+
+    public static RESTConectaProveedores_d_Invoices_Wb_InvoiceDetailsChat_ActionAddComment_Inputs FromJSON(JObject inputParameters, JsonSerializer settings) {RESTConectaProveedores_d_Invoices_Wb_InvoiceDetailsChat_ActionAddComment_Inputs result = inputParameters.ToObject<RESTConectaProveedores_d_Invoices_Wb_InvoiceDetailsChat_ActionAddComment_Inputs>(settings);
+return result;
+}
+
+
+    public ConectaProveedores_d_Invoices_Wb_InvoiceDetailsChat_ActionAddComment_Model ToModel() {ConectaProveedores_d_Invoices_Wb_InvoiceDetailsChat_ActionAddComment_Model result = new ConectaProveedores_d_Invoices_Wb_InvoiceDetailsChat_ActionAddComment_Model();
+result.inParami_InvoiceComment = ssConectaProveedores.RestRecords.RESTEN_41db3de59e8e7bb612336c1b02d2e4f8EntityRecord.ToStructure(inParami_InvoiceComment);
+return result;
+}
+
+}
